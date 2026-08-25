@@ -74,6 +74,7 @@ def main():
                 "does not explain it"),
             "is_today": day == today,
             "falsified_by_control": (day == "2026-08-20" and dominant == "Hostinger"),
+            "confirmed_by_control": (day == "2026-02-05" and dominant == "GoDaddy"),
         })
 
     # GoDaddy assigns nsNN/nsNN+1 pairs; the assignment is widely understood to be
@@ -100,6 +101,16 @@ def main():
                      "their SOA serials"),
             "result": "12 of 12 controls carry the same 2026-08-20 serial",
             "verdict": "FALSIFIED - provider-wide serial bump, not operator activity",
+        }, {
+            "hypothesis": ("the 8 GoDaddy domains sharing zone-edit date 2026-02-05 "
+                           "were configured as one batch"),
+            "test": ("sampled 79 GoDaddy-nameserver domains discovered by the "
+                     "expansion sweep that belong to no cluster, and read their "
+                     "SOA serials"),
+            "result": ("0 of 79 controls carry the 2026-02-05 serial; control dates "
+                       "are widely dispersed (most common is 2023-09-19 at 8 of 79)"),
+            "verdict": ("SURVIVES - 2026-02-05 is not a GoDaddy-wide event, so the "
+                        "8 domains share a genuine same-day configuration event"),
         }],
         "caveat": ("SOA serial dates the last zone edit, not registration. It is a "
                    "batch-detection signal only, never an age estimate."),

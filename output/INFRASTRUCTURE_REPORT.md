@@ -14,7 +14,7 @@
 | With MX (mail-capable) | 223 |
 | With SPF | 186 |
 | With DMARC | 151 |
-| With DKIM key found | 129 |
+| With DKIM key found | 171 |
 | With CAA | 15 |
 | Unique IPs observed | 1207 |
 | Unique ASNs | 49 |
@@ -74,10 +74,8 @@ Registrar attribution below is therefore inferred from **delegated nameservers a
 |---|---|---|
 | AS16509 | AMAZON-02 - Amazon.com, Inc., US | 74 |
 | AS53831 | SQUARESPACE - Squarespace, Inc., US | 57 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | 27 |
-| AS47583 | AS-HOSTINGER - Hostinger International Limited, CY | 22 |
-| AS13335 |  | 17 |
-| AS16276 | OVH - OVH SAS, FR | 16 |
+| AS47583 | AS-HOSTINGER - Hostinger International Limited, CY | 21 |
+| AS13335 |  | 16 |
 | AS58182 | wix_com - Wix.com Ltd., IL | 10 |
 | AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | 7 |
 | AS62371 | PROTON - Proton AG, CH | 4 |
@@ -87,21 +85,23 @@ Registrar attribution below is therefore inferred from **delegated nameservers a
 | AS151847 | FASTMAILPTYLTD-AS-AP - Fastmail Pty Ltd, AU | 3 |
 | AS210909 | TUTA - Tutao GmbH, DE | 3 |
 | AS398787 |  | 2 |
+| AS398101 | GO-DADDY-COM-LLC - GoDaddy.com, LLC, US | 2 |
+| AS8495 | INTERNET_AG - INTERNET AG Global Network, DE | 2 |
 
 **Mail-path ASN** (from MX host IPs — vendor infrastructure, not attributable)
 
 | ASN | AS name | Domains |
 |---|---|---|
-| AS15169 | GOOGLE - Google LLC, US | 128 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | 26 |
-| AS16276 | OVH - OVH SAS, FR | 15 |
+| AS15169 | GOOGLE - Google LLC, US | 129 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | 29 |
+| AS16276 | OVH - OVH SAS, FR | 19 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | 8 |
 | AS62371 | PROTON - Proton AG, CH | 8 |
 | AS14618 | AMAZON-AES - Amazon.com, Inc., US | 7 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | 5 |
+| AS13335 |  | 4 |
 | AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | 4 |
-| AS151847 | FASTMAILPTYLTD-AS-AP - Fastmail Pty Ltd, AU | 3 |
 
-**Geo (BGP registry country):** US (183), CY (22), FR (15), IL (10), DE (8), CH (4), NL (3), AU (3), CA (3), LT (2)
+**Geo (BGP registry country):** US (171), CY (21), IL (10), DE (7), CH (4), NL (3), AU (3), LT (2), GB (2), CA (2)
 
 ## 3. Mail authentication posture
 
@@ -143,6 +143,7 @@ Clusters are sets of two or more domains sharing an infrastructure selector. Sel
 |---|---|---|
 | `dkim:MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJudTILTG3qrzQzZzbptozaGQ0` | 3 | passinbox.com, passmail.com, passmail.net |
 | `k2:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv2aC2KjGKLOwTweBY5A9` | 2 | insightfulworkplace.com, prorecresources.com |
+| `k3:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsYGiMSn7fsUqSvfSX40x` | 2 | insightfulworkplace.com, prorecresources.com |
 
 ### Shared SPF-management tenant
 *Attribution strength: very high — one account administers SPF for every member domain*
@@ -176,7 +177,6 @@ Clusters are sets of two or more domains sharing an infrastructure selector. Sel
 | `a2aa9ff50de748dbe.awsglobalaccelerator.com` | 32 | ajobguide.com, careerattainment.com, careeritjob.com, careernb.com, careersmails.com, cvmailhub.com, jobinboxhub.com, jobitmail.com, jobsmailbox.com, jobsmails.com, jobstechmail.com, jobsupp.com, … (+20 more) |
 | `a16e665f42988324c.awsglobalaccelerator.com` | 27 | careermailus.com, cvtechmail.com, glidemail.io, itcareerinfo.com, itjobmail.com, itjobworks.com, jobitwork.com, jobstechmails.com, jobtechmail.com, jobtechsmail.com, mailjobtech.com, mailmywork.com, … (+15 more) |
 | `unalocated.63.wixsite.com` | 10 | jobemails.net, jobhuntmails.com, myjobsemail.com, myjobsinbox.com, mymailsbox.net, mywebemails.com, myworkmails.com, sharpcareerimage.com, work-mail.net, workwebmail.com |
-| `185-70-42-15.protonmail.ch` | 4 | pm.me, proton.me, protonmail.ch, protonmail.com |
 | `185-70-42-150.protonmail.ch` | 4 | pm.me, proton.me, protonmail.ch, protonmail.com |
 | `185-70-42-31.protonmail.ch` | 3 | pm.me, protonmail.ch, protonmail.com |
 | `redir.messagingengine.com` | 3 | fastmail.com, fastmail.net, pobox.com |
@@ -198,11 +198,11 @@ Clusters are sets of two or more domains sharing an infrastructure selector. Sel
 | `13.248.243.5` | 27 | careermailus.com, cvtechmail.com, glidemail.io, itcareerinfo.com, itjobmail.com, itjobworks.com, jobitwork.com, jobstechmails.com, jobtechmail.com, jobtechsmail.com, mailjobtech.com, mailmywork.com, … (+15 more) |
 | `76.223.105.230` | 27 | careermailus.com, cvtechmail.com, glidemail.io, itcareerinfo.com, itjobmail.com, itjobworks.com, jobitwork.com, jobstechmails.com, jobtechmail.com, jobtechsmail.com, mailjobtech.com, mailmywork.com, … (+15 more) |
 | `2.57.91.91` | 18 | career-techmail.com, carrermail.com, cvejobs.com, itjobdesire.com, itjobemails.com, itjobinbox.com, itresumejobs.com, jobmaildesk.com, jobmailoffer.com, jobrequires.com, jobsdesire.com, myemailjobs.com, … (+6 more) |
-| `141.94.97.141` | 15 | activemails.net, boxmailhere.com, boxmailhost.com, careermails.net, mailactiv.com, mailboxcore.com, mailmessage.co, nextstepcareer.net, rapidmailhost.com, smartmailhost.net, swiftemail.co, swiftmailhost.com, … (+3 more) |
-| `2001:41d0:403:488d::` | 11 | activemails.net, boxmailhere.com, boxmailhost.com, mailactiv.com, mailmessage.co, nextstepcareer.net, rapidmailhost.com, smartmailhost.net, swiftemail.co, topcandidate.co, webpostbox.net |
 | `185.230.63.107` | 10 | jobemails.net, jobhuntmails.com, myjobsemail.com, myjobsinbox.com, mymailsbox.net, mywebemails.com, myworkmails.com, sharpcareerimage.com, work-mail.net, workwebmail.com |
+| `185.230.63.171` | 10 | jobemails.net, jobhuntmails.com, myjobsemail.com, myjobsinbox.com, mymailsbox.net, mywebemails.com, myworkmails.com, sharpcareerimage.com, work-mail.net, workwebmail.com |
+| `185.230.63.186` | 10 | jobemails.net, jobhuntmails.com, myjobsemail.com, myjobsinbox.com, mymailsbox.net, mywebemails.com, myworkmails.com, sharpcareerimage.com, work-mail.net, workwebmail.com |
 
-*106 further clusters of this type in `output/pivot_clusters.json`.*
+*24 further clusters of this type in `output/pivot_clusters.json`.*
 
 ### Shared SOA responsible mailbox
 *Attribution strength: medium — same DNS operator*
@@ -253,14 +253,14 @@ Clusters are sets of two or more domains sharing an infrastructure selector. Sel
 | `3.33.128.0/20` | 32 | ajobguide.com, careerattainment.com, careeritjob.com, careernb.com, careersmails.com, cvmailhub.com, jobinboxhub.com, jobitmail.com, jobsmailbox.com, jobsmails.com, jobstechmail.com, jobsupp.com, … (+20 more) |
 | `13.248.240.0/20` | 27 | careermailus.com, cvtechmail.com, glidemail.io, itcareerinfo.com, itjobmail.com, itjobworks.com, jobitwork.com, jobstechmails.com, jobtechmail.com, jobtechsmail.com, mailjobtech.com, mailmywork.com, … (+15 more) |
 | `76.223.96.0/20` | 27 | careermailus.com, cvtechmail.com, glidemail.io, itcareerinfo.com, itjobmail.com, itjobworks.com, jobitwork.com, jobstechmails.com, jobtechmail.com, jobtechsmail.com, mailjobtech.com, mailmywork.com, … (+15 more) |
-| `52.96.0.0/14` | 25 | ajoy2consult.com, careeremail.net, careerwebmail.com, ebsworksite.com, insightfulworkplace.com, jobemail.net, jobemails.net, jobhuntmails.com, mail.mcgill.ca, mail.utoronto.ca, mainewoodproducts.com, mycareermail.com, … (+13 more) |
-| `2603:1000::/25` | 24 | ajoy2consult.com, careerattainment.com, careerwebmail.com, ebsworksite.com, insightfulworkplace.com, jobemail.net, jobemails.net, jobhuntmails.com, mail.utoronto.ca, mainewoodproducts.com, mycareermail.com, mycareersmail.com, … (+12 more) |
 | `2.57.91.0/24` | 19 | career-techmail.com, carrermail.com, cvejobs.com, i-mail.in, itjobdesire.com, itjobemails.com, itjobinbox.com, itresumejobs.com, jobmaildesk.com, jobmailoffer.com, jobrequires.com, jobsdesire.com, … (+7 more) |
-| `141.94.0.0/16` | 15 | activemails.net, boxmailhere.com, boxmailhost.com, careermails.net, mailactiv.com, mailboxcore.com, mailmessage.co, nextstepcareer.net, rapidmailhost.com, smartmailhost.net, swiftemail.co, swiftmailhost.com, … (+3 more) |
 | `185.230.63.0/24` | 10 | jobemails.net, jobhuntmails.com, myjobsemail.com, myjobsinbox.com, mymailsbox.net, mywebemails.com, myworkmails.com, sharpcareerimage.com, work-mail.net, workwebmail.com |
 | `34.148.0.0/14` | 7 | careerwebmail.com, jobhuntmails.com, mymailsbox.net, mywebemails.com, sharpcareerimage.com, work-mail.net, workwebmail.com |
+| `2606:4700:3030::/48` | 4 | careerx.us, passinbox.com, passmail.net, wgcv.me |
+| `176.119.200.0/24` | 4 | pm.me, proton.me, protonmail.ch, protonmail.com |
+| `185.70.42.0/24` | 4 | pm.me, proton.me, protonmail.ch, protonmail.com |
 
-*33 further clusters of this type in `output/pivot_clusters.json`.*
+*30 further clusters of this type in `output/pivot_clusters.json`.*
 
 ### Shared MX host
 *Attribution strength: low — vendor-level*
@@ -307,18 +307,18 @@ Clusters are sets of two or more domains sharing an infrastructure selector. Sel
 |---|---|---|
 | `AS16509` | 74 | ajobguide.com, careerattainment.com, careeritjob.com, careermail.pro, careermails.com, careermailus.com, careernb.com, careersmails.com, contactbox.io, cvmailhub.com, cvtechmail.com, eprivatemail.com, … (+62 more) |
 | `AS53831` | 57 | applyitmail.com, blazepinnacle.com, career2026.com, celestialflare.com, cometmailhub.com, couriermailhub.com, expressinboxmail.com, fastmailzoom.com, flashpostmail.com, hcmconsultingpro.com, inboxflashpro.com, itworkmail.net, … (+45 more) |
-| `AS8075` | 27 | ajoy2consult.com, careerattainment.com, careeremail.net, careerwebmail.com, duck.com, ebsworksite.com, insightfulworkplace.com, jobemail.net, jobemails.net, jobhuntmails.com, mail.mcgill.ca, mail.utoronto.ca, … (+15 more) |
-| `AS47583` | 22 | career-techmail.com, carrermail.com, cvejobs.com, i-mail.in, itjobdesire.com, itjobemails.com, itjobinbox.com, itresumejobs.com, jobmaildesk.com, jobmailoffer.com, jobrequires.com, jobsdesire.com, … (+10 more) |
-| `AS13335` | 17 | aogjob.com, careerx.us, fastmail.com, hushmail.com, inboxhere.com, inboxhires.com, jobemails.net, jobhuntus.com, mailflux.com, myjobsemail.com, myjobsinbox.com, passinbox.com, … (+5 more) |
-| `AS16276` | 16 | activemails.net, boxmailhere.com, boxmailhost.com, careermails.net, mailactiv.com, mailboxcore.com, mailmessage.co, myquickmails.com, nextstepcareer.net, rapidmailhost.com, smartmailhost.net, swiftemail.co, … (+4 more) |
+| `AS47583` | 21 | career-techmail.com, carrermail.com, cvejobs.com, i-mail.in, itjobdesire.com, itjobemails.com, itjobinbox.com, itresumejobs.com, jobmaildesk.com, jobmailoffer.com, jobrequires.com, jobsdesire.com, … (+9 more) |
+| `AS13335` | 16 | aogjob.com, careerx.us, fastmail.com, hushmail.com, inboxhere.com, inboxhires.com, jobemails.net, jobhuntus.com, mailflux.com, myjobsemail.com, myjobsinbox.com, passinbox.com, … (+4 more) |
 | `AS58182` | 10 | jobemails.net, jobhuntmails.com, myjobsemail.com, myjobsinbox.com, mymailsbox.net, mywebemails.com, myworkmails.com, sharpcareerimage.com, work-mail.net, workwebmail.com |
 | `AS396982` | 7 | careerwebmail.com, jobhuntmails.com, mymailsbox.net, mywebemails.com, sharpcareerimage.com, work-mail.net, workwebmail.com |
 | `AS62371` | 4 | pm.me, proton.me, protonmail.ch, protonmail.com |
 | `AS15169` | 3 | ajoy2consult.com, jgcareers.com, myitjobmails.com |
 | `AS22612` | 3 | jobmail.io, ohmymail.net, thejobtec.com |
 | `AS209242` | 3 | hushmail.com, insightfulworkplace.com, mainewoodproducts.com |
+| `AS151847` | 3 | fastmail.com, fastmail.net, pobox.com |
+| `AS210909` | 3 | keemail.me, tuta.io, tutanota.com |
 
-*6 further clusters of this type in `output/pivot_clusters.json`.*
+*3 further clusters of this type in `output/pivot_clusters.json`.*
 
 ## 5. Linked operator groups
 
@@ -351,7 +351,7 @@ The clusters in section 4 are single selectors. This section merges them into co
 | DNS operator | Cloudflare (13), none (2) |
 | Mail provider | Google Workspace (11), none (4) |
 | SOA responsible party | `dns.cloudflare.com` (13) |
-| Hosting IPs | `141.94.97.141` (12), `2001:41d0:403:488d::` (9), `104.21.73.99` (1), `172.67.160.234` (1), `2606:4700:3033::ac43:a0ea` (1), `2606:4700:3035::6815:4963` (1) |
+| Hosting IPs |  |
 | DMARC policy | quarantine (15) |
 | Risk tier | medium (8), low (7) |
 | Naming theme | synthetic_generic_mailbox_brand (11), job_career_work_it_cv_themed (4) |
@@ -367,7 +367,7 @@ The clusters in section 4 are single selectors. This section merges them into co
 | DNS operator | messagingengine.com (3) |
 | Mail provider | Fastmail (3) |
 | SOA responsible party | `postmaster.messagingengine.com` (3) |
-| Hosting IPs | `103.168.172.37` (3), `103.168.172.52` (3), `103.168.172.65` (3), `103.168.172.38` (1), `103.168.172.39` (1), `103.168.172.43` (1) |
+| Hosting IPs | `103.168.172.37` (3), `103.168.172.52` (3), `103.168.172.65` (3), `103.168.172.38` (1), `103.168.172.39` (1), `103.168.172.53` (1) |
 | DMARC policy | none (3) |
 | Risk tier | low (3) |
 | Naming theme | privacy_alias_mailbox (3) |
@@ -408,14 +408,14 @@ The clusters in section 4 are single selectors. This section merges them into co
 
 ### Group 6 — 2 domains
 
-**Linking evidence:** `dkim:k2:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv2aC2KjGKLOwTweBY5A9`
+**Linking evidence:** `dkim:k2:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv2aC2KjGKLOwTweBY5A9`, `dkim:k3:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsYGiMSn7fsUqSvfSX40x`
 
 | Attribute | Value |
 |---|---|
 | DNS operator | GoDaddy (2) |
 | Mail provider | self/other (ppe-hosted.com) (1), Microsoft 365 (1) |
 | SOA responsible party | `dns.jomax.net` (1) |
-| Hosting IPs | `52.96.156.8` (2), `160.153.0.105` (1), `2603:1036:304:2852::8` (1), `2603:1036:304:3404::8` (1), `2603:1036:304:806::8` (1), `2603:1036:304:85e::8` (1) |
+| Hosting IPs | `160.153.0.105` (1), `173.231.203.220` (1) |
 | DMARC policy | none (2) |
 | Risk tier | low (2) |
 | Naming theme | job_career_work_it_cv_themed (1), synthetic_generic_mailbox_brand (1) |
@@ -443,20 +443,20 @@ Full records are in `output/dns_enumeration.json` (raw) and `output/domain_infra
 | mailjobtech.com | 85 | GoDaddy | Google Workspace | AS16509 | none | 13.248.243.5;76.223.105.230 |
 | nextitjobs.com | 85 | GoDaddy | Google Workspace | AS16509 | quarantine | 15.197.148.33;3.33.130.190 |
 | itjobmail.com | 80 | GoDaddy | Google Workspace | AS16509 | - | 13.248.243.5;76.223.105.230 |
-| myjobemails.com | 75 | Hostinger | none | AS47583;AS8075 | none | 2.57.91.91;2603:1036:304:2852::8;2603:1036:3 |
-| careeremail.net | 75 | Google Domains / Squarespace | Microsoft 365 | AS8075 | none | 52.96.156.24;52.96.156.8;52.96.170.72;52.96. |
+| myjobemails.com | 75 | Hostinger | none | AS47583 | none | 2.57.91.91 |
+| careeremail.net | 75 | Google Domains / Squarespace | Microsoft 365 | - | none | - |
 | itjobinbox.com | 75 | Hostinger | Google Workspace | AS47583 | - | 2.57.91.91 |
 | aogjob.com | 75 | Cloudflare | Google Workspace | AS13335 | none | 104.21.67.4;172.67.167.105;2606:4700:3033::a |
 | itjobworks.com | 75 | GoDaddy | Google Workspace | AS16509 | - | 13.248.243.5;76.223.105.230 |
 | jobstechmails.com | 75 | GoDaddy | Google Workspace | AS16509 | none | 13.248.243.5;76.223.105.230 |
 | myitjobmails.com | 75 | Hostinger | none | AS15169;AS47583 | - | 2.57.91.91;2607:f8b0:4002:c10::65;2607:f8b0: |
 | jobitmail.com | 75 | GoDaddy | Google Workspace | AS16509 | - | 15.197.148.33;3.33.130.190 |
-| careerattainment.com | 70 | GoDaddy | Microsoft 365 | AS16509;AS8075 | none | 15.197.148.33;2603:1036:304:2853::8;2603:103 |
+| careerattainment.com | 70 | GoDaddy | Microsoft 365 | AS16509 | none | 15.197.148.33;3.33.130.190 |
 | myjobsmails.com | 70 | GoDaddy | none | AS16509 | - | 13.248.243.5;76.223.105.230 |
-| myworkmails.com | 70 | Wix | Microsoft 365 | AS58182;AS8075 | - | 185.230.63.107;185.230.63.171;185.230.63.186 |
-| workwebmail.com | 70 | Wix | Microsoft 365 | AS396982;AS58182;AS8075 | none | 185.230.63.107;185.230.63.171;185.230.63.186 |
+| myworkmails.com | 70 | Wix | Microsoft 365 | AS58182 | - | 185.230.63.107;185.230.63.171;185.230.63.186 |
+| workwebmail.com | 70 | Wix | Microsoft 365 | AS396982;AS58182 | none | 185.230.63.107;185.230.63.171;185.230.63.186 |
 | jobsmails.com | 70 | GoDaddy | Google Workspace | AS16509 | - | 15.197.148.33;3.33.130.190 |
-| techcareermail.com | 70 | Google Domains / Squarespace | Microsoft 365 | AS8075 | none | 2603:1036:304:284d::8;2603:1036:304:2857::8; |
+| techcareermail.com | 70 | Google Domains / Squarespace | Microsoft 365 | - | none | - |
 | cvtechmail.com | 70 | GoDaddy | Google Workspace | AS16509 | - | 13.248.243.5;76.223.105.230 |
 | jobtechmail.com | 70 | GoDaddy | Google Workspace | AS16509 | none | 13.248.243.5;76.223.105.230 |
 | jobtechsmail.com | 70 | GoDaddy | Google Workspace | AS16509 | none | 13.248.243.5;76.223.105.230 |
@@ -464,27 +464,54 @@ Full records are in `output/dns_enumeration.json` (raw) and `output/domain_infra
 | jobsitmail.com | 70 | Google Domains / Squarespace | Google Workspace | AS53831 | - | 198.185.159.144;198.185.159.145;198.49.23.14 |
 | workmailit.com | 70 | Google Domains / Squarespace | Google Workspace | AS53831 | - | 198.185.159.144;198.185.159.145;198.49.23.14 |
 
-## 8. Follow-on collection and negative findings
+## 8. Follow-on collection
 
-### Cluster expansion by DNS marker
+### 8.1 Cluster expansion by DNS marker
 
-Group 1 membership is directly testable: members carry `include:dc-aa8e722993._spfm.<domain>` in their apex SPF, so the record exists at that name. Candidate names generated from the corpus naming grammar were tested against it — 20,227 candidates probed, 639 registered.
+Both large groups publish a marker that can be tested directly, so candidate names generated from the corpus naming grammar can be checked for membership without any of the blocked egress.
 
-**Two false-positive modes had to be controlled out before the result meant anything:**
+| Group | Marker tested | Candidates | Confirmed new members |
+|---|---|---|---|
+| Group 1 | `dc-aa8e722993._spfm.<domain>` TXT exists | 20,227 | `hiremails.com`, `mypostwork.com`, `sorce.io`, `thetechbox.co` |
+| Group 2 | `p7rqadcw.uriports.com` inside the DMARC record | 29,786 | `primemailhost.com` |
 
-1. *Wildcard DNS.* Parking providers (Afternic, Sedo, CashParking, NameFind) answer every subdomain, so the marker query returns a hit on domains with no connection to the cluster. An uncontrolled first pass returned 71 'hits'; adding a random-label canary and rejecting the parking default `v=spf1 -all` cut it to 4. Parked brand names such as `pobox.co`, `proton.io` and `tuta.us` were all in the discarded set.
-2. *Timeouts read as absence.* A failed canary lookup is not proof of no wildcard. The probe now retries and treats only a definitive NXDOMAIN as clearing a zone; undecidable cases are flagged, not counted.
+Group 1 goes from 27 to 31 domains, Group 2 from 15 to 16. `primemailhost.com` matches Group 2 on every attribute — Cloudflare DNS, Migadu MX, `spf.migadu.com`, and the same URIports account. `sorce.io` is a sibling of `sorce.email`, which was already in the source list.
 
-**Confirmed new members (4):** `hiremails.com`, `mypostwork.com`, `sorce.io`, `thetechbox.co` — each verified with the tenant's exact SPF content and two NXDOMAIN canaries.
+**Two false-positive modes had to be controlled out first.** They are worth recording because both would have produced confident, wrong answers:
 
-This takes Group 1 from 27 to 31 domains. Group 2 did not expand: no generated candidate carried the URIports account, which is expected given its members are brandable coinages rather than compound job/mail words.
+1. *Wildcard DNS.* Parking providers (Afternic, Sedo, CashParking, NameFind) answer every subdomain, so a name-existence probe returns a hit on domains with no connection to the cluster. The uncontrolled first pass reported 71 'new members' including `pobox.co`, `proton.io` and `tuta.us`. Requiring the marker content to match the tenant's SPF rather than the parking default `v=spf1 -all`, and adding random-label canaries, cut it to 4.
+2. *Timeouts read as absence.* A canary lookup that fails is not proof of no wildcard. Probes now retry and treat only a definitive NXDOMAIN as clearing a zone; undecidable cases are flagged rather than counted.
 
-### Negative finding: the 2026-08-20 'batch' is not real
+Group 2's hosting was **not** usable as a marker: 12 of its 15 members resolve `autoconfig.<domain>` to `141.94.97.141`, which is `autoconfig.migadu.com` — the mail vendor's shared host, common to every Migadu customer. It identifies the vendor, not the operator, and is excluded.
 
-**Hypothesis:** the 21 domains sharing zone-edit date 2026-08-20 were registered or configured as one batch  
-**Test:** sampled 12 Hostinger-nameserver domains discovered by the expansion sweep that are unrelated to any cluster, and read their SOA serials  
-**Result:** 12 of 12 controls carry the same 2026-08-20 serial  
-**Verdict:** FALSIFIED - provider-wide serial bump, not operator activity
+### 8.2 Zone-edit timing
 
-21 domains share a 2026-08-20 SOA serial, all on Hostinger — which reads as a batch operation until you sample unrelated Hostinger domains and find the same serial. It is a provider-wide bump. SOA serials date the last zone edit, never registration, and any single-provider batch needs this control before it is believed. The remaining candidate batches are in `output/temporal_analysis.json`; the 2026-02-05 GoDaddy set (8 domains, all Google Workspace, two carrying the Group 1 tenant) spans one provider and is untested.
+RDAP creation dates were unavailable, so SOA serials stand in partially. They date the *last zone edit*, never registration, which makes them a batch-detection signal only. Any single-provider batch needs a control sample of unrelated domains on that provider before it means anything:
+
+**The 21 domains sharing zone-edit date 2026-08-20 were registered or configured as one batch** — FALSIFIED  
+sampled 12 Hostinger-nameserver domains discovered by the expansion sweep that are unrelated to any cluster, and read their SOA serials. 12 of 12 controls carry the same 2026-08-20 serial.
+
+**The 8 GoDaddy domains sharing zone-edit date 2026-02-05 were configured as one batch** — SURVIVES  
+sampled 79 GoDaddy-nameserver domains discovered by the expansion sweep that belong to no cluster, and read their SOA serials. 0 of 79 controls carry the 2026-02-05 serial; control dates are widely dispersed (most common is 2023-09-19 at 8 of 79).
+
+The surviving 2026-02-05 batch is notable for what its members are: near-exhaustive token permutations of one stem — `careeritjob.com`, `cvtechmail.com`, `jobstechmail.com`, `jobstechmails.com`, `jobtechmail.com`, `jobtechsmail.com`, `mailjobtech.com`, `techjobmail.com`. All are on GoDaddy with Google Workspace, two already carry the Group 1 SPF tenant, and all eight were configured the same day. That is consistent with the other six belonging to Group 1 as well, though co-timing and shared provider are weaker evidence than the account selector and are not treated as proof.
+
+### 8.3 Deeper enumeration
+
+A second pass widened the subdomain wordlist to 133 names and the DKIM selector list to 55, and checked DNSSEC status.
+
+| Result | Value |
+|---|---|
+| Domains with a DKIM key found | 129 → 171 |
+| DKIM keys retrieved | 228 |
+| Wildcard zones detected (probes suppressed) | 16 |
+| Undecidable zones | 0 |
+| DNSSEC-signed | 19 |
+| NSEC-walkable | 5 |
+
+**This corrects an earlier figure.** Section 1 reports 603 subdomains from the first pass, but that count included wildcard zones answering every probe. With the 16 wildcard zones suppressed, the clean count is 364 across a wordlist nearly five times longer.
+
+The deeper DKIM sweep raised coverage substantially but produced **no new operator links** — a negative result. Its one effect on attribution is to strengthen an existing link: `insightfulworkplace.com` and `prorecresources.com` now share two independent DKIM public keys (selectors `k2` and `k3`) rather than one.
+
+Zone walking yielded little. Of 19 DNSSEC-signed zones only 5 used walkable NSEC, and the Proton-operated ones (`passmail.com`, `passmail.net`, `passinbox.com`) return RFC 4470 'white lies' — synthetic `\000`-prefixed names generated per query, which reveal nothing. Only `runbox.no` produced a real chain, exposing its DKIM selectors and an `acme` host.
 

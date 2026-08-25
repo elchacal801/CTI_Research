@@ -1,0 +1,10 @@
+{
+  "generated_utc": "2026-08-25T22:15:18.137421+00:00",
+  "method": "content-matched DMARC probe for p7rqadcw.uriports.com; wildcard-safe because the account id must appear inside the record",
+  "not_used_as_marker": "141.94.97.141 == autoconfig.migadu.com, the mail vendor's shared host; it identifies Migadu customers, not this operator",
+  "candidates_probed": 29786,
+  "with_any_dmarc": 691,
+  "new_group2_members": [
+    "primemailhost.com"
+  ]
+}

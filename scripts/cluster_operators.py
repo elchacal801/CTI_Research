@@ -64,16 +64,30 @@ class DSU:
             self.p[rb] = ra
 
 
+def load_deep_dkim():
+    """Second-pass DKIM sweep uses a much longer selector list; merge it in."""
+    p = os.path.join(ROOT, "output", "deep_enumeration.json")
+    if not os.path.exists(p):
+        return {}
+    deep = json.load(open(p))
+    return {d["domain"]: d.get("dkim", {}) for d in deep["domains"]}
+
+
+DEEP_DKIM = load_deep_dkim()
+
+
 def dkim_key_selectors(dns_json, domain):
     out = []
+    merged = {}
     for d in dns_json["domains"]:
-        if d["domain"] != domain:
-            continue
-        for sel, vals in d["dkim"].items():
-            for v in vals:
-                m = re.search(r"p=([A-Za-z0-9+/=]{40,})", v)
-                if m:
-                    out.append(f"dkim:{sel}:{m.group(1)[:64]}")
+        if d["domain"] == domain:
+            merged.update(d["dkim"])
+    merged.update(DEEP_DKIM.get(domain, {}))
+    for sel, vals in merged.items():
+        for v in vals:
+            m = re.search(r"p=([A-Za-z0-9+/=]{40,})", v)
+            if m:
+                out.append(f"dkim:{sel}:{m.group(1)[:64]}")
     return out
 
 

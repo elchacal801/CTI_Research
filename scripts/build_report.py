@@ -257,59 +257,113 @@ def main():
     A("")
 
     # ---- section 8: follow-on collection ----
-    exp_p = os.path.join(ROOT, "output", "cluster_expansion.json")
-    tmp_p = os.path.join(ROOT, "output", "temporal_analysis.json")
-    if os.path.exists(exp_p) and os.path.exists(tmp_p):
-        exp = json.load(open(exp_p))
-        tmp = json.load(open(tmp_p))
-        A("## 8. Follow-on collection and negative findings")
+    def load(name):
+        fp = os.path.join(ROOT, "output", name)
+        return json.load(open(fp)) if os.path.exists(fp) else None
+
+    exp, g2, tmp, deep = (load("cluster_expansion.json"), load("group2_expansion.json"),
+                          load("temporal_analysis.json"), load("deep_enumeration.json"))
+    if exp and tmp:
+        A("## 8. Follow-on collection")
         A("")
-        A("### Cluster expansion by DNS marker")
+        A("### 8.1 Cluster expansion by DNS marker")
         A("")
-        A("Group 1 membership is directly testable: members carry "
-          "`include:dc-aa8e722993._spfm.<domain>` in their apex SPF, so the record exists "
-          "at that name. Candidate names generated from the corpus naming grammar were "
-          f"tested against it — {exp['candidates_probed']:,} candidates probed, "
-          f"{exp['registered']} registered.")
+        A("Both large groups publish a marker that can be tested directly, so candidate "
+          "names generated from the corpus naming grammar can be checked for membership "
+          "without any of the blocked egress.")
         A("")
-        A("**Two false-positive modes had to be controlled out before the result meant "
-          "anything:**")
+        A(tbl(["Group", "Marker tested", "Candidates", "Confirmed new members"], [
+            ["Group 1", "`dc-aa8e722993._spfm.<domain>` TXT exists",
+             f"{exp['candidates_probed']:,}",
+             ", ".join(f"`{d}`" for d in exp["new_group1_members"]) or "none"],
+            ["Group 2", "`p7rqadcw.uriports.com` inside the DMARC record",
+             f"{g2['candidates_probed']:,}" if g2 else "-",
+             ", ".join(f"`{d}`" for d in g2["new_group2_members"]) if g2 else "-"],
+        ]))
+        A("")
+        A("Group 1 goes from 27 to 31 domains, Group 2 from 15 to 16. "
+          "`primemailhost.com` matches Group 2 on every attribute — Cloudflare DNS, "
+          "Migadu MX, `spf.migadu.com`, and the same URIports account. `sorce.io` is a "
+          "sibling of `sorce.email`, which was already in the source list.")
+        A("")
+        A("**Two false-positive modes had to be controlled out first.** They are worth "
+          "recording because both would have produced confident, wrong answers:")
         A("")
         A("1. *Wildcard DNS.* Parking providers (Afternic, Sedo, CashParking, NameFind) "
-          "answer every subdomain, so the marker query returns a hit on domains with no "
-          "connection to the cluster. An uncontrolled first pass returned 71 'hits'; "
-          "adding a random-label canary and rejecting the parking default `v=spf1 -all` "
-          "cut it to 4. Parked brand names such as `pobox.co`, `proton.io` and `tuta.us` "
-          "were all in the discarded set.")
-        A("2. *Timeouts read as absence.* A failed canary lookup is not proof of no "
-          "wildcard. The probe now retries and treats only a definitive NXDOMAIN as "
-          "clearing a zone; undecidable cases are flagged, not counted.")
+          "answer every subdomain, so a name-existence probe returns a hit on domains "
+          "with no connection to the cluster. The uncontrolled first pass reported 71 "
+          "'new members' including `pobox.co`, `proton.io` and `tuta.us`. Requiring the "
+          "marker content to match the tenant's SPF rather than the parking default "
+          "`v=spf1 -all`, and adding random-label canaries, cut it to 4.")
+        A("2. *Timeouts read as absence.* A canary lookup that fails is not proof of no "
+          "wildcard. Probes now retry and treat only a definitive NXDOMAIN as clearing a "
+          "zone; undecidable cases are flagged rather than counted.")
         A("")
-        A("**Confirmed new members (4):** " +
-          ", ".join(f"`{d}`" for d in exp["new_group1_members"]) +
-          " — each verified with the tenant's exact SPF content and two NXDOMAIN canaries.")
+        A("Group 2's hosting was **not** usable as a marker: 12 of its 15 members resolve "
+          "`autoconfig.<domain>` to `141.94.97.141`, which is `autoconfig.migadu.com` — "
+          "the mail vendor's shared host, common to every Migadu customer. It identifies "
+          "the vendor, not the operator, and is excluded.")
         A("")
-        A("This takes Group 1 from 27 to 31 domains. Group 2 did not expand: no generated "
-          "candidate carried the URIports account, which is expected given its members "
-          "are brandable coinages rather than compound job/mail words.")
+
+        A("### 8.2 Zone-edit timing")
         A("")
-        A("### Negative finding: the 2026-08-20 'batch' is not real")
+        A("RDAP creation dates were unavailable, so SOA serials stand in partially. They "
+          "date the *last zone edit*, never registration, which makes them a "
+          "batch-detection signal only. Any single-provider batch needs a control sample "
+          "of unrelated domains on that provider before it means anything:")
         A("")
         for ct in tmp.get("control_tests", []):
-            A(f"**Hypothesis:** {ct['hypothesis']}  ")
-            A(f"**Test:** {ct['test']}  ")
-            A(f"**Result:** {ct['result']}  ")
-            A(f"**Verdict:** {ct['verdict']}")
+            verdict = ct["verdict"].split(" - ")[0]
+            A(f"**{ct['hypothesis'][0].upper()}{ct['hypothesis'][1:]}** — {verdict}  ")
+            A(f"{ct['test']}. {ct['result']}.")
             A("")
-        A("21 domains share a 2026-08-20 SOA serial, all on Hostinger — which reads as a "
-          "batch operation until you sample unrelated Hostinger domains and find the same "
-          "serial. It is a provider-wide bump. SOA serials date the last zone edit, never "
-          "registration, and any single-provider batch needs this control before it is "
-          "believed. The remaining candidate batches are in "
-          "`output/temporal_analysis.json`; the 2026-02-05 GoDaddy set (8 domains, all "
-          "Google Workspace, two carrying the Group 1 tenant) spans one provider and is "
-          "untested.")
-        A("")
+        confirmed = [b for b in tmp["candidate_batches"] if b.get("confirmed_by_control")]
+        for b in confirmed:
+            A(f"The surviving {b['zone_edit_date']} batch is notable for what its members "
+              "are: near-exhaustive token permutations of one stem — " +
+              ", ".join(f"`{d}`" for d in b["domains"]) + ". All are on GoDaddy with "
+              "Google Workspace, two already carry the Group 1 SPF tenant, and all eight "
+              "were configured the same day. That is consistent with the other six "
+              "belonging to Group 1 as well, though co-timing and shared provider are "
+              "weaker evidence than the account selector and are not treated as proof.")
+            A("")
+
+        if deep:
+            A("### 8.3 Deeper enumeration")
+            A("")
+            A(f"A second pass widened the subdomain wordlist to "
+              f"{deep['subdomain_wordlist_size']} names and the DKIM selector list to "
+              f"{deep['dkim_selector_count']}, and checked DNSSEC status.")
+            A("")
+            dk_dom = sum(1 for r in rows if r["dkim_selectors"])
+            A(tbl(["Result", "Value"], [
+                ["Domains with a DKIM key found", f"129 → {dk_dom}"],
+                ["DKIM keys retrieved", sum(len(x["dkim"]) for x in deep["domains"])],
+                ["Wildcard zones detected (probes suppressed)", deep["wildcard_zones"]],
+                ["Undecidable zones", deep["undecided_zones"]],
+                ["DNSSEC-signed", deep["dnssec_signed"]],
+                ["NSEC-walkable", deep["nsec_walkable"]],
+            ]))
+            A("")
+            A("**This corrects an earlier figure.** Section 1 reports 603 subdomains from "
+              "the first pass, but that count included wildcard zones answering every "
+              "probe. With the 16 wildcard zones suppressed, the clean count is "
+              f"{sum(len(x['subdomains']) for x in deep['domains'])} across a wordlist "
+              "nearly five times longer.")
+            A("")
+            A("The deeper DKIM sweep raised coverage substantially but produced **no new "
+              "operator links** — a negative result. Its one effect on attribution is to "
+              "strengthen an existing link: `insightfulworkplace.com` and "
+              "`prorecresources.com` now share two independent DKIM public keys "
+              "(selectors `k2` and `k3`) rather than one.")
+            A("")
+            A("Zone walking yielded little. Of 19 DNSSEC-signed zones only "
+              f"{deep['nsec_walkable']} used walkable NSEC, and the Proton-operated ones "
+              "(`passmail.com`, `passmail.net`, `passinbox.com`) return RFC 4470 "
+              "'white lies' — synthetic `\\000`-prefixed names generated per query, which "
+              "reveal nothing. Only `runbox.no` produced a real chain, exposing its DKIM "
+              "selectors and an `acme` host.")
+            A("")
 
     with open(OUT_MD, "w") as fh:
         fh.write("\n".join(L) + "\n")

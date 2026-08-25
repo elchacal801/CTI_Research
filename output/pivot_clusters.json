@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-25T22:00:16.357762+00:00",
+  "generated_utc": "2026-08-25T22:50:43.869191+00:00",
   "pivots": {
     "dkim_key": {
       "selector_type": "shared DKIM public key",
@@ -15,6 +15,14 @@
         },
         {
           "selector": "k2:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv2aC2KjGKLOwTweBY5A9",
+          "count": 2,
+          "domains": [
+            "insightfulworkplace.com",
+            "prorecresources.com"
+          ]
+        },
+        {
+          "selector": "k3:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsYGiMSn7fsUqSvfSX40x",
           "count": 2,
           "domains": [
             "insightfulworkplace.com",
@@ -583,44 +591,6 @@
           ]
         },
         {
-          "selector": "141.94.97.141",
-          "count": 15,
-          "domains": [
-            "activemails.net",
-            "boxmailhere.com",
-            "boxmailhost.com",
-            "careermails.net",
-            "mailactiv.com",
-            "mailboxcore.com",
-            "mailmessage.co",
-            "nextstepcareer.net",
-            "rapidmailhost.com",
-            "smartmailhost.net",
-            "swiftemail.co",
-            "swiftmailhost.com",
-            "tivomail.com",
-            "topcandidate.co",
-            "webpostbox.net"
-          ]
-        },
-        {
-          "selector": "2001:41d0:403:488d::",
-          "count": 11,
-          "domains": [
-            "activemails.net",
-            "boxmailhere.com",
-            "boxmailhost.com",
-            "mailactiv.com",
-            "mailmessage.co",
-            "nextstepcareer.net",
-            "rapidmailhost.com",
-            "smartmailhost.net",
-            "swiftemail.co",
-            "topcandidate.co",
-            "webpostbox.net"
-          ]
-        },
-        {
           "selector": "185.230.63.107",
           "count": 10,
           "domains": [
@@ -682,270 +652,7 @@
           ]
         },
         {
-          "selector": "2603:1036:304:800::8",
-          "count": 7,
-          "domains": [
-            "mail.utoronto.ca",
-            "mycareersmail.com",
-            "myjobsmail.com",
-            "prorecresources.com",
-            "techcareermail.com",
-            "techjobsemail.net",
-            "work-mail.net"
-          ]
-        },
-        {
-          "selector": "52.96.156.8",
-          "count": 6,
-          "domains": [
-            "careeremail.net",
-            "careerwebmail.com",
-            "insightfulworkplace.com",
-            "mywebemails.com",
-            "prorecresources.com",
-            "restartworks.com"
-          ]
-        },
-        {
-          "selector": "52.96.239.184",
-          "count": 6,
-          "domains": [
-            "careeremail.net",
-            "insightfulworkplace.com",
-            "mainewoodproducts.com",
-            "thetalentarc.co.uk",
-            "work-mail.net",
-            "workwebmail.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:284d::8",
-          "count": 6,
-          "domains": [
-            "ajoy2consult.com",
-            "careerwebmail.com",
-            "jobhuntmails.com",
-            "myjobsinbox.com",
-            "mywebemails.com",
-            "techcareermail.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:805::8",
-          "count": 5,
-          "domains": [
-            "careerattainment.com",
-            "jobemails.net",
-            "mainewoodproducts.com",
-            "myjobsinbox.com",
-            "myworkmails.com"
-          ]
-        },
-        {
-          "selector": "52.96.79.8",
-          "count": 5,
-          "domains": [
-            "careerwebmail.com",
-            "jobemail.net",
-            "mycareersmail.com",
-            "techjobsemail.net",
-            "workwebmail.com"
-          ]
-        },
-        {
-          "selector": "52.96.157.56",
-          "count": 5,
-          "domains": [
-            "ajoy2consult.com",
-            "jobemails.net",
-            "jobhuntmails.com",
-            "mycareersmail.com",
-            "work-mail.net"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:81d::8",
-          "count": 5,
-          "domains": [
-            "mail.utoronto.ca",
-            "mycareersmail.com",
-            "myjobsmail.com",
-            "prorecresources.com",
-            "work-mail.net"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:340a::8",
-          "count": 4,
-          "domains": [
-            "ajoy2consult.com",
-            "jobemail.net",
-            "mycareermail.com",
-            "myjobemails.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:859::8",
-          "count": 4,
-          "domains": [
-            "jobhuntmails.com",
-            "mycareersmail.com",
-            "myjobemails.com",
-            "mywebemails.com"
-          ]
-        },
-        {
-          "selector": "52.96.191.8",
-          "count": 4,
-          "domains": [
-            "careeremail.net",
-            "mainewoodproducts.com",
-            "mycareermail.com",
-            "techcareermail.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:2851::8",
-          "count": 4,
-          "domains": [
-            "careerwebmail.com",
-            "mainewoodproducts.com",
-            "mywebemails.com",
-            "myworkmails.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:3404::8",
-          "count": 4,
-          "domains": [
-            "insightfulworkplace.com",
-            "mail.utoronto.ca",
-            "myjobsinbox.com",
-            "myworkmails.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:871::8",
-          "count": 4,
-          "domains": [
-            "jobemail.net",
-            "mainewoodproducts.com",
-            "myjobsmail.com",
-            "myworkmails.com"
-          ]
-        },
-        {
-          "selector": "52.96.226.168",
-          "count": 4,
-          "domains": [
-            "mail.utoronto.ca",
-            "mycareermail.com",
-            "mywebemails.com",
-            "myworkmails.com"
-          ]
-        },
-        {
-          "selector": "52.96.79.184",
-          "count": 4,
-          "domains": [
-            "ebsworksite.com",
-            "myjobsmail.com",
-            "myworkmails.com",
-            "prorecresources.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:83c::8",
-          "count": 4,
-          "domains": [
-            "careerwebmail.com",
-            "ebsworksite.com",
-            "mywebemails.com",
-            "workwebmail.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:802::8",
-          "count": 4,
-          "domains": [
-            "ajoy2consult.com",
-            "jobhuntmails.com",
-            "mycareermail.com",
-            "mycareersmail.com"
-          ]
-        },
-        {
-          "selector": "52.96.191.200",
-          "count": 4,
-          "domains": [
-            "insightfulworkplace.com",
-            "jobemail.net",
-            "jobemails.net",
-            "jobhuntmails.com"
-          ]
-        },
-        {
-          "selector": "52.96.79.232",
-          "count": 4,
-          "domains": [
-            "jobhuntmails.com",
-            "mail.mcgill.ca",
-            "myjobsmail.com",
-            "techjobsemail.net"
-          ]
-        },
-        {
-          "selector": "52.96.79.248",
-          "count": 4,
-          "domains": [
-            "ajoy2consult.com",
-            "jobhuntmails.com",
-            "prorecresources.com",
-            "work-mail.net"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:2858::8",
-          "count": 4,
-          "domains": [
-            "mail.utoronto.ca",
-            "myjobsinbox.com",
-            "mywebemails.com",
-            "prorecresources.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:83f::8",
-          "count": 4,
-          "domains": [
-            "mycareersmail.com",
-            "myjobsinbox.com",
-            "techjobsemail.net",
-            "thetalentarc.co.uk"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:2856::8",
-          "count": 4,
-          "domains": [
-            "ajoy2consult.com",
-            "mail.utoronto.ca",
-            "mywebemails.com",
-            "techjobsemail.net"
-          ]
-        },
-        {
           "selector": "176.119.200.150",
-          "count": 4,
-          "domains": [
-            "pm.me",
-            "proton.me",
-            "protonmail.ch",
-            "protonmail.com"
-          ]
-        },
-        {
-          "selector": "185.70.42.15",
           "count": 4,
           "domains": [
             "pm.me",
@@ -965,78 +672,6 @@
           ]
         },
         {
-          "selector": "52.96.164.184",
-          "count": 3,
-          "domains": [
-            "jobhuntmails.com",
-            "mail.mcgill.ca",
-            "myjobemails.com"
-          ]
-        },
-        {
-          "selector": "52.96.79.136",
-          "count": 3,
-          "domains": [
-            "careeremail.net",
-            "mainewoodproducts.com",
-            "mywebemails.com"
-          ]
-        },
-        {
-          "selector": "52.96.79.88",
-          "count": 3,
-          "domains": [
-            "careeremail.net",
-            "mainewoodproducts.com",
-            "prorecresources.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:2855::8",
-          "count": 3,
-          "domains": [
-            "careerattainment.com",
-            "ebsworksite.com",
-            "jobemails.net"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:2859::8",
-          "count": 3,
-          "domains": [
-            "myjobsinbox.com",
-            "myworkmails.com",
-            "restartworks.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:806::8",
-          "count": 3,
-          "domains": [
-            "insightfulworkplace.com",
-            "techcareermail.com",
-            "workwebmail.com"
-          ]
-        },
-        {
-          "selector": "52.96.242.40",
-          "count": 3,
-          "domains": [
-            "jobhuntmails.com",
-            "myjobsinbox.com",
-            "techcareermail.com"
-          ]
-        },
-        {
-          "selector": "52.96.157.104",
-          "count": 3,
-          "domains": [
-            "jobhuntmails.com",
-            "mail.mcgill.ca",
-            "thetalentarc.co.uk"
-          ]
-        },
-        {
           "selector": "162.159.143.12",
           "count": 3,
           "domains": [
@@ -1052,105 +687,6 @@
             "jobemails.net",
             "myjobsemail.com",
             "myjobsinbox.com"
-          ]
-        },
-        {
-          "selector": "52.96.157.88",
-          "count": 3,
-          "domains": [
-            "myjobsinbox.com",
-            "prorecresources.com",
-            "work-mail.net"
-          ]
-        },
-        {
-          "selector": "52.96.163.56",
-          "count": 3,
-          "domains": [
-            "myjobsinbox.com",
-            "prorecresources.com",
-            "thetalentarc.co.uk"
-          ]
-        },
-        {
-          "selector": "52.96.191.248",
-          "count": 3,
-          "domains": [
-            "mail.mcgill.ca",
-            "myjobsinbox.com",
-            "myjobsmail.com"
-          ]
-        },
-        {
-          "selector": "52.96.226.152",
-          "count": 3,
-          "domains": [
-            "mail.utoronto.ca",
-            "myjobsinbox.com",
-            "techjobsemail.net"
-          ]
-        },
-        {
-          "selector": "52.96.157.120",
-          "count": 3,
-          "domains": [
-            "mycareermail.com",
-            "myjobsmail.com",
-            "thetalentarc.co.uk"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:85e::8",
-          "count": 3,
-          "domains": [
-            "insightfulworkplace.com",
-            "jobemail.net",
-            "jobemails.net"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:284f::8",
-          "count": 3,
-          "domains": [
-            "careerwebmail.com",
-            "mainewoodproducts.com",
-            "techjobsemail.net"
-          ]
-        },
-        {
-          "selector": "52.96.223.8",
-          "count": 3,
-          "domains": [
-            "careerwebmail.com",
-            "mywebemails.com",
-            "work-mail.net"
-          ]
-        },
-        {
-          "selector": "52.96.79.72",
-          "count": 3,
-          "domains": [
-            "careerwebmail.com",
-            "mail.mcgill.ca",
-            "work-mail.net"
-          ]
-        },
-        {
-          "selector": "52.96.79.168",
-          "count": 3,
-          "domains": [
-            "prorecresources.com",
-            "restartworks.com",
-            "work-mail.net"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:85c::8",
-          "count": 3,
-          "domains": [
-            "mywebemails.com",
-            "restartworks.com",
-            "thetalentarc.co.uk"
           ]
         },
         {
@@ -1262,283 +798,11 @@
           ]
         },
         {
-          "selector": "2603:1036:304:2852::8",
-          "count": 2,
-          "domains": [
-            "insightfulworkplace.com",
-            "myjobemails.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:3409::8",
-          "count": 2,
-          "domains": [
-            "myjobemails.com",
-            "workwebmail.com"
-          ]
-        },
-        {
-          "selector": "52.96.164.152",
-          "count": 2,
-          "domains": [
-            "mail.utoronto.ca",
-            "myjobemails.com"
-          ]
-        },
-        {
-          "selector": "52.96.79.120",
-          "count": 2,
-          "domains": [
-            "jobemails.net",
-            "myjobemails.com"
-          ]
-        },
-        {
-          "selector": "52.96.79.40",
-          "count": 2,
-          "domains": [
-            "careeremail.net",
-            "myjobemails.com"
-          ]
-        },
-        {
-          "selector": "52.96.170.72",
-          "count": 2,
-          "domains": [
-            "careeremail.net",
-            "restartworks.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:83d::8",
-          "count": 2,
-          "domains": [
-            "careerattainment.com",
-            "myjobsmail.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:2854::8",
-          "count": 2,
-          "domains": [
-            "mail.utoronto.ca",
-            "myworkmails.com"
-          ]
-        },
-        {
-          "selector": "52.96.157.152",
-          "count": 2,
-          "domains": [
-            "jobemail.net",
-            "myworkmails.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:2860::8",
-          "count": 2,
-          "domains": [
-            "thetalentarc.co.uk",
-            "workwebmail.com"
-          ]
-        },
-        {
-          "selector": "52.96.157.72",
-          "count": 2,
-          "domains": [
-            "myjobsinbox.com",
-            "workwebmail.com"
-          ]
-        },
-        {
-          "selector": "52.96.191.232",
-          "count": 2,
-          "domains": [
-            "myjobsinbox.com",
-            "workwebmail.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:2857::8",
-          "count": 2,
-          "domains": [
-            "mycareermail.com",
-            "techcareermail.com"
-          ]
-        },
-        {
-          "selector": "52.96.157.136",
-          "count": 2,
-          "domains": [
-            "jobhuntmails.com",
-            "techcareermail.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:3406::8",
-          "count": 2,
-          "domains": [
-            "myjobsinbox.com",
-            "prorecresources.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:807::8",
-          "count": 2,
-          "domains": [
-            "myjobsinbox.com",
-            "techjobsemail.net"
-          ]
-        },
-        {
-          "selector": "52.96.79.56",
-          "count": 2,
-          "domains": [
-            "myjobsinbox.com",
-            "myjobsmail.com"
-          ]
-        },
-        {
-          "selector": "52.96.76.104",
-          "count": 2,
-          "domains": [
-            "ebsworksite.com",
-            "mycareermail.com"
-          ]
-        },
-        {
-          "selector": "52.96.79.104",
-          "count": 2,
-          "domains": [
-            "jobemails.net",
-            "work-mail.net"
-          ]
-        },
-        {
           "selector": "76.223.25.50",
           "count": 2,
           "domains": [
             "careermails.com",
             "quopost.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:284e::8",
-          "count": 2,
-          "domains": [
-            "ebsworksite.com",
-            "myjobsmail.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:839::8",
-          "count": 2,
-          "domains": [
-            "myjobsmail.com",
-            "work-mail.net"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:873::8",
-          "count": 2,
-          "domains": [
-            "mycareersmail.com",
-            "myjobsmail.com"
-          ]
-        },
-        {
-          "selector": "52.96.157.168",
-          "count": 2,
-          "domains": [
-            "myjobsmail.com",
-            "restartworks.com"
-          ]
-        },
-        {
-          "selector": "52.96.190.232",
-          "count": 2,
-          "domains": [
-            "ajoy2consult.com",
-            "myjobsmail.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:3407::8",
-          "count": 2,
-          "domains": [
-            "careerwebmail.com",
-            "techjobsemail.net"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:801::8",
-          "count": 2,
-          "domains": [
-            "careerwebmail.com",
-            "mail.utoronto.ca"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:81c::8",
-          "count": 2,
-          "domains": [
-            "careerwebmail.com",
-            "restartworks.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:85f::8",
-          "count": 2,
-          "domains": [
-            "careerwebmail.com",
-            "mywebemails.com"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:3405::8",
-          "count": 2,
-          "domains": [
-            "mycareersmail.com",
-            "techjobsemail.net"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:803::8",
-          "count": 2,
-          "domains": [
-            "mail.utoronto.ca",
-            "techjobsemail.net"
-          ]
-        },
-        {
-          "selector": "52.96.164.168",
-          "count": 2,
-          "domains": [
-            "ajoy2consult.com",
-            "techjobsemail.net"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:284c::8",
-          "count": 2,
-          "domains": [
-            "jobemail.net",
-            "work-mail.net"
-          ]
-        },
-        {
-          "selector": "2603:1036:304:2850::8",
-          "count": 2,
-          "domains": [
-            "ebsworksite.com",
-            "restartworks.com"
-          ]
-        },
-        {
-          "selector": "52.96.164.136",
-          "count": 2,
-          "domains": [
-            "ebsworksite.com",
-            "mail.mcgill.ca"
           ]
         },
         {
@@ -1563,22 +827,6 @@
           "domains": [
             "personalspacehub.com",
             "webappemail.com"
-          ]
-        },
-        {
-          "selector": "52.96.79.24",
-          "count": 2,
-          "domains": [
-            "mycareersmail.com",
-            "prorecresources.com"
-          ]
-        },
-        {
-          "selector": "52.96.163.8",
-          "count": 2,
-          "domains": [
-            "insightfulworkplace.com",
-            "mail.utoronto.ca"
           ]
         },
         {
@@ -1695,16 +943,6 @@
             "sharpcareerimage.com",
             "work-mail.net",
             "workwebmail.com"
-          ]
-        },
-        {
-          "selector": "185-70-42-15.protonmail.ch",
-          "count": 4,
-          "domains": [
-            "pm.me",
-            "proton.me",
-            "protonmail.ch",
-            "protonmail.com"
           ]
         },
         {
@@ -3695,67 +2933,6 @@
           ]
         },
         {
-          "selector": "52.96.0.0/14",
-          "count": 25,
-          "domains": [
-            "ajoy2consult.com",
-            "careeremail.net",
-            "careerwebmail.com",
-            "ebsworksite.com",
-            "insightfulworkplace.com",
-            "jobemail.net",
-            "jobemails.net",
-            "jobhuntmails.com",
-            "mail.mcgill.ca",
-            "mail.utoronto.ca",
-            "mainewoodproducts.com",
-            "mycareermail.com",
-            "mycareersmail.com",
-            "myjobemails.com",
-            "myjobsinbox.com",
-            "myjobsmail.com",
-            "mywebemails.com",
-            "myworkmails.com",
-            "prorecresources.com",
-            "restartworks.com",
-            "techcareermail.com",
-            "techjobsemail.net",
-            "thetalentarc.co.uk",
-            "work-mail.net",
-            "workwebmail.com"
-          ]
-        },
-        {
-          "selector": "2603:1000::/25",
-          "count": 24,
-          "domains": [
-            "ajoy2consult.com",
-            "careerattainment.com",
-            "careerwebmail.com",
-            "ebsworksite.com",
-            "insightfulworkplace.com",
-            "jobemail.net",
-            "jobemails.net",
-            "jobhuntmails.com",
-            "mail.utoronto.ca",
-            "mainewoodproducts.com",
-            "mycareermail.com",
-            "mycareersmail.com",
-            "myjobemails.com",
-            "myjobsinbox.com",
-            "myjobsmail.com",
-            "mywebemails.com",
-            "myworkmails.com",
-            "prorecresources.com",
-            "restartworks.com",
-            "techcareermail.com",
-            "techjobsemail.net",
-            "thetalentarc.co.uk",
-            "work-mail.net",
-            "workwebmail.com"
-          ]
-        },
-        {
           "selector": "2.57.91.0/24",
           "count": 19,
           "domains": [
@@ -3778,27 +2955,6 @@
             "newjobdesire.com",
             "newjobrequire.com",
             "newjobshunt.com"
-          ]
-        },
-        {
-          "selector": "141.94.0.0/16",
-          "count": 15,
-          "domains": [
-            "activemails.net",
-            "boxmailhere.com",
-            "boxmailhost.com",
-            "careermails.net",
-            "mailactiv.com",
-            "mailboxcore.com",
-            "mailmessage.co",
-            "nextstepcareer.net",
-            "rapidmailhost.com",
-            "smartmailhost.net",
-            "swiftemail.co",
-            "swiftmailhost.com",
-            "tivomail.com",
-            "topcandidate.co",
-            "webpostbox.net"
           ]
         },
         {
@@ -3828,36 +2984,6 @@
             "sharpcareerimage.com",
             "work-mail.net",
             "workwebmail.com"
-          ]
-        },
-        {
-          "selector": "104.21.64.0/20",
-          "count": 4,
-          "domains": [
-            "aogjob.com",
-            "inboxhere.com",
-            "mailflux.com",
-            "truemailhost.net"
-          ]
-        },
-        {
-          "selector": "2606:4700:3033::/48",
-          "count": 4,
-          "domains": [
-            "aogjob.com",
-            "inboxhires.com",
-            "passmail.com",
-            "truemailhost.net"
-          ]
-        },
-        {
-          "selector": "2606:4700:3035::/48",
-          "count": 4,
-          "domains": [
-            "inboxhere.com",
-            "jobhuntus.com",
-            "truemailhost.net",
-            "wgcv.me"
           ]
         },
         {
@@ -3891,11 +3017,38 @@
           ]
         },
         {
+          "selector": "104.21.64.0/20",
+          "count": 3,
+          "domains": [
+            "aogjob.com",
+            "inboxhere.com",
+            "mailflux.com"
+          ]
+        },
+        {
+          "selector": "2606:4700:3033::/48",
+          "count": 3,
+          "domains": [
+            "aogjob.com",
+            "inboxhires.com",
+            "passmail.com"
+          ]
+        },
+        {
           "selector": "104.21.48.0/20",
           "count": 3,
           "domains": [
             "jobhuntus.com",
             "passmail.net",
+            "wgcv.me"
+          ]
+        },
+        {
+          "selector": "2606:4700:3035::/48",
+          "count": 3,
+          "domains": [
+            "inboxhere.com",
+            "jobhuntus.com",
             "wgcv.me"
           ]
         },
@@ -5831,41 +4984,8 @@
           ]
         },
         {
-          "selector": "AS8075",
-          "count": 27,
-          "domains": [
-            "ajoy2consult.com",
-            "careerattainment.com",
-            "careeremail.net",
-            "careerwebmail.com",
-            "duck.com",
-            "ebsworksite.com",
-            "insightfulworkplace.com",
-            "jobemail.net",
-            "jobemails.net",
-            "jobhuntmails.com",
-            "mail.mcgill.ca",
-            "mail.utoronto.ca",
-            "mainewoodproducts.com",
-            "mycareermail.com",
-            "mycareersmail.com",
-            "myjobemails.com",
-            "myjobsinbox.com",
-            "myjobsmail.com",
-            "mywebemails.com",
-            "myworkmails.com",
-            "prorecresources.com",
-            "restartworks.com",
-            "techcareermail.com",
-            "techjobsemail.net",
-            "thetalentarc.co.uk",
-            "work-mail.net",
-            "workwebmail.com"
-          ]
-        },
-        {
           "selector": "AS47583",
-          "count": 22,
+          "count": 21,
           "domains": [
             "career-techmail.com",
             "carrermail.com",
@@ -5883,7 +5003,6 @@
             "myhotmail.net",
             "myitjobmails.com",
             "myjobemails.com",
-            "mysecuremail.co",
             "newjobdesire.com",
             "newjobrequire.com",
             "newjobshunt.com",
@@ -5893,7 +5012,7 @@
         },
         {
           "selector": "AS13335",
-          "count": 17,
+          "count": 16,
           "domains": [
             "aogjob.com",
             "careerx.us",
@@ -5910,30 +5029,7 @@
             "passmail.com",
             "passmail.net",
             "restartworks.com",
-            "truemailhost.net",
             "wgcv.me"
-          ]
-        },
-        {
-          "selector": "AS16276",
-          "count": 16,
-          "domains": [
-            "activemails.net",
-            "boxmailhere.com",
-            "boxmailhost.com",
-            "careermails.net",
-            "mailactiv.com",
-            "mailboxcore.com",
-            "mailmessage.co",
-            "myquickmails.com",
-            "nextstepcareer.net",
-            "rapidmailhost.com",
-            "smartmailhost.net",
-            "swiftemail.co",
-            "swiftmailhost.com",
-            "tivomail.com",
-            "topcandidate.co",
-            "webpostbox.net"
           ]
         },
         {
@@ -6026,14 +5122,6 @@
           "domains": [
             "ebsworksite.com",
             "odinsoftworks.com"
-          ]
-        },
-        {
-          "selector": "AS14618",
-          "count": 2,
-          "domains": [
-            "insphiretalent.com",
-            "skymail.ai"
           ]
         },
         {

@@ -87,6 +87,15 @@ MX_PROVIDER = [
 ]
 
 
+# Subdomain labels whose addresses belong to the mail provider, not the domain's
+# own hosting. autoconfig/autodiscover in particular are usually CNAMEs straight
+# into the mail vendor (e.g. autoconfig.migadu.com), so counting their IPs as
+# "hosting" makes every customer of that vendor look co-hosted.
+MAIL_PATH_LABELS = {"autoconfig", "autodiscover", "mail", "smtp", "imap",
+                    "pop", "pop3", "webmail", "mx", "mx1", "mx2", "owa",
+                    "exchange"}
+
+
 def base_domain(host):
     """Best-effort registrable domain (handles the common two-label suffixes)."""
     host = (host or "").rstrip(".").lower()
@@ -148,6 +157,10 @@ def verification_tokens(txts):
         r"adobe-idp-site-verification=[\w\-]+",
         r"onetrust-domain-verification=[\w\-]+",
         r"shopify-verification-code=[\w\-]+",
+        r"hosted-email-verify=[\w\-]+",
+        r"mailru-verification=[\w\-]+",
+        r"yandex-verification=[\w\-]+",
+        r"globalsign-domain-verification=[\w\-/+=]+",
     ]
     toks = []
     for t in txts:
@@ -188,6 +201,19 @@ def main():
     domains = data["domains"]
     by_dom = {d["domain"]: d for d in domains}
 
+    # Second-pass sweep used a far longer DKIM selector list; merge those keys in
+    # so the DKIM pivot sees every selector actually found.
+    deep_path = os.path.join(OUT_DIR, "deep_enumeration.json")
+    deep_dkim = {}
+    if os.path.exists(deep_path):
+        deep_dkim = {d["domain"]: d.get("dkim", {})
+                     for d in json.load(open(deep_path))["domains"]}
+    for dom, extra in deep_dkim.items():
+        if dom in by_dom:
+            merged = dict(by_dom[dom]["dkim"])
+            merged.update(extra)
+            by_dom[dom]["dkim"] = merged
+
     def ip_meta(ips):
         asns, as_names, ccs, prefixes, ptrs = set(), set(), set(), set(), set()
         for ip in ips:
@@ -214,10 +240,13 @@ def main():
         # Hosting IPs (what the domain itself points at) are the attributable ones.
         # MX-host IPs belong to the mail vendor and are shared by every tenant, so
         # they are tracked separately and kept out of the hosting pivots.
-        hosting_ips = sorted(set(r["A"]) | set(r["AAAA"]) |
-                             {ip for s in d["subdomains"].values()
-                              for ip in s["A"] + s["AAAA"]})
-        mail_ips = sorted({ip for lst in d["mx_hosts"].values() for ip in lst})
+        host_sub, mail_sub = set(), set()
+        for fqdn, s_rec in d["subdomains"].items():
+            label = fqdn.split(".")[0]
+            (mail_sub if label in MAIL_PATH_LABELS else host_sub).update(
+                s_rec["A"] + s_rec["AAAA"])
+        hosting_ips = sorted(set(r["A"]) | set(r["AAAA"]) | host_sub)
+        mail_ips = sorted({ip for lst in d["mx_hosts"].values() for ip in lst} | mail_sub)
 
         h_asns, h_names, h_ccs, h_prefix, h_ptr = ip_meta(hosting_ips)
         m_asns, m_names, _, _, m_ptr = ip_meta(mail_ips)
@@ -250,7 +279,7 @@ def main():
             "dmarc_rua": ";".join(rua),
             "dmarc_ruf": ";".join(ruf),
             "dmarc_tenant": ";".join(dmarc_tenants(d["dmarc"])),
-            "dkim_selectors": ";".join(sorted(d["dkim"])),
+            "dkim_selectors": ";".join(sorted(by_dom[d["domain"]]["dkim"])),
             "mta_sts": ";".join(d["mta_sts"]),
             "tls_rpt": ";".join(d["tls_rpt"]),
             "subdomains_found": ";".join(sorted(d["subdomains"])),

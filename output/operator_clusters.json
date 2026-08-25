@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-25T22:00:16.394641+00:00",
+  "generated_utc": "2026-08-25T22:50:43.898197+00:00",
   "method": "connected components over account-level selectors only (DKIM public key, SPF-management tenant, DMARC reporting-platform account, provider verification token, non-vendor reverse DNS); vendor-level facts attached as corroboration only",
   "vendor_ptr_suffixes_excluded": [
     "awsglobalaccelerator.com",
@@ -200,32 +200,7 @@
             2
           ]
         ],
-        "hosting_ips": [
-          [
-            "141.94.97.141",
-            12
-          ],
-          [
-            "2001:41d0:403:488d::",
-            9
-          ],
-          [
-            "104.21.73.99",
-            1
-          ],
-          [
-            "172.67.160.234",
-            1
-          ],
-          [
-            "2606:4700:3033::ac43:a0ea",
-            1
-          ],
-          [
-            "2606:4700:3035::6815:4963",
-            1
-          ]
-        ],
+        "hosting_ips": [],
         "dmarc_policy": [
           [
             "quarantine",
@@ -305,7 +280,7 @@
             1
           ],
           [
-            "103.168.172.43",
+            "103.168.172.53",
             1
           ]
         ],
@@ -505,7 +480,8 @@
         "prorecresources.com"
       ],
       "linking_evidence": [
-        "dkim:k2:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv2aC2KjGKLOwTweBY5A9"
+        "dkim:k2:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv2aC2KjGKLOwTweBY5A9",
+        "dkim:k3:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsYGiMSn7fsUqSvfSX40x"
       ],
       "corroboration": {
         "ns_operator": [
@@ -536,27 +512,11 @@
         ],
         "hosting_ips": [
           [
-            "52.96.156.8",
-            2
-          ],
-          [
             "160.153.0.105",
             1
           ],
           [
-            "2603:1036:304:2852::8",
-            1
-          ],
-          [
-            "2603:1036:304:3404::8",
-            1
-          ],
-          [
-            "2603:1036:304:806::8",
-            1
-          ],
-          [
-            "2603:1036:304:85e::8",
+            "173.231.203.220",
             1
           ]
         ],
