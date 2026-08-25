@@ -1,0 +1,52 @@
+{
+  "generated_utc": "2026-08-25T21:21:22.696191+00:00",
+  "status": "NOT_COLLECTED_EGRESS_BLOCKED",
+  "summary": "RDAP and WHOIS could not be collected from this session. Both transports are refused by the network egress policy. DNS collection was unaffected.",
+  "probes": [
+    {
+      "transport": "HTTPS/443 (RDAP)",
+      "target": "rdap.org/domain/<domain>",
+      "result": "urlopen error Tunnel connection failed: 403 Forbidden",
+      "detail": "egress proxy answered 403 to CONNECT (policy denial)"
+    },
+    {
+      "transport": "HTTPS/443 (RDAP)",
+      "target": "rdap.verisign.com/com/v1/domain/<domain>",
+      "result": "403 Forbidden on CONNECT",
+      "detail": "same policy denial"
+    },
+    {
+      "transport": "HTTPS/443 (RDAP)",
+      "target": "dns.google, cloudflare-dns.com",
+      "result": "403 Forbidden on CONNECT",
+      "detail": "DoH also denied; DNS was collected over UDP/53 instead, which is permitted"
+    },
+    {
+      "transport": "TCP/43 (WHOIS)",
+      "target": "whois.verisign-grs.com, whois.iana.org",
+      "result": "connection timeout",
+      "detail": "outbound TCP/43 not permitted"
+    },
+    {
+      "transport": "WebFetch tool",
+      "target": "rdap.verisign.com",
+      "result": "EGRESS_BLOCKED",
+      "detail": "same policy applies to the tool egress path"
+    }
+  ],
+  "fields_that_would_be_collected": [
+    "registrar name",
+    "registrar IANA ID",
+    "registration/creation date",
+    "expiration date",
+    "last-changed date",
+    "EPP status codes",
+    "abuse contact email",
+    "registrant organisation",
+    "registrant country",
+    "delegated nameservers",
+    "DNSSEC delegation flag"
+  ],
+  "how_to_collect": "Run scripts/enumerate_rdap.py from a network permitting outbound HTTPS to registry RDAP endpoints (or TCP/43 for the WHOIS fallback). It writes this same path with populated records.",
+  "records": []
+}

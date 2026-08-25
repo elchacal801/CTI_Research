@@ -47,8 +47,8 @@ def resolver():
         r = dns.resolver.Resolver(configure=False)
         idx = next(_counter) % len(RESOLVERS)
         r.nameservers = [RESOLVERS[idx]] + [n for n in RESOLVERS if n != RESOLVERS[idx]]
-        r.timeout = 5.0
-        r.lifetime = 12.0
+        r.timeout = 3.0
+        r.lifetime = 6.0
         _tls.r = r
     return r
 
@@ -242,7 +242,7 @@ def enrich_ip(ip):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--workers", type=int, default=20)
+    ap.add_argument("--workers", type=int, default=64)
     ap.add_argument("--limit", type=int, default=0)
     args = ap.parse_args()
 

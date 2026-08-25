@@ -1,0 +1,6058 @@
+{
+  "generated_utc": "2026-08-25T21:21:38.445988+00:00",
+  "pivots": {
+    "dkim_key": {
+      "selector_type": "shared DKIM public key",
+      "clusters": [
+        {
+          "selector": "dkim:MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJudTILTG3qrzQzZzbptozaGQ0",
+          "count": 3,
+          "domains": [
+            "passinbox.com",
+            "passmail.com",
+            "passmail.net"
+          ]
+        },
+        {
+          "selector": "k2:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv2aC2KjGKLOwTweBY5A9",
+          "count": 2,
+          "domains": [
+            "insightfulworkplace.com",
+            "prorecresources.com"
+          ]
+        }
+      ]
+    },
+    "spf_manager_tenant": {
+      "selector_type": "shared SPF-management tenant",
+      "clusters": [
+        {
+          "selector": "spfm:aa8e722993",
+          "count": 27,
+          "domains": [
+            "careernb.com",
+            "careersmails.com",
+            "cvmailhub.com",
+            "itjobmail.com",
+            "jobitmail.com",
+            "jobsmails.com",
+            "jobtechmail.com",
+            "mailmywork.com",
+            "mailscareer.com",
+            "mailsworks.com",
+            "mycareersjobs.com",
+            "mycvscout.com",
+            "mycvtalent.com",
+            "myemailjob.com",
+            "myjobscouts.com",
+            "myjobsmails.com",
+            "mymailjob.com",
+            "mymailkeeper.com",
+            "mymailworks.com",
+            "protectmymails.com",
+            "savemymails.com",
+            "techjobmail.com",
+            "techmyjob.com",
+            "techsmail.com",
+            "thepromail.co",
+            "worksemail.com",
+            "worksemails.com"
+          ]
+        }
+      ]
+    },
+    "dmarc_tenant": {
+      "selector_type": "shared DMARC reporting-platform account",
+      "clusters": [
+        {
+          "selector": "uriports:p7rqadcw",
+          "count": 15,
+          "domains": [
+            "activemails.net",
+            "boxmailhere.com",
+            "boxmailhost.com",
+            "careermails.net",
+            "elitecandidates.com",
+            "mailactiv.com",
+            "mailboxcore.com",
+            "nextstepcareer.net",
+            "pulsemailbox.com",
+            "rapidmailhost.com",
+            "smartmailhost.net",
+            "swiftemail.co",
+            "tivomail.com",
+            "topcandidate.co",
+            "truemailhost.net"
+          ]
+        },
+        {
+          "selector": "ondmarc:e3936a44",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        }
+      ]
+    },
+    "verification_token": {
+      "selector_type": "shared provider verification token",
+      "clusters": []
+    },
+    "dmarc_rua": {
+      "selector_type": "shared DMARC reporting address",
+      "clusters": [
+        {
+          "selector": "dmarc_rua@onsecureserver.net",
+          "count": 20,
+          "domains": [
+            "careermailus.com",
+            "careersmails.com",
+            "inboxhere.com",
+            "insphiretalent.com",
+            "itcareerinfo.com",
+            "jobinboxhub.com",
+            "jobsupp.com",
+            "mailscareer.com",
+            "mycareersmail.com",
+            "myitjobshub.com",
+            "myjobfolio.com",
+            "myjobscouts.com",
+            "myjobsmail.com",
+            "myquickmails.com",
+            "nextitjobs.com",
+            "ocproject.net",
+            "techmyjob.com",
+            "thepromail.co",
+            "thetalentarc.co.uk",
+            "theworkmails.com"
+          ]
+        },
+        {
+          "selector": "dmarc@p7rqadcw.uriports.com",
+          "count": 15,
+          "domains": [
+            "activemails.net",
+            "boxmailhere.com",
+            "boxmailhost.com",
+            "careermails.net",
+            "elitecandidates.com",
+            "mailactiv.com",
+            "mailboxcore.com",
+            "nextstepcareer.net",
+            "pulsemailbox.com",
+            "rapidmailhost.com",
+            "smartmailhost.net",
+            "swiftemail.co",
+            "tivomail.com",
+            "topcandidate.co",
+            "truemailhost.net"
+          ]
+        },
+        {
+          "selector": "e3936a44@inbox.ondmarc.com",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        }
+      ]
+    },
+    "hosting_ip": {
+      "selector_type": "shared hosting IP",
+      "clusters": [
+        {
+          "selector": "198.185.159.144",
+          "count": 57,
+          "domains": [
+            "applyitmail.com",
+            "blazepinnacle.com",
+            "career2026.com",
+            "celestialflare.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "hcmconsultingpro.com",
+            "inboxflashpro.com",
+            "itworkmail.net",
+            "jobemails24.com",
+            "jobmails.net",
+            "jobsitmail.com",
+            "jobtecmail.net",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "mycvwork.com",
+            "myitemailapp.com",
+            "myjobitapp.com",
+            "myjobtechmail.com",
+            "myprofiley.com",
+            "myuswork.com",
+            "neuronmail.io",
+            "phoenixglide.com",
+            "postmailpro.com",
+            "proinboxpost.com",
+            "promailcenter.com",
+            "propostbox.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quantumzens.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "risemail.com",
+            "speedymailpost.com",
+            "swiftinboxmail.com",
+            "tasksemail.com",
+            "tasksmail.com",
+            "techemailapp.com",
+            "terraquasar.com",
+            "workapplyjob.com",
+            "workemailapply.com",
+            "workitmail.com",
+            "workmailit.com",
+            "workmymails.com",
+            "worktechmail.com",
+            "worktechmails.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "198.185.159.145",
+          "count": 57,
+          "domains": [
+            "applyitmail.com",
+            "blazepinnacle.com",
+            "career2026.com",
+            "celestialflare.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "hcmconsultingpro.com",
+            "inboxflashpro.com",
+            "itworkmail.net",
+            "jobemails24.com",
+            "jobmails.net",
+            "jobsitmail.com",
+            "jobtecmail.net",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "mycvwork.com",
+            "myitemailapp.com",
+            "myjobitapp.com",
+            "myjobtechmail.com",
+            "myprofiley.com",
+            "myuswork.com",
+            "neuronmail.io",
+            "phoenixglide.com",
+            "postmailpro.com",
+            "proinboxpost.com",
+            "promailcenter.com",
+            "propostbox.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quantumzens.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "risemail.com",
+            "speedymailpost.com",
+            "swiftinboxmail.com",
+            "tasksemail.com",
+            "tasksmail.com",
+            "techemailapp.com",
+            "terraquasar.com",
+            "workapplyjob.com",
+            "workemailapply.com",
+            "workitmail.com",
+            "workmailit.com",
+            "workmymails.com",
+            "worktechmail.com",
+            "worktechmails.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "198.49.23.144",
+          "count": 57,
+          "domains": [
+            "applyitmail.com",
+            "blazepinnacle.com",
+            "career2026.com",
+            "celestialflare.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "hcmconsultingpro.com",
+            "inboxflashpro.com",
+            "itworkmail.net",
+            "jobemails24.com",
+            "jobmails.net",
+            "jobsitmail.com",
+            "jobtecmail.net",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "mycvwork.com",
+            "myitemailapp.com",
+            "myjobitapp.com",
+            "myjobtechmail.com",
+            "myprofiley.com",
+            "myuswork.com",
+            "neuronmail.io",
+            "phoenixglide.com",
+            "postmailpro.com",
+            "proinboxpost.com",
+            "promailcenter.com",
+            "propostbox.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quantumzens.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "risemail.com",
+            "speedymailpost.com",
+            "swiftinboxmail.com",
+            "tasksemail.com",
+            "tasksmail.com",
+            "techemailapp.com",
+            "terraquasar.com",
+            "workapplyjob.com",
+            "workemailapply.com",
+            "workitmail.com",
+            "workmailit.com",
+            "workmymails.com",
+            "worktechmail.com",
+            "worktechmails.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "198.49.23.145",
+          "count": 57,
+          "domains": [
+            "applyitmail.com",
+            "blazepinnacle.com",
+            "career2026.com",
+            "celestialflare.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "hcmconsultingpro.com",
+            "inboxflashpro.com",
+            "itworkmail.net",
+            "jobemails24.com",
+            "jobmails.net",
+            "jobsitmail.com",
+            "jobtecmail.net",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "mycvwork.com",
+            "myitemailapp.com",
+            "myjobitapp.com",
+            "myjobtechmail.com",
+            "myprofiley.com",
+            "myuswork.com",
+            "neuronmail.io",
+            "phoenixglide.com",
+            "postmailpro.com",
+            "proinboxpost.com",
+            "promailcenter.com",
+            "propostbox.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quantumzens.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "risemail.com",
+            "speedymailpost.com",
+            "swiftinboxmail.com",
+            "tasksemail.com",
+            "tasksmail.com",
+            "techemailapp.com",
+            "terraquasar.com",
+            "workapplyjob.com",
+            "workemailapply.com",
+            "workitmail.com",
+            "workmailit.com",
+            "workmymails.com",
+            "worktechmail.com",
+            "worktechmails.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "15.197.148.33",
+          "count": 32,
+          "domains": [
+            "ajobguide.com",
+            "careerattainment.com",
+            "careeritjob.com",
+            "careernb.com",
+            "careersmails.com",
+            "cvmailhub.com",
+            "jobinboxhub.com",
+            "jobitmail.com",
+            "jobsmailbox.com",
+            "jobsmails.com",
+            "jobstechmail.com",
+            "jobsupp.com",
+            "mailjobhub.com",
+            "mailscareer.com",
+            "mycvhire.com",
+            "mycvscout.com",
+            "mycvtalent.com",
+            "myjobitmail.com",
+            "myjobscouts.com",
+            "myjobsmail.com",
+            "mymailjob.com",
+            "mymailshub.com",
+            "mymailwork.com",
+            "mymailworks.com",
+            "myquickmails.com",
+            "nextitjobs.com",
+            "protectmymails.com",
+            "quickitmail.com",
+            "techjobmail.com",
+            "techmyjob.com",
+            "themailpad.com",
+            "vegascareers.org"
+          ]
+        },
+        {
+          "selector": "3.33.130.190",
+          "count": 32,
+          "domains": [
+            "ajobguide.com",
+            "careerattainment.com",
+            "careeritjob.com",
+            "careernb.com",
+            "careersmails.com",
+            "cvmailhub.com",
+            "jobinboxhub.com",
+            "jobitmail.com",
+            "jobsmailbox.com",
+            "jobsmails.com",
+            "jobstechmail.com",
+            "jobsupp.com",
+            "mailjobhub.com",
+            "mailscareer.com",
+            "mycvhire.com",
+            "mycvscout.com",
+            "mycvtalent.com",
+            "myjobitmail.com",
+            "myjobscouts.com",
+            "myjobsmail.com",
+            "mymailjob.com",
+            "mymailshub.com",
+            "mymailwork.com",
+            "mymailworks.com",
+            "myquickmails.com",
+            "nextitjobs.com",
+            "protectmymails.com",
+            "quickitmail.com",
+            "techjobmail.com",
+            "techmyjob.com",
+            "themailpad.com",
+            "vegascareers.org"
+          ]
+        },
+        {
+          "selector": "13.248.243.5",
+          "count": 27,
+          "domains": [
+            "careermailus.com",
+            "cvtechmail.com",
+            "glidemail.io",
+            "itcareerinfo.com",
+            "itjobmail.com",
+            "itjobworks.com",
+            "jobitwork.com",
+            "jobstechmails.com",
+            "jobtechmail.com",
+            "jobtechsmail.com",
+            "mailjobtech.com",
+            "mailmywork.com",
+            "mailsworks.com",
+            "mycareersjobs.com",
+            "mycareersmail.com",
+            "myemailjob.com",
+            "myitjobshub.com",
+            "myjobfolio.com",
+            "myjobsmails.com",
+            "mymailkeeper.com",
+            "orbitalpost.com",
+            "savemymails.com",
+            "techsmail.com",
+            "thepromail.co",
+            "theworkmails.com",
+            "worksemail.com",
+            "worksemails.com"
+          ]
+        },
+        {
+          "selector": "76.223.105.230",
+          "count": 27,
+          "domains": [
+            "careermailus.com",
+            "cvtechmail.com",
+            "glidemail.io",
+            "itcareerinfo.com",
+            "itjobmail.com",
+            "itjobworks.com",
+            "jobitwork.com",
+            "jobstechmails.com",
+            "jobtechmail.com",
+            "jobtechsmail.com",
+            "mailjobtech.com",
+            "mailmywork.com",
+            "mailsworks.com",
+            "mycareersjobs.com",
+            "mycareersmail.com",
+            "myemailjob.com",
+            "myitjobshub.com",
+            "myjobfolio.com",
+            "myjobsmails.com",
+            "mymailkeeper.com",
+            "orbitalpost.com",
+            "savemymails.com",
+            "techsmail.com",
+            "thepromail.co",
+            "theworkmails.com",
+            "worksemail.com",
+            "worksemails.com"
+          ]
+        },
+        {
+          "selector": "2.57.91.91",
+          "count": 18,
+          "domains": [
+            "career-techmail.com",
+            "carrermail.com",
+            "cvejobs.com",
+            "itjobdesire.com",
+            "itjobemails.com",
+            "itjobinbox.com",
+            "itresumejobs.com",
+            "jobmaildesk.com",
+            "jobmailoffer.com",
+            "jobrequires.com",
+            "jobsdesire.com",
+            "myemailjobs.com",
+            "myhotmail.net",
+            "myitjobmails.com",
+            "myjobemails.com",
+            "newjobdesire.com",
+            "newjobrequire.com",
+            "newjobshunt.com"
+          ]
+        },
+        {
+          "selector": "141.94.97.141",
+          "count": 15,
+          "domains": [
+            "activemails.net",
+            "boxmailhere.com",
+            "boxmailhost.com",
+            "careermails.net",
+            "mailactiv.com",
+            "mailboxcore.com",
+            "mailmessage.co",
+            "nextstepcareer.net",
+            "rapidmailhost.com",
+            "smartmailhost.net",
+            "swiftemail.co",
+            "swiftmailhost.com",
+            "tivomail.com",
+            "topcandidate.co",
+            "webpostbox.net"
+          ]
+        },
+        {
+          "selector": "2001:41d0:403:488d::",
+          "count": 11,
+          "domains": [
+            "activemails.net",
+            "boxmailhere.com",
+            "boxmailhost.com",
+            "mailactiv.com",
+            "mailmessage.co",
+            "nextstepcareer.net",
+            "rapidmailhost.com",
+            "smartmailhost.net",
+            "swiftemail.co",
+            "topcandidate.co",
+            "webpostbox.net"
+          ]
+        },
+        {
+          "selector": "185.230.63.107",
+          "count": 10,
+          "domains": [
+            "jobemails.net",
+            "jobhuntmails.com",
+            "myjobsemail.com",
+            "myjobsinbox.com",
+            "mymailsbox.net",
+            "mywebemails.com",
+            "myworkmails.com",
+            "sharpcareerimage.com",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "185.230.63.171",
+          "count": 10,
+          "domains": [
+            "jobemails.net",
+            "jobhuntmails.com",
+            "myjobsemail.com",
+            "myjobsinbox.com",
+            "mymailsbox.net",
+            "mywebemails.com",
+            "myworkmails.com",
+            "sharpcareerimage.com",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "185.230.63.186",
+          "count": 10,
+          "domains": [
+            "jobemails.net",
+            "jobhuntmails.com",
+            "myjobsemail.com",
+            "myjobsinbox.com",
+            "mymailsbox.net",
+            "mywebemails.com",
+            "myworkmails.com",
+            "sharpcareerimage.com",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "34.149.87.45",
+          "count": 7,
+          "domains": [
+            "careerwebmail.com",
+            "jobhuntmails.com",
+            "mymailsbox.net",
+            "mywebemails.com",
+            "sharpcareerimage.com",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:800::8",
+          "count": 7,
+          "domains": [
+            "mail.utoronto.ca",
+            "mycareersmail.com",
+            "myjobsmail.com",
+            "prorecresources.com",
+            "techcareermail.com",
+            "techjobsemail.net",
+            "work-mail.net"
+          ]
+        },
+        {
+          "selector": "52.96.156.8",
+          "count": 6,
+          "domains": [
+            "careeremail.net",
+            "careerwebmail.com",
+            "insightfulworkplace.com",
+            "mywebemails.com",
+            "prorecresources.com",
+            "restartworks.com"
+          ]
+        },
+        {
+          "selector": "52.96.239.184",
+          "count": 6,
+          "domains": [
+            "careeremail.net",
+            "insightfulworkplace.com",
+            "mainewoodproducts.com",
+            "thetalentarc.co.uk",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:284d::8",
+          "count": 6,
+          "domains": [
+            "ajoy2consult.com",
+            "careerwebmail.com",
+            "jobhuntmails.com",
+            "myjobsinbox.com",
+            "mywebemails.com",
+            "techcareermail.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:805::8",
+          "count": 5,
+          "domains": [
+            "careerattainment.com",
+            "jobemails.net",
+            "mainewoodproducts.com",
+            "myjobsinbox.com",
+            "myworkmails.com"
+          ]
+        },
+        {
+          "selector": "52.96.79.8",
+          "count": 5,
+          "domains": [
+            "careerwebmail.com",
+            "jobemail.net",
+            "mycareersmail.com",
+            "techjobsemail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "52.96.157.56",
+          "count": 5,
+          "domains": [
+            "ajoy2consult.com",
+            "jobemails.net",
+            "jobhuntmails.com",
+            "mycareersmail.com",
+            "work-mail.net"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:81d::8",
+          "count": 5,
+          "domains": [
+            "mail.utoronto.ca",
+            "mycareersmail.com",
+            "myjobsmail.com",
+            "prorecresources.com",
+            "work-mail.net"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:340a::8",
+          "count": 4,
+          "domains": [
+            "ajoy2consult.com",
+            "jobemail.net",
+            "mycareermail.com",
+            "myjobemails.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:859::8",
+          "count": 4,
+          "domains": [
+            "jobhuntmails.com",
+            "mycareersmail.com",
+            "myjobemails.com",
+            "mywebemails.com"
+          ]
+        },
+        {
+          "selector": "52.96.191.8",
+          "count": 4,
+          "domains": [
+            "careeremail.net",
+            "mainewoodproducts.com",
+            "mycareermail.com",
+            "techcareermail.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:2851::8",
+          "count": 4,
+          "domains": [
+            "careerwebmail.com",
+            "mainewoodproducts.com",
+            "mywebemails.com",
+            "myworkmails.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:3404::8",
+          "count": 4,
+          "domains": [
+            "insightfulworkplace.com",
+            "mail.utoronto.ca",
+            "myjobsinbox.com",
+            "myworkmails.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:871::8",
+          "count": 4,
+          "domains": [
+            "jobemail.net",
+            "mainewoodproducts.com",
+            "myjobsmail.com",
+            "myworkmails.com"
+          ]
+        },
+        {
+          "selector": "52.96.226.168",
+          "count": 4,
+          "domains": [
+            "mail.utoronto.ca",
+            "mycareermail.com",
+            "mywebemails.com",
+            "myworkmails.com"
+          ]
+        },
+        {
+          "selector": "52.96.79.184",
+          "count": 4,
+          "domains": [
+            "ebsworksite.com",
+            "myjobsmail.com",
+            "myworkmails.com",
+            "prorecresources.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:83c::8",
+          "count": 4,
+          "domains": [
+            "careerwebmail.com",
+            "ebsworksite.com",
+            "mywebemails.com",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:802::8",
+          "count": 4,
+          "domains": [
+            "ajoy2consult.com",
+            "jobhuntmails.com",
+            "mycareermail.com",
+            "mycareersmail.com"
+          ]
+        },
+        {
+          "selector": "52.96.191.200",
+          "count": 4,
+          "domains": [
+            "insightfulworkplace.com",
+            "jobemail.net",
+            "jobemails.net",
+            "jobhuntmails.com"
+          ]
+        },
+        {
+          "selector": "52.96.79.232",
+          "count": 4,
+          "domains": [
+            "jobhuntmails.com",
+            "mail.mcgill.ca",
+            "myjobsmail.com",
+            "techjobsemail.net"
+          ]
+        },
+        {
+          "selector": "52.96.79.248",
+          "count": 4,
+          "domains": [
+            "ajoy2consult.com",
+            "jobhuntmails.com",
+            "prorecresources.com",
+            "work-mail.net"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:2858::8",
+          "count": 4,
+          "domains": [
+            "mail.utoronto.ca",
+            "myjobsinbox.com",
+            "mywebemails.com",
+            "prorecresources.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:83f::8",
+          "count": 4,
+          "domains": [
+            "mycareersmail.com",
+            "myjobsinbox.com",
+            "techjobsemail.net",
+            "thetalentarc.co.uk"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:2856::8",
+          "count": 4,
+          "domains": [
+            "ajoy2consult.com",
+            "mail.utoronto.ca",
+            "mywebemails.com",
+            "techjobsemail.net"
+          ]
+        },
+        {
+          "selector": "176.119.200.150",
+          "count": 4,
+          "domains": [
+            "pm.me",
+            "proton.me",
+            "protonmail.ch",
+            "protonmail.com"
+          ]
+        },
+        {
+          "selector": "185.70.42.15",
+          "count": 4,
+          "domains": [
+            "pm.me",
+            "proton.me",
+            "protonmail.ch",
+            "protonmail.com"
+          ]
+        },
+        {
+          "selector": "185.70.42.150",
+          "count": 4,
+          "domains": [
+            "pm.me",
+            "proton.me",
+            "protonmail.ch",
+            "protonmail.com"
+          ]
+        },
+        {
+          "selector": "52.96.164.184",
+          "count": 3,
+          "domains": [
+            "jobhuntmails.com",
+            "mail.mcgill.ca",
+            "myjobemails.com"
+          ]
+        },
+        {
+          "selector": "52.96.79.136",
+          "count": 3,
+          "domains": [
+            "careeremail.net",
+            "mainewoodproducts.com",
+            "mywebemails.com"
+          ]
+        },
+        {
+          "selector": "52.96.79.88",
+          "count": 3,
+          "domains": [
+            "careeremail.net",
+            "mainewoodproducts.com",
+            "prorecresources.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:2855::8",
+          "count": 3,
+          "domains": [
+            "careerattainment.com",
+            "ebsworksite.com",
+            "jobemails.net"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:2859::8",
+          "count": 3,
+          "domains": [
+            "myjobsinbox.com",
+            "myworkmails.com",
+            "restartworks.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:806::8",
+          "count": 3,
+          "domains": [
+            "insightfulworkplace.com",
+            "techcareermail.com",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "52.96.242.40",
+          "count": 3,
+          "domains": [
+            "jobhuntmails.com",
+            "myjobsinbox.com",
+            "techcareermail.com"
+          ]
+        },
+        {
+          "selector": "52.96.157.104",
+          "count": 3,
+          "domains": [
+            "jobhuntmails.com",
+            "mail.mcgill.ca",
+            "thetalentarc.co.uk"
+          ]
+        },
+        {
+          "selector": "162.159.143.12",
+          "count": 3,
+          "domains": [
+            "jobemails.net",
+            "myjobsemail.com",
+            "myjobsinbox.com"
+          ]
+        },
+        {
+          "selector": "172.66.3.8",
+          "count": 3,
+          "domains": [
+            "jobemails.net",
+            "myjobsemail.com",
+            "myjobsinbox.com"
+          ]
+        },
+        {
+          "selector": "52.96.157.88",
+          "count": 3,
+          "domains": [
+            "myjobsinbox.com",
+            "prorecresources.com",
+            "work-mail.net"
+          ]
+        },
+        {
+          "selector": "52.96.163.56",
+          "count": 3,
+          "domains": [
+            "myjobsinbox.com",
+            "prorecresources.com",
+            "thetalentarc.co.uk"
+          ]
+        },
+        {
+          "selector": "52.96.191.248",
+          "count": 3,
+          "domains": [
+            "mail.mcgill.ca",
+            "myjobsinbox.com",
+            "myjobsmail.com"
+          ]
+        },
+        {
+          "selector": "52.96.226.152",
+          "count": 3,
+          "domains": [
+            "mail.utoronto.ca",
+            "myjobsinbox.com",
+            "techjobsemail.net"
+          ]
+        },
+        {
+          "selector": "52.96.157.120",
+          "count": 3,
+          "domains": [
+            "mycareermail.com",
+            "myjobsmail.com",
+            "thetalentarc.co.uk"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:85e::8",
+          "count": 3,
+          "domains": [
+            "insightfulworkplace.com",
+            "jobemail.net",
+            "jobemails.net"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:284f::8",
+          "count": 3,
+          "domains": [
+            "careerwebmail.com",
+            "mainewoodproducts.com",
+            "techjobsemail.net"
+          ]
+        },
+        {
+          "selector": "52.96.223.8",
+          "count": 3,
+          "domains": [
+            "careerwebmail.com",
+            "mywebemails.com",
+            "work-mail.net"
+          ]
+        },
+        {
+          "selector": "52.96.79.72",
+          "count": 3,
+          "domains": [
+            "careerwebmail.com",
+            "mail.mcgill.ca",
+            "work-mail.net"
+          ]
+        },
+        {
+          "selector": "52.96.79.168",
+          "count": 3,
+          "domains": [
+            "prorecresources.com",
+            "restartworks.com",
+            "work-mail.net"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:85c::8",
+          "count": 3,
+          "domains": [
+            "mywebemails.com",
+            "restartworks.com",
+            "thetalentarc.co.uk"
+          ]
+        },
+        {
+          "selector": "185.70.42.31",
+          "count": 3,
+          "domains": [
+            "pm.me",
+            "protonmail.ch",
+            "protonmail.com"
+          ]
+        },
+        {
+          "selector": "216.150.1.1",
+          "count": 3,
+          "domains": [
+            "careermail.pro",
+            "myprivatemail.io",
+            "sorce.email"
+          ]
+        },
+        {
+          "selector": "216.150.1.129",
+          "count": 3,
+          "domains": [
+            "careermail.pro",
+            "myprivatemail.io",
+            "sorce.email"
+          ]
+        },
+        {
+          "selector": "216.150.1.193",
+          "count": 3,
+          "domains": [
+            "careermail.pro",
+            "myprivatemail.io",
+            "sorce.email"
+          ]
+        },
+        {
+          "selector": "216.150.1.65",
+          "count": 3,
+          "domains": [
+            "careermail.pro",
+            "myprivatemail.io",
+            "sorce.email"
+          ]
+        },
+        {
+          "selector": "216.150.16.1",
+          "count": 3,
+          "domains": [
+            "careermail.pro",
+            "myprivatemail.io",
+            "sorce.email"
+          ]
+        },
+        {
+          "selector": "216.150.16.129",
+          "count": 3,
+          "domains": [
+            "careermail.pro",
+            "myprivatemail.io",
+            "sorce.email"
+          ]
+        },
+        {
+          "selector": "216.150.16.193",
+          "count": 3,
+          "domains": [
+            "careermail.pro",
+            "myprivatemail.io",
+            "sorce.email"
+          ]
+        },
+        {
+          "selector": "103.168.172.37",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "103.168.172.52",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "103.168.172.65",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "185.205.69.12",
+          "count": 3,
+          "domains": [
+            "keemail.me",
+            "tuta.io",
+            "tutanota.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:2852::8",
+          "count": 2,
+          "domains": [
+            "insightfulworkplace.com",
+            "myjobemails.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:3409::8",
+          "count": 2,
+          "domains": [
+            "myjobemails.com",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "52.96.164.152",
+          "count": 2,
+          "domains": [
+            "mail.utoronto.ca",
+            "myjobemails.com"
+          ]
+        },
+        {
+          "selector": "52.96.79.120",
+          "count": 2,
+          "domains": [
+            "jobemails.net",
+            "myjobemails.com"
+          ]
+        },
+        {
+          "selector": "52.96.79.40",
+          "count": 2,
+          "domains": [
+            "careeremail.net",
+            "myjobemails.com"
+          ]
+        },
+        {
+          "selector": "52.96.170.72",
+          "count": 2,
+          "domains": [
+            "careeremail.net",
+            "restartworks.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:83d::8",
+          "count": 2,
+          "domains": [
+            "careerattainment.com",
+            "myjobsmail.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:2854::8",
+          "count": 2,
+          "domains": [
+            "mail.utoronto.ca",
+            "myworkmails.com"
+          ]
+        },
+        {
+          "selector": "52.96.157.152",
+          "count": 2,
+          "domains": [
+            "jobemail.net",
+            "myworkmails.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:2860::8",
+          "count": 2,
+          "domains": [
+            "thetalentarc.co.uk",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "52.96.157.72",
+          "count": 2,
+          "domains": [
+            "myjobsinbox.com",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "52.96.191.232",
+          "count": 2,
+          "domains": [
+            "myjobsinbox.com",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:2857::8",
+          "count": 2,
+          "domains": [
+            "mycareermail.com",
+            "techcareermail.com"
+          ]
+        },
+        {
+          "selector": "52.96.157.136",
+          "count": 2,
+          "domains": [
+            "jobhuntmails.com",
+            "techcareermail.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:3406::8",
+          "count": 2,
+          "domains": [
+            "myjobsinbox.com",
+            "prorecresources.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:807::8",
+          "count": 2,
+          "domains": [
+            "myjobsinbox.com",
+            "techjobsemail.net"
+          ]
+        },
+        {
+          "selector": "52.96.79.56",
+          "count": 2,
+          "domains": [
+            "myjobsinbox.com",
+            "myjobsmail.com"
+          ]
+        },
+        {
+          "selector": "52.96.76.104",
+          "count": 2,
+          "domains": [
+            "ebsworksite.com",
+            "mycareermail.com"
+          ]
+        },
+        {
+          "selector": "52.96.79.104",
+          "count": 2,
+          "domains": [
+            "jobemails.net",
+            "work-mail.net"
+          ]
+        },
+        {
+          "selector": "76.223.25.50",
+          "count": 2,
+          "domains": [
+            "careermails.com",
+            "quopost.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:284e::8",
+          "count": 2,
+          "domains": [
+            "ebsworksite.com",
+            "myjobsmail.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:839::8",
+          "count": 2,
+          "domains": [
+            "myjobsmail.com",
+            "work-mail.net"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:873::8",
+          "count": 2,
+          "domains": [
+            "mycareersmail.com",
+            "myjobsmail.com"
+          ]
+        },
+        {
+          "selector": "52.96.157.168",
+          "count": 2,
+          "domains": [
+            "myjobsmail.com",
+            "restartworks.com"
+          ]
+        },
+        {
+          "selector": "52.96.190.232",
+          "count": 2,
+          "domains": [
+            "ajoy2consult.com",
+            "myjobsmail.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:3407::8",
+          "count": 2,
+          "domains": [
+            "careerwebmail.com",
+            "techjobsemail.net"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:801::8",
+          "count": 2,
+          "domains": [
+            "careerwebmail.com",
+            "mail.utoronto.ca"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:81c::8",
+          "count": 2,
+          "domains": [
+            "careerwebmail.com",
+            "restartworks.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:85f::8",
+          "count": 2,
+          "domains": [
+            "careerwebmail.com",
+            "mywebemails.com"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:3405::8",
+          "count": 2,
+          "domains": [
+            "mycareersmail.com",
+            "techjobsemail.net"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:803::8",
+          "count": 2,
+          "domains": [
+            "mail.utoronto.ca",
+            "techjobsemail.net"
+          ]
+        },
+        {
+          "selector": "52.96.164.168",
+          "count": 2,
+          "domains": [
+            "ajoy2consult.com",
+            "techjobsemail.net"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:284c::8",
+          "count": 2,
+          "domains": [
+            "jobemail.net",
+            "work-mail.net"
+          ]
+        },
+        {
+          "selector": "2603:1036:304:2850::8",
+          "count": 2,
+          "domains": [
+            "ebsworksite.com",
+            "restartworks.com"
+          ]
+        },
+        {
+          "selector": "52.96.164.136",
+          "count": 2,
+          "domains": [
+            "ebsworksite.com",
+            "mail.mcgill.ca"
+          ]
+        },
+        {
+          "selector": "31.43.160.6",
+          "count": 2,
+          "domains": [
+            "eprivatemail.com",
+            "whisperpost.io"
+          ]
+        },
+        {
+          "selector": "31.43.161.6",
+          "count": 2,
+          "domains": [
+            "eprivatemail.com",
+            "whisperpost.io"
+          ]
+        },
+        {
+          "selector": "147.79.73.249",
+          "count": 2,
+          "domains": [
+            "personalspacehub.com",
+            "webappemail.com"
+          ]
+        },
+        {
+          "selector": "52.96.79.24",
+          "count": 2,
+          "domains": [
+            "mycareersmail.com",
+            "prorecresources.com"
+          ]
+        },
+        {
+          "selector": "52.96.163.8",
+          "count": 2,
+          "domains": [
+            "insightfulworkplace.com",
+            "mail.utoronto.ca"
+          ]
+        },
+        {
+          "selector": "185.67.36.169",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        },
+        {
+          "selector": "2a05:bc0:1000::169:1",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        },
+        {
+          "selector": "2a10:e000:1::12",
+          "count": 2,
+          "domains": [
+            "tuta.io",
+            "tutanota.com"
+          ]
+        }
+      ]
+    },
+    "hosting_ptr": {
+      "selector_type": "shared hosting reverse-DNS hostname",
+      "clusters": [
+        {
+          "selector": "a2aa9ff50de748dbe.awsglobalaccelerator.com",
+          "count": 32,
+          "domains": [
+            "ajobguide.com",
+            "careerattainment.com",
+            "careeritjob.com",
+            "careernb.com",
+            "careersmails.com",
+            "cvmailhub.com",
+            "jobinboxhub.com",
+            "jobitmail.com",
+            "jobsmailbox.com",
+            "jobsmails.com",
+            "jobstechmail.com",
+            "jobsupp.com",
+            "mailjobhub.com",
+            "mailscareer.com",
+            "mycvhire.com",
+            "mycvscout.com",
+            "mycvtalent.com",
+            "myjobitmail.com",
+            "myjobscouts.com",
+            "myjobsmail.com",
+            "mymailjob.com",
+            "mymailshub.com",
+            "mymailwork.com",
+            "mymailworks.com",
+            "myquickmails.com",
+            "nextitjobs.com",
+            "protectmymails.com",
+            "quickitmail.com",
+            "techjobmail.com",
+            "techmyjob.com",
+            "themailpad.com",
+            "vegascareers.org"
+          ]
+        },
+        {
+          "selector": "a16e665f42988324c.awsglobalaccelerator.com",
+          "count": 27,
+          "domains": [
+            "careermailus.com",
+            "cvtechmail.com",
+            "glidemail.io",
+            "itcareerinfo.com",
+            "itjobmail.com",
+            "itjobworks.com",
+            "jobitwork.com",
+            "jobstechmails.com",
+            "jobtechmail.com",
+            "jobtechsmail.com",
+            "mailjobtech.com",
+            "mailmywork.com",
+            "mailsworks.com",
+            "mycareersjobs.com",
+            "mycareersmail.com",
+            "myemailjob.com",
+            "myitjobshub.com",
+            "myjobfolio.com",
+            "myjobsmails.com",
+            "mymailkeeper.com",
+            "orbitalpost.com",
+            "savemymails.com",
+            "techsmail.com",
+            "thepromail.co",
+            "theworkmails.com",
+            "worksemail.com",
+            "worksemails.com"
+          ]
+        },
+        {
+          "selector": "unalocated.63.wixsite.com",
+          "count": 10,
+          "domains": [
+            "jobemails.net",
+            "jobhuntmails.com",
+            "myjobsemail.com",
+            "myjobsinbox.com",
+            "mymailsbox.net",
+            "mywebemails.com",
+            "myworkmails.com",
+            "sharpcareerimage.com",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "185-70-42-15.protonmail.ch",
+          "count": 4,
+          "domains": [
+            "pm.me",
+            "proton.me",
+            "protonmail.ch",
+            "protonmail.com"
+          ]
+        },
+        {
+          "selector": "185-70-42-150.protonmail.ch",
+          "count": 4,
+          "domains": [
+            "pm.me",
+            "proton.me",
+            "protonmail.ch",
+            "protonmail.com"
+          ]
+        },
+        {
+          "selector": "185-70-42-31.protonmail.ch",
+          "count": 3,
+          "domains": [
+            "pm.me",
+            "protonmail.ch",
+            "protonmail.com"
+          ]
+        },
+        {
+          "selector": "redir.messagingengine.com",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "www.messagingengine.com",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "abe11aa245084d8f0.awsglobalaccelerator.com",
+          "count": 2,
+          "domains": [
+            "careermails.com",
+            "quopost.com"
+          ]
+        },
+        {
+          "selector": "sites.framer.app",
+          "count": 2,
+          "domains": [
+            "eprivatemail.com",
+            "whisperpost.io"
+          ]
+        }
+      ]
+    },
+    "soa_rname": {
+      "selector_type": "SOA responsible-party mailbox",
+      "clusters": [
+        {
+          "selector": "dns.jomax.net",
+          "count": 67,
+          "domains": [
+            "ajobguide.com",
+            "applyme.co",
+            "careerattainment.com",
+            "careeritjob.com",
+            "careermailus.com",
+            "careernb.com",
+            "careersmails.com",
+            "cvmailhub.com",
+            "cvtechmail.com",
+            "ebsworksite.com",
+            "eprivatemail.com",
+            "glidemail.io",
+            "insightfulworkplace.com",
+            "insphiretalent.com",
+            "itcareerinfo.com",
+            "itjobmail.com",
+            "itjobworks.com",
+            "jobinboxhub.com",
+            "jobitmail.com",
+            "jobitwork.com",
+            "jobslink-inc.com",
+            "jobsmailbox.com",
+            "jobsmails.com",
+            "jobstechmail.com",
+            "jobstechmails.com",
+            "jobsupp.com",
+            "jobtechmail.com",
+            "jobtechsmail.com",
+            "mailjobhub.com",
+            "mailjobtech.com",
+            "mailsworks.com",
+            "mainewoodproducts.com",
+            "miuramail.com",
+            "mycareersjobs.com",
+            "mycareersmail.com",
+            "mycvhire.com",
+            "mycvscout.com",
+            "mycvtalent.com",
+            "myemailjob.com",
+            "myitjobshub.com",
+            "myjobfolio.com",
+            "myjobitmail.com",
+            "myjobscouts.com",
+            "myjobsmail.com",
+            "myjobsmails.com",
+            "mymailjob.com",
+            "mymailshub.com",
+            "mymailwork.com",
+            "mymailworks.com",
+            "myquickmails.com",
+            "nextitjobs.com",
+            "ocproject.net",
+            "odinsoftworks.com",
+            "orbitalpost.com",
+            "protectmymails.com",
+            "quickitmail.com",
+            "restartworks.com",
+            "techjobmail.com",
+            "techmyjob.com",
+            "techsmail.com",
+            "themailpad.com",
+            "thepromail.co",
+            "thetalentarc.co.uk",
+            "theworkmails.com",
+            "vegascareers.org",
+            "worksemail.com",
+            "worksemails.com"
+          ]
+        },
+        {
+          "selector": "cloud-dns-hostmaster.google.com",
+          "count": 34,
+          "domains": [
+            "applyitmail.com",
+            "career2026.com",
+            "careeremail.net",
+            "championtalentco.com",
+            "hcmconsultingpro.com",
+            "itworkmail.net",
+            "jobemail.net",
+            "jobemails24.com",
+            "jobmails.net",
+            "jobsitmail.com",
+            "jobtecmail.net",
+            "mycvwork.com",
+            "myitemail.com",
+            "myitemailapp.com",
+            "myjobitapp.com",
+            "myjobtechmail.com",
+            "myprofiley.com",
+            "myuswork.com",
+            "neuronmail.io",
+            "phoenixglide.com",
+            "propertymaveninc.com",
+            "quantumzens.com",
+            "risemail.com",
+            "tasksmail.com",
+            "techcareermail.com",
+            "techemailapp.com",
+            "techjobsemail.net",
+            "workapplyjob.com",
+            "workemailapply.com",
+            "workitmail.com",
+            "workmailit.com",
+            "workmymails.com",
+            "worktechmail.com",
+            "worktechmails.com"
+          ]
+        },
+        {
+          "selector": "hostmaster.nsone.net",
+          "count": 30,
+          "domains": [
+            "blazepinnacle.com",
+            "careermail.pro",
+            "celestialflare.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "duck.com",
+            "expressinboxmail.com",
+            "flashpostmail.com",
+            "inboxflashpro.com",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "postmailpro.com",
+            "proinboxpost.com",
+            "promailcenter.com",
+            "propostbox.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "sorce.email",
+            "speedmailhub.com",
+            "speedymailpost.com",
+            "swiftcouriermail.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "dns.cloudflare.com",
+          "count": 27,
+          "domains": [
+            "activemails.net",
+            "aogjob.com",
+            "boxmailhere.com",
+            "boxmailhost.com",
+            "careermails.net",
+            "careerx.us",
+            "contactbox.io",
+            "elitecandidates.com",
+            "inboxhere.com",
+            "inboxhires.com",
+            "jobhuntus.com",
+            "mailactiv.com",
+            "mailbluff.com",
+            "mailboxcore.com",
+            "mailmessage.co",
+            "my-privatemail.com",
+            "mysecuremail.co",
+            "nextstepcareer.net",
+            "passinbox.com",
+            "passmail.com",
+            "pulsemailbox.com",
+            "rapidmailhost.com",
+            "smartmailhost.net",
+            "swiftemail.co",
+            "truemailhost.net",
+            "webpostbox.net",
+            "wgcv.me"
+          ]
+        },
+        {
+          "selector": "dns.hostinger.com",
+          "count": 19,
+          "domains": [
+            "career-techmail.com",
+            "carrermail.com",
+            "cvejobs.com",
+            "itjobemails.com",
+            "itjobinbox.com",
+            "itresumejobs.com",
+            "jobmaildesk.com",
+            "jobmailoffer.com",
+            "jobrequires.com",
+            "jobsdesire.com",
+            "myemailjobs.com",
+            "myhotmail.net",
+            "myitjobmails.com",
+            "myjobemails.com",
+            "myjobsca.com",
+            "newjobrequire.com",
+            "newjobshunt.com",
+            "sharemejobs.com",
+            "webappemail.com"
+          ]
+        },
+        {
+          "selector": "support.wix.com",
+          "count": 9,
+          "domains": [
+            "careerwebmail.com",
+            "jobemails.net",
+            "jobhuntmails.com",
+            "myjobsinbox.com",
+            "mywebemails.com",
+            "myworkmails.com",
+            "sharpcareerimage.com",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "awsdns-hostmaster.amazon.com",
+          "count": 7,
+          "domains": [
+            "careerio-aa.com",
+            "keemail.me",
+            "mailflyn.com",
+            "proctorconsultingservices.com",
+            "skymail.ai",
+            "tuta.io",
+            "tutanota.com"
+          ]
+        },
+        {
+          "selector": "support.protonmail.ch",
+          "count": 3,
+          "domains": [
+            "pm.me",
+            "protonmail.ch",
+            "protonmail.com"
+          ]
+        },
+        {
+          "selector": "postmaster.messagingengine.com",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "hostmaster.registrar-servers.com",
+          "count": 2,
+          "domains": [
+            "hirehub.careers",
+            "jobmail.io"
+          ]
+        },
+        {
+          "selector": "hostmaster.bnamed.eu",
+          "count": 2,
+          "domains": [
+            "careermails.com",
+            "quopost.com"
+          ]
+        },
+        {
+          "selector": "hostmaster.posteo.de",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        }
+      ]
+    },
+    "nameserver_host": {
+      "selector_type": "shared authoritative nameserver",
+      "clusters": [
+        {
+          "selector": "ns01.squarespacedns.com",
+          "count": 27,
+          "domains": [
+            "blazepinnacle.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "inboxflashpro.com",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "postmailpro.com",
+            "promailcenter.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "speedmailhub.com",
+            "speedymailpost.com",
+            "swiftcouriermail.com",
+            "swiftinboxmail.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "ns03.squarespacedns.com",
+          "count": 27,
+          "domains": [
+            "blazepinnacle.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "inboxflashpro.com",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "postmailpro.com",
+            "promailcenter.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "speedmailhub.com",
+            "speedymailpost.com",
+            "swiftcouriermail.com",
+            "swiftinboxmail.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "ns04.squarespacedns.com",
+          "count": 27,
+          "domains": [
+            "blazepinnacle.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "inboxflashpro.com",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "postmailpro.com",
+            "promailcenter.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "speedmailhub.com",
+            "speedymailpost.com",
+            "swiftcouriermail.com",
+            "swiftinboxmail.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "ns02.squarespacedns.com",
+          "count": 27,
+          "domains": [
+            "blazepinnacle.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "inboxflashpro.com",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "postmailpro.com",
+            "promailcenter.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "speedmailhub.com",
+            "speedymailpost.com",
+            "swiftcouriermail.com",
+            "swiftinboxmail.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "ns1.dns-parking.com",
+          "count": 19,
+          "domains": [
+            "career-techmail.com",
+            "carrermail.com",
+            "cvejobs.com",
+            "itjobdesire.com",
+            "itjobinbox.com",
+            "itresumejobs.com",
+            "jobmailoffer.com",
+            "jobrequires.com",
+            "jobsdesire.com",
+            "myemailjobs.com",
+            "myhotmail.net",
+            "myitjobmails.com",
+            "myjobemails.com",
+            "myjobsca.com",
+            "newjobdesire.com",
+            "newjobrequire.com",
+            "newjobshunt.com",
+            "personalspacehub.com",
+            "webappemail.com"
+          ]
+        },
+        {
+          "selector": "ns2.dns-parking.com",
+          "count": 19,
+          "domains": [
+            "career-techmail.com",
+            "carrermail.com",
+            "cvejobs.com",
+            "itjobdesire.com",
+            "itjobinbox.com",
+            "itresumejobs.com",
+            "jobmailoffer.com",
+            "jobrequires.com",
+            "jobsdesire.com",
+            "myemailjobs.com",
+            "myhotmail.net",
+            "myitjobmails.com",
+            "myjobemails.com",
+            "myjobsca.com",
+            "newjobdesire.com",
+            "newjobrequire.com",
+            "newjobshunt.com",
+            "personalspacehub.com",
+            "webappemail.com"
+          ]
+        },
+        {
+          "selector": "norm.ns.cloudflare.com",
+          "count": 12,
+          "domains": [
+            "activemails.net",
+            "boxmailhere.com",
+            "boxmailhost.com",
+            "mailactiv.com",
+            "mailmessage.co",
+            "pulsemailbox.com",
+            "rapidmailhost.com",
+            "smartmailhost.net",
+            "swiftemail.co",
+            "tivomail.com",
+            "truemailhost.net",
+            "webpostbox.net"
+          ]
+        },
+        {
+          "selector": "colette.ns.cloudflare.com",
+          "count": 12,
+          "domains": [
+            "activemails.net",
+            "boxmailhere.com",
+            "boxmailhost.com",
+            "mailactiv.com",
+            "mailmessage.co",
+            "pulsemailbox.com",
+            "rapidmailhost.com",
+            "smartmailhost.net",
+            "swiftemail.co",
+            "tivomail.com",
+            "truemailhost.net",
+            "webpostbox.net"
+          ]
+        },
+        {
+          "selector": "ns9.wixdns.net",
+          "count": 10,
+          "domains": [
+            "careerwebmail.com",
+            "jobemails.net",
+            "jobhuntmails.com",
+            "myjobsemail.com",
+            "myjobsinbox.com",
+            "mymailsbox.net",
+            "mywebemails.com",
+            "myworkmails.com",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "ns8.wixdns.net",
+          "count": 10,
+          "domains": [
+            "careerwebmail.com",
+            "jobemails.net",
+            "jobhuntmails.com",
+            "myjobsemail.com",
+            "myjobsinbox.com",
+            "mymailsbox.net",
+            "mywebemails.com",
+            "myworkmails.com",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-a2.googledomains.com",
+          "count": 8,
+          "domains": [
+            "career2026.com",
+            "careeremail.net",
+            "hcmconsultingpro.com",
+            "itworkmail.net",
+            "phoenixglide.com",
+            "quantumzens.com",
+            "tasksmail.com",
+            "workitmail.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-a3.googledomains.com",
+          "count": 8,
+          "domains": [
+            "career2026.com",
+            "careeremail.net",
+            "hcmconsultingpro.com",
+            "itworkmail.net",
+            "phoenixglide.com",
+            "quantumzens.com",
+            "tasksmail.com",
+            "workitmail.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-a1.googledomains.com",
+          "count": 8,
+          "domains": [
+            "career2026.com",
+            "careeremail.net",
+            "hcmconsultingpro.com",
+            "itworkmail.net",
+            "phoenixglide.com",
+            "quantumzens.com",
+            "tasksmail.com",
+            "workitmail.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-a4.googledomains.com",
+          "count": 8,
+          "domains": [
+            "career2026.com",
+            "careeremail.net",
+            "hcmconsultingpro.com",
+            "itworkmail.net",
+            "phoenixglide.com",
+            "quantumzens.com",
+            "tasksmail.com",
+            "workitmail.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-e2.googledomains.com",
+          "count": 8,
+          "domains": [
+            "applyitmail.com",
+            "jobsitmail.com",
+            "mycareermail.com",
+            "myitemail.com",
+            "myjobitapp.com",
+            "neuronmail.io",
+            "techcareermail.com",
+            "workmymails.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-e1.googledomains.com",
+          "count": 8,
+          "domains": [
+            "applyitmail.com",
+            "jobsitmail.com",
+            "mycareermail.com",
+            "myitemail.com",
+            "myjobitapp.com",
+            "neuronmail.io",
+            "techcareermail.com",
+            "workmymails.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-e3.googledomains.com",
+          "count": 8,
+          "domains": [
+            "applyitmail.com",
+            "jobsitmail.com",
+            "mycareermail.com",
+            "myitemail.com",
+            "myjobitapp.com",
+            "neuronmail.io",
+            "techcareermail.com",
+            "workmymails.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-e4.googledomains.com",
+          "count": 8,
+          "domains": [
+            "applyitmail.com",
+            "jobsitmail.com",
+            "mycareermail.com",
+            "myitemail.com",
+            "myjobitapp.com",
+            "neuronmail.io",
+            "techcareermail.com",
+            "workmymails.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-c2.googledomains.com",
+          "count": 8,
+          "domains": [
+            "jobemail.net",
+            "jobmails.net",
+            "myuswork.com",
+            "tasksemail.com",
+            "techjobsemail.net",
+            "workemailapply.com",
+            "workmailit.com",
+            "worktechmail.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-c4.googledomains.com",
+          "count": 8,
+          "domains": [
+            "jobemail.net",
+            "jobmails.net",
+            "myuswork.com",
+            "tasksemail.com",
+            "techjobsemail.net",
+            "workemailapply.com",
+            "workmailit.com",
+            "worktechmail.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-c3.googledomains.com",
+          "count": 8,
+          "domains": [
+            "jobemail.net",
+            "jobmails.net",
+            "myuswork.com",
+            "tasksemail.com",
+            "techjobsemail.net",
+            "workemailapply.com",
+            "workmailit.com",
+            "worktechmail.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-c1.googledomains.com",
+          "count": 8,
+          "domains": [
+            "jobemail.net",
+            "jobmails.net",
+            "myuswork.com",
+            "tasksemail.com",
+            "techjobsemail.net",
+            "workemailapply.com",
+            "workmailit.com",
+            "worktechmail.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-d3.googledomains.com",
+          "count": 6,
+          "domains": [
+            "championtalentco.com",
+            "jobtecmail.net",
+            "myjobtechmail.com",
+            "myprofiley.com",
+            "terraquasar.com",
+            "worktechmails.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-d4.googledomains.com",
+          "count": 6,
+          "domains": [
+            "championtalentco.com",
+            "jobtecmail.net",
+            "myjobtechmail.com",
+            "myprofiley.com",
+            "terraquasar.com",
+            "worktechmails.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-d1.googledomains.com",
+          "count": 6,
+          "domains": [
+            "championtalentco.com",
+            "jobtecmail.net",
+            "myjobtechmail.com",
+            "myprofiley.com",
+            "terraquasar.com",
+            "worktechmails.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-d2.googledomains.com",
+          "count": 6,
+          "domains": [
+            "championtalentco.com",
+            "jobtecmail.net",
+            "myjobtechmail.com",
+            "myprofiley.com",
+            "terraquasar.com",
+            "worktechmails.com"
+          ]
+        },
+        {
+          "selector": "dns2.p06.nsone.net",
+          "count": 6,
+          "domains": [
+            "blazepinnacle.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "mailzoomhub.com",
+            "pulsearcana.com",
+            "pxdmail.com"
+          ]
+        },
+        {
+          "selector": "dns1.p06.nsone.net",
+          "count": 6,
+          "domains": [
+            "blazepinnacle.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "mailzoomhub.com",
+            "pulsearcana.com",
+            "pxdmail.com"
+          ]
+        },
+        {
+          "selector": "dns3.p06.nsone.net",
+          "count": 6,
+          "domains": [
+            "blazepinnacle.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "mailzoomhub.com",
+            "pulsearcana.com",
+            "pxdmail.com"
+          ]
+        },
+        {
+          "selector": "dns4.p06.nsone.net",
+          "count": 6,
+          "domains": [
+            "blazepinnacle.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "mailzoomhub.com",
+            "pulsearcana.com",
+            "pxdmail.com"
+          ]
+        },
+        {
+          "selector": "ns35.domaincontrol.com",
+          "count": 5,
+          "domains": [
+            "applyme.co",
+            "careernb.com",
+            "mymailshub.com",
+            "mymailworks.com",
+            "protectmymails.com"
+          ]
+        },
+        {
+          "selector": "ns36.domaincontrol.com",
+          "count": 5,
+          "domains": [
+            "applyme.co",
+            "careernb.com",
+            "mymailshub.com",
+            "mymailworks.com",
+            "protectmymails.com"
+          ]
+        },
+        {
+          "selector": "ns73.domaincontrol.com",
+          "count": 4,
+          "domains": [
+            "cvtechmail.com",
+            "myjobsmail.com",
+            "myquickmails.com",
+            "nextitjobs.com"
+          ]
+        },
+        {
+          "selector": "ns74.domaincontrol.com",
+          "count": 4,
+          "domains": [
+            "cvtechmail.com",
+            "myjobsmail.com",
+            "myquickmails.com",
+            "nextitjobs.com"
+          ]
+        },
+        {
+          "selector": "ns57.domaincontrol.com",
+          "count": 4,
+          "domains": [
+            "careermailus.com",
+            "jobitwork.com",
+            "jobtechsmail.com",
+            "myemailjob.com"
+          ]
+        },
+        {
+          "selector": "ns58.domaincontrol.com",
+          "count": 4,
+          "domains": [
+            "careermailus.com",
+            "jobitwork.com",
+            "jobtechsmail.com",
+            "myemailjob.com"
+          ]
+        },
+        {
+          "selector": "brad.ns.cloudflare.com",
+          "count": 4,
+          "domains": [
+            "careermails.net",
+            "elitecandidates.com",
+            "swiftmailhost.com",
+            "topcandidate.co"
+          ]
+        },
+        {
+          "selector": "magali.ns.cloudflare.com",
+          "count": 4,
+          "domains": [
+            "careermails.net",
+            "elitecandidates.com",
+            "swiftmailhost.com",
+            "topcandidate.co"
+          ]
+        },
+        {
+          "selector": "ns69.domaincontrol.com",
+          "count": 4,
+          "domains": [
+            "jobinboxhub.com",
+            "myjobscouts.com",
+            "ocproject.net",
+            "odinsoftworks.com"
+          ]
+        },
+        {
+          "selector": "ns70.domaincontrol.com",
+          "count": 4,
+          "domains": [
+            "jobinboxhub.com",
+            "myjobscouts.com",
+            "ocproject.net",
+            "odinsoftworks.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-b2.googledomains.com",
+          "count": 4,
+          "domains": [
+            "jobemails24.com",
+            "propertymaveninc.com",
+            "risemail.com",
+            "techemailapp.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-b3.googledomains.com",
+          "count": 4,
+          "domains": [
+            "jobemails24.com",
+            "propertymaveninc.com",
+            "risemail.com",
+            "techemailapp.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-b1.googledomains.com",
+          "count": 4,
+          "domains": [
+            "jobemails24.com",
+            "propertymaveninc.com",
+            "risemail.com",
+            "techemailapp.com"
+          ]
+        },
+        {
+          "selector": "ns-cloud-b4.googledomains.com",
+          "count": 4,
+          "domains": [
+            "jobemails24.com",
+            "propertymaveninc.com",
+            "risemail.com",
+            "techemailapp.com"
+          ]
+        },
+        {
+          "selector": "dns1.p05.nsone.net",
+          "count": 4,
+          "domains": [
+            "mailblitzhub.com",
+            "mailzoomexpress.com",
+            "pulsedynamo.com",
+            "speedymailpost.com"
+          ]
+        },
+        {
+          "selector": "dns2.p05.nsone.net",
+          "count": 4,
+          "domains": [
+            "mailblitzhub.com",
+            "mailzoomexpress.com",
+            "pulsedynamo.com",
+            "speedymailpost.com"
+          ]
+        },
+        {
+          "selector": "dns3.p05.nsone.net",
+          "count": 4,
+          "domains": [
+            "mailblitzhub.com",
+            "mailzoomexpress.com",
+            "pulsedynamo.com",
+            "speedymailpost.com"
+          ]
+        },
+        {
+          "selector": "dns4.p05.nsone.net",
+          "count": 4,
+          "domains": [
+            "mailblitzhub.com",
+            "mailzoomexpress.com",
+            "pulsedynamo.com",
+            "speedymailpost.com"
+          ]
+        },
+        {
+          "selector": "dns4.p08.nsone.net",
+          "count": 4,
+          "domains": [
+            "flashpostmail.com",
+            "promailcenter.com",
+            "swiftcouriermail.com",
+            "swiftinboxmail.com"
+          ]
+        },
+        {
+          "selector": "dns3.p08.nsone.net",
+          "count": 4,
+          "domains": [
+            "flashpostmail.com",
+            "promailcenter.com",
+            "swiftcouriermail.com",
+            "swiftinboxmail.com"
+          ]
+        },
+        {
+          "selector": "dns2.p08.nsone.net",
+          "count": 4,
+          "domains": [
+            "flashpostmail.com",
+            "promailcenter.com",
+            "swiftcouriermail.com",
+            "swiftinboxmail.com"
+          ]
+        },
+        {
+          "selector": "dns1.p08.nsone.net",
+          "count": 4,
+          "domains": [
+            "flashpostmail.com",
+            "promailcenter.com",
+            "swiftcouriermail.com",
+            "swiftinboxmail.com"
+          ]
+        },
+        {
+          "selector": "ns24.domaincontrol.com",
+          "count": 3,
+          "domains": [
+            "jobsupp.com",
+            "mailmywork.com",
+            "myjobsmails.com"
+          ]
+        },
+        {
+          "selector": "ns23.domaincontrol.com",
+          "count": 3,
+          "domains": [
+            "jobsupp.com",
+            "mailmywork.com",
+            "myjobsmails.com"
+          ]
+        },
+        {
+          "selector": "dns2.registrar-servers.com",
+          "count": 3,
+          "domains": [
+            "hirehub.careers",
+            "jobmail.io",
+            "ohmymail.net"
+          ]
+        },
+        {
+          "selector": "dns1.registrar-servers.com",
+          "count": 3,
+          "domains": [
+            "hirehub.careers",
+            "jobmail.io",
+            "ohmymail.net"
+          ]
+        },
+        {
+          "selector": "ns42.domaincontrol.com",
+          "count": 3,
+          "domains": [
+            "cvmailhub.com",
+            "myjobfolio.com",
+            "prorecresources.com"
+          ]
+        },
+        {
+          "selector": "ns41.domaincontrol.com",
+          "count": 3,
+          "domains": [
+            "cvmailhub.com",
+            "myjobfolio.com",
+            "prorecresources.com"
+          ]
+        },
+        {
+          "selector": "ns66.domaincontrol.com",
+          "count": 3,
+          "domains": [
+            "insightfulworkplace.com",
+            "mailjobhub.com",
+            "mycareersjobs.com"
+          ]
+        },
+        {
+          "selector": "ns65.domaincontrol.com",
+          "count": 3,
+          "domains": [
+            "insightfulworkplace.com",
+            "mailjobhub.com",
+            "mycareersjobs.com"
+          ]
+        },
+        {
+          "selector": "ns29.domaincontrol.com",
+          "count": 3,
+          "domains": [
+            "careersmails.com",
+            "savemymails.com",
+            "vegascareers.org"
+          ]
+        },
+        {
+          "selector": "ns30.domaincontrol.com",
+          "count": 3,
+          "domains": [
+            "careersmails.com",
+            "savemymails.com",
+            "vegascareers.org"
+          ]
+        },
+        {
+          "selector": "ns04.domaincontrol.com",
+          "count": 3,
+          "domains": [
+            "insphiretalent.com",
+            "restartworks.com",
+            "theworkmails.com"
+          ]
+        },
+        {
+          "selector": "ns03.domaincontrol.com",
+          "count": 3,
+          "domains": [
+            "insphiretalent.com",
+            "restartworks.com",
+            "theworkmails.com"
+          ]
+        },
+        {
+          "selector": "ns1.vercel-dns.com",
+          "count": 3,
+          "domains": [
+            "careermail.pro",
+            "myprivatemail.io",
+            "sorce.email"
+          ]
+        },
+        {
+          "selector": "ns2.vercel-dns.com",
+          "count": 3,
+          "domains": [
+            "careermail.pro",
+            "myprivatemail.io",
+            "sorce.email"
+          ]
+        },
+        {
+          "selector": "dns3.p03.nsone.net",
+          "count": 3,
+          "domains": [
+            "duck.com",
+            "letterinboxpro.com",
+            "mailjethub.com"
+          ]
+        },
+        {
+          "selector": "dns1.p03.nsone.net",
+          "count": 3,
+          "domains": [
+            "duck.com",
+            "letterinboxpro.com",
+            "mailjethub.com"
+          ]
+        },
+        {
+          "selector": "dns4.p03.nsone.net",
+          "count": 3,
+          "domains": [
+            "duck.com",
+            "letterinboxpro.com",
+            "mailjethub.com"
+          ]
+        },
+        {
+          "selector": "dns2.p03.nsone.net",
+          "count": 3,
+          "domains": [
+            "duck.com",
+            "letterinboxpro.com",
+            "mailjethub.com"
+          ]
+        },
+        {
+          "selector": "dns3.p02.nsone.net",
+          "count": 3,
+          "domains": [
+            "mailflashpro.com",
+            "postmailpro.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "dns1.p02.nsone.net",
+          "count": 3,
+          "domains": [
+            "mailflashpro.com",
+            "postmailpro.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "dns4.p02.nsone.net",
+          "count": 3,
+          "domains": [
+            "mailflashpro.com",
+            "postmailpro.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "dns2.p02.nsone.net",
+          "count": 3,
+          "domains": [
+            "mailflashpro.com",
+            "postmailpro.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "fmns2.messagingengine.com",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "fmns1.messagingengine.com",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "kay.ns.cloudflare.com",
+          "count": 3,
+          "domains": [
+            "passinbox.com",
+            "passmail.com",
+            "passmail.net"
+          ]
+        },
+        {
+          "selector": "marek.ns.cloudflare.com",
+          "count": 3,
+          "domains": [
+            "passinbox.com",
+            "passmail.com",
+            "passmail.net"
+          ]
+        },
+        {
+          "selector": "dns3.p09.nsone.net",
+          "count": 3,
+          "domains": [
+            "inboxflashpro.com",
+            "messagehubplus.com",
+            "rapidinboxpro.com"
+          ]
+        },
+        {
+          "selector": "dns1.p09.nsone.net",
+          "count": 3,
+          "domains": [
+            "inboxflashpro.com",
+            "messagehubplus.com",
+            "rapidinboxpro.com"
+          ]
+        },
+        {
+          "selector": "dns2.p09.nsone.net",
+          "count": 3,
+          "domains": [
+            "inboxflashpro.com",
+            "messagehubplus.com",
+            "rapidinboxpro.com"
+          ]
+        },
+        {
+          "selector": "dns4.p09.nsone.net",
+          "count": 3,
+          "domains": [
+            "inboxflashpro.com",
+            "messagehubplus.com",
+            "rapidinboxpro.com"
+          ]
+        },
+        {
+          "selector": "dns1.p07.nsone.net",
+          "count": 3,
+          "domains": [
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "speedmailhub.com"
+          ]
+        },
+        {
+          "selector": "dns2.p07.nsone.net",
+          "count": 3,
+          "domains": [
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "speedmailhub.com"
+          ]
+        },
+        {
+          "selector": "dns4.p07.nsone.net",
+          "count": 3,
+          "domains": [
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "speedmailhub.com"
+          ]
+        },
+        {
+          "selector": "dns3.p07.nsone.net",
+          "count": 3,
+          "domains": [
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "speedmailhub.com"
+          ]
+        },
+        {
+          "selector": "ns60.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "mailjobtech.com",
+            "techmyjob.com"
+          ]
+        },
+        {
+          "selector": "ns59.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "mailjobtech.com",
+            "techmyjob.com"
+          ]
+        },
+        {
+          "selector": "ns76.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "itjobmail.com",
+            "techsmail.com"
+          ]
+        },
+        {
+          "selector": "ns75.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "itjobmail.com",
+            "techsmail.com"
+          ]
+        },
+        {
+          "selector": "hans.ns.cloudflare.com",
+          "count": 2,
+          "domains": [
+            "aogjob.com",
+            "jobhuntus.com"
+          ]
+        },
+        {
+          "selector": "elsa.ns.cloudflare.com",
+          "count": 2,
+          "domains": [
+            "aogjob.com",
+            "jobhuntus.com"
+          ]
+        },
+        {
+          "selector": "ns68.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "itjobworks.com",
+            "quickitmail.com"
+          ]
+        },
+        {
+          "selector": "ns67.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "itjobworks.com",
+            "quickitmail.com"
+          ]
+        },
+        {
+          "selector": "ns46.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "jobitmail.com",
+            "mailscareer.com"
+          ]
+        },
+        {
+          "selector": "ns45.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "jobitmail.com",
+            "mailscareer.com"
+          ]
+        },
+        {
+          "selector": "ns71.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "careerattainment.com",
+            "mycareersmail.com"
+          ]
+        },
+        {
+          "selector": "ns72.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "careerattainment.com",
+            "mycareersmail.com"
+          ]
+        },
+        {
+          "selector": "ns22.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "jobtechmail.com",
+            "myitjobshub.com"
+          ]
+        },
+        {
+          "selector": "ns21.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "jobtechmail.com",
+            "myitjobshub.com"
+          ]
+        },
+        {
+          "selector": "nsa4.squarespacedns.com",
+          "count": 2,
+          "domains": [
+            "mycvwork.com",
+            "workapplyjob.com"
+          ]
+        },
+        {
+          "selector": "nsa1.squarespacedns.com",
+          "count": 2,
+          "domains": [
+            "mycvwork.com",
+            "workapplyjob.com"
+          ]
+        },
+        {
+          "selector": "nsa2.squarespacedns.com",
+          "count": 2,
+          "domains": [
+            "mycvwork.com",
+            "workapplyjob.com"
+          ]
+        },
+        {
+          "selector": "nsa3.squarespacedns.com",
+          "count": 2,
+          "domains": [
+            "mycvwork.com",
+            "workapplyjob.com"
+          ]
+        },
+        {
+          "selector": "ns14.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "ebsworksite.com",
+            "jobstechmail.com"
+          ]
+        },
+        {
+          "selector": "ns13.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "ebsworksite.com",
+            "jobstechmail.com"
+          ]
+        },
+        {
+          "selector": "ns44.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "myjobitmail.com",
+            "worksemail.com"
+          ]
+        },
+        {
+          "selector": "ns43.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "myjobitmail.com",
+            "worksemail.com"
+          ]
+        },
+        {
+          "selector": "ns01.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "mailsworks.com",
+            "worksemails.com"
+          ]
+        },
+        {
+          "selector": "ns02.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "mailsworks.com",
+            "worksemails.com"
+          ]
+        },
+        {
+          "selector": "ns51.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "mycvhire.com",
+            "mycvtalent.com"
+          ]
+        },
+        {
+          "selector": "ns52.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "mycvhire.com",
+            "mycvtalent.com"
+          ]
+        },
+        {
+          "selector": "ns08.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "mainewoodproducts.com",
+            "mymailkeeper.com"
+          ]
+        },
+        {
+          "selector": "ns07.domaincontrol.com",
+          "count": 2,
+          "domains": [
+            "mainewoodproducts.com",
+            "mymailkeeper.com"
+          ]
+        },
+        {
+          "selector": "dns4.p01.nsone.net",
+          "count": 2,
+          "domains": [
+            "fastmailzoom.com",
+            "quickpostmail.com"
+          ]
+        },
+        {
+          "selector": "dns3.p01.nsone.net",
+          "count": 2,
+          "domains": [
+            "fastmailzoom.com",
+            "quickpostmail.com"
+          ]
+        },
+        {
+          "selector": "dns2.p01.nsone.net",
+          "count": 2,
+          "domains": [
+            "fastmailzoom.com",
+            "quickpostmail.com"
+          ]
+        },
+        {
+          "selector": "dns1.p01.nsone.net",
+          "count": 2,
+          "domains": [
+            "fastmailzoom.com",
+            "quickpostmail.com"
+          ]
+        },
+        {
+          "selector": "curitiba.ns.porkbun.com",
+          "count": 2,
+          "domains": [
+            "contactbox.io",
+            "posthuman.help"
+          ]
+        },
+        {
+          "selector": "fortaleza.ns.porkbun.com",
+          "count": 2,
+          "domains": [
+            "contactbox.io",
+            "posthuman.help"
+          ]
+        },
+        {
+          "selector": "salvador.ns.porkbun.com",
+          "count": 2,
+          "domains": [
+            "contactbox.io",
+            "posthuman.help"
+          ]
+        },
+        {
+          "selector": "maceio.ns.porkbun.com",
+          "count": 2,
+          "domains": [
+            "contactbox.io",
+            "posthuman.help"
+          ]
+        },
+        {
+          "selector": "ns01.posteo-dns.de",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        },
+        {
+          "selector": "sto.excedodns.se",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        },
+        {
+          "selector": "global.excedodns.com",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        },
+        {
+          "selector": "emea.excedodns.eu",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        },
+        {
+          "selector": "nordic.excedodns.net",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        }
+      ]
+    },
+    "cname_target": {
+      "selector_type": "shared CNAME target",
+      "clusters": []
+    },
+    "hosting_bgp_prefix": {
+      "selector_type": "shared hosting BGP prefix",
+      "clusters": [
+        {
+          "selector": "198.185.159.0/24",
+          "count": 57,
+          "domains": [
+            "applyitmail.com",
+            "blazepinnacle.com",
+            "career2026.com",
+            "celestialflare.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "hcmconsultingpro.com",
+            "inboxflashpro.com",
+            "itworkmail.net",
+            "jobemails24.com",
+            "jobmails.net",
+            "jobsitmail.com",
+            "jobtecmail.net",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "mycvwork.com",
+            "myitemailapp.com",
+            "myjobitapp.com",
+            "myjobtechmail.com",
+            "myprofiley.com",
+            "myuswork.com",
+            "neuronmail.io",
+            "phoenixglide.com",
+            "postmailpro.com",
+            "proinboxpost.com",
+            "promailcenter.com",
+            "propostbox.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quantumzens.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "risemail.com",
+            "speedymailpost.com",
+            "swiftinboxmail.com",
+            "tasksemail.com",
+            "tasksmail.com",
+            "techemailapp.com",
+            "terraquasar.com",
+            "workapplyjob.com",
+            "workemailapply.com",
+            "workitmail.com",
+            "workmailit.com",
+            "workmymails.com",
+            "worktechmail.com",
+            "worktechmails.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "198.49.23.0/24",
+          "count": 57,
+          "domains": [
+            "applyitmail.com",
+            "blazepinnacle.com",
+            "career2026.com",
+            "celestialflare.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "hcmconsultingpro.com",
+            "inboxflashpro.com",
+            "itworkmail.net",
+            "jobemails24.com",
+            "jobmails.net",
+            "jobsitmail.com",
+            "jobtecmail.net",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "mycvwork.com",
+            "myitemailapp.com",
+            "myjobitapp.com",
+            "myjobtechmail.com",
+            "myprofiley.com",
+            "myuswork.com",
+            "neuronmail.io",
+            "phoenixglide.com",
+            "postmailpro.com",
+            "proinboxpost.com",
+            "promailcenter.com",
+            "propostbox.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quantumzens.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "risemail.com",
+            "speedymailpost.com",
+            "swiftinboxmail.com",
+            "tasksemail.com",
+            "tasksmail.com",
+            "techemailapp.com",
+            "terraquasar.com",
+            "workapplyjob.com",
+            "workemailapply.com",
+            "workitmail.com",
+            "workmailit.com",
+            "workmymails.com",
+            "worktechmail.com",
+            "worktechmails.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "15.197.144.0/20",
+          "count": 32,
+          "domains": [
+            "ajobguide.com",
+            "careerattainment.com",
+            "careeritjob.com",
+            "careernb.com",
+            "careersmails.com",
+            "cvmailhub.com",
+            "jobinboxhub.com",
+            "jobitmail.com",
+            "jobsmailbox.com",
+            "jobsmails.com",
+            "jobstechmail.com",
+            "jobsupp.com",
+            "mailjobhub.com",
+            "mailscareer.com",
+            "mycvhire.com",
+            "mycvscout.com",
+            "mycvtalent.com",
+            "myjobitmail.com",
+            "myjobscouts.com",
+            "myjobsmail.com",
+            "mymailjob.com",
+            "mymailshub.com",
+            "mymailwork.com",
+            "mymailworks.com",
+            "myquickmails.com",
+            "nextitjobs.com",
+            "protectmymails.com",
+            "quickitmail.com",
+            "techjobmail.com",
+            "techmyjob.com",
+            "themailpad.com",
+            "vegascareers.org"
+          ]
+        },
+        {
+          "selector": "3.33.128.0/20",
+          "count": 32,
+          "domains": [
+            "ajobguide.com",
+            "careerattainment.com",
+            "careeritjob.com",
+            "careernb.com",
+            "careersmails.com",
+            "cvmailhub.com",
+            "jobinboxhub.com",
+            "jobitmail.com",
+            "jobsmailbox.com",
+            "jobsmails.com",
+            "jobstechmail.com",
+            "jobsupp.com",
+            "mailjobhub.com",
+            "mailscareer.com",
+            "mycvhire.com",
+            "mycvscout.com",
+            "mycvtalent.com",
+            "myjobitmail.com",
+            "myjobscouts.com",
+            "myjobsmail.com",
+            "mymailjob.com",
+            "mymailshub.com",
+            "mymailwork.com",
+            "mymailworks.com",
+            "myquickmails.com",
+            "nextitjobs.com",
+            "protectmymails.com",
+            "quickitmail.com",
+            "techjobmail.com",
+            "techmyjob.com",
+            "themailpad.com",
+            "vegascareers.org"
+          ]
+        },
+        {
+          "selector": "13.248.240.0/20",
+          "count": 27,
+          "domains": [
+            "careermailus.com",
+            "cvtechmail.com",
+            "glidemail.io",
+            "itcareerinfo.com",
+            "itjobmail.com",
+            "itjobworks.com",
+            "jobitwork.com",
+            "jobstechmails.com",
+            "jobtechmail.com",
+            "jobtechsmail.com",
+            "mailjobtech.com",
+            "mailmywork.com",
+            "mailsworks.com",
+            "mycareersjobs.com",
+            "mycareersmail.com",
+            "myemailjob.com",
+            "myitjobshub.com",
+            "myjobfolio.com",
+            "myjobsmails.com",
+            "mymailkeeper.com",
+            "orbitalpost.com",
+            "savemymails.com",
+            "techsmail.com",
+            "thepromail.co",
+            "theworkmails.com",
+            "worksemail.com",
+            "worksemails.com"
+          ]
+        },
+        {
+          "selector": "76.223.96.0/20",
+          "count": 27,
+          "domains": [
+            "careermailus.com",
+            "cvtechmail.com",
+            "glidemail.io",
+            "itcareerinfo.com",
+            "itjobmail.com",
+            "itjobworks.com",
+            "jobitwork.com",
+            "jobstechmails.com",
+            "jobtechmail.com",
+            "jobtechsmail.com",
+            "mailjobtech.com",
+            "mailmywork.com",
+            "mailsworks.com",
+            "mycareersjobs.com",
+            "mycareersmail.com",
+            "myemailjob.com",
+            "myitjobshub.com",
+            "myjobfolio.com",
+            "myjobsmails.com",
+            "mymailkeeper.com",
+            "orbitalpost.com",
+            "savemymails.com",
+            "techsmail.com",
+            "thepromail.co",
+            "theworkmails.com",
+            "worksemail.com",
+            "worksemails.com"
+          ]
+        },
+        {
+          "selector": "52.96.0.0/14",
+          "count": 25,
+          "domains": [
+            "ajoy2consult.com",
+            "careeremail.net",
+            "careerwebmail.com",
+            "ebsworksite.com",
+            "insightfulworkplace.com",
+            "jobemail.net",
+            "jobemails.net",
+            "jobhuntmails.com",
+            "mail.mcgill.ca",
+            "mail.utoronto.ca",
+            "mainewoodproducts.com",
+            "mycareermail.com",
+            "mycareersmail.com",
+            "myjobemails.com",
+            "myjobsinbox.com",
+            "myjobsmail.com",
+            "mywebemails.com",
+            "myworkmails.com",
+            "prorecresources.com",
+            "restartworks.com",
+            "techcareermail.com",
+            "techjobsemail.net",
+            "thetalentarc.co.uk",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "2603:1000::/25",
+          "count": 24,
+          "domains": [
+            "ajoy2consult.com",
+            "careerattainment.com",
+            "careerwebmail.com",
+            "ebsworksite.com",
+            "insightfulworkplace.com",
+            "jobemail.net",
+            "jobemails.net",
+            "jobhuntmails.com",
+            "mail.utoronto.ca",
+            "mainewoodproducts.com",
+            "mycareermail.com",
+            "mycareersmail.com",
+            "myjobemails.com",
+            "myjobsinbox.com",
+            "myjobsmail.com",
+            "mywebemails.com",
+            "myworkmails.com",
+            "prorecresources.com",
+            "restartworks.com",
+            "techcareermail.com",
+            "techjobsemail.net",
+            "thetalentarc.co.uk",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "2.57.91.0/24",
+          "count": 19,
+          "domains": [
+            "career-techmail.com",
+            "carrermail.com",
+            "cvejobs.com",
+            "i-mail.in",
+            "itjobdesire.com",
+            "itjobemails.com",
+            "itjobinbox.com",
+            "itresumejobs.com",
+            "jobmaildesk.com",
+            "jobmailoffer.com",
+            "jobrequires.com",
+            "jobsdesire.com",
+            "myemailjobs.com",
+            "myhotmail.net",
+            "myitjobmails.com",
+            "myjobemails.com",
+            "newjobdesire.com",
+            "newjobrequire.com",
+            "newjobshunt.com"
+          ]
+        },
+        {
+          "selector": "141.94.0.0/16",
+          "count": 15,
+          "domains": [
+            "activemails.net",
+            "boxmailhere.com",
+            "boxmailhost.com",
+            "careermails.net",
+            "mailactiv.com",
+            "mailboxcore.com",
+            "mailmessage.co",
+            "nextstepcareer.net",
+            "rapidmailhost.com",
+            "smartmailhost.net",
+            "swiftemail.co",
+            "swiftmailhost.com",
+            "tivomail.com",
+            "topcandidate.co",
+            "webpostbox.net"
+          ]
+        },
+        {
+          "selector": "185.230.63.0/24",
+          "count": 10,
+          "domains": [
+            "jobemails.net",
+            "jobhuntmails.com",
+            "myjobsemail.com",
+            "myjobsinbox.com",
+            "mymailsbox.net",
+            "mywebemails.com",
+            "myworkmails.com",
+            "sharpcareerimage.com",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "34.148.0.0/14",
+          "count": 7,
+          "domains": [
+            "careerwebmail.com",
+            "jobhuntmails.com",
+            "mymailsbox.net",
+            "mywebemails.com",
+            "sharpcareerimage.com",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "104.21.64.0/20",
+          "count": 4,
+          "domains": [
+            "aogjob.com",
+            "inboxhere.com",
+            "mailflux.com",
+            "truemailhost.net"
+          ]
+        },
+        {
+          "selector": "2606:4700:3033::/48",
+          "count": 4,
+          "domains": [
+            "aogjob.com",
+            "inboxhires.com",
+            "passmail.com",
+            "truemailhost.net"
+          ]
+        },
+        {
+          "selector": "2606:4700:3035::/48",
+          "count": 4,
+          "domains": [
+            "inboxhere.com",
+            "jobhuntus.com",
+            "truemailhost.net",
+            "wgcv.me"
+          ]
+        },
+        {
+          "selector": "2606:4700:3030::/48",
+          "count": 4,
+          "domains": [
+            "careerx.us",
+            "passinbox.com",
+            "passmail.net",
+            "wgcv.me"
+          ]
+        },
+        {
+          "selector": "176.119.200.0/24",
+          "count": 4,
+          "domains": [
+            "pm.me",
+            "proton.me",
+            "protonmail.ch",
+            "protonmail.com"
+          ]
+        },
+        {
+          "selector": "185.70.42.0/24",
+          "count": 4,
+          "domains": [
+            "pm.me",
+            "proton.me",
+            "protonmail.ch",
+            "protonmail.com"
+          ]
+        },
+        {
+          "selector": "104.21.48.0/20",
+          "count": 3,
+          "domains": [
+            "jobhuntus.com",
+            "passmail.net",
+            "wgcv.me"
+          ]
+        },
+        {
+          "selector": "2606:4700:3036::/48",
+          "count": 3,
+          "domains": [
+            "careerx.us",
+            "inboxhires.com",
+            "jobhuntus.com"
+          ]
+        },
+        {
+          "selector": "162.159.128.0/19",
+          "count": 3,
+          "domains": [
+            "jobemails.net",
+            "myjobsemail.com",
+            "myjobsinbox.com"
+          ]
+        },
+        {
+          "selector": "172.66.0.0/22",
+          "count": 3,
+          "domains": [
+            "jobemails.net",
+            "myjobsemail.com",
+            "myjobsinbox.com"
+          ]
+        },
+        {
+          "selector": "172.67.208.0/20",
+          "count": 3,
+          "domains": [
+            "careerx.us",
+            "passinbox.com",
+            "passmail.com"
+          ]
+        },
+        {
+          "selector": "216.150.1.0/24",
+          "count": 3,
+          "domains": [
+            "careermail.pro",
+            "myprivatemail.io",
+            "sorce.email"
+          ]
+        },
+        {
+          "selector": "216.150.16.0/24",
+          "count": 3,
+          "domains": [
+            "careermail.pro",
+            "myprivatemail.io",
+            "sorce.email"
+          ]
+        },
+        {
+          "selector": "2606:4700:3031::/48",
+          "count": 3,
+          "domains": [
+            "inboxhere.com",
+            "mailflux.com",
+            "passmail.com"
+          ]
+        },
+        {
+          "selector": "103.168.172.0/24",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "185.205.69.0/24",
+          "count": 3,
+          "domains": [
+            "keemail.me",
+            "tuta.io",
+            "tutanota.com"
+          ]
+        },
+        {
+          "selector": "2606:4700:3037::/48",
+          "count": 2,
+          "domains": [
+            "aogjob.com",
+            "passmail.net"
+          ]
+        },
+        {
+          "selector": "172.67.160.0/20",
+          "count": 2,
+          "domains": [
+            "jobhuntus.com",
+            "mailflux.com"
+          ]
+        },
+        {
+          "selector": "76.223.16.0/20",
+          "count": 2,
+          "domains": [
+            "careermails.com",
+            "quopost.com"
+          ]
+        },
+        {
+          "selector": "104.21.32.0/20",
+          "count": 2,
+          "domains": [
+            "careerx.us",
+            "passinbox.com"
+          ]
+        },
+        {
+          "selector": "162.255.119.0/24",
+          "count": 2,
+          "domains": [
+            "jobmail.io",
+            "ohmymail.net"
+          ]
+        },
+        {
+          "selector": "31.43.160.0/24",
+          "count": 2,
+          "domains": [
+            "eprivatemail.com",
+            "whisperpost.io"
+          ]
+        },
+        {
+          "selector": "31.43.161.0/24",
+          "count": 2,
+          "domains": [
+            "eprivatemail.com",
+            "whisperpost.io"
+          ]
+        },
+        {
+          "selector": "145.223.120.0/21",
+          "count": 2,
+          "domains": [
+            "personalspacehub.com",
+            "webappemail.com"
+          ]
+        },
+        {
+          "selector": "147.79.72.0/21",
+          "count": 2,
+          "domains": [
+            "personalspacehub.com",
+            "webappemail.com"
+          ]
+        },
+        {
+          "selector": "2a02:4780:4a::/48",
+          "count": 2,
+          "domains": [
+            "personalspacehub.com",
+            "webappemail.com"
+          ]
+        },
+        {
+          "selector": "160.153.0.0/24",
+          "count": 2,
+          "domains": [
+            "insightfulworkplace.com",
+            "mainewoodproducts.com"
+          ]
+        },
+        {
+          "selector": "3.33.240.0/20",
+          "count": 2,
+          "domains": [
+            "ocproject.net",
+            "workmail.com"
+          ]
+        },
+        {
+          "selector": "18.238.176.0/22",
+          "count": 2,
+          "domains": [
+            "proctorconsultingservices.com",
+            "theproctors.cloud"
+          ]
+        },
+        {
+          "selector": "2600:9000:284a::/48",
+          "count": 2,
+          "domains": [
+            "proctorconsultingservices.com",
+            "theproctors.cloud"
+          ]
+        },
+        {
+          "selector": "185.67.36.0/23",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        },
+        {
+          "selector": "2a05:bc0:1000::/48",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        },
+        {
+          "selector": "2a10:e000:1::/48",
+          "count": 2,
+          "domains": [
+            "tuta.io",
+            "tutanota.com"
+          ]
+        }
+      ]
+    },
+    "mx_host": {
+      "selector_type": "shared MX host",
+      "clusters": [
+        {
+          "selector": "alt1.aspmx.l.google.com",
+          "count": 69,
+          "domains": [
+            "applyme.co",
+            "blazepinnacle.com",
+            "careermailus.com",
+            "careernb.com",
+            "careersmails.com",
+            "celestialflare.com",
+            "championtalentco.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "cvmailhub.com",
+            "digitalexpress.co.uk",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "inboxflashpro.com",
+            "insphiretalent.com",
+            "itjobmail.com",
+            "jgcareers.com",
+            "jobitmail.com",
+            "jobslink-inc.com",
+            "jobsmails.com",
+            "jobtechmail.com",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailjobhub.com",
+            "mailscareer.com",
+            "mailsworks.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "miuramail.com",
+            "mycareersjobs.com",
+            "mycvhire.com",
+            "mycvscout.com",
+            "myemailjob.com",
+            "myitemail.com",
+            "myjobscouts.com",
+            "mymailjob.com",
+            "nextitjobs.com",
+            "odinsoftworks.com",
+            "phoenixglide.com",
+            "posthuman.help",
+            "postmailpro.com",
+            "proinboxpost.com",
+            "promailcenter.com",
+            "propertymaveninc.com",
+            "propostbox.com",
+            "protectmymails.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quantumzens.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidposthub.com",
+            "risemail.com",
+            "savemymails.com",
+            "speedmailhub.com",
+            "speedymailpost.com",
+            "swiftinboxmail.com",
+            "techjobmail.com",
+            "techmyjob.com",
+            "techsmail.com",
+            "terraquasar.com",
+            "themailpad.com",
+            "thepromail.co",
+            "worksemails.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "aspmx.l.google.com",
+          "count": 69,
+          "domains": [
+            "applyme.co",
+            "blazepinnacle.com",
+            "careermailus.com",
+            "careernb.com",
+            "careersmails.com",
+            "celestialflare.com",
+            "championtalentco.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "cvmailhub.com",
+            "digitalexpress.co.uk",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "inboxflashpro.com",
+            "insphiretalent.com",
+            "itjobmail.com",
+            "jgcareers.com",
+            "jobitmail.com",
+            "jobsmails.com",
+            "jobtechmail.com",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailjobhub.com",
+            "mailscareer.com",
+            "mailsworks.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "miuramail.com",
+            "mycareersjobs.com",
+            "mycvhire.com",
+            "mycvscout.com",
+            "myemailjob.com",
+            "myitemail.com",
+            "myjobscouts.com",
+            "mymailjob.com",
+            "nextitjobs.com",
+            "odinsoftworks.com",
+            "phoenixglide.com",
+            "posthuman.help",
+            "postmailpro.com",
+            "proinboxpost.com",
+            "promailcenter.com",
+            "propertymaveninc.com",
+            "propostbox.com",
+            "protectmymails.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quantumzens.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidposthub.com",
+            "risemail.com",
+            "savemymails.com",
+            "sharpcareerimage.com",
+            "speedmailhub.com",
+            "speedymailpost.com",
+            "swiftinboxmail.com",
+            "techjobmail.com",
+            "techmyjob.com",
+            "techsmail.com",
+            "terraquasar.com",
+            "themailpad.com",
+            "thepromail.co",
+            "worksemails.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "alt2.aspmx.l.google.com",
+          "count": 68,
+          "domains": [
+            "applyme.co",
+            "blazepinnacle.com",
+            "careermailus.com",
+            "careernb.com",
+            "careersmails.com",
+            "celestialflare.com",
+            "championtalentco.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "cvmailhub.com",
+            "digitalexpress.co.uk",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "inboxflashpro.com",
+            "insphiretalent.com",
+            "itjobmail.com",
+            "jgcareers.com",
+            "jobitmail.com",
+            "jobsmails.com",
+            "jobtechmail.com",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailjobhub.com",
+            "mailscareer.com",
+            "mailsworks.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "miuramail.com",
+            "mycareersjobs.com",
+            "mycvhire.com",
+            "mycvscout.com",
+            "myemailjob.com",
+            "myitemail.com",
+            "myjobscouts.com",
+            "mymailjob.com",
+            "nextitjobs.com",
+            "odinsoftworks.com",
+            "phoenixglide.com",
+            "posthuman.help",
+            "postmailpro.com",
+            "proinboxpost.com",
+            "promailcenter.com",
+            "propertymaveninc.com",
+            "propostbox.com",
+            "protectmymails.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quantumzens.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidposthub.com",
+            "risemail.com",
+            "savemymails.com",
+            "speedmailhub.com",
+            "speedymailpost.com",
+            "swiftinboxmail.com",
+            "techjobmail.com",
+            "techmyjob.com",
+            "techsmail.com",
+            "terraquasar.com",
+            "themailpad.com",
+            "thepromail.co",
+            "worksemails.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "alt3.aspmx.l.google.com",
+          "count": 66,
+          "domains": [
+            "applyme.co",
+            "blazepinnacle.com",
+            "careermailus.com",
+            "careernb.com",
+            "careersmails.com",
+            "celestialflare.com",
+            "championtalentco.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "cvmailhub.com",
+            "digitalexpress.co.uk",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "inboxflashpro.com",
+            "insphiretalent.com",
+            "itjobmail.com",
+            "jobitmail.com",
+            "jobslink-inc.com",
+            "jobsmails.com",
+            "jobtechmail.com",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailjobhub.com",
+            "mailscareer.com",
+            "mailsworks.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "mycareersjobs.com",
+            "mycvhire.com",
+            "mycvscout.com",
+            "myemailjob.com",
+            "myitemail.com",
+            "myjobscouts.com",
+            "mymailjob.com",
+            "nextitjobs.com",
+            "phoenixglide.com",
+            "posthuman.help",
+            "postmailpro.com",
+            "proinboxpost.com",
+            "promailcenter.com",
+            "propertymaveninc.com",
+            "propostbox.com",
+            "protectmymails.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quantumzens.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidposthub.com",
+            "risemail.com",
+            "savemymails.com",
+            "speedmailhub.com",
+            "speedymailpost.com",
+            "swiftinboxmail.com",
+            "techjobmail.com",
+            "techmyjob.com",
+            "techsmail.com",
+            "terraquasar.com",
+            "themailpad.com",
+            "thepromail.co",
+            "worksemails.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "alt4.aspmx.l.google.com",
+          "count": 65,
+          "domains": [
+            "applyme.co",
+            "blazepinnacle.com",
+            "careermailus.com",
+            "careernb.com",
+            "careersmails.com",
+            "celestialflare.com",
+            "championtalentco.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "cvmailhub.com",
+            "digitalexpress.co.uk",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "inboxflashpro.com",
+            "insphiretalent.com",
+            "itjobmail.com",
+            "jobitmail.com",
+            "jobsmails.com",
+            "jobtechmail.com",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailjobhub.com",
+            "mailscareer.com",
+            "mailsworks.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "mycareersjobs.com",
+            "mycvhire.com",
+            "mycvscout.com",
+            "myemailjob.com",
+            "myitemail.com",
+            "myjobscouts.com",
+            "mymailjob.com",
+            "nextitjobs.com",
+            "phoenixglide.com",
+            "posthuman.help",
+            "postmailpro.com",
+            "proinboxpost.com",
+            "promailcenter.com",
+            "propertymaveninc.com",
+            "propostbox.com",
+            "protectmymails.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quantumzens.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidposthub.com",
+            "risemail.com",
+            "savemymails.com",
+            "speedmailhub.com",
+            "speedymailpost.com",
+            "swiftinboxmail.com",
+            "techjobmail.com",
+            "techmyjob.com",
+            "techsmail.com",
+            "terraquasar.com",
+            "themailpad.com",
+            "thepromail.co",
+            "worksemails.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "smtp.google.com",
+          "count": 41,
+          "domains": [
+            "ajobguide.com",
+            "applyitmail.com",
+            "career2026.com",
+            "careeritjob.com",
+            "cvtechmail.com",
+            "hcmconsultingpro.com",
+            "itjobworks.com",
+            "itworkmail.net",
+            "jobemails24.com",
+            "jobhuntus.com",
+            "jobinboxhub.com",
+            "jobitwork.com",
+            "jobsitmail.com",
+            "jobslink-inc.com",
+            "jobsmailbox.com",
+            "jobstechmail.com",
+            "jobstechmails.com",
+            "jobtechsmail.com",
+            "jobtecmail.net",
+            "mailjobtech.com",
+            "mycvtalent.com",
+            "mycvwork.com",
+            "myitemailapp.com",
+            "myitjobshub.com",
+            "myjobfolio.com",
+            "myjobitapp.com",
+            "mymailshub.com",
+            "mymailwork.com",
+            "myprofiley.com",
+            "myuswork.com",
+            "ocproject.net",
+            "posthuman.help",
+            "tasksmail.com",
+            "techemailapp.com",
+            "theworkmails.com",
+            "workapplyjob.com",
+            "workemailapply.com",
+            "workitmail.com",
+            "workmailit.com",
+            "workmymails.com",
+            "worktechmail.com"
+          ]
+        },
+        {
+          "selector": "aspmx2.migadu.com",
+          "count": 14,
+          "domains": [
+            "boxmailhere.com",
+            "careermails.net",
+            "elitecandidates.com",
+            "mailactiv.com",
+            "mailmessage.co",
+            "nextstepcareer.net",
+            "pulsemailbox.com",
+            "rapidmailhost.com",
+            "smartmailhost.net",
+            "swiftemail.co",
+            "swiftmailhost.com",
+            "tivomail.com",
+            "truemailhost.net",
+            "webpostbox.net"
+          ]
+        },
+        {
+          "selector": "aspmx1.migadu.com",
+          "count": 14,
+          "domains": [
+            "boxmailhere.com",
+            "careermails.net",
+            "elitecandidates.com",
+            "mailactiv.com",
+            "mailmessage.co",
+            "nextstepcareer.net",
+            "pulsemailbox.com",
+            "rapidmailhost.com",
+            "smartmailhost.net",
+            "swiftemail.co",
+            "swiftmailhost.com",
+            "tivomail.com",
+            "truemailhost.net",
+            "webpostbox.net"
+          ]
+        },
+        {
+          "selector": "SMTP.GOOGLE.com",
+          "count": 13,
+          "domains": [
+            "aogjob.com",
+            "carrermail.com",
+            "cvejobs.com",
+            "itjobdesire.com",
+            "itjobemails.com",
+            "jobmailoffer.com",
+            "jobrequires.com",
+            "myemailjobs.com",
+            "newjobdesire.com",
+            "newjobrequire.com",
+            "newjobshunt.com",
+            "sharemejobs.com",
+            "webappemail.com"
+          ]
+        },
+        {
+          "selector": "inbound-smtp.us-east-1.amazonaws.com",
+          "count": 6,
+          "domains": [
+            "eprivatemail.com",
+            "jobmail.io",
+            "mailflyn.com",
+            "my-privatemail.com",
+            "skymail.ai",
+            "sorce.email"
+          ]
+        },
+        {
+          "selector": "mail.protonmail.ch",
+          "count": 5,
+          "domains": [
+            "pm.me",
+            "proton.me",
+            "protonmail.ch",
+            "protonmail.com",
+            "wgcv.me"
+          ]
+        },
+        {
+          "selector": "mailsec.protonmail.ch",
+          "count": 5,
+          "domains": [
+            "pm.me",
+            "proton.me",
+            "protonmail.ch",
+            "protonmail.com",
+            "wgcv.me"
+          ]
+        },
+        {
+          "selector": "mxa.mailgun.org",
+          "count": 4,
+          "domains": [
+            "careermails.com",
+            "contactbox.io",
+            "quopost.com",
+            "whisperpost.io"
+          ]
+        },
+        {
+          "selector": "mxb.mailgun.org",
+          "count": 4,
+          "domains": [
+            "careermails.com",
+            "contactbox.io",
+            "quopost.com",
+            "whisperpost.io"
+          ]
+        },
+        {
+          "selector": "gmail-smtp-in.l.google.com",
+          "count": 4,
+          "domains": [
+            "mailjobhub.com.test-google-a.com",
+            "myjobscouts.com.test-google-a.com",
+            "protectmymails.com.test-google-a.com",
+            "themailpad.com.test-google-a.com"
+          ]
+        },
+        {
+          "selector": "aspmx3.googlemail.com",
+          "count": 3,
+          "domains": [
+            "jgcareers.com",
+            "miuramail.com",
+            "odinsoftworks.com"
+          ]
+        },
+        {
+          "selector": "aspmx2.googlemail.com",
+          "count": 3,
+          "domains": [
+            "jgcareers.com",
+            "miuramail.com",
+            "odinsoftworks.com"
+          ]
+        },
+        {
+          "selector": "in1-smtp.messagingengine.com",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "in2-smtp.messagingengine.com",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "mx2.simplelogin.co",
+          "count": 3,
+          "domains": [
+            "passinbox.com",
+            "passmail.com",
+            "passmail.net"
+          ]
+        },
+        {
+          "selector": "mx1.simplelogin.co",
+          "count": 3,
+          "domains": [
+            "passinbox.com",
+            "passmail.com",
+            "passmail.net"
+          ]
+        },
+        {
+          "selector": "mail.tutanota.de",
+          "count": 3,
+          "domains": [
+            "keemail.me",
+            "tuta.io",
+            "tutanota.com"
+          ]
+        },
+        {
+          "selector": "SMTP.google.com",
+          "count": 2,
+          "domains": [
+            "career-techmail.com",
+            "itjobinbox.com"
+          ]
+        },
+        {
+          "selector": "mx3.zoho.com",
+          "count": 2,
+          "domains": [
+            "careerx.us",
+            "ohmymail.net"
+          ]
+        },
+        {
+          "selector": "mx2.zoho.com",
+          "count": 2,
+          "domains": [
+            "careerx.us",
+            "ohmymail.net"
+          ]
+        },
+        {
+          "selector": "mx.zoho.com",
+          "count": 2,
+          "domains": [
+            "careerx.us",
+            "ohmymail.net"
+          ]
+        },
+        {
+          "selector": "inbound-smtp.us-west-2.amazonaws.com",
+          "count": 2,
+          "domains": [
+            "careermail.pro",
+            "mailflux.com"
+          ]
+        },
+        {
+          "selector": "mx.sendgrid.net",
+          "count": 2,
+          "domains": [
+            "glidemail.io",
+            "inboxhere.com"
+          ]
+        },
+        {
+          "selector": "mx01.mail.icloud.com",
+          "count": 2,
+          "domains": [
+            "proctorconsultingservices.com",
+            "theproctors.cloud"
+          ]
+        },
+        {
+          "selector": "mx02.mail.icloud.com",
+          "count": 2,
+          "domains": [
+            "proctorconsultingservices.com",
+            "theproctors.cloud"
+          ]
+        },
+        {
+          "selector": "mx03.posteo.de",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        },
+        {
+          "selector": "mx04.posteo.de",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        },
+        {
+          "selector": "mx01.posteo.de",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        }
+      ]
+    },
+    "spf_include": {
+      "selector_type": "shared SPF include",
+      "clusters": [
+        {
+          "selector": "_spf.google.com",
+          "count": 82,
+          "domains": [
+            "ajobguide.com",
+            "applyitmail.com",
+            "blazepinnacle.com",
+            "career2026.com",
+            "careeritjob.com",
+            "careermailus.com",
+            "careernb.com",
+            "championtalentco.com",
+            "couriermailhub.com",
+            "cvtechmail.com",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "hcmconsultingpro.com",
+            "inboxflashpro.com",
+            "insphiretalent.com",
+            "itjobmail.com",
+            "itworkmail.net",
+            "jgcareers.com",
+            "jobemails24.com",
+            "jobinboxhub.com",
+            "jobmaildesk.com",
+            "jobmails.net",
+            "jobslink-inc.com",
+            "jobsmailbox.com",
+            "jobstechmail.com",
+            "jobstechmails.com",
+            "jobtechmail.com",
+            "jobtechsmail.com",
+            "jobtecmail.net",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailjobtech.com",
+            "mailsworks.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "mycvhire.com",
+            "mycvwork.com",
+            "myitemailapp.com",
+            "myitjobshub.com",
+            "myjobfolio.com",
+            "myjobitapp.com",
+            "myjobscouts.com",
+            "myjobtechmail.com",
+            "mymailshub.com",
+            "myprofiley.com",
+            "nextitjobs.com",
+            "ocproject.net",
+            "odinsoftworks.com",
+            "phoenixglide.com",
+            "posthuman.help",
+            "postmailpro.com",
+            "promailcenter.com",
+            "propertymaveninc.com",
+            "protectmymails.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quantumzens.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "risemail.com",
+            "savemymails.com",
+            "sharpcareerimage.com",
+            "speedmailhub.com",
+            "speedymailpost.com",
+            "tasksmail.com",
+            "techemailapp.com",
+            "techjobmail.com",
+            "terraquasar.com",
+            "wgcv.me",
+            "workapplyjob.com",
+            "workemailapply.com",
+            "workitmail.com",
+            "workmailit.com",
+            "workmymails.com",
+            "worktechmail.com",
+            "worktechmails.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "spf.protection.outlook.com",
+          "count": 24,
+          "domains": [
+            "ajoy2consult.com",
+            "careerattainment.com",
+            "careeremail.net",
+            "ebsworksite.com",
+            "jobemail.net",
+            "jobemails.net",
+            "jobhuntmails.com",
+            "mail.mcgill.ca",
+            "mail.utoronto.ca",
+            "mainewoodproducts.com",
+            "mycareermail.com",
+            "mycareersmail.com",
+            "myjobemails.com",
+            "myjobsemail.com",
+            "myjobsinbox.com",
+            "myjobsmail.com",
+            "mymailsbox.net",
+            "mywebemails.com",
+            "myworkmails.com",
+            "restartworks.com",
+            "techcareermail.com",
+            "techjobsemail.net",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "spf.migadu.com",
+          "count": 15,
+          "domains": [
+            "activemails.net",
+            "boxmailhere.com",
+            "boxmailhost.com",
+            "careermails.net",
+            "elitecandidates.com",
+            "mailactiv.com",
+            "mailboxcore.com",
+            "mailmessage.co",
+            "nextstepcareer.net",
+            "pulsemailbox.com",
+            "rapidmailhost.com",
+            "smartmailhost.net",
+            "swiftemail.co",
+            "swiftmailhost.com",
+            "truemailhost.net"
+          ]
+        },
+        {
+          "selector": "secureserver.net",
+          "count": 12,
+          "domains": [
+            "careeritjob.com",
+            "ebsworksite.com",
+            "insightfulworkplace.com",
+            "jobslink-inc.com",
+            "jobstechmail.com",
+            "jobstechmails.com",
+            "jobsupp.com",
+            "jobtechmail.com",
+            "jobtechsmail.com",
+            "mailjobtech.com",
+            "techjobmail.com",
+            "thetalentarc.co.uk"
+          ]
+        },
+        {
+          "selector": "amazonses.com",
+          "count": 7,
+          "domains": [
+            "careerio-aa.com",
+            "jobmail.io",
+            "mailflyn.com",
+            "my-privatemail.com",
+            "mysecuremail.co",
+            "neuronmail.io",
+            "skymail.ai"
+          ]
+        },
+        {
+          "selector": "mailgun.org",
+          "count": 6,
+          "domains": [
+            "careermails.com",
+            "contactbox.io",
+            "inboxhere.com",
+            "myprivatemail.io",
+            "quopost.com",
+            "risemail.com"
+          ]
+        },
+        {
+          "selector": "_spf.mx.cloudflare.net",
+          "count": 3,
+          "domains": [
+            "inboxhere.com",
+            "inboxhires.com",
+            "mailbluff.com"
+          ]
+        },
+        {
+          "selector": "_spf.protonmail.ch",
+          "count": 3,
+          "domains": [
+            "pm.me",
+            "protonmail.ch",
+            "wgcv.me"
+          ]
+        },
+        {
+          "selector": "spf.messagingengine.com",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "simplelogin.co",
+          "count": 3,
+          "domains": [
+            "passinbox.com",
+            "passmail.com",
+            "passmail.net"
+          ]
+        },
+        {
+          "selector": "spf.tutanota.de",
+          "count": 3,
+          "domains": [
+            "keemail.me",
+            "tuta.io",
+            "tutanota.com"
+          ]
+        },
+        {
+          "selector": "162.0.237.182",
+          "count": 2,
+          "domains": [
+            "aogjob.com",
+            "jobhuntus.com"
+          ]
+        }
+      ]
+    },
+    "ns_operator": {
+      "selector_type": "DNS operator / registrar",
+      "clusters": [
+        {
+          "selector": "GoDaddy",
+          "count": 65,
+          "domains": [
+            "ajobguide.com",
+            "applyme.co",
+            "careerattainment.com",
+            "careeritjob.com",
+            "careermailus.com",
+            "careernb.com",
+            "careersmails.com",
+            "cvmailhub.com",
+            "cvtechmail.com",
+            "ebsworksite.com",
+            "eprivatemail.com",
+            "insightfulworkplace.com",
+            "insphiretalent.com",
+            "itjobmail.com",
+            "itjobworks.com",
+            "jobinboxhub.com",
+            "jobitmail.com",
+            "jobitwork.com",
+            "jobslink-inc.com",
+            "jobsmails.com",
+            "jobstechmail.com",
+            "jobstechmails.com",
+            "jobsupp.com",
+            "jobtechmail.com",
+            "jobtechsmail.com",
+            "mailjobhub.com",
+            "mailjobtech.com",
+            "mailmywork.com",
+            "mailscareer.com",
+            "mailsworks.com",
+            "mainewoodproducts.com",
+            "miuramail.com",
+            "mycareersjobs.com",
+            "mycareersmail.com",
+            "mycvhire.com",
+            "mycvtalent.com",
+            "myemailjob.com",
+            "myitjobshub.com",
+            "myjobfolio.com",
+            "myjobitmail.com",
+            "myjobscouts.com",
+            "myjobsmail.com",
+            "myjobsmails.com",
+            "mymailjob.com",
+            "mymailkeeper.com",
+            "mymailshub.com",
+            "mymailworks.com",
+            "myquickmails.com",
+            "nextitjobs.com",
+            "ocproject.net",
+            "odinsoftworks.com",
+            "orbitalpost.com",
+            "prorecresources.com",
+            "protectmymails.com",
+            "quickitmail.com",
+            "restartworks.com",
+            "savemymails.com",
+            "techjobmail.com",
+            "techmyjob.com",
+            "techsmail.com",
+            "thetalentarc.co.uk",
+            "theworkmails.com",
+            "vegascareers.org",
+            "worksemail.com",
+            "worksemails.com"
+          ]
+        },
+        {
+          "selector": "Google Domains / Squarespace",
+          "count": 34,
+          "domains": [
+            "applyitmail.com",
+            "career2026.com",
+            "careeremail.net",
+            "championtalentco.com",
+            "hcmconsultingpro.com",
+            "itworkmail.net",
+            "jobemail.net",
+            "jobemails24.com",
+            "jobmails.net",
+            "jobsitmail.com",
+            "jobtecmail.net",
+            "mycareermail.com",
+            "myitemail.com",
+            "myjobitapp.com",
+            "myjobtechmail.com",
+            "myprofiley.com",
+            "myuswork.com",
+            "neuronmail.io",
+            "phoenixglide.com",
+            "propertymaveninc.com",
+            "quantumzens.com",
+            "risemail.com",
+            "tasksemail.com",
+            "tasksmail.com",
+            "techcareermail.com",
+            "techemailapp.com",
+            "techjobsemail.net",
+            "terraquasar.com",
+            "workemailapply.com",
+            "workitmail.com",
+            "workmailit.com",
+            "workmymails.com",
+            "worktechmail.com",
+            "worktechmails.com"
+          ]
+        },
+        {
+          "selector": "Cloudflare",
+          "count": 31,
+          "domains": [
+            "activemails.net",
+            "aogjob.com",
+            "boxmailhere.com",
+            "boxmailhost.com",
+            "careermails.net",
+            "careerx.us",
+            "elitecandidates.com",
+            "hushmail.com",
+            "inboxhere.com",
+            "inboxhires.com",
+            "jobhuntus.com",
+            "mailactiv.com",
+            "mailbluff.com",
+            "mailflux.com",
+            "mailmessage.co",
+            "my-privatemail.com",
+            "mysecuremail.co",
+            "passinbox.com",
+            "passmail.com",
+            "passmail.net",
+            "pulsemailbox.com",
+            "rapidmailhost.com",
+            "smartmailhost.net",
+            "swiftemail.co",
+            "swiftmailhost.com",
+            "tivomail.com",
+            "topcandidate.co",
+            "truemailhost.net",
+            "webpostbox.net",
+            "wgcv.me",
+            "whisperpost.io"
+          ]
+        },
+        {
+          "selector": "none",
+          "count": 31,
+          "domains": [
+            "careermails.com",
+            "careerwebmails.com",
+            "celestialflare.com",
+            "cvtechmail.co",
+            "email.scued",
+            "glidemail.io",
+            "gmail.com0",
+            "gmail.comlinkedin",
+            "gmail.om",
+            "i-mail.in",
+            "itcareerinfo.com",
+            "jobmaildesk.com",
+            "jobsmailbox.com",
+            "mail.mcgill.ca",
+            "mailboxcore.com",
+            "mailjobhub.com.test-google-a.com",
+            "mycvscout.com",
+            "myjobesmails.com",
+            "myjobscouts.com.test-google-a.com",
+            "mymail.pomona.edi",
+            "mymailwork.com",
+            "myworksmail.com",
+            "nextstepcareer.net",
+            "proinboxpost.com",
+            "propostbox.com",
+            "protectmymails.com.test-google-a.com",
+            "thejobmail.com",
+            "themailpad.com",
+            "themailpad.com.test-google-a.com",
+            "thepromail.co",
+            "use.startmail.com"
+          ]
+        },
+        {
+          "selector": "NS1;Squarespace",
+          "count": 27,
+          "domains": [
+            "blazepinnacle.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "inboxflashpro.com",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "postmailpro.com",
+            "promailcenter.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "speedmailhub.com",
+            "speedymailpost.com",
+            "swiftcouriermail.com",
+            "swiftinboxmail.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "Hostinger",
+          "count": 21,
+          "domains": [
+            "career-techmail.com",
+            "carrermail.com",
+            "cvejobs.com",
+            "itjobdesire.com",
+            "itjobemails.com",
+            "itjobinbox.com",
+            "itresumejobs.com",
+            "jobmailoffer.com",
+            "jobrequires.com",
+            "jobsdesire.com",
+            "myemailjobs.com",
+            "myhotmail.net",
+            "myitjobmails.com",
+            "myjobemails.com",
+            "myjobsca.com",
+            "newjobdesire.com",
+            "newjobrequire.com",
+            "newjobshunt.com",
+            "personalspacehub.com",
+            "sharemejobs.com",
+            "webappemail.com"
+          ]
+        },
+        {
+          "selector": "Wix",
+          "count": 11,
+          "domains": [
+            "careerwebmail.com",
+            "jobemails.net",
+            "jobhuntmails.com",
+            "myjobsemail.com",
+            "myjobsinbox.com",
+            "mymailsbox.net",
+            "mywebemails.com",
+            "myworkmails.com",
+            "sharpcareerimage.com",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "Namecheap",
+          "count": 4,
+          "domains": [
+            "hirehub.careers",
+            "jobmail.io",
+            "ohmymail.net",
+            "thejobtec.com"
+          ]
+        },
+        {
+          "selector": "Squarespace",
+          "count": 3,
+          "domains": [
+            "mycvwork.com",
+            "myitemailapp.com",
+            "workapplyjob.com"
+          ]
+        },
+        {
+          "selector": "vercel-dns.com",
+          "count": 3,
+          "domains": [
+            "careermail.pro",
+            "myprivatemail.io",
+            "sorce.email"
+          ]
+        },
+        {
+          "selector": "messagingengine.com",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "Porkbun",
+          "count": 2,
+          "domains": [
+            "contactbox.io",
+            "posthuman.help"
+          ]
+        }
+      ]
+    },
+    "mx_provider": {
+      "selector_type": "mail provider",
+      "clusters": [
+        {
+          "selector": "Google Workspace",
+          "count": 143,
+          "domains": [
+            "ajobguide.com",
+            "aogjob.com",
+            "applyitmail.com",
+            "applyme.co",
+            "blazepinnacle.com",
+            "boxmailhere.com",
+            "career-techmail.com",
+            "career2026.com",
+            "careeritjob.com",
+            "careermails.net",
+            "careermailus.com",
+            "careernb.com",
+            "careersmails.com",
+            "carrermail.com",
+            "celestialflare.com",
+            "championtalentco.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "cvejobs.com",
+            "cvmailhub.com",
+            "cvtechmail.com",
+            "digitalexpress.co.uk",
+            "elitecandidates.com",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "hcmconsultingpro.com",
+            "inboxflashpro.com",
+            "insphiretalent.com",
+            "itjobdesire.com",
+            "itjobemails.com",
+            "itjobinbox.com",
+            "itjobmail.com",
+            "itjobworks.com",
+            "itworkmail.net",
+            "jgcareers.com",
+            "jobemails24.com",
+            "jobhuntus.com",
+            "jobinboxhub.com",
+            "jobitmail.com",
+            "jobitwork.com",
+            "jobmaildesk.com",
+            "jobmailoffer.com",
+            "jobrequires.com",
+            "jobsitmail.com",
+            "jobslink-inc.com",
+            "jobsmailbox.com",
+            "jobsmails.com",
+            "jobstechmail.com",
+            "jobstechmails.com",
+            "jobtechmail.com",
+            "jobtechsmail.com",
+            "jobtecmail.net",
+            "letterinboxpro.com",
+            "mailactiv.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailjobhub.com",
+            "mailjobhub.com.test-google-a.com",
+            "mailjobtech.com",
+            "mailmessage.co",
+            "mailscareer.com",
+            "mailsworks.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "miuramail.com",
+            "mycareersjobs.com",
+            "mycvhire.com",
+            "mycvscout.com",
+            "mycvtalent.com",
+            "mycvwork.com",
+            "myemailjob.com",
+            "myemailjobs.com",
+            "myitemail.com",
+            "myitemailapp.com",
+            "myitjobshub.com",
+            "myjobfolio.com",
+            "myjobitapp.com",
+            "myjobscouts.com",
+            "myjobscouts.com.test-google-a.com",
+            "mymailjob.com",
+            "mymailshub.com",
+            "mymailwork.com",
+            "myprofiley.com",
+            "myuswork.com",
+            "newjobdesire.com",
+            "newjobrequire.com",
+            "newjobshunt.com",
+            "nextitjobs.com",
+            "nextstepcareer.net",
+            "ocproject.net",
+            "odinsoftworks.com",
+            "phoenixglide.com",
+            "posthuman.help",
+            "postmailpro.com",
+            "proinboxpost.com",
+            "promailcenter.com",
+            "propertymaveninc.com",
+            "propostbox.com",
+            "protectmymails.com",
+            "protectmymails.com.test-google-a.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "pulsemailbox.com",
+            "quantumzens.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailhost.com",
+            "rapidposthub.com",
+            "risemail.com",
+            "savemymails.com",
+            "sharemejobs.com",
+            "sharpcareerimage.com",
+            "smartmailhost.net",
+            "speedmailhub.com",
+            "speedymailpost.com",
+            "swiftemail.co",
+            "swiftinboxmail.com",
+            "swiftmailhost.com",
+            "tasksmail.com",
+            "techemailapp.com",
+            "techjobmail.com",
+            "techmyjob.com",
+            "techsmail.com",
+            "terraquasar.com",
+            "themailpad.com",
+            "themailpad.com.test-google-a.com",
+            "thepromail.co",
+            "theworkmails.com",
+            "tivomail.com",
+            "truemailhost.net",
+            "webappemail.com",
+            "webpostbox.net",
+            "workapplyjob.com",
+            "workemailapply.com",
+            "workitmail.com",
+            "workmailit.com",
+            "workmymails.com",
+            "worksemails.com",
+            "worktechmail.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "none",
+          "count": 40,
+          "domains": [
+            "activemails.net",
+            "boxmailhost.com",
+            "careerio-aa.com",
+            "careerwebmails.com",
+            "cvtechmail.co",
+            "email.scued",
+            "gmail.com0",
+            "gmail.comlinkedin",
+            "gmail.om",
+            "i-mail.in",
+            "itresumejobs.com",
+            "jobmails.net",
+            "jobsdesire.com",
+            "mailbluff.com",
+            "mailboxcore.com",
+            "mailmywork.com",
+            "myhotmail.net",
+            "myitjobmails.com",
+            "myjobemails.com",
+            "myjobesmails.com",
+            "myjobitmail.com",
+            "myjobsca.com",
+            "myjobsmails.com",
+            "myjobtechmail.com",
+            "mymail.pomona.edi",
+            "mymailkeeper.com",
+            "mymailworks.com",
+            "myprivatemail.io",
+            "myworksmail.com",
+            "neuronmail.io",
+            "personalspacehub.com",
+            "privatemailbox.co",
+            "quickitmail.com",
+            "rapidmailpost.com",
+            "swiftcouriermail.com",
+            "tasksemail.com",
+            "thejobmail.com",
+            "topcandidate.co",
+            "worksemail.com",
+            "worktechmails.com"
+          ]
+        },
+        {
+          "selector": "Microsoft 365",
+          "count": 25,
+          "domains": [
+            "ajoy2consult.com",
+            "careerattainment.com",
+            "careeremail.net",
+            "careerwebmail.com",
+            "jobemail.net",
+            "jobemails.net",
+            "jobhuntmails.com",
+            "mail.mcgill.ca",
+            "mail.utoronto.ca",
+            "mainewoodproducts.com",
+            "mycareermail.com",
+            "mycareersmail.com",
+            "myjobsemail.com",
+            "myjobsinbox.com",
+            "myjobsmail.com",
+            "mymailsbox.net",
+            "mywebemails.com",
+            "myworkmails.com",
+            "prorecresources.com",
+            "restartworks.com",
+            "techcareermail.com",
+            "techjobsemail.net",
+            "thetalentarc.co.uk",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "self/other (amazonaws.com)",
+          "count": 9,
+          "domains": [
+            "careermail.pro",
+            "eprivatemail.com",
+            "hirehub.careers",
+            "jobmail.io",
+            "mailflux.com",
+            "mailflyn.com",
+            "my-privatemail.com",
+            "skymail.ai",
+            "sorce.email"
+          ]
+        },
+        {
+          "selector": "Bulk/ESP",
+          "count": 6,
+          "domains": [
+            "careermails.com",
+            "contactbox.io",
+            "glidemail.io",
+            "inboxhere.com",
+            "quopost.com",
+            "whisperpost.io"
+          ]
+        },
+        {
+          "selector": "Proton Mail",
+          "count": 5,
+          "domains": [
+            "pm.me",
+            "proton.me",
+            "protonmail.ch",
+            "protonmail.com",
+            "wgcv.me"
+          ]
+        },
+        {
+          "selector": "Zoho Mail",
+          "count": 3,
+          "domains": [
+            "careerx.us",
+            "itcareerinfo.com",
+            "ohmymail.net"
+          ]
+        },
+        {
+          "selector": "Fastmail",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "self/other (simplelogin.co)",
+          "count": 3,
+          "domains": [
+            "passinbox.com",
+            "passmail.com",
+            "passmail.net"
+          ]
+        },
+        {
+          "selector": "Tuta",
+          "count": 3,
+          "domains": [
+            "keemail.me",
+            "tuta.io",
+            "tutanota.com"
+          ]
+        },
+        {
+          "selector": "self/other (icloud.com)",
+          "count": 2,
+          "domains": [
+            "proctorconsultingservices.com",
+            "theproctors.cloud"
+          ]
+        },
+        {
+          "selector": "self/other (posteo.de)",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        }
+      ]
+    },
+    "hosting_asn": {
+      "selector_type": "shared hosting ASN",
+      "clusters": [
+        {
+          "selector": "AS16509",
+          "count": 74,
+          "domains": [
+            "ajobguide.com",
+            "careerattainment.com",
+            "careeritjob.com",
+            "careermail.pro",
+            "careermails.com",
+            "careermailus.com",
+            "careernb.com",
+            "careersmails.com",
+            "contactbox.io",
+            "cvmailhub.com",
+            "cvtechmail.com",
+            "eprivatemail.com",
+            "glidemail.io",
+            "insphiretalent.com",
+            "itcareerinfo.com",
+            "itjobmail.com",
+            "itjobworks.com",
+            "jobinboxhub.com",
+            "jobitmail.com",
+            "jobitwork.com",
+            "jobsmailbox.com",
+            "jobsmails.com",
+            "jobstechmail.com",
+            "jobstechmails.com",
+            "jobsupp.com",
+            "jobtechmail.com",
+            "jobtechsmail.com",
+            "londondesignworks.com",
+            "mailjobhub.com",
+            "mailjobtech.com",
+            "mailmywork.com",
+            "mailscareer.com",
+            "mailsworks.com",
+            "miuramail.com",
+            "mycareersjobs.com",
+            "mycareersmail.com",
+            "mycvhire.com",
+            "mycvscout.com",
+            "mycvtalent.com",
+            "myemailjob.com",
+            "myitjobshub.com",
+            "myjobfolio.com",
+            "myjobitmail.com",
+            "myjobscouts.com",
+            "myjobsmail.com",
+            "myjobsmails.com",
+            "mymailjob.com",
+            "mymailkeeper.com",
+            "mymailshub.com",
+            "mymailwork.com",
+            "mymailworks.com",
+            "myprivatemail.io",
+            "myquickmails.com",
+            "nextitjobs.com",
+            "ocproject.net",
+            "orbitalpost.com",
+            "proctorconsultingservices.com",
+            "protectmymails.com",
+            "quickitmail.com",
+            "quopost.com",
+            "savemymails.com",
+            "sorce.email",
+            "techjobmail.com",
+            "techmyjob.com",
+            "techsmail.com",
+            "themailpad.com",
+            "theproctors.cloud",
+            "thepromail.co",
+            "theworkmails.com",
+            "vegascareers.org",
+            "whisperpost.io",
+            "workmail.com",
+            "worksemail.com",
+            "worksemails.com"
+          ]
+        },
+        {
+          "selector": "AS53831",
+          "count": 57,
+          "domains": [
+            "applyitmail.com",
+            "blazepinnacle.com",
+            "career2026.com",
+            "celestialflare.com",
+            "cometmailhub.com",
+            "couriermailhub.com",
+            "expressinboxmail.com",
+            "fastmailzoom.com",
+            "flashpostmail.com",
+            "hcmconsultingpro.com",
+            "inboxflashpro.com",
+            "itworkmail.net",
+            "jobemails24.com",
+            "jobmails.net",
+            "jobsitmail.com",
+            "jobtecmail.net",
+            "letterinboxpro.com",
+            "mailblitzhub.com",
+            "mailflashpro.com",
+            "mailjethub.com",
+            "mailzoomexpress.com",
+            "mailzoomhub.com",
+            "messagehubplus.com",
+            "mycvwork.com",
+            "myitemailapp.com",
+            "myjobitapp.com",
+            "myjobtechmail.com",
+            "myprofiley.com",
+            "myuswork.com",
+            "neuronmail.io",
+            "phoenixglide.com",
+            "postmailpro.com",
+            "proinboxpost.com",
+            "promailcenter.com",
+            "propostbox.com",
+            "pulsearcana.com",
+            "pulsedynamo.com",
+            "quantumzens.com",
+            "quickpostmail.com",
+            "rapidinboxpro.com",
+            "rapidmailpost.com",
+            "rapidposthub.com",
+            "risemail.com",
+            "speedymailpost.com",
+            "swiftinboxmail.com",
+            "tasksemail.com",
+            "tasksmail.com",
+            "techemailapp.com",
+            "terraquasar.com",
+            "workapplyjob.com",
+            "workemailapply.com",
+            "workitmail.com",
+            "workmailit.com",
+            "workmymails.com",
+            "worktechmail.com",
+            "worktechmails.com",
+            "zenithstellar.com"
+          ]
+        },
+        {
+          "selector": "AS8075",
+          "count": 27,
+          "domains": [
+            "ajoy2consult.com",
+            "careerattainment.com",
+            "careeremail.net",
+            "careerwebmail.com",
+            "duck.com",
+            "ebsworksite.com",
+            "insightfulworkplace.com",
+            "jobemail.net",
+            "jobemails.net",
+            "jobhuntmails.com",
+            "mail.mcgill.ca",
+            "mail.utoronto.ca",
+            "mainewoodproducts.com",
+            "mycareermail.com",
+            "mycareersmail.com",
+            "myjobemails.com",
+            "myjobsinbox.com",
+            "myjobsmail.com",
+            "mywebemails.com",
+            "myworkmails.com",
+            "prorecresources.com",
+            "restartworks.com",
+            "techcareermail.com",
+            "techjobsemail.net",
+            "thetalentarc.co.uk",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "AS47583",
+          "count": 22,
+          "domains": [
+            "career-techmail.com",
+            "carrermail.com",
+            "cvejobs.com",
+            "i-mail.in",
+            "itjobdesire.com",
+            "itjobemails.com",
+            "itjobinbox.com",
+            "itresumejobs.com",
+            "jobmaildesk.com",
+            "jobmailoffer.com",
+            "jobrequires.com",
+            "jobsdesire.com",
+            "myemailjobs.com",
+            "myhotmail.net",
+            "myitjobmails.com",
+            "myjobemails.com",
+            "mysecuremail.co",
+            "newjobdesire.com",
+            "newjobrequire.com",
+            "newjobshunt.com",
+            "personalspacehub.com",
+            "webappemail.com"
+          ]
+        },
+        {
+          "selector": "AS13335",
+          "count": 17,
+          "domains": [
+            "aogjob.com",
+            "careerx.us",
+            "fastmail.com",
+            "hushmail.com",
+            "inboxhere.com",
+            "inboxhires.com",
+            "jobemails.net",
+            "jobhuntus.com",
+            "mailflux.com",
+            "myjobsemail.com",
+            "myjobsinbox.com",
+            "passinbox.com",
+            "passmail.com",
+            "passmail.net",
+            "restartworks.com",
+            "truemailhost.net",
+            "wgcv.me"
+          ]
+        },
+        {
+          "selector": "AS16276",
+          "count": 16,
+          "domains": [
+            "activemails.net",
+            "boxmailhere.com",
+            "boxmailhost.com",
+            "careermails.net",
+            "mailactiv.com",
+            "mailboxcore.com",
+            "mailmessage.co",
+            "myquickmails.com",
+            "nextstepcareer.net",
+            "rapidmailhost.com",
+            "smartmailhost.net",
+            "swiftemail.co",
+            "swiftmailhost.com",
+            "tivomail.com",
+            "topcandidate.co",
+            "webpostbox.net"
+          ]
+        },
+        {
+          "selector": "AS58182",
+          "count": 10,
+          "domains": [
+            "jobemails.net",
+            "jobhuntmails.com",
+            "myjobsemail.com",
+            "myjobsinbox.com",
+            "mymailsbox.net",
+            "mywebemails.com",
+            "myworkmails.com",
+            "sharpcareerimage.com",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "AS396982",
+          "count": 7,
+          "domains": [
+            "careerwebmail.com",
+            "jobhuntmails.com",
+            "mymailsbox.net",
+            "mywebemails.com",
+            "sharpcareerimage.com",
+            "work-mail.net",
+            "workwebmail.com"
+          ]
+        },
+        {
+          "selector": "AS62371",
+          "count": 4,
+          "domains": [
+            "pm.me",
+            "proton.me",
+            "protonmail.ch",
+            "protonmail.com"
+          ]
+        },
+        {
+          "selector": "AS15169",
+          "count": 3,
+          "domains": [
+            "ajoy2consult.com",
+            "jgcareers.com",
+            "myitjobmails.com"
+          ]
+        },
+        {
+          "selector": "AS22612",
+          "count": 3,
+          "domains": [
+            "jobmail.io",
+            "ohmymail.net",
+            "thejobtec.com"
+          ]
+        },
+        {
+          "selector": "AS209242",
+          "count": 3,
+          "domains": [
+            "hushmail.com",
+            "insightfulworkplace.com",
+            "mainewoodproducts.com"
+          ]
+        },
+        {
+          "selector": "AS151847",
+          "count": 3,
+          "domains": [
+            "fastmail.com",
+            "fastmail.net",
+            "pobox.com"
+          ]
+        },
+        {
+          "selector": "AS210909",
+          "count": 3,
+          "domains": [
+            "keemail.me",
+            "tuta.io",
+            "tutanota.com"
+          ]
+        },
+        {
+          "selector": "AS398787",
+          "count": 2,
+          "domains": [
+            "ebsworksite.com",
+            "odinsoftworks.com"
+          ]
+        },
+        {
+          "selector": "AS14618",
+          "count": 2,
+          "domains": [
+            "insphiretalent.com",
+            "skymail.ai"
+          ]
+        },
+        {
+          "selector": "AS398101",
+          "count": 2,
+          "domains": [
+            "jobslink-inc.com",
+            "restartworks.com"
+          ]
+        },
+        {
+          "selector": "AS8495",
+          "count": 2,
+          "domains": [
+            "posteo.in",
+            "posteo.net"
+          ]
+        }
+      ]
+    }
+  }
+}

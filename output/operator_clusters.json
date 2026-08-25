@@ -1,0 +1,588 @@
+{
+  "generated_utc": "2026-08-25T21:21:38.477944+00:00",
+  "method": "connected components over account-level selectors only (DKIM public key, SPF-management tenant, DMARC reporting-platform account, provider verification token, non-vendor reverse DNS); vendor-level facts attached as corroboration only",
+  "vendor_ptr_suffixes_excluded": [
+    "awsglobalaccelerator.com",
+    "1e100.net",
+    "wixsite.com",
+    "wixdns.net",
+    "protonmail.ch",
+    "squarespace.com",
+    "sqspcdn.com",
+    "cloudflare.com",
+    "cloudflare.net",
+    "amazonaws.com",
+    "hostinger.com",
+    "hostinger.io",
+    "outlook.com",
+    "office365.com",
+    "migadu.com",
+    "messagingengine.com",
+    "shopify.com",
+    "vercel-dns.com"
+  ],
+  "group_count": 6,
+  "domains_in_groups": 52,
+  "groups": [
+    {
+      "size": 27,
+      "domains": [
+        "careernb.com",
+        "careersmails.com",
+        "cvmailhub.com",
+        "itjobmail.com",
+        "jobitmail.com",
+        "jobsmails.com",
+        "jobtechmail.com",
+        "mailmywork.com",
+        "mailscareer.com",
+        "mailsworks.com",
+        "mycareersjobs.com",
+        "mycvscout.com",
+        "mycvtalent.com",
+        "myemailjob.com",
+        "myjobscouts.com",
+        "myjobsmails.com",
+        "mymailjob.com",
+        "mymailkeeper.com",
+        "mymailworks.com",
+        "protectmymails.com",
+        "savemymails.com",
+        "techjobmail.com",
+        "techmyjob.com",
+        "techsmail.com",
+        "thepromail.co",
+        "worksemail.com",
+        "worksemails.com"
+      ],
+      "linking_evidence": [
+        "spfm:aa8e722993"
+      ],
+      "corroboration": {
+        "ns_operator": [
+          [
+            "GoDaddy",
+            25
+          ],
+          [
+            "none",
+            2
+          ]
+        ],
+        "mx_provider": [
+          [
+            "Google Workspace",
+            22
+          ],
+          [
+            "none",
+            5
+          ]
+        ],
+        "soa_rname": [
+          [
+            "dns.jomax.net",
+            23
+          ],
+          [
+            "",
+            4
+          ]
+        ],
+        "hosting_ips": [
+          [
+            "15.197.148.33",
+            14
+          ],
+          [
+            "3.33.130.190",
+            14
+          ],
+          [
+            "13.248.243.5",
+            13
+          ],
+          [
+            "76.223.105.230",
+            13
+          ]
+        ],
+        "dmarc_policy": [
+          [
+            "none-published",
+            16
+          ],
+          [
+            "none",
+            6
+          ],
+          [
+            "quarantine",
+            5
+          ]
+        ],
+        "risk_tier": [
+          [
+            "medium",
+            22
+          ],
+          [
+            "high",
+            5
+          ]
+        ],
+        "domain_class": [
+          [
+            "job_career_work_it_cv_themed",
+            22
+          ],
+          [
+            "synthetic_generic_mailbox_brand",
+            4
+          ],
+          [
+            "privacy_alias_mailbox",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "size": 15,
+      "domains": [
+        "activemails.net",
+        "boxmailhere.com",
+        "boxmailhost.com",
+        "careermails.net",
+        "elitecandidates.com",
+        "mailactiv.com",
+        "mailboxcore.com",
+        "nextstepcareer.net",
+        "pulsemailbox.com",
+        "rapidmailhost.com",
+        "smartmailhost.net",
+        "swiftemail.co",
+        "tivomail.com",
+        "topcandidate.co",
+        "truemailhost.net"
+      ],
+      "linking_evidence": [
+        "uriports:p7rqadcw"
+      ],
+      "corroboration": {
+        "ns_operator": [
+          [
+            "Cloudflare",
+            13
+          ],
+          [
+            "none",
+            2
+          ]
+        ],
+        "mx_provider": [
+          [
+            "Google Workspace",
+            11
+          ],
+          [
+            "none",
+            4
+          ]
+        ],
+        "soa_rname": [
+          [
+            "dns.cloudflare.com",
+            13
+          ],
+          [
+            "",
+            2
+          ]
+        ],
+        "hosting_ips": [
+          [
+            "141.94.97.141",
+            12
+          ],
+          [
+            "2001:41d0:403:488d::",
+            9
+          ],
+          [
+            "104.21.73.99",
+            1
+          ],
+          [
+            "172.67.160.234",
+            1
+          ],
+          [
+            "2606:4700:3033::ac43:a0ea",
+            1
+          ],
+          [
+            "2606:4700:3035::6815:4963",
+            1
+          ]
+        ],
+        "dmarc_policy": [
+          [
+            "quarantine",
+            15
+          ]
+        ],
+        "risk_tier": [
+          [
+            "medium",
+            8
+          ],
+          [
+            "low",
+            7
+          ]
+        ],
+        "domain_class": [
+          [
+            "synthetic_generic_mailbox_brand",
+            11
+          ],
+          [
+            "job_career_work_it_cv_themed",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "size": 3,
+      "domains": [
+        "fastmail.com",
+        "fastmail.net",
+        "pobox.com"
+      ],
+      "linking_evidence": [
+        "ondmarc:e3936a44"
+      ],
+      "corroboration": {
+        "ns_operator": [
+          [
+            "messagingengine.com",
+            3
+          ]
+        ],
+        "mx_provider": [
+          [
+            "Fastmail",
+            3
+          ]
+        ],
+        "soa_rname": [
+          [
+            "postmaster.messagingengine.com",
+            3
+          ]
+        ],
+        "hosting_ips": [
+          [
+            "103.168.172.37",
+            3
+          ],
+          [
+            "103.168.172.52",
+            3
+          ],
+          [
+            "103.168.172.65",
+            3
+          ],
+          [
+            "103.168.172.38",
+            1
+          ],
+          [
+            "103.168.172.39",
+            1
+          ],
+          [
+            "103.168.172.43",
+            1
+          ]
+        ],
+        "dmarc_policy": [
+          [
+            "none",
+            3
+          ]
+        ],
+        "risk_tier": [
+          [
+            "low",
+            3
+          ]
+        ],
+        "domain_class": [
+          [
+            "privacy_alias_mailbox",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "size": 3,
+      "domains": [
+        "passinbox.com",
+        "passmail.com",
+        "passmail.net"
+      ],
+      "linking_evidence": [
+        "dkim:dkim:MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJudTILTG3qrzQzZzbptozaGQ0"
+      ],
+      "corroboration": {
+        "ns_operator": [
+          [
+            "Cloudflare",
+            3
+          ]
+        ],
+        "mx_provider": [
+          [
+            "self/other (simplelogin.co)",
+            3
+          ]
+        ],
+        "soa_rname": [
+          [
+            "dns.cloudflare.com",
+            2
+          ],
+          [
+            "",
+            1
+          ]
+        ],
+        "hosting_ips": [
+          [
+            "104.21.34.220",
+            1
+          ],
+          [
+            "172.67.209.190",
+            1
+          ],
+          [
+            "2606:4700:3030::6815:22dc",
+            1
+          ],
+          [
+            "2606:4700:3032::ac43:d1be",
+            1
+          ],
+          [
+            "104.21.15.227",
+            1
+          ],
+          [
+            "172.67.208.40",
+            1
+          ]
+        ],
+        "dmarc_policy": [
+          [
+            "quarantine",
+            3
+          ]
+        ],
+        "risk_tier": [
+          [
+            "low",
+            3
+          ]
+        ],
+        "domain_class": [
+          [
+            "privacy_alias_mailbox",
+            2
+          ],
+          [
+            "synthetic_generic_mailbox_brand",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "size": 2,
+      "domains": [
+        "eprivatemail.com",
+        "whisperpost.io"
+      ],
+      "linking_evidence": [
+        "ptr:sites.framer.app"
+      ],
+      "corroboration": {
+        "ns_operator": [
+          [
+            "GoDaddy",
+            1
+          ],
+          [
+            "Cloudflare",
+            1
+          ]
+        ],
+        "mx_provider": [
+          [
+            "self/other (amazonaws.com)",
+            1
+          ],
+          [
+            "Bulk/ESP",
+            1
+          ]
+        ],
+        "soa_rname": [
+          [
+            "dns.jomax.net",
+            1
+          ],
+          [
+            "",
+            1
+          ]
+        ],
+        "hosting_ips": [
+          [
+            "31.43.160.6",
+            2
+          ],
+          [
+            "31.43.161.6",
+            2
+          ],
+          [
+            "35.71.142.77",
+            1
+          ],
+          [
+            "52.223.52.2",
+            1
+          ]
+        ],
+        "dmarc_policy": [
+          [
+            "none",
+            1
+          ],
+          [
+            "none-published",
+            1
+          ]
+        ],
+        "risk_tier": [
+          [
+            "low",
+            1
+          ],
+          [
+            "medium",
+            1
+          ]
+        ],
+        "domain_class": [
+          [
+            "privacy_alias_mailbox",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "size": 2,
+      "domains": [
+        "insightfulworkplace.com",
+        "prorecresources.com"
+      ],
+      "linking_evidence": [
+        "dkim:k2:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv2aC2KjGKLOwTweBY5A9"
+      ],
+      "corroboration": {
+        "ns_operator": [
+          [
+            "GoDaddy",
+            2
+          ]
+        ],
+        "mx_provider": [
+          [
+            "self/other (ppe-hosted.com)",
+            1
+          ],
+          [
+            "Microsoft 365",
+            1
+          ]
+        ],
+        "soa_rname": [
+          [
+            "dns.jomax.net",
+            1
+          ],
+          [
+            "",
+            1
+          ]
+        ],
+        "hosting_ips": [
+          [
+            "52.96.156.8",
+            2
+          ],
+          [
+            "160.153.0.105",
+            1
+          ],
+          [
+            "2603:1036:304:2852::8",
+            1
+          ],
+          [
+            "2603:1036:304:3404::8",
+            1
+          ],
+          [
+            "2603:1036:304:806::8",
+            1
+          ],
+          [
+            "2603:1036:304:85e::8",
+            1
+          ]
+        ],
+        "dmarc_policy": [
+          [
+            "none",
+            2
+          ]
+        ],
+        "risk_tier": [
+          [
+            "low",
+            2
+          ]
+        ],
+        "domain_class": [
+          [
+            "job_career_work_it_cv_themed",
+            1
+          ],
+          [
+            "synthetic_generic_mailbox_brand",
+            1
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -134,24 +134,74 @@ def dmarc_fields(dmarc):
 
 
 def verification_tokens(txts):
+    """Provider domain-ownership tokens. A shared token means a shared tenant."""
+    patterns = [
+        r"google-site-verification=[\w\-]+",
+        r"\bMS=[\w\-]+",
+        r"facebook-domain-verification=[\w\-]+",
+        r"atlassian-domain-verification=[\w\-/+=]+",
+        r"zoho-verification=[\w\-.]+",
+        r"apple-domain-verification=[\w\-]+",
+        r"stripe-verification=[\w\-]+",
+        r"logmein-verification-code=[\w\-]+",
+        r"docusign=[\w\-]+",
+        r"adobe-idp-site-verification=[\w\-]+",
+        r"onetrust-domain-verification=[\w\-]+",
+        r"shopify-verification-code=[\w\-]+",
+    ]
     toks = []
     for t in txts:
-        for pat in (r"google-site-verification=([\w\-]+)",
-                    r"^MS=([\w\-]+)", r"facebook-domain-verification=([\w\-]+)",
-                    r"atlassian-domain-verification=([\w\-/+=]+)",
-                    r"zoho-verification=([\w\-\.]+)",
-                    r"^apple-domain-verification=([\w\-]+)"):
+        for pat in patterns:
             m = re.search(pat, t, re.I)
             if m:
-                toks.append(f"{pat.split('=')[0].strip('^()\\\\w-')}:{m.group(1)}"
-                            if False else m.group(0))
+                toks.append(m.group(0))
     return sorted(set(toks))
+
+
+
+def spf_manager_tenants(txts):
+    """SPF-delegation/flattening service tenant ids (e.g. dc-<id>._spfm.<domain>).
+    A shared tenant id means one account manages SPF for all those domains."""
+    out = []
+    for t in txts:
+        out.extend(f"spfm:{m}" for m in re.findall(r"dc-([0-9a-f]{6,})\._spfm\.", t, re.I))
+    return sorted(set(out))
+
+
+def dmarc_tenants(dmarc):
+    """Reporting-platform account ids inside DMARC rua/ruf targets."""
+    out = []
+    for t in dmarc:
+        for host_pat, label in ((r"([\w-]+)\.uriports\.com", "uriports"),
+                                (r"([\w-]+)@inbox\.ondmarc\.com", "ondmarc"),
+                                (r"([\w-]+)@[\w.-]*dmarcian", "dmarcian"),
+                                (r"([\w-]+)@[\w.-]*valimail", "valimail"),
+                                (r"rua@[\w-]+\.([\w-]+)\.report-uri\.com", "report-uri")):
+            for m in re.findall(host_pat, t, re.I):
+                out.append(f"{label}:{m}")
+    return sorted(set(out))
 
 
 def main():
     data = json.load(open(IN_JSON))
     ipintel = data["ip_intel"]
     domains = data["domains"]
+    by_dom = {d["domain"]: d for d in domains}
+
+    def ip_meta(ips):
+        asns, as_names, ccs, prefixes, ptrs = set(), set(), set(), set(), set()
+        for ip in ips:
+            info = ipintel.get(ip) or {}
+            if info.get("asn"):
+                asns.add(info["asn"])
+                if info.get("as_name"):
+                    as_names.add(info["as_name"])
+                if info.get("cc"):
+                    ccs.add(info["cc"])
+                if info.get("bgp_prefix"):
+                    prefixes.add(info["bgp_prefix"])
+            ptrs.update(info.get("ptr", []))
+        return asns, as_names, ccs, prefixes, ptrs
 
     rows = []
     for d in domains:
@@ -159,19 +209,18 @@ def main():
         mx_hosts = [m.split()[-1].rstrip(".").lower() for m in r["MX"]]
         ns_hosts = [n.rstrip(".").lower() for n in r["NS"]]
         ns_bases = sorted({base_domain(n) for n in ns_hosts})
-        soa_rname = r["SOA"][0].split()[1].rstrip(".") if r["SOA"] else ""
         pol, rua, ruf = dmarc_fields(d["dmarc"])
 
-        asns, as_names, ccs, prefixes, ptrs = set(), set(), set(), set(), set()
-        for ip in d["ips"]:
-            info = ipintel.get(ip) or {}
-            if info.get("asn"):
-                asns.add(info["asn"])
-                as_names.add(info.get("as_name") or "")
-                ccs.add(info.get("cc") or "")
-                prefixes.add(info.get("bgp_prefix") or "")
-            for p in info.get("ptr", []):
-                ptrs.add(p)
+        # Hosting IPs (what the domain itself points at) are the attributable ones.
+        # MX-host IPs belong to the mail vendor and are shared by every tenant, so
+        # they are tracked separately and kept out of the hosting pivots.
+        hosting_ips = sorted(set(r["A"]) | set(r["AAAA"]) |
+                             {ip for s in d["subdomains"].values()
+                              for ip in s["A"] + s["AAAA"]})
+        mail_ips = sorted({ip for lst in d["mx_hosts"].values() for ip in lst})
+
+        h_asns, h_names, h_ccs, h_prefix, h_ptr = ip_meta(hosting_ips)
+        m_asns, m_names, _, _, m_ptr = ip_meta(mail_ips)
 
         rows.append({
             "domain": d["domain"],
@@ -186,12 +235,13 @@ def main():
             "ns": ";".join(ns_hosts),
             "ns_operator": ";".join(sorted({NS_OPERATOR.get(b, b) for b in ns_bases})) or "none",
             "soa_mname": r["SOA"][0].split()[0].rstrip(".") if r["SOA"] else "",
-            "soa_rname": soa_rname,
+            "soa_rname": r["SOA"][0].split()[1].rstrip(".") if r["SOA"] else "",
             "soa_serial": r["SOA"][0].split()[2] if r["SOA"] else "",
             "mx": ";".join(r["MX"]),
             "mx_provider": mx_provider(mx_hosts),
             "spf": ";".join(t for t in r["TXT"] if t.lower().startswith("v=spf1")),
             "spf_includes": ";".join(spf_includes(r["TXT"])),
+            "spf_manager_tenant": ";".join(spf_manager_tenants(r["TXT"])),
             "txt_all": " | ".join(r["TXT"]),
             "verification_tokens": ";".join(verification_tokens(r["TXT"])),
             "caa": ";".join(r["CAA"]),
@@ -199,16 +249,24 @@ def main():
             "dmarc_policy": pol or "",
             "dmarc_rua": ";".join(rua),
             "dmarc_ruf": ";".join(ruf),
+            "dmarc_tenant": ";".join(dmarc_tenants(d["dmarc"])),
             "dkim_selectors": ";".join(sorted(d["dkim"])),
             "mta_sts": ";".join(d["mta_sts"]),
             "tls_rpt": ";".join(d["tls_rpt"]),
             "subdomains_found": ";".join(sorted(d["subdomains"])),
-            "ips": ";".join(d["ips"]),
-            "asns": ";".join(sorted(asns)),
-            "as_names": ";".join(sorted(x for x in as_names if x)),
-            "bgp_prefixes": ";".join(sorted(x for x in prefixes if x)),
-            "geo_cc": ";".join(sorted(x for x in ccs if x)),
-            "ptr": ";".join(sorted(ptrs)),
+            "hosting_ips": ";".join(hosting_ips),
+            "hosting_asns": ";".join(sorted(h_asns)),
+            "hosting_as_names": ";".join(sorted(h_names)),
+            "hosting_bgp_prefixes": ";".join(sorted(h_prefix)),
+            "hosting_ptr": ";".join(sorted(h_ptr)),
+            "geo_cc": ";".join(sorted(h_ccs)),
+            "mail_ips": ";".join(mail_ips),
+            "mail_asns": ";".join(sorted(m_asns)),
+            "mail_as_names": ";".join(sorted(m_names)),
+            # union kept for completeness / backwards compatibility
+            "ips": ";".join(sorted(set(hosting_ips) | set(mail_ips))),
+            "asns": ";".join(sorted(h_asns | m_asns)),
+            "as_names": ";".join(sorted(h_names | m_names)),
         })
 
     csv_path = os.path.join(OUT_DIR, "domain_infrastructure.csv")
@@ -235,32 +293,40 @@ def main():
 
     def dkim_keys(row_domain):
         out = []
-        for d in domains:
-            if d["domain"] != row_domain:
-                continue
-            for sel, vals in d["dkim"].items():
-                for v in vals:
-                    m = re.search(r"p=([A-Za-z0-9+/=]{40,})", v)
-                    if m:
-                        out.append(f"{sel}:{m.group(1)[:64]}")
+        for sel, vals in by_dom[row_domain]["dkim"].items():
+            for v in vals:
+                m = re.search(r"p=([A-Za-z0-9+/=]{40,})", v)
+                if m:
+                    out.append(f"{sel}:{m.group(1)[:64]}")
         return out
 
     pivots = {
-        "nameserver_host": cluster(lambda r: r["ns"].split(";"), "shared authoritative nameserver"),
-        "ns_operator": cluster(lambda r: [r["ns_operator"]], "DNS operator / registrar"),
-        "soa_rname": cluster(lambda r: [r["soa_rname"]], "SOA responsible-party mailbox"),
-        "mx_host": cluster(lambda r: [m.split()[-1].rstrip(".") for m in r["mx"].split(";") if m],
-                           "shared MX host"),
-        "mx_provider": cluster(lambda r: [r["mx_provider"]], "mail provider"),
-        "ip_address": cluster(lambda r: r["ips"].split(";"), "shared IP address"),
-        "bgp_prefix": cluster(lambda r: r["bgp_prefixes"].split(";"), "shared BGP prefix"),
-        "asn": cluster(lambda r: [f"AS{a}" for a in r["asns"].split(";") if a], "shared ASN"),
-        "spf_include": cluster(lambda r: r["spf_includes"].split(";"), "shared SPF include"),
+        "dkim_key": cluster(lambda r: dkim_keys(r["domain"]), "shared DKIM public key"),
+        "spf_manager_tenant": cluster(lambda r: r["spf_manager_tenant"].split(";"),
+                                      "shared SPF-management tenant"),
+        "dmarc_tenant": cluster(lambda r: r["dmarc_tenant"].split(";"),
+                                "shared DMARC reporting-platform account"),
         "verification_token": cluster(lambda r: r["verification_tokens"].split(";"),
                                       "shared provider verification token"),
-        "dmarc_rua": cluster(lambda r: r["dmarc_rua"].split(";"), "shared DMARC reporting address"),
-        "dkim_key": cluster(lambda r: dkim_keys(r["domain"]), "shared DKIM public key"),
-        "ptr_hostname": cluster(lambda r: r["ptr"].split(";"), "shared reverse-DNS hostname"),
+        "dmarc_rua": cluster(lambda r: r["dmarc_rua"].split(";"),
+                             "shared DMARC reporting address"),
+        "hosting_ip": cluster(lambda r: r["hosting_ips"].split(";"), "shared hosting IP"),
+        "hosting_ptr": cluster(lambda r: r["hosting_ptr"].split(";"),
+                               "shared hosting reverse-DNS hostname"),
+        "soa_rname": cluster(lambda r: [r["soa_rname"]], "SOA responsible-party mailbox"),
+        "nameserver_host": cluster(lambda r: r["ns"].split(";"),
+                                   "shared authoritative nameserver"),
+        "cname_target": cluster(lambda r: [x for x in r["cname"].split(";") if x],
+                                "shared CNAME target"),
+        "hosting_bgp_prefix": cluster(lambda r: r["hosting_bgp_prefixes"].split(";"),
+                                      "shared hosting BGP prefix"),
+        "mx_host": cluster(lambda r: [m.split()[-1].rstrip(".") for m in r["mx"].split(";") if m],
+                           "shared MX host"),
+        "spf_include": cluster(lambda r: r["spf_includes"].split(";"), "shared SPF include"),
+        "ns_operator": cluster(lambda r: [r["ns_operator"]], "DNS operator / registrar"),
+        "mx_provider": cluster(lambda r: [r["mx_provider"]], "mail provider"),
+        "hosting_asn": cluster(lambda r: [f"AS{a}" for a in r["hosting_asns"].split(";") if a],
+                               "shared hosting ASN"),
     }
 
     with open(os.path.join(OUT_DIR, "pivot_clusters.json"), "w") as fh:
