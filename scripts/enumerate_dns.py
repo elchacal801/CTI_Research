@@ -244,9 +244,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--workers", type=int, default=64)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--input", default=IN_CSV, help="domain CSV to enumerate")
+    ap.add_argument("--output", default=OUT_JSON, help="where to write results")
     args = ap.parse_args()
 
-    rows = list(csv.DictReader(open(IN_CSV)))
+    rows = list(csv.DictReader(open(args.input)))
     if args.limit:
         rows = rows[: args.limit]
 
@@ -266,7 +268,7 @@ def main():
 
     out = {
         "generated_utc": datetime.now(timezone.utc).isoformat(),
-        "source": os.path.relpath(IN_CSV, ROOT),
+        "source": os.path.relpath(args.input, ROOT),
         "resolvers": RESOLVERS,
         "collection_notes": {
             "dns": "collected live over UDP/53 against public resolvers",
@@ -275,10 +277,10 @@ def main():
         "domains": results,
         "ip_intel": {i["ip"]: i for i in ipinfo},
     }
-    os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
-    with open(OUT_JSON, "w") as fh:
+    os.makedirs(os.path.dirname(args.output), exist_ok=True)
+    with open(args.output, "w") as fh:
         json.dump(out, fh, indent=2, sort_keys=False)
-    print(f"[+] wrote {OUT_JSON}", file=sys.stderr)
+    print(f"[+] wrote {args.output}", file=sys.stderr)
 
 
 if __name__ == "__main__":

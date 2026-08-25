@@ -256,6 +256,61 @@ def main():
            sorted(hi, key=lambda x: -int(x["risk_score"] or 0))]))
     A("")
 
+    # ---- section 8: follow-on collection ----
+    exp_p = os.path.join(ROOT, "output", "cluster_expansion.json")
+    tmp_p = os.path.join(ROOT, "output", "temporal_analysis.json")
+    if os.path.exists(exp_p) and os.path.exists(tmp_p):
+        exp = json.load(open(exp_p))
+        tmp = json.load(open(tmp_p))
+        A("## 8. Follow-on collection and negative findings")
+        A("")
+        A("### Cluster expansion by DNS marker")
+        A("")
+        A("Group 1 membership is directly testable: members carry "
+          "`include:dc-aa8e722993._spfm.<domain>` in their apex SPF, so the record exists "
+          "at that name. Candidate names generated from the corpus naming grammar were "
+          f"tested against it — {exp['candidates_probed']:,} candidates probed, "
+          f"{exp['registered']} registered.")
+        A("")
+        A("**Two false-positive modes had to be controlled out before the result meant "
+          "anything:**")
+        A("")
+        A("1. *Wildcard DNS.* Parking providers (Afternic, Sedo, CashParking, NameFind) "
+          "answer every subdomain, so the marker query returns a hit on domains with no "
+          "connection to the cluster. An uncontrolled first pass returned 71 'hits'; "
+          "adding a random-label canary and rejecting the parking default `v=spf1 -all` "
+          "cut it to 4. Parked brand names such as `pobox.co`, `proton.io` and `tuta.us` "
+          "were all in the discarded set.")
+        A("2. *Timeouts read as absence.* A failed canary lookup is not proof of no "
+          "wildcard. The probe now retries and treats only a definitive NXDOMAIN as "
+          "clearing a zone; undecidable cases are flagged, not counted.")
+        A("")
+        A("**Confirmed new members (4):** " +
+          ", ".join(f"`{d}`" for d in exp["new_group1_members"]) +
+          " — each verified with the tenant's exact SPF content and two NXDOMAIN canaries.")
+        A("")
+        A("This takes Group 1 from 27 to 31 domains. Group 2 did not expand: no generated "
+          "candidate carried the URIports account, which is expected given its members "
+          "are brandable coinages rather than compound job/mail words.")
+        A("")
+        A("### Negative finding: the 2026-08-20 'batch' is not real")
+        A("")
+        for ct in tmp.get("control_tests", []):
+            A(f"**Hypothesis:** {ct['hypothesis']}  ")
+            A(f"**Test:** {ct['test']}  ")
+            A(f"**Result:** {ct['result']}  ")
+            A(f"**Verdict:** {ct['verdict']}")
+            A("")
+        A("21 domains share a 2026-08-20 SOA serial, all on Hostinger — which reads as a "
+          "batch operation until you sample unrelated Hostinger domains and find the same "
+          "serial. It is a provider-wide bump. SOA serials date the last zone edit, never "
+          "registration, and any single-provider batch needs this control before it is "
+          "believed. The remaining candidate batches are in "
+          "`output/temporal_analysis.json`; the 2026-02-05 GoDaddy set (8 domains, all "
+          "Google Workspace, two carrying the Group 1 tenant) spans one provider and is "
+          "untested.")
+        A("")
+
     with open(OUT_MD, "w") as fh:
         fh.write("\n".join(L) + "\n")
     print(f"[+] wrote {OUT_MD}")

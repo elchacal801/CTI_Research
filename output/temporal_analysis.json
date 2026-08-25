@@ -1,0 +1,537 @@
+{
+  "generated_utc": "2026-08-25T21:45:33.584490+00:00",
+  "control_tests": [
+    {
+      "hypothesis": "the 21 domains sharing zone-edit date 2026-08-20 were registered or configured as one batch",
+      "test": "sampled 12 Hostinger-nameserver domains discovered by the expansion sweep that are unrelated to any cluster, and read their SOA serials",
+      "result": "12 of 12 controls carry the same 2026-08-20 serial",
+      "verdict": "FALSIFIED - provider-wide serial bump, not operator activity"
+    }
+  ],
+  "caveat": "SOA serial dates the last zone edit, not registration. It is a batch-detection signal only, never an age estimate.",
+  "serial_decodable": 106,
+  "serial_total": 263,
+  "candidate_batches": [
+    {
+      "zone_edit_date": "2026-08-20",
+      "domains": [
+        "career-techmail.com",
+        "carrermail.com",
+        "cvejobs.com",
+        "itjobemails.com",
+        "itjobinbox.com",
+        "itresumejobs.com",
+        "jobmaildesk.com",
+        "jobmailoffer.com",
+        "jobrequires.com",
+        "jobsdesire.com",
+        "myemailjobs.com",
+        "myhotmail.net",
+        "myitjobmails.com",
+        "myjobemails.com",
+        "myjobsca.com",
+        "newjobrequire.com",
+        "newjobshunt.com",
+        "ocproject.net",
+        "quopost.com",
+        "sharemejobs.com",
+        "webappemail.com"
+      ],
+      "count": 21,
+      "ns_operator": [
+        [
+          "Hostinger",
+          18
+        ],
+        [
+          "bnamed.eu;bnamed.uk;bnamed.us;nscluster.ee;nscluster.lv",
+          1
+        ],
+        [
+          "none",
+          1
+        ],
+        [
+          "GoDaddy",
+          1
+        ]
+      ],
+      "mx_provider": [
+        [
+          "Google Workspace",
+          14
+        ],
+        [
+          "none",
+          6
+        ],
+        [
+          "Bulk/ESP",
+          1
+        ]
+      ],
+      "domain_class": [
+        [
+          "job_career_work_it_cv_themed",
+          16
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          5
+        ]
+      ],
+      "account_selectors": [
+        [
+          "none",
+          21
+        ]
+      ],
+      "single_provider": false,
+      "confounder": "spans 4 providers, so a single-provider platform event does not explain it",
+      "is_today": false,
+      "falsified_by_control": true
+    },
+    {
+      "zone_edit_date": "2026-02-05",
+      "domains": [
+        "careeritjob.com",
+        "cvtechmail.com",
+        "jobstechmail.com",
+        "jobstechmails.com",
+        "jobtechmail.com",
+        "jobtechsmail.com",
+        "mailjobtech.com",
+        "techjobmail.com"
+      ],
+      "count": 8,
+      "ns_operator": [
+        [
+          "GoDaddy",
+          8
+        ]
+      ],
+      "mx_provider": [
+        [
+          "Google Workspace",
+          8
+        ]
+      ],
+      "domain_class": [
+        [
+          "job_career_work_it_cv_themed",
+          8
+        ]
+      ],
+      "account_selectors": [
+        [
+          "none",
+          6
+        ],
+        [
+          "spfm:aa8e722993",
+          2
+        ]
+      ],
+      "single_provider": true,
+      "confounder": "all 8 are on GoDaddy; a provider-wide serial bump would look identical. Needs a control sample of unrelated domains on the same provider before treating as a batch registration.",
+      "is_today": false,
+      "falsified_by_control": false
+    },
+    {
+      "zone_edit_date": "2026-03-19",
+      "domains": [
+        "itjobmail.com",
+        "mailsworks.com",
+        "myemailjob.com",
+        "worksemails.com"
+      ],
+      "count": 4,
+      "ns_operator": [
+        [
+          "GoDaddy",
+          4
+        ]
+      ],
+      "mx_provider": [
+        [
+          "Google Workspace",
+          4
+        ]
+      ],
+      "domain_class": [
+        [
+          "job_career_work_it_cv_themed",
+          4
+        ]
+      ],
+      "account_selectors": [
+        [
+          "spfm:aa8e722993",
+          4
+        ]
+      ],
+      "single_provider": true,
+      "confounder": "all 4 are on GoDaddy; a provider-wide serial bump would look identical. Needs a control sample of unrelated domains on the same provider before treating as a batch registration.",
+      "is_today": false,
+      "falsified_by_control": false
+    },
+    {
+      "zone_edit_date": "2026-08-25",
+      "domains": [
+        "applyme.co",
+        "fastmail.com",
+        "fastmail.net",
+        "pobox.com"
+      ],
+      "count": 4,
+      "ns_operator": [
+        [
+          "messagingengine.com",
+          3
+        ],
+        [
+          "GoDaddy",
+          1
+        ]
+      ],
+      "mx_provider": [
+        [
+          "Fastmail",
+          3
+        ],
+        [
+          "Google Workspace",
+          1
+        ]
+      ],
+      "domain_class": [
+        [
+          "privacy_alias_mailbox",
+          3
+        ],
+        [
+          "job_career_work_it_cv_themed",
+          1
+        ]
+      ],
+      "account_selectors": [
+        [
+          "ondmarc:e3936a44",
+          3
+        ],
+        [
+          "none",
+          1
+        ]
+      ],
+      "single_provider": false,
+      "confounder": "spans 2 providers, so a single-provider platform event does not explain it",
+      "is_today": true,
+      "falsified_by_control": false
+    },
+    {
+      "zone_edit_date": "2026-06-17",
+      "domains": [
+        "ajobguide.com",
+        "mycvscout.com",
+        "nextitjobs.com"
+      ],
+      "count": 3,
+      "ns_operator": [
+        [
+          "GoDaddy",
+          2
+        ],
+        [
+          "none",
+          1
+        ]
+      ],
+      "mx_provider": [
+        [
+          "Google Workspace",
+          3
+        ]
+      ],
+      "domain_class": [
+        [
+          "job_career_work_it_cv_themed",
+          3
+        ]
+      ],
+      "account_selectors": [
+        [
+          "none",
+          2
+        ],
+        [
+          "spfm:aa8e722993",
+          1
+        ]
+      ],
+      "single_provider": false,
+      "confounder": "spans 2 providers, so a single-provider platform event does not explain it",
+      "is_today": false,
+      "falsified_by_control": false
+    },
+    {
+      "zone_edit_date": "2025-01-10",
+      "domains": [
+        "jobitwork.com",
+        "myjobitmail.com",
+        "quickitmail.com"
+      ],
+      "count": 3,
+      "ns_operator": [
+        [
+          "GoDaddy",
+          3
+        ]
+      ],
+      "mx_provider": [
+        [
+          "none",
+          2
+        ],
+        [
+          "Google Workspace",
+          1
+        ]
+      ],
+      "domain_class": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ],
+      "account_selectors": [
+        [
+          "none",
+          3
+        ]
+      ],
+      "single_provider": true,
+      "confounder": "all 3 are on GoDaddy; a provider-wide serial bump would look identical. Needs a control sample of unrelated domains on the same provider before treating as a batch registration.",
+      "is_today": false,
+      "falsified_by_control": false
+    },
+    {
+      "zone_edit_date": "2026-08-07",
+      "domains": [
+        "jobinboxhub.com",
+        "jobsmailbox.com",
+        "myitjobshub.com"
+      ],
+      "count": 3,
+      "ns_operator": [
+        [
+          "GoDaddy",
+          2
+        ],
+        [
+          "none",
+          1
+        ]
+      ],
+      "mx_provider": [
+        [
+          "Google Workspace",
+          3
+        ]
+      ],
+      "domain_class": [
+        [
+          "job_career_work_it_cv_themed",
+          3
+        ]
+      ],
+      "account_selectors": [
+        [
+          "none",
+          3
+        ]
+      ],
+      "single_provider": false,
+      "confounder": "spans 2 providers, so a single-provider platform event does not explain it",
+      "is_today": false,
+      "falsified_by_control": false
+    },
+    {
+      "zone_edit_date": "2024-05-13",
+      "domains": [
+        "careerwebmail.com",
+        "mywebemails.com",
+        "work-mail.net"
+      ],
+      "count": 3,
+      "ns_operator": [
+        [
+          "Wix",
+          3
+        ]
+      ],
+      "mx_provider": [
+        [
+          "Microsoft 365",
+          3
+        ]
+      ],
+      "domain_class": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ],
+      "account_selectors": [
+        [
+          "none",
+          3
+        ]
+      ],
+      "single_provider": true,
+      "confounder": "all 3 are on Wix; a provider-wide serial bump would look identical. Needs a control sample of unrelated domains on the same provider before treating as a batch registration.",
+      "is_today": false,
+      "falsified_by_control": false
+    }
+  ],
+  "godaddy_ns_pairs": {
+    "note": "GoDaddy nameserver-pair assignment appears to derive from the domain name, not the account, so shared pairs are NOT evidence of common ownership. Listed for completeness only.",
+    "distinct_pairs": 31,
+    "domains": 65,
+    "pairs": {
+      "ns35.domaincontrol.com+ns36.domaincontrol.com": [
+        "applyme.co",
+        "careernb.com",
+        "mymailshub.com",
+        "mymailworks.com",
+        "protectmymails.com"
+      ],
+      "ns73.domaincontrol.com+ns74.domaincontrol.com": [
+        "cvtechmail.com",
+        "myjobsmail.com",
+        "myquickmails.com",
+        "nextitjobs.com"
+      ],
+      "ns57.domaincontrol.com+ns58.domaincontrol.com": [
+        "careermailus.com",
+        "jobitwork.com",
+        "jobtechsmail.com",
+        "myemailjob.com"
+      ],
+      "ns69.domaincontrol.com+ns70.domaincontrol.com": [
+        "jobinboxhub.com",
+        "myjobscouts.com",
+        "ocproject.net",
+        "odinsoftworks.com"
+      ],
+      "ns23.domaincontrol.com+ns24.domaincontrol.com": [
+        "jobsupp.com",
+        "mailmywork.com",
+        "myjobsmails.com"
+      ],
+      "ns41.domaincontrol.com+ns42.domaincontrol.com": [
+        "cvmailhub.com",
+        "myjobfolio.com",
+        "prorecresources.com"
+      ],
+      "ns65.domaincontrol.com+ns66.domaincontrol.com": [
+        "insightfulworkplace.com",
+        "mailjobhub.com",
+        "mycareersjobs.com"
+      ],
+      "ns29.domaincontrol.com+ns30.domaincontrol.com": [
+        "careersmails.com",
+        "savemymails.com",
+        "vegascareers.org"
+      ],
+      "ns03.domaincontrol.com+ns04.domaincontrol.com": [
+        "insphiretalent.com",
+        "restartworks.com",
+        "theworkmails.com"
+      ],
+      "ns59.domaincontrol.com+ns60.domaincontrol.com": [
+        "mailjobtech.com",
+        "techmyjob.com"
+      ],
+      "ns75.domaincontrol.com+ns76.domaincontrol.com": [
+        "itjobmail.com",
+        "techsmail.com"
+      ],
+      "ns67.domaincontrol.com+ns68.domaincontrol.com": [
+        "itjobworks.com",
+        "quickitmail.com"
+      ],
+      "ns45.domaincontrol.com+ns46.domaincontrol.com": [
+        "jobitmail.com",
+        "mailscareer.com"
+      ],
+      "ns71.domaincontrol.com+ns72.domaincontrol.com": [
+        "careerattainment.com",
+        "mycareersmail.com"
+      ],
+      "ns21.domaincontrol.com+ns22.domaincontrol.com": [
+        "jobtechmail.com",
+        "myitjobshub.com"
+      ],
+      "ns13.domaincontrol.com+ns14.domaincontrol.com": [
+        "ebsworksite.com",
+        "jobstechmail.com"
+      ],
+      "ns43.domaincontrol.com+ns44.domaincontrol.com": [
+        "myjobitmail.com",
+        "worksemail.com"
+      ],
+      "ns01.domaincontrol.com+ns02.domaincontrol.com": [
+        "mailsworks.com",
+        "worksemails.com"
+      ],
+      "ns51.domaincontrol.com+ns52.domaincontrol.com": [
+        "mycvhire.com",
+        "mycvtalent.com"
+      ],
+      "ns07.domaincontrol.com+ns08.domaincontrol.com": [
+        "mainewoodproducts.com",
+        "mymailkeeper.com"
+      ]
+    }
+  },
+  "mta_sts_policy_ids": {
+    "v=STSv1; id=20260728T132000": [
+      "fastmail.com",
+      "fastmail.net",
+      "pobox.com"
+    ],
+    "v=STSv1; id=190906205100Z;": [
+      "protonmail.ch",
+      "protonmail.com"
+    ],
+    "v=STSv1; id=2026072001;": [
+      "passinbox.com",
+      "passmail.com"
+    ],
+    "v=STSv1; id=20190723;": [
+      "keemail.me",
+      "tuta.io"
+    ],
+    "This domain is expired at Hostinger!": [
+      "i-mail.in"
+    ],
+    "v=STSv1; id=20260715T120000;": [
+      "mail.ru"
+    ],
+    "v=STSv1; id=20251202110430Z": [
+      "posteo.net"
+    ],
+    "v=STSv1; id=2023100501": [
+      "use.startmail.com"
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-25T21:21:38.477944+00:00",
+  "generated_utc": "2026-08-25T22:00:16.394641+00:00",
   "method": "connected components over account-level selectors only (DKIM public key, SPF-management tenant, DMARC reporting-platform account, provider verification token, non-vendor reverse DNS); vendor-level facts attached as corroboration only",
   "vendor_ptr_suffixes_excluded": [
     "awsglobalaccelerator.com",

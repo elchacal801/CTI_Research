@@ -1,0 +1,948 @@
+{
+  "generated_utc": "2026-08-25T21:59:29.097862+00:00",
+  "source": "data/Discovered_Domains.csv",
+  "resolvers": [
+    "1.1.1.1",
+    "8.8.8.8",
+    "9.9.9.9",
+    "1.0.0.1",
+    "8.8.4.4"
+  ],
+  "collection_notes": {
+    "dns": "collected live over UDP/53 against public resolvers",
+    "asn": "Team Cymru IP-to-ASN DNS service (origin.asn.cymru.com / asn.cymru.com)"
+  },
+  "domains": [
+    {
+      "domain": "hiremails.com",
+      "domain_class": "discovered_group1_spfm_tenant",
+      "risk_score": "",
+      "risk_tier": "discovered",
+      "resolves": true,
+      "records": {
+        "NS": [
+          "ns51.domaincontrol.com.",
+          "ns52.domaincontrol.com."
+        ],
+        "SOA": [
+          "ns51.domaincontrol.com. dns.jomax.net. 2026060102 28800 7200 604800 600"
+        ],
+        "A": [
+          "185.158.133.1"
+        ],
+        "AAAA": [],
+        "MX": [
+          "1 aspmx.l.google.com.",
+          "10 alt3.aspmx.l.google.com.",
+          "10 alt4.aspmx.l.google.com.",
+          "5 alt1.aspmx.l.google.com.",
+          "5 alt2.aspmx.l.google.com."
+        ],
+        "TXT": [
+          "v=spf1 include:dc-aa8e722993._spfm.hiremails.com ~all",
+          "google-site-verification=vRoOZUWDfzA5Z1zDtzTxLSx3DxF8-91ckElRZokPDi8"
+        ],
+        "CNAME": [],
+        "CAA": []
+      },
+      "status": {
+        "NS": "OK",
+        "SOA": "OK",
+        "A": "OK",
+        "AAAA": "NOANSWER",
+        "MX": "OK",
+        "TXT": "OK",
+        "CNAME": "NOANSWER",
+        "CAA": "NOANSWER"
+      },
+      "dmarc": [
+        "v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:dmarc_rua@onsecureserver.net;"
+      ],
+      "dkim": {},
+      "mta_sts": [],
+      "tls_rpt": [],
+      "subdomains": {
+        "www.hiremails.com": {
+          "A": [
+            "185.158.133.1"
+          ],
+          "AAAA": [],
+          "CNAME": []
+        }
+      },
+      "mx_hosts": {
+        "aspmx.l.google.com": [
+          "192.178.209.27",
+          "2607:f8b0:4001:c2f::1a"
+        ],
+        "alt3.aspmx.l.google.com": [
+          "142.250.96.26",
+          "2607:f8b0:4023:403::1a"
+        ],
+        "alt4.aspmx.l.google.com": [
+          "172.253.132.27",
+          "2607:f8b0:4023:2c03::1a"
+        ],
+        "alt1.aspmx.l.google.com": [
+          "142.250.100.27",
+          "2607:f8b0:4023:3801::1a"
+        ],
+        "alt2.aspmx.l.google.com": [
+          "172.253.149.26",
+          "2607:f8b0:4024:c0f::1b"
+        ]
+      },
+      "ns_hosts": {
+        "ns51.domaincontrol.com": [
+          "97.74.105.26",
+          "2603:5:2192::1a"
+        ],
+        "ns52.domaincontrol.com": [
+          "173.201.73.26",
+          "2603:5:2292::1a"
+        ]
+      },
+      "ips": [
+        "142.250.100.27",
+        "142.250.96.26",
+        "172.253.132.27",
+        "172.253.149.26",
+        "185.158.133.1",
+        "192.178.209.27",
+        "2607:f8b0:4001:c2f::1a",
+        "2607:f8b0:4023:2c03::1a",
+        "2607:f8b0:4023:3801::1a",
+        "2607:f8b0:4023:403::1a",
+        "2607:f8b0:4024:c0f::1b"
+      ],
+      "nxdomain": false
+    },
+    {
+      "domain": "mypostwork.com",
+      "domain_class": "discovered_group1_spfm_tenant",
+      "risk_score": "",
+      "risk_tier": "discovered",
+      "resolves": true,
+      "records": {
+        "NS": [
+          "ns69.domaincontrol.com.",
+          "ns70.domaincontrol.com."
+        ],
+        "SOA": [
+          "ns69.domaincontrol.com. dns.jomax.net. 2026050300 28800 7200 604800 600"
+        ],
+        "A": [
+          "13.248.243.5",
+          "76.223.105.230"
+        ],
+        "AAAA": [],
+        "MX": [
+          "10 alt4.aspmx.l.google.com.",
+          "10 alt3.aspmx.l.google.com.",
+          "5 alt2.aspmx.l.google.com.",
+          "5 alt1.aspmx.l.google.com.",
+          "1 aspmx.l.google.com."
+        ],
+        "TXT": [
+          "v=spf1 include:dc-aa8e722993._spfm.mypostwork.com ~all",
+          "google-site-verification=D2SzEOrbZBGDyEHnl3yaHaSq2np9oqNtAk18xWnN1-o"
+        ],
+        "CNAME": [],
+        "CAA": []
+      },
+      "status": {
+        "NS": "OK",
+        "SOA": "OK",
+        "A": "OK",
+        "AAAA": "NOANSWER",
+        "MX": "OK",
+        "TXT": "OK",
+        "CNAME": "NOANSWER",
+        "CAA": "NOANSWER"
+      },
+      "dmarc": [
+        "v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:dmarc_rua@onsecureserver.net;"
+      ],
+      "dkim": {
+        "google": [
+          "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA99CdR1h77c4uPOSuDCuuaRSAhx2lAcIzxSBNQBT4fNMBnEZXTXZR3RTSb3V9xelzS5LQP6dYL2EliGYxkE9f6+3h5AT1aVetJvZW5TU6QoEtgS1IpUTtsNrcttDCckwsWn+ShtD+JdP5FEoBuS8JPCLdSlapnjOmRxT1NytRu56Lq/yF+TtVo4EKswjxLTl2Xr5PsMGUg7I1EyEK8unQhuja0Ui0RY4in4WOH5eW4Zmyhn/S71uk+alEpF3dErQx2HnuDJYuurkHCcy0iQkPey7JJin1FBgKlk8eLwmpzmYe+rXHDEaaGtkQ6/7X+ccfZ13G4RHzdx3N1t60Rc3VaQIDAQAB"
+        ]
+      },
+      "mta_sts": [],
+      "tls_rpt": [],
+      "subdomains": {
+        "www.mypostwork.com": {
+          "A": [
+            "13.248.243.5",
+            "76.223.105.230"
+          ],
+          "AAAA": [],
+          "CNAME": [
+            "mypostwork.com."
+          ]
+        }
+      },
+      "mx_hosts": {
+        "alt4.aspmx.l.google.com": [
+          "172.253.132.26",
+          "2607:f8b0:4023:2c03::1b"
+        ],
+        "alt3.aspmx.l.google.com": [
+          "142.250.96.26",
+          "2607:f8b0:4023:403::1a"
+        ],
+        "alt2.aspmx.l.google.com": [
+          "172.253.149.26",
+          "2607:f8b0:4024:c0f::1a"
+        ],
+        "alt1.aspmx.l.google.com": [
+          "142.250.100.27",
+          "2607:f8b0:4023:3801::1a"
+        ],
+        "aspmx.l.google.com": [
+          "192.178.209.27",
+          "2607:f8b0:4001:c70::1a"
+        ]
+      },
+      "ns_hosts": {
+        "ns69.domaincontrol.com": [
+          "97.74.104.45",
+          "2603:5:2184::2d"
+        ],
+        "ns70.domaincontrol.com": [
+          "173.201.72.45",
+          "2603:5:2284::2d"
+        ]
+      },
+      "ips": [
+        "13.248.243.5",
+        "142.250.100.27",
+        "142.250.96.26",
+        "172.253.132.26",
+        "172.253.149.26",
+        "192.178.209.27",
+        "2607:f8b0:4001:c70::1a",
+        "2607:f8b0:4023:2c03::1b",
+        "2607:f8b0:4023:3801::1a",
+        "2607:f8b0:4023:403::1a",
+        "2607:f8b0:4024:c0f::1a",
+        "76.223.105.230"
+      ],
+      "nxdomain": false
+    },
+    {
+      "domain": "sorce.io",
+      "domain_class": "discovered_group1_spfm_tenant",
+      "risk_score": "",
+      "risk_tier": "discovered",
+      "resolves": true,
+      "records": {
+        "NS": [
+          "ns16.domaincontrol.com.",
+          "ns15.domaincontrol.com."
+        ],
+        "SOA": [
+          "ns15.domaincontrol.com. dns.jomax.net. 2025122406 28800 7200 604800 600"
+        ],
+        "A": [
+          "141.193.213.21",
+          "141.193.213.20"
+        ],
+        "AAAA": [],
+        "MX": [
+          "5 alt2.aspmx.l.google.com.",
+          "5 alt1.aspmx.l.google.com.",
+          "10 alt4.aspmx.l.google.com.",
+          "10 alt3.aspmx.l.google.com.",
+          "1 aspmx.l.google.com."
+        ],
+        "TXT": [
+          "MS=E8C9127EF6B03D50C6D5ECBCFEB8B71C9E9BFD51",
+          "google-site-verification=dcipil2DwQ2PV-ygDsUcnKIpsR_wxblwLQdhmizYrwc",
+          "v=spf1 include:dc-aa8e722993._spfm.sorce.io ~all"
+        ],
+        "CNAME": [],
+        "CAA": []
+      },
+      "status": {
+        "NS": "OK",
+        "SOA": "OK",
+        "A": "OK",
+        "AAAA": "NOANSWER",
+        "MX": "OK",
+        "TXT": "OK",
+        "CNAME": "NOANSWER",
+        "CAA": "NOANSWER"
+      },
+      "dmarc": [
+        "v=DMARC1;p=none;"
+      ],
+      "dkim": {},
+      "mta_sts": [],
+      "tls_rpt": [],
+      "subdomains": {
+        "www.sorce.io": {
+          "A": [
+            "141.193.213.21",
+            "141.193.213.20"
+          ],
+          "AAAA": [],
+          "CNAME": []
+        }
+      },
+      "mx_hosts": {
+        "alt2.aspmx.l.google.com": [
+          "172.253.149.26",
+          "2607:f8b0:4024:c0f::1b"
+        ],
+        "alt1.aspmx.l.google.com": [
+          "142.250.100.27",
+          "2607:f8b0:4023:3801::1a"
+        ],
+        "alt4.aspmx.l.google.com": [
+          "172.253.132.26",
+          "2607:f8b0:4023:2c03::1b"
+        ],
+        "alt3.aspmx.l.google.com": [
+          "142.250.96.26",
+          "2607:f8b0:4023:403::1a"
+        ],
+        "aspmx.l.google.com": [
+          "74.125.132.26",
+          "2607:f8b0:4001:c2f::1a"
+        ]
+      },
+      "ns_hosts": {
+        "ns16.domaincontrol.com": [
+          "173.201.75.8",
+          "2603:5:22b0::8"
+        ],
+        "ns15.domaincontrol.com": [
+          "97.74.107.8",
+          "2603:5:21b0::8"
+        ]
+      },
+      "ips": [
+        "141.193.213.20",
+        "141.193.213.21",
+        "142.250.100.27",
+        "142.250.96.26",
+        "172.253.132.26",
+        "172.253.149.26",
+        "2607:f8b0:4001:c2f::1a",
+        "2607:f8b0:4023:2c03::1b",
+        "2607:f8b0:4023:3801::1a",
+        "2607:f8b0:4023:403::1a",
+        "2607:f8b0:4024:c0f::1b",
+        "74.125.132.26"
+      ],
+      "nxdomain": false
+    },
+    {
+      "domain": "thetechbox.co",
+      "domain_class": "discovered_group1_spfm_tenant",
+      "risk_score": "",
+      "risk_tier": "discovered",
+      "resolves": true,
+      "records": {
+        "NS": [
+          "ns40.domaincontrol.com.",
+          "ns39.domaincontrol.com."
+        ],
+        "SOA": [
+          "ns39.domaincontrol.com. dns.jomax.net. 2024072100 28800 7200 604800 600"
+        ],
+        "A": [
+          "23.227.38.32"
+        ],
+        "AAAA": [],
+        "MX": [
+          "5 alt2.aspmx.l.google.com.",
+          "1 aspmx.l.google.com.",
+          "10 alt3.aspmx.l.google.com.",
+          "10 alt4.aspmx.l.google.com.",
+          "5 alt1.aspmx.l.google.com."
+        ],
+        "TXT": [
+          "v=spf1 include:dc-aa8e722993._spfm.thetechbox.co ~all",
+          "google-site-verification=7xwWO0muJPKHKoj_80wc5oy0yjH0A4a5L2U7sItDiWQ"
+        ],
+        "CNAME": [],
+        "CAA": []
+      },
+      "status": {
+        "NS": "OK",
+        "SOA": "OK",
+        "A": "OK",
+        "AAAA": "NOANSWER",
+        "MX": "OK",
+        "TXT": "OK",
+        "CNAME": "NOANSWER",
+        "CAA": "NOANSWER"
+      },
+      "dmarc": [],
+      "dkim": {},
+      "mta_sts": [],
+      "tls_rpt": [],
+      "subdomains": {
+        "www.thetechbox.co": {
+          "A": [
+            "23.227.38.32"
+          ],
+          "AAAA": [],
+          "CNAME": [
+            "thetechbox.co."
+          ]
+        }
+      },
+      "mx_hosts": {
+        "alt2.aspmx.l.google.com": [
+          "172.253.149.27",
+          "2607:f8b0:4024:c0f::1a"
+        ],
+        "aspmx.l.google.com": [
+          "142.250.152.27",
+          "2607:f8b0:4001:c2f::1a"
+        ],
+        "alt3.aspmx.l.google.com": [
+          "142.250.96.26",
+          "2607:f8b0:4023:403::1b"
+        ],
+        "alt4.aspmx.l.google.com": [
+          "172.253.132.27",
+          "2607:f8b0:4023:2c03::1a"
+        ],
+        "alt1.aspmx.l.google.com": [
+          "142.250.100.26",
+          "2607:f8b0:4023:3801::1b"
+        ]
+      },
+      "ns_hosts": {
+        "ns40.domaincontrol.com": [
+          "173.201.77.20",
+          "2603:5:22d1::14"
+        ],
+        "ns39.domaincontrol.com": [
+          "97.74.109.20",
+          "2603:5:21d1::14"
+        ]
+      },
+      "ips": [
+        "142.250.100.26",
+        "142.250.152.27",
+        "142.250.96.26",
+        "172.253.132.27",
+        "172.253.149.27",
+        "23.227.38.32",
+        "2607:f8b0:4001:c2f::1a",
+        "2607:f8b0:4023:2c03::1a",
+        "2607:f8b0:4023:3801::1b",
+        "2607:f8b0:4023:403::1b",
+        "2607:f8b0:4024:c0f::1a"
+      ],
+      "nxdomain": false
+    }
+  ],
+  "ip_intel": {
+    "13.248.243.5": {
+      "ip": "13.248.243.5",
+      "ptr": [
+        "a16e665f42988324c.awsglobalaccelerator.com"
+      ],
+      "asn": "16509",
+      "bgp_prefix": "13.248.240.0/20",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2018-07-11",
+      "as_name": "AMAZON-02 - Amazon.com, Inc., US"
+    },
+    "141.193.213.20": {
+      "ip": "141.193.213.20",
+      "ptr": [],
+      "asn": "209242",
+      "bgp_prefix": "141.193.213.0/24",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2020-07-13",
+      "as_name": "CLOUDFLARESPECTRUM - Cloudflare London, LLC, US"
+    },
+    "141.193.213.21": {
+      "ip": "141.193.213.21",
+      "ptr": [],
+      "asn": "209242",
+      "bgp_prefix": "141.193.213.0/24",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2020-07-13",
+      "as_name": "CLOUDFLARESPECTRUM - Cloudflare London, LLC, US"
+    },
+    "142.250.100.26": {
+      "ip": "142.250.100.26",
+      "ptr": [
+        "yumciex-in-f26.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "142.250.100.0/24",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2012-05-24",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "142.250.100.27": {
+      "ip": "142.250.100.27",
+      "ptr": [
+        "yumciex-in-f27.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "142.250.100.0/24",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2012-05-24",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "142.250.152.27": {
+      "ip": "142.250.152.27",
+      "ptr": [
+        "ia-in-f27.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "142.250.152.0/24",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2012-05-24",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "142.250.96.26": {
+      "ip": "142.250.96.26",
+      "ptr": [
+        "gg-in-f26.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "142.250.96.0/24",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2012-05-24",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "172.253.132.26": {
+      "ip": "172.253.132.26",
+      "ptr": [
+        "yufwakf-in-f26.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "172.253.132.0/24",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2013-04-04",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "172.253.132.27": {
+      "ip": "172.253.132.27",
+      "ptr": [
+        "yufwakf-in-f27.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "172.253.132.0/24",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2013-04-04",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "172.253.149.26": {
+      "ip": "172.253.149.26",
+      "ptr": [
+        "yuckvax-in-f26.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "172.253.149.0/24",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2013-04-04",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "172.253.149.27": {
+      "ip": "172.253.149.27",
+      "ptr": [
+        "yuckvax-in-f27.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "172.253.149.0/24",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2013-04-04",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "173.201.72.45": {
+      "ip": "173.201.72.45",
+      "ptr": [
+        "ns70.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "173.201.72.0/23",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2009-09-18",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "173.201.73.26": {
+      "ip": "173.201.73.26",
+      "ptr": [
+        "ns52.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "173.201.72.0/23",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2009-09-18",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "173.201.75.8": {
+      "ip": "173.201.75.8",
+      "ptr": [
+        "ns16.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "173.201.74.0/23",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2009-09-18",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "173.201.77.20": {
+      "ip": "173.201.77.20",
+      "ptr": [
+        "ns40.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "173.201.76.0/23",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2009-09-18",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "185.158.133.1": {
+      "ip": "185.158.133.1",
+      "ptr": [
+        "lovable-app-cd-1-4.p.l5e.io"
+      ],
+      "asn": "13335",
+      "bgp_prefix": "185.158.133.0/24",
+      "cc": "AE",
+      "registry": "ripencc",
+      "allocated": "2016-07-05",
+      "as_name": "CLOUDFLARENET - Cloudflare, Inc., US"
+    },
+    "192.178.209.27": {
+      "ip": "192.178.209.27",
+      "ptr": [
+        "yucbful-in-f27.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "192.178.209.0/24",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2012-07-12",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "23.227.38.32": {
+      "ip": "23.227.38.32",
+      "ptr": [
+        "myshopify.com"
+      ],
+      "asn": "13335",
+      "bgp_prefix": "23.227.38.0/23",
+      "cc": "CA",
+      "registry": "arin",
+      "allocated": "2013-09-19",
+      "as_name": "CLOUDFLARENET - Cloudflare, Inc., US"
+    },
+    "2603:5:2184::2d": {
+      "ip": "2603:5:2184::2d",
+      "ptr": [
+        "ns69.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "2603:5:2180::/44",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2013-11-12",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "2603:5:2192::1a": {
+      "ip": "2603:5:2192::1a",
+      "ptr": [
+        "ns51.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "2603:5:2190::/44",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2013-11-12",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "2603:5:21b0::8": {
+      "ip": "2603:5:21b0::8",
+      "ptr": [
+        "ns15.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "2603:5:21b0::/44",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2013-11-12",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "2603:5:21d1::14": {
+      "ip": "2603:5:21d1::14",
+      "ptr": [
+        "ns39.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "2603:5:21d0::/44",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2013-11-12",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "2603:5:2284::2d": {
+      "ip": "2603:5:2284::2d",
+      "ptr": [
+        "ns70.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "2603:5:2280::/44",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2013-11-12",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "2603:5:2292::1a": {
+      "ip": "2603:5:2292::1a",
+      "ptr": [
+        "ns52.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "2603:5:2290::/44",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2013-11-12",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "2603:5:22b0::8": {
+      "ip": "2603:5:22b0::8",
+      "ptr": [
+        "ns16.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "2603:5:22b0::/44",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2013-11-12",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "2603:5:22d1::14": {
+      "ip": "2603:5:22d1::14",
+      "ptr": [
+        "ns40.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "2603:5:22d0::/44",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2013-11-12",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "2607:f8b0:4001:c2f::1a": {
+      "ip": "2607:f8b0:4001:c2f::1a",
+      "ptr": [
+        "jh-in-f26.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "2607:f8b0:4001::/48",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2009-03-12",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "2607:f8b0:4001:c70::1a": {
+      "ip": "2607:f8b0:4001:c70::1a",
+      "ptr": [
+        "yucbful-in-f26.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "2607:f8b0:4001::/48",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2009-03-12",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "2607:f8b0:4023:2c03::1a": {
+      "ip": "2607:f8b0:4023:2c03::1a",
+      "ptr": [
+        "yufwakf-in-f26.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "2607:f8b0::/32",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2009-03-12",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "2607:f8b0:4023:2c03::1b": {
+      "ip": "2607:f8b0:4023:2c03::1b",
+      "ptr": [
+        "yufwakf-in-f27.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "2607:f8b0::/32",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2009-03-12",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "2607:f8b0:4023:3801::1a": {
+      "ip": "2607:f8b0:4023:3801::1a",
+      "ptr": [
+        "yumciex-in-f26.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "2607:f8b0::/32",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2009-03-12",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "2607:f8b0:4023:3801::1b": {
+      "ip": "2607:f8b0:4023:3801::1b",
+      "ptr": [
+        "yumciex-in-f27.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "2607:f8b0::/32",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2009-03-12",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "2607:f8b0:4023:403::1a": {
+      "ip": "2607:f8b0:4023:403::1a",
+      "ptr": [
+        "gg-in-f26.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "2607:f8b0::/32",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2009-03-12",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "2607:f8b0:4023:403::1b": {
+      "ip": "2607:f8b0:4023:403::1b",
+      "ptr": [
+        "gg-in-f27.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "2607:f8b0::/32",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2009-03-12",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "2607:f8b0:4024:c0f::1a": {
+      "ip": "2607:f8b0:4024:c0f::1a",
+      "ptr": [
+        "yuckvax-in-f26.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "2607:f8b0::/32",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2009-03-12",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "2607:f8b0:4024:c0f::1b": {
+      "ip": "2607:f8b0:4024:c0f::1b",
+      "ptr": [
+        "yuckvax-in-f27.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "2607:f8b0::/32",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2009-03-12",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "74.125.132.26": {
+      "ip": "74.125.132.26",
+      "ptr": [
+        "im-in-f26.1e100.net"
+      ],
+      "asn": "15169",
+      "bgp_prefix": "74.125.132.0/24",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2007-03-13",
+      "as_name": "GOOGLE - Google LLC, US"
+    },
+    "76.223.105.230": {
+      "ip": "76.223.105.230",
+      "ptr": [
+        "a16e665f42988324c.awsglobalaccelerator.com"
+      ],
+      "asn": "16509",
+      "bgp_prefix": "76.223.96.0/20",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2018-01-10",
+      "as_name": "AMAZON-02 - Amazon.com, Inc., US"
+    },
+    "97.74.104.45": {
+      "ip": "97.74.104.45",
+      "ptr": [
+        "ns69.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "97.74.104.0/23",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2008-08-14",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "97.74.105.26": {
+      "ip": "97.74.105.26",
+      "ptr": [
+        "ns51.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "97.74.104.0/23",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2008-08-14",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "97.74.107.8": {
+      "ip": "97.74.107.8",
+      "ptr": [
+        "ns15.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "97.74.106.0/23",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2008-08-14",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    },
+    "97.74.109.20": {
+      "ip": "97.74.109.20",
+      "ptr": [
+        "ns39.domaincontrol.com"
+      ],
+      "asn": "44273",
+      "bgp_prefix": "97.74.108.0/23",
+      "cc": "US",
+      "registry": "arin",
+      "allocated": "2008-08-14",
+      "as_name": "GODADDY-DNS - Host Europe GmbH, DE"
+    }
+  }
+}

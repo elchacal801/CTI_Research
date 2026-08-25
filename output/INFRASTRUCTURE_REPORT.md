@@ -464,3 +464,27 @@ Full records are in `output/dns_enumeration.json` (raw) and `output/domain_infra
 | jobsitmail.com | 70 | Google Domains / Squarespace | Google Workspace | AS53831 | - | 198.185.159.144;198.185.159.145;198.49.23.14 |
 | workmailit.com | 70 | Google Domains / Squarespace | Google Workspace | AS53831 | - | 198.185.159.144;198.185.159.145;198.49.23.14 |
 
+## 8. Follow-on collection and negative findings
+
+### Cluster expansion by DNS marker
+
+Group 1 membership is directly testable: members carry `include:dc-aa8e722993._spfm.<domain>` in their apex SPF, so the record exists at that name. Candidate names generated from the corpus naming grammar were tested against it — 20,227 candidates probed, 639 registered.
+
+**Two false-positive modes had to be controlled out before the result meant anything:**
+
+1. *Wildcard DNS.* Parking providers (Afternic, Sedo, CashParking, NameFind) answer every subdomain, so the marker query returns a hit on domains with no connection to the cluster. An uncontrolled first pass returned 71 'hits'; adding a random-label canary and rejecting the parking default `v=spf1 -all` cut it to 4. Parked brand names such as `pobox.co`, `proton.io` and `tuta.us` were all in the discarded set.
+2. *Timeouts read as absence.* A failed canary lookup is not proof of no wildcard. The probe now retries and treats only a definitive NXDOMAIN as clearing a zone; undecidable cases are flagged, not counted.
+
+**Confirmed new members (4):** `hiremails.com`, `mypostwork.com`, `sorce.io`, `thetechbox.co` — each verified with the tenant's exact SPF content and two NXDOMAIN canaries.
+
+This takes Group 1 from 27 to 31 domains. Group 2 did not expand: no generated candidate carried the URIports account, which is expected given its members are brandable coinages rather than compound job/mail words.
+
+### Negative finding: the 2026-08-20 'batch' is not real
+
+**Hypothesis:** the 21 domains sharing zone-edit date 2026-08-20 were registered or configured as one batch  
+**Test:** sampled 12 Hostinger-nameserver domains discovered by the expansion sweep that are unrelated to any cluster, and read their SOA serials  
+**Result:** 12 of 12 controls carry the same 2026-08-20 serial  
+**Verdict:** FALSIFIED - provider-wide serial bump, not operator activity
+
+21 domains share a 2026-08-20 SOA serial, all on Hostinger — which reads as a batch operation until you sample unrelated Hostinger domains and find the same serial. It is a provider-wide bump. SOA serials date the last zone edit, never registration, and any single-provider batch needs this control before it is believed. The remaining candidate batches are in `output/temporal_analysis.json`; the 2026-02-05 GoDaddy set (8 domains, all Google Workspace, two carrying the Group 1 tenant) spans one provider and is untested.
+
