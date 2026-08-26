@@ -1,5 +1,3834 @@
 {
-  "generated_utc": "2026-08-25T22:50:02.563673+00:00",
+  "generated_utc": "2026-08-26T04:15:58.889118+00:00",
+  "burst_gap_seconds": 600,
+  "registration": {
+    "corpus_domains": 263,
+    "registered": 245,
+    "not_registered": 10,
+    "undetermined": 8,
+    "with_created": 245,
+    "time_basis": {
+      "registry": 239,
+      "registrar": 5,
+      "whois": 1
+    },
+    "age_buckets": [
+      [
+        "< 90 days",
+        9
+      ],
+      [
+        "90 days - 1 year",
+        57
+      ],
+      [
+        "1 - 2 years",
+        60
+      ],
+      [
+        "2 - 5 years",
+        80
+      ],
+      [
+        "> 5 years",
+        39
+      ]
+    ],
+    "by_year": [
+      [
+        "1994",
+        1
+      ],
+      [
+        "1995",
+        2
+      ],
+      [
+        "1996",
+        1
+      ],
+      [
+        "1997",
+        1
+      ],
+      [
+        "1998",
+        1
+      ],
+      [
+        "1999",
+        3
+      ],
+      [
+        "2002",
+        1
+      ],
+      [
+        "2003",
+        1
+      ],
+      [
+        "2006",
+        1
+      ],
+      [
+        "2009",
+        2
+      ],
+      [
+        "2010",
+        3
+      ],
+      [
+        "2011",
+        1
+      ],
+      [
+        "2013",
+        2
+      ],
+      [
+        "2014",
+        6
+      ],
+      [
+        "2015",
+        2
+      ],
+      [
+        "2017",
+        2
+      ],
+      [
+        "2018",
+        5
+      ],
+      [
+        "2019",
+        3
+      ],
+      [
+        "2020",
+        1
+      ],
+      [
+        "2021",
+        1
+      ],
+      [
+        "2023",
+        43
+      ],
+      [
+        "2024",
+        54
+      ],
+      [
+        "2025",
+        70
+      ],
+      [
+        "2026",
+        38
+      ]
+    ],
+    "by_month_since_2023": [
+      [
+        "2023-02",
+        3
+      ],
+      [
+        "2023-03",
+        5
+      ],
+      [
+        "2023-04",
+        1
+      ],
+      [
+        "2023-06",
+        1
+      ],
+      [
+        "2023-07",
+        1
+      ],
+      [
+        "2023-08",
+        2
+      ],
+      [
+        "2023-10",
+        14
+      ],
+      [
+        "2023-11",
+        12
+      ],
+      [
+        "2023-12",
+        4
+      ],
+      [
+        "2024-01",
+        2
+      ],
+      [
+        "2024-02",
+        1
+      ],
+      [
+        "2024-03",
+        7
+      ],
+      [
+        "2024-04",
+        9
+      ],
+      [
+        "2024-05",
+        6
+      ],
+      [
+        "2024-06",
+        2
+      ],
+      [
+        "2024-07",
+        7
+      ],
+      [
+        "2024-08",
+        2
+      ],
+      [
+        "2024-09",
+        8
+      ],
+      [
+        "2024-10",
+        4
+      ],
+      [
+        "2024-11",
+        4
+      ],
+      [
+        "2024-12",
+        2
+      ],
+      [
+        "2025-01",
+        12
+      ],
+      [
+        "2025-02",
+        7
+      ],
+      [
+        "2025-03",
+        3
+      ],
+      [
+        "2025-04",
+        3
+      ],
+      [
+        "2025-05",
+        1
+      ],
+      [
+        "2025-06",
+        8
+      ],
+      [
+        "2025-07",
+        4
+      ],
+      [
+        "2025-08",
+        7
+      ],
+      [
+        "2025-09",
+        3
+      ],
+      [
+        "2025-10",
+        5
+      ],
+      [
+        "2025-11",
+        12
+      ],
+      [
+        "2025-12",
+        5
+      ],
+      [
+        "2026-01",
+        9
+      ],
+      [
+        "2026-02",
+        3
+      ],
+      [
+        "2026-03",
+        7
+      ],
+      [
+        "2026-04",
+        6
+      ],
+      [
+        "2026-05",
+        4
+      ],
+      [
+        "2026-06",
+        6
+      ],
+      [
+        "2026-07",
+        3
+      ]
+    ],
+    "median_age_days": 706
+  },
+  "registrar_share": [
+    {
+      "registrar": "GoDaddy",
+      "corpus": 78,
+      "corpus_pct": 31.8,
+      "control": 132,
+      "control_pct": 23.4,
+      "lift": 1.36
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "corpus": 66,
+      "corpus_pct": 26.9,
+      "control": 25,
+      "control_pct": 4.4,
+      "lift": 6.09
+    },
+    {
+      "registrar": "Cloudflare",
+      "corpus": 21,
+      "corpus_pct": 8.6,
+      "control": 22,
+      "control_pct": 3.9,
+      "lift": 2.2
+    },
+    {
+      "registrar": "Hostinger",
+      "corpus": 17,
+      "corpus_pct": 6.9,
+      "control": 13,
+      "control_pct": 2.3,
+      "lift": 3.02
+    },
+    {
+      "registrar": "Wix",
+      "corpus": 11,
+      "corpus_pct": 4.5,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 25.37
+    },
+    {
+      "registrar": "Namecheap",
+      "corpus": 10,
+      "corpus_pct": 4.1,
+      "control": 64,
+      "control_pct": 11.3,
+      "lift": 0.36
+    },
+    {
+      "registrar": "Tucows",
+      "corpus": 6,
+      "corpus_pct": 2.4,
+      "control": 34,
+      "control_pct": 6.0,
+      "lift": 0.41
+    },
+    {
+      "registrar": "MarkMonitor",
+      "corpus": 6,
+      "corpus_pct": 2.4,
+      "control": 9,
+      "control_pct": 1.6,
+      "lift": 1.54
+    },
+    {
+      "registrar": "Realtime Register B.V.",
+      "corpus": 5,
+      "corpus_pct": 2.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 11.53
+    },
+    {
+      "registrar": "Gandi",
+      "corpus": 4,
+      "corpus_pct": 1.6,
+      "control": 3,
+      "control_pct": 0.5,
+      "lift": 3.07
+    },
+    {
+      "registrar": "INWX GmbH",
+      "corpus": 4,
+      "corpus_pct": 1.6,
+      "control": 9,
+      "control_pct": 1.6,
+      "lift": 1.02
+    },
+    {
+      "registrar": "Spaceship",
+      "corpus": 2,
+      "corpus_pct": 0.8,
+      "control": 21,
+      "control_pct": 3.7,
+      "lift": 0.22
+    },
+    {
+      "registrar": "Amazon Registrar",
+      "corpus": 2,
+      "corpus_pct": 0.8,
+      "control": 7,
+      "control_pct": 1.2,
+      "lift": 0.66
+    },
+    {
+      "registrar": "NameWeb BVBA",
+      "corpus": 2,
+      "corpus_pct": 0.8,
+      "control": 0,
+      "control_pct": 0.0,
+      "lift": null
+    },
+    {
+      "registrar": "Porkbun",
+      "corpus": 2,
+      "corpus_pct": 0.8,
+      "control": 7,
+      "control_pct": 1.2,
+      "lift": 0.66
+    },
+    {
+      "registrar": "unknown",
+      "corpus": 1,
+      "corpus_pct": 0.4,
+      "control": 0,
+      "control_pct": 0.0,
+      "lift": null
+    },
+    {
+      "registrar": "Network Solutions / Web.com",
+      "corpus": 1,
+      "corpus_pct": 0.4,
+      "control": 11,
+      "control_pct": 1.9,
+      "lift": 0.21
+    },
+    {
+      "registrar": "123-Reg Limited t/a 123-reg",
+      "corpus": 1,
+      "corpus_pct": 0.4,
+      "control": 0,
+      "control_pct": 0.0,
+      "lift": null
+    },
+    {
+      "registrar": "RU-CENTER",
+      "corpus": 1,
+      "corpus_pct": 0.4,
+      "control": 0,
+      "control_pct": 0.0,
+      "lift": null
+    },
+    {
+      "registrar": "InterNetworX Ltd. & Co. KG",
+      "corpus": 1,
+      "corpus_pct": 0.4,
+      "control": 0,
+      "control_pct": 0.0,
+      "lift": null
+    },
+    {
+      "registrar": "Hosting Concepts B.V. d/b/a Registrar.eu",
+      "corpus": 1,
+      "corpus_pct": 0.4,
+      "control": 3,
+      "control_pct": 0.5,
+      "lift": 0.77
+    },
+    {
+      "registrar": "Name.com",
+      "corpus": 1,
+      "corpus_pct": 0.4,
+      "control": 8,
+      "control_pct": 1.4,
+      "lift": 0.29
+    },
+    {
+      "registrar": "Name SRS AB",
+      "corpus": 1,
+      "corpus_pct": 0.4,
+      "control": 0,
+      "control_pct": 0.0,
+      "lift": null
+    },
+    {
+      "registrar": "COPYLEFT, HOST1, KLONER, GRAVITY ASSIST,",
+      "corpus": 1,
+      "corpus_pct": 0.4,
+      "control": 0,
+      "control_pct": 0.0,
+      "lift": null
+    },
+    {
+      "registrar": "DCGRP OU",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "IONOS",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 11,
+      "control_pct": 1.9,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Fastdomains",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Megazone Corp., dba HOSTING.KR",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 654 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 1032 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Scaleway SAS",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Web Commerce Communications Limited dba ",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Dynadot",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 17,
+      "control_pct": 3.0,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Rabbitsfoot.com LLC d/b/a Oxygen.nyc",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Above.com Pty Ltd.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 3,
+      "control_pct": 0.5,
+      "lift": 0.0
+    },
+    {
+      "registrar": "RegistryGate GmbH",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 4,
+      "control_pct": 0.7,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Alibaba Cloud Computing Ltd. d/b/a HiChi",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 5,
+      "control_pct": 0.9,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Domain Science Kutatasi Szolgaltato Korl",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "123-Reg Limited",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 3,
+      "control_pct": 0.5,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Gransy, s.r.o.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 4,
+      "control_pct": 0.7,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Key-Systems",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 6,
+      "control_pct": 1.1,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Hetzner Online GmbH",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "101domain GRS Limited",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Sav.com, LLC - 14",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 1189 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Namepanther.com LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "OVH SAS",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Register SPA",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 3,
+      "control_pct": 0.5,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 1482 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Gabia, Inc.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Wild West Domains, LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 7,
+      "control_pct": 1.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Metaregistrar BV",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "CSL Computer Service Langenbach GmbH d/b",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "InterNetX GmbH",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 1503 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "TurnCommerce, Inc. DBA NameBright.com",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 37,
+      "control_pct": 6.5,
+      "lift": 0.0
+    },
+    {
+      "registrar": "CNOBIN INFORMATION TECHNOLOGY LIMITED",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Epik LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 3,
+      "control_pct": 0.5,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Dotname Korea Corp.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "united-domains GmbH",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Ligne Web Services SAS dba LWS",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Alibaba Cloud Computing (Beijing) Co., L",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 3,
+      "control_pct": 0.5,
+      "lift": 0.0
+    },
+    {
+      "registrar": "One.com A/S",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Synergy Wholesale Accreditations Pty Ltd",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 765 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Arsys Internet, S.L. dba NICLINE.COM",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Sav.com, LLC - 28",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Hongkong Kouming International Limited",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "CSC Corporate Domains, Inc.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 8,
+      "control_pct": 1.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Zoho Corporation Private Limited",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "NameSilo",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 5,
+      "control_pct": 0.9,
+      "lift": 0.0
+    },
+    {
+      "registrar": "1API GmbH",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Ascio Technologies, Inc. Danmark - Filia",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Global Domains International, Inc. DBA D",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Unstoppable Domains Inc.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Nom-iq Ltd. dba COM LAUDE",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 4,
+      "control_pct": 0.7,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Domain.com",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DNC Holdings, Inc.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Sav.com, LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Dot Holding Inc.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "PDR",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Dominet (HK) Limited",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 952 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "OVH sas",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 3,
+      "control_pct": 0.5,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 1308 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "World4You Internet Services GmbH",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Gname 469 Inc",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Instra Corporation Pty Ltd.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Moniker Online Services LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 5,
+      "control_pct": 0.9,
+      "lift": 0.0
+    },
+    {
+      "registrar": "WHC Online Solutions Inc.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 660 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 887 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 542 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Automattic Inc.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    }
+  ],
+  "registration_bursts": [
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "start": "2023-11-01T10:58:12Z",
+      "span_s": 137,
+      "count": 6,
+      "domains": [
+        "speedmailhub.com",
+        "quickpostmail.com",
+        "swiftinboxmail.com",
+        "rapidmailpost.com",
+        "rapidinboxpro.com",
+        "postmailpro.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          6
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "start": "2023-03-04T11:33:30Z",
+      "span_s": 6,
+      "count": 5,
+      "domains": [
+        "careeremail.net",
+        "mycareermail.com",
+        "jobemail.net",
+        "techcareermail.com",
+        "techjobsemail.net"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          5
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "start": "2023-10-25T21:24:46Z",
+      "span_s": 569,
+      "count": 5,
+      "domains": [
+        "swiftcouriermail.com",
+        "promailcenter.com",
+        "messagehubplus.com",
+        "letterinboxpro.com",
+        "couriermailhub.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          5
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "start": "2023-11-01T09:58:25Z",
+      "span_s": 110,
+      "count": 5,
+      "domains": [
+        "mailzoomexpress.com",
+        "rapidposthub.com",
+        "fastmailzoom.com",
+        "mailflashpro.com",
+        "propostbox.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          5
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "start": "2023-10-31T22:34:23Z",
+      "span_s": 94,
+      "count": 4,
+      "domains": [
+        "inboxflashpro.com",
+        "mailblitzhub.com",
+        "mailjethub.com",
+        "cometmailhub.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          4
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "start": "2024-03-14T20:48:58Z",
+      "span_s": 5,
+      "count": 4,
+      "domains": [
+        "worksemails.com",
+        "itjobmail.com",
+        "myemailjob.com",
+        "mailsworks.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          4
+        ]
+      ]
+    },
+    {
+      "registrar": "Cloudflare",
+      "start": "2026-01-21T02:01:52Z",
+      "span_s": 197,
+      "count": 4,
+      "domains": [
+        "rapidmailhost.com",
+        "mailboxcore.com",
+        "tivomail.com",
+        "smartmailhost.net"
+      ],
+      "groups": [
+        2
+      ],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          4
+        ]
+      ]
+    },
+    {
+      "registrar": "Cloudflare",
+      "start": "2026-06-04T08:48:52Z",
+      "span_s": 425,
+      "count": 4,
+      "domains": [
+        "elitecandidates.com",
+        "careermails.net",
+        "primemailhost.com",
+        "swiftmailhost.com"
+      ],
+      "groups": [
+        2
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "start": "2024-04-08T22:34:28Z",
+      "span_s": 4,
+      "count": 3,
+      "domains": [
+        "zenithstellar.com",
+        "celestialflare.com",
+        "quantumzens.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          3
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "start": "2024-04-16T11:23:28Z",
+      "span_s": 7,
+      "count": 3,
+      "domains": [
+        "blazepinnacle.com",
+        "pulsearcana.com",
+        "pulsedynamo.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          3
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "start": "2024-09-25T18:21:26Z",
+      "span_s": 5,
+      "count": 3,
+      "domains": [
+        "mailmywork.com",
+        "techsmail.com",
+        "myjobsmails.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "start": "2025-01-06T21:41:54Z",
+      "span_s": 43,
+      "count": 3,
+      "domains": [
+        "jobitwork.com",
+        "myjobitmail.com",
+        "quickitmail.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ]
+    },
+    {
+      "registrar": "Hostinger",
+      "start": "2025-01-31T20:55:06Z",
+      "span_s": 238,
+      "count": 3,
+      "domains": [
+        "newjobrequire.com",
+        "newjobdesire.com",
+        "newjobshunt.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          3
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "start": "2025-08-26T19:01:36Z",
+      "span_s": 32,
+      "count": 3,
+      "domains": [
+        "mymailjob.com",
+        "careersmails.com",
+        "mycareersjobs.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          3
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "start": "2025-11-03T14:56:38Z",
+      "span_s": 4,
+      "count": 3,
+      "domains": [
+        "myjobscouts.com",
+        "savemymails.com",
+        "mailjobhub.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "start": "2023-10-26T11:06:06Z",
+      "span_s": 113,
+      "count": 2,
+      "domains": [
+        "expressinboxmail.com",
+        "mailzoomhub.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "start": "2023-10-31T21:44:48Z",
+      "span_s": 5,
+      "count": 2,
+      "domains": [
+        "flashpostmail.com",
+        "speedymailpost.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "start": "2024-03-12T20:34:55Z",
+      "span_s": 357,
+      "count": 2,
+      "domains": [
+        "mycvtalent.com",
+        "mycvhire.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "start": "2024-04-08T19:29:59Z",
+      "span_s": 5,
+      "count": 2,
+      "domains": [
+        "terraquasar.com",
+        "phoenixglide.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "Wix",
+      "start": "2024-05-13T18:46:53Z",
+      "span_s": 109,
+      "count": 2,
+      "domains": [
+        "careerwebmail.com",
+        "mywebemails.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          1
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "start": "2024-05-15T19:31:39Z",
+      "span_s": 2,
+      "count": 2,
+      "domains": [
+        "cvtechmail.com",
+        "techjobmail.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "start": "2024-06-25T16:01:13Z",
+      "span_s": 39,
+      "count": 2,
+      "domains": [
+        "mycvscout.com",
+        "ajobguide.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "start": "2024-07-29T21:51:20Z",
+      "span_s": 47,
+      "count": 2,
+      "domains": [
+        "jobtechmail.com",
+        "careeritjob.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "start": "2024-10-23T17:30:22Z",
+      "span_s": 3,
+      "count": 2,
+      "domains": [
+        "themailpad.com",
+        "mymailkeeper.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "Realtime Register B.V.",
+      "start": "2024-11-26T15:08:58Z",
+      "span_s": 513,
+      "count": 2,
+      "domains": [
+        "jobrequires.com",
+        "jobsdesire.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "start": "2025-02-05T16:14:06Z",
+      "span_s": 0,
+      "count": 2,
+      "domains": [
+        "protectmymails.com",
+        "mymailshub.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "privacy_alias_mailbox",
+          1
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ]
+    },
+    {
+      "registrar": "Hostinger",
+      "start": "2025-02-07T20:21:38Z",
+      "span_s": 171,
+      "count": 2,
+      "domains": [
+        "itresumejobs.com",
+        "itjobdesire.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "Cloudflare",
+      "start": "2025-11-22T17:26:55Z",
+      "span_s": 43,
+      "count": 2,
+      "domains": [
+        "mailactiv.com",
+        "activemails.net"
+      ],
+      "groups": [
+        2
+      ],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "start": "2026-04-22T20:53:08Z",
+      "span_s": 4,
+      "count": 2,
+      "domains": [
+        "techmyjob.com",
+        "mailscareer.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "start": "2026-05-07T19:29:54Z",
+      "span_s": 281,
+      "count": 2,
+      "domains": [
+        "jobsmailbox.com",
+        "jobinboxhub.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    }
+  ],
+  "registration_day_batches": [
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "day": "2023-11-01",
+      "count": 11,
+      "span_s": 3724,
+      "domains": [
+        "mailzoomexpress.com",
+        "rapidposthub.com",
+        "fastmailzoom.com",
+        "mailflashpro.com",
+        "propostbox.com",
+        "speedmailhub.com",
+        "quickpostmail.com",
+        "swiftinboxmail.com",
+        "rapidmailpost.com",
+        "rapidinboxpro.com",
+        "postmailpro.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          11
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "day": "2023-10-31",
+      "count": 6,
+      "span_s": 3069,
+      "domains": [
+        "flashpostmail.com",
+        "speedymailpost.com",
+        "inboxflashpro.com",
+        "mailblitzhub.com",
+        "mailjethub.com",
+        "cometmailhub.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          6
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "day": "2023-03-04",
+      "count": 5,
+      "span_s": 6,
+      "domains": [
+        "careeremail.net",
+        "mycareermail.com",
+        "jobemail.net",
+        "techcareermail.com",
+        "techjobsemail.net"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          5
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "day": "2023-10-25",
+      "count": 5,
+      "span_s": 569,
+      "domains": [
+        "swiftcouriermail.com",
+        "promailcenter.com",
+        "messagehubplus.com",
+        "letterinboxpro.com",
+        "couriermailhub.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          5
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "day": "2024-04-08",
+      "count": 5,
+      "span_s": 11073,
+      "domains": [
+        "terraquasar.com",
+        "phoenixglide.com",
+        "zenithstellar.com",
+        "celestialflare.com",
+        "quantumzens.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          5
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2024-03-14",
+      "count": 4,
+      "span_s": 5,
+      "domains": [
+        "worksemails.com",
+        "itjobmail.com",
+        "myemailjob.com",
+        "mailsworks.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          4
+        ]
+      ]
+    },
+    {
+      "registrar": "Cloudflare",
+      "day": "2025-11-22",
+      "count": 4,
+      "span_s": 507,
+      "domains": [
+        "mailactiv.com",
+        "activemails.net",
+        "swiftemail.co",
+        "mailmessage.co"
+      ],
+      "groups": [
+        2
+      ],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          4
+        ]
+      ]
+    },
+    {
+      "registrar": "Cloudflare",
+      "day": "2026-01-21",
+      "count": 4,
+      "span_s": 197,
+      "domains": [
+        "rapidmailhost.com",
+        "mailboxcore.com",
+        "tivomail.com",
+        "smartmailhost.net"
+      ],
+      "groups": [
+        2
+      ],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          4
+        ]
+      ]
+    },
+    {
+      "registrar": "Cloudflare",
+      "day": "2026-06-04",
+      "count": 4,
+      "span_s": 425,
+      "domains": [
+        "elitecandidates.com",
+        "careermails.net",
+        "primemailhost.com",
+        "swiftmailhost.com"
+      ],
+      "groups": [
+        2
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2024-03-12",
+      "count": 3,
+      "span_s": 8545,
+      "domains": [
+        "mycvtalent.com",
+        "mycvhire.com",
+        "nextitjobs.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          3
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "day": "2024-04-16",
+      "count": 3,
+      "span_s": 7,
+      "domains": [
+        "blazepinnacle.com",
+        "pulsearcana.com",
+        "pulsedynamo.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          3
+        ]
+      ]
+    },
+    {
+      "registrar": "Wix",
+      "day": "2024-05-13",
+      "count": 3,
+      "span_s": 15373,
+      "domains": [
+        "work-mail.net",
+        "careerwebmail.com",
+        "mywebemails.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2024-09-25",
+      "count": 3,
+      "span_s": 5,
+      "domains": [
+        "mailmywork.com",
+        "techsmail.com",
+        "myjobsmails.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ]
+    },
+    {
+      "registrar": "Realtime Register B.V.",
+      "day": "2024-11-26",
+      "count": 3,
+      "span_s": 1239,
+      "domains": [
+        "carrermail.com",
+        "jobrequires.com",
+        "jobsdesire.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2025-01-06",
+      "count": 3,
+      "span_s": 43,
+      "domains": [
+        "jobitwork.com",
+        "myjobitmail.com",
+        "quickitmail.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ]
+    },
+    {
+      "registrar": "Hostinger",
+      "day": "2025-01-31",
+      "count": 3,
+      "span_s": 238,
+      "domains": [
+        "newjobrequire.com",
+        "newjobdesire.com",
+        "newjobshunt.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          3
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2025-08-26",
+      "count": 3,
+      "span_s": 32,
+      "domains": [
+        "mymailjob.com",
+        "careersmails.com",
+        "mycareersjobs.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          3
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2025-11-03",
+      "count": 3,
+      "span_s": 4,
+      "domains": [
+        "myjobscouts.com",
+        "savemymails.com",
+        "mailjobhub.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2026-04-22",
+      "count": 3,
+      "span_s": 64367,
+      "domains": [
+        "mypostwork.com",
+        "techmyjob.com",
+        "mailscareer.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "day": "2023-10-26",
+      "count": 2,
+      "span_s": 113,
+      "domains": [
+        "expressinboxmail.com",
+        "mailzoomhub.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2024-05-15",
+      "count": 2,
+      "span_s": 2,
+      "domains": [
+        "cvtechmail.com",
+        "techjobmail.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2024-06-25",
+      "count": 2,
+      "span_s": 39,
+      "domains": [
+        "mycvscout.com",
+        "ajobguide.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2024-07-17",
+      "count": 2,
+      "span_s": 4967,
+      "domains": [
+        "thetechbox.co",
+        "careerattainment.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          1
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2024-07-29",
+      "count": 2,
+      "span_s": 47,
+      "domains": [
+        "jobtechmail.com",
+        "careeritjob.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2024-10-23",
+      "count": 2,
+      "span_s": 3,
+      "domains": [
+        "themailpad.com",
+        "mymailkeeper.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2025-02-05",
+      "count": 2,
+      "span_s": 0,
+      "domains": [
+        "protectmymails.com",
+        "mymailshub.com"
+      ],
+      "groups": [
+        1
+      ],
+      "classes": [
+        [
+          "privacy_alias_mailbox",
+          1
+        ],
+        [
+          "synthetic_generic_mailbox_brand",
+          1
+        ]
+      ]
+    },
+    {
+      "registrar": "Hostinger",
+      "day": "2025-02-07",
+      "count": 2,
+      "span_s": 171,
+      "domains": [
+        "itresumejobs.com",
+        "itjobdesire.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "Cloudflare",
+      "day": "2025-11-11",
+      "count": 2,
+      "span_s": 927,
+      "domains": [
+        "pulsemailbox.com",
+        "boxmailhost.com"
+      ],
+      "groups": [
+        2
+      ],
+      "classes": [
+        [
+          "synthetic_generic_mailbox_brand",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "Cloudflare",
+      "day": "2026-03-25",
+      "count": 2,
+      "span_s": 590,
+      "domains": [
+        "topcandidate.co",
+        "nextstepcareer.net"
+      ],
+      "groups": [
+        2
+      ],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2026-05-07",
+      "count": 2,
+      "span_s": 281,
+      "domains": [
+        "jobsmailbox.com",
+        "jobinboxhub.com"
+      ],
+      "groups": [],
+      "classes": [
+        [
+          "job_career_work_it_cv_themed",
+          2
+        ]
+      ]
+    }
+  ],
+  "last_changed_batches": [
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "day": "2025-10-17",
+      "count": 15,
+      "domains": [
+        "fastmailzoom.com",
+        "flashpostmail.com",
+        "inboxflashpro.com",
+        "mailblitzhub.com",
+        "mailflashpro.com",
+        "mailzoomexpress.com",
+        "postmailpro.com",
+        "propostbox.com",
+        "quickpostmail.com",
+        "rapidinboxpro.com",
+        "rapidmailpost.com",
+        "rapidposthub.com",
+        "speedmailhub.com",
+        "speedymailpost.com",
+        "swiftinboxmail.com"
+      ],
+      "groups": [],
+      "controls_same_day": 0,
+      "controls_at_registrar": 25,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    },
+    {
+      "registrar": "Hostinger",
+      "day": "2026-02-02",
+      "count": 5,
+      "domains": [
+        "itjobdesire.com",
+        "itresumejobs.com",
+        "newjobdesire.com",
+        "newjobrequire.com",
+        "newjobshunt.com"
+      ],
+      "groups": [],
+      "controls_same_day": 0,
+      "controls_at_registrar": 13,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "day": "2025-10-10",
+      "count": 5,
+      "domains": [
+        "couriermailhub.com",
+        "letterinboxpro.com",
+        "messagehubplus.com",
+        "promailcenter.com",
+        "swiftcouriermail.com"
+      ],
+      "groups": [],
+      "controls_same_day": 0,
+      "controls_at_registrar": 25,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2026-03-19",
+      "count": 4,
+      "domains": [
+        "itjobmail.com",
+        "mailsworks.com",
+        "myemailjob.com",
+        "worksemails.com"
+      ],
+      "groups": [
+        1
+      ],
+      "controls_same_day": 0,
+      "controls_at_registrar": 132,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "day": "2026-03-04",
+      "count": 4,
+      "domains": [
+        "jobemail.net",
+        "mycareermail.com",
+        "techcareermail.com",
+        "techjobsemail.net"
+      ],
+      "groups": [],
+      "controls_same_day": 3,
+      "controls_at_registrar": 25,
+      "control_share": 0.12,
+      "verdict": "also seen in 3 controls \u2014 weak"
+    },
+    {
+      "registrar": "Cloudflare",
+      "day": "2026-06-04",
+      "count": 4,
+      "domains": [
+        "careermails.net",
+        "elitecandidates.com",
+        "primemailhost.com",
+        "swiftmailhost.com"
+      ],
+      "groups": [
+        2
+      ],
+      "controls_same_day": 0,
+      "controls_at_registrar": 22,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2026-08-12",
+      "count": 4,
+      "domains": [
+        "myprivatemail.io",
+        "sorce.io",
+        "vegascareers.org",
+        "whisperpost.io"
+      ],
+      "groups": [
+        1,
+        5
+      ],
+      "controls_same_day": 8,
+      "controls_at_registrar": 132,
+      "control_share": 0.061,
+      "verdict": "also seen in 8 controls \u2014 weak"
+    },
+    {
+      "registrar": "Cloudflare",
+      "day": "2026-01-21",
+      "count": 4,
+      "domains": [
+        "mailboxcore.com",
+        "rapidmailhost.com",
+        "smartmailhost.net",
+        "tivomail.com"
+      ],
+      "groups": [
+        2
+      ],
+      "controls_same_day": 0,
+      "controls_at_registrar": 22,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2025-08-12",
+      "count": 3,
+      "domains": [
+        "mailmywork.com",
+        "myjobsmails.com",
+        "techsmail.com"
+      ],
+      "groups": [
+        1
+      ],
+      "controls_same_day": 0,
+      "controls_at_registrar": 132,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2025-01-06",
+      "count": 3,
+      "domains": [
+        "jobitwork.com",
+        "myjobitmail.com",
+        "quickitmail.com"
+      ],
+      "groups": [],
+      "controls_same_day": 0,
+      "controls_at_registrar": 132,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2026-04-22",
+      "count": 3,
+      "domains": [
+        "mailscareer.com",
+        "mypostwork.com",
+        "techmyjob.com"
+      ],
+      "groups": [
+        1
+      ],
+      "controls_same_day": 0,
+      "controls_at_registrar": 132,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2025-11-03",
+      "count": 3,
+      "domains": [
+        "mailjobhub.com",
+        "myjobscouts.com",
+        "savemymails.com"
+      ],
+      "groups": [
+        1
+      ],
+      "controls_same_day": 0,
+      "controls_at_registrar": 132,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    },
+    {
+      "registrar": "GoDaddy",
+      "day": "2025-08-26",
+      "count": 3,
+      "domains": [
+        "careersmails.com",
+        "mycareersjobs.com",
+        "mymailjob.com"
+      ],
+      "groups": [
+        1
+      ],
+      "controls_same_day": 0,
+      "controls_at_registrar": 132,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    },
+    {
+      "registrar": "Realtime Register B.V.",
+      "day": "2025-11-25",
+      "count": 3,
+      "domains": [
+        "carrermail.com",
+        "jobrequires.com",
+        "jobsdesire.com"
+      ],
+      "groups": [],
+      "controls_same_day": 0,
+      "controls_at_registrar": 1,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    },
+    {
+      "registrar": "Wix",
+      "day": "2026-04-16",
+      "count": 3,
+      "domains": [
+        "careerwebmail.com",
+        "mywebemails.com",
+        "work-mail.net"
+      ],
+      "groups": [],
+      "controls_same_day": 0,
+      "controls_at_registrar": 1,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    },
+    {
+      "registrar": "Namecheap",
+      "day": "2026-08-12",
+      "count": 3,
+      "domains": [
+        "careermail.pro",
+        "jobmail.io",
+        "wgcv.me"
+      ],
+      "groups": [],
+      "controls_same_day": 11,
+      "controls_at_registrar": 62,
+      "control_share": 0.177,
+      "verdict": "also seen in 11 controls \u2014 weak"
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "day": "2026-04-01",
+      "count": 3,
+      "domains": [
+        "blazepinnacle.com",
+        "pulsearcana.com",
+        "pulsedynamo.com"
+      ],
+      "groups": [],
+      "controls_same_day": 0,
+      "controls_at_registrar": 25,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    },
+    {
+      "registrar": "Squarespace (ex-Google Domains)",
+      "day": "2026-04-04",
+      "count": 3,
+      "domains": [
+        "celestialflare.com",
+        "quantumzens.com",
+        "zenithstellar.com"
+      ],
+      "groups": [],
+      "controls_same_day": 0,
+      "controls_at_registrar": 25,
+      "control_share": 0.0,
+      "verdict": "operator-specific (controls do not share it)"
+    }
+  ],
+  "base_rates": {
+    "corpus_domains_in_a_burst": 88,
+    "corpus_burst_share": 0.362,
+    "control_domains_in_a_burst": 33,
+    "control_burst_share": 0.061,
+    "corpus_domains_in_a_day_batch": 100,
+    "corpus_day_batch_share": 0.4,
+    "control_domains_in_a_day_batch": 41,
+    "control_day_batch_share": 0.073,
+    "note": "controls are naming-adjacent registered domains that failed the cluster marker test; some may still belong to the same operators, so the control rates are an upper bound on chance co-registration"
+  },
+  "control_collisions": [
+    {
+      "corpus_domain": "careeremail.net",
+      "group": null,
+      "control_domain": "cvemail.net",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 0
+    },
+    {
+      "corpus_domain": "careeremail.net",
+      "group": null,
+      "control_domain": "workmails.net",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 0
+    },
+    {
+      "corpus_domain": "careerx.us",
+      "group": null,
+      "control_domain": "careerx.io",
+      "registrar": "GoDaddy",
+      "gap_s": 0
+    },
+    {
+      "corpus_domain": "jobemail.net",
+      "group": null,
+      "control_domain": "cvemail.net",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 0
+    },
+    {
+      "corpus_domain": "jobemail.net",
+      "group": null,
+      "control_domain": "workmails.net",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 0
+    },
+    {
+      "corpus_domain": "mycareermail.com",
+      "group": null,
+      "control_domain": "cvemail.net",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 0
+    },
+    {
+      "corpus_domain": "mycareermail.com",
+      "group": null,
+      "control_domain": "workmails.net",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 0
+    },
+    {
+      "corpus_domain": "pxdmail.com",
+      "group": null,
+      "control_domain": "pxdmail.net",
+      "registrar": "Namecheap",
+      "gap_s": 0
+    },
+    {
+      "corpus_domain": "careeremail.net",
+      "group": null,
+      "control_domain": "mycvemail.com",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 1
+    },
+    {
+      "corpus_domain": "jobemail.net",
+      "group": null,
+      "control_domain": "mycvemail.com",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 1
+    },
+    {
+      "corpus_domain": "mycareermail.com",
+      "group": null,
+      "control_domain": "mycvemail.com",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 1
+    },
+    {
+      "corpus_domain": "techcareermail.com",
+      "group": null,
+      "control_domain": "mycvemail.com",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 4
+    },
+    {
+      "corpus_domain": "techcareermail.com",
+      "group": null,
+      "control_domain": "cvemail.net",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 5
+    },
+    {
+      "corpus_domain": "techcareermail.com",
+      "group": null,
+      "control_domain": "workmails.net",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 5
+    },
+    {
+      "corpus_domain": "techjobsemail.net",
+      "group": null,
+      "control_domain": "mycvemail.com",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 5
+    },
+    {
+      "corpus_domain": "techjobsemail.net",
+      "group": null,
+      "control_domain": "cvemail.net",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 6
+    },
+    {
+      "corpus_domain": "techjobsemail.net",
+      "group": null,
+      "control_domain": "workmails.net",
+      "registrar": "Squarespace (ex-Google Domains)",
+      "gap_s": 6
+    },
+    {
+      "corpus_domain": "keemail.me",
+      "group": null,
+      "control_domain": "keemail.org",
+      "registrar": "INWX GmbH",
+      "gap_s": 8
+    },
+    {
+      "corpus_domain": "keemail.me",
+      "group": null,
+      "control_domain": "keemail.net",
+      "registrar": "INWX GmbH",
+      "gap_s": 19
+    },
+    {
+      "corpus_domain": "oxfordnetworks.net",
+      "group": null,
+      "control_domain": "oxfordnetworks.com",
+      "registrar": "Tucows",
+      "gap_s": 20
+    },
+    {
+      "corpus_domain": "oxfordnetworks.net",
+      "group": null,
+      "control_domain": "oxfordnetworks.org",
+      "registrar": "Tucows",
+      "gap_s": 20
+    }
+  ],
+  "group_timelines": [
+    {
+      "same_checkout_leads": [
+        {
+          "domain": "mycvhire.com",
+          "burst_start": "2024-03-12T20:34:55Z",
+          "span_s": 357,
+          "with": [
+            "mycvtalent.com"
+          ]
+        },
+        {
+          "domain": "cvtechmail.com",
+          "burst_start": "2024-05-15T19:31:39Z",
+          "span_s": 2,
+          "with": [
+            "techjobmail.com"
+          ]
+        },
+        {
+          "domain": "ajobguide.com",
+          "burst_start": "2024-06-25T16:01:13Z",
+          "span_s": 39,
+          "with": [
+            "mycvscout.com"
+          ]
+        },
+        {
+          "domain": "careeritjob.com",
+          "burst_start": "2024-07-29T21:51:20Z",
+          "span_s": 47,
+          "with": [
+            "jobtechmail.com"
+          ]
+        },
+        {
+          "domain": "themailpad.com",
+          "burst_start": "2024-10-23T17:30:22Z",
+          "span_s": 3,
+          "with": [
+            "mymailkeeper.com"
+          ]
+        },
+        {
+          "domain": "mymailshub.com",
+          "burst_start": "2025-02-05T16:14:06Z",
+          "span_s": 0,
+          "with": [
+            "protectmymails.com"
+          ]
+        },
+        {
+          "domain": "mailjobhub.com",
+          "burst_start": "2025-11-03T14:56:38Z",
+          "span_s": 4,
+          "with": [
+            "myjobscouts.com",
+            "savemymails.com"
+          ]
+        }
+      ],
+      "group": 1,
+      "linking_evidence": [
+        "spfm:aa8e722993"
+      ],
+      "size": 31,
+      "with_created": 31,
+      "first": "2012-05-24",
+      "last": "2026-04-22",
+      "span_days": 5081,
+      "registrars": [
+        [
+          "GoDaddy",
+          31
+        ]
+      ],
+      "members_in_bursts": 14,
+      "bursts": [
+        {
+          "registrar": "GoDaddy",
+          "start": "2024-03-14T20:48:58Z",
+          "span_s": 5,
+          "count": 4,
+          "domains": [
+            "worksemails.com",
+            "itjobmail.com",
+            "mailsworks.com",
+            "myemailjob.com"
+          ]
+        },
+        {
+          "registrar": "GoDaddy",
+          "start": "2024-09-25T18:21:26Z",
+          "span_s": 5,
+          "count": 3,
+          "domains": [
+            "mailmywork.com",
+            "techsmail.com",
+            "myjobsmails.com"
+          ]
+        },
+        {
+          "registrar": "GoDaddy",
+          "start": "2025-08-26T19:01:36Z",
+          "span_s": 32,
+          "count": 3,
+          "domains": [
+            "mymailjob.com",
+            "careersmails.com",
+            "mycareersjobs.com"
+          ]
+        },
+        {
+          "registrar": "GoDaddy",
+          "start": "2025-11-03T14:56:38Z",
+          "span_s": 1,
+          "count": 2,
+          "domains": [
+            "myjobscouts.com",
+            "savemymails.com"
+          ]
+        },
+        {
+          "registrar": "GoDaddy",
+          "start": "2026-04-22T20:53:08Z",
+          "span_s": 4,
+          "count": 2,
+          "domains": [
+            "techmyjob.com",
+            "mailscareer.com"
+          ]
+        }
+      ],
+      "day_batches": [
+        {
+          "registrar": "GoDaddy",
+          "day": "2024-03-14",
+          "count": 4,
+          "span_s": 5,
+          "domains": [
+            "worksemails.com",
+            "itjobmail.com",
+            "mailsworks.com",
+            "myemailjob.com"
+          ]
+        },
+        {
+          "registrar": "GoDaddy",
+          "day": "2024-09-25",
+          "count": 3,
+          "span_s": 5,
+          "domains": [
+            "mailmywork.com",
+            "techsmail.com",
+            "myjobsmails.com"
+          ]
+        },
+        {
+          "registrar": "GoDaddy",
+          "day": "2025-08-26",
+          "count": 3,
+          "span_s": 32,
+          "domains": [
+            "mymailjob.com",
+            "careersmails.com",
+            "mycareersjobs.com"
+          ]
+        },
+        {
+          "registrar": "GoDaddy",
+          "day": "2026-04-22",
+          "count": 3,
+          "span_s": 64367,
+          "domains": [
+            "mypostwork.com",
+            "techmyjob.com",
+            "mailscareer.com"
+          ]
+        },
+        {
+          "registrar": "GoDaddy",
+          "day": "2025-11-03",
+          "count": 2,
+          "span_s": 1,
+          "domains": [
+            "myjobscouts.com",
+            "savemymails.com"
+          ]
+        }
+      ],
+      "members": [
+        {
+          "domain": "hiremails.com",
+          "created": "2012-05-24",
+          "registrar": "GoDaddy",
+          "expansion_member": true
+        },
+        {
+          "domain": "sorce.io",
+          "created": "2020-05-17",
+          "registrar": "GoDaddy",
+          "expansion_member": true
+        },
+        {
+          "domain": "careernb.com",
+          "created": "2023-08-09",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "cvmailhub.com",
+          "created": "2023-10-02",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "mymailworks.com",
+          "created": "2024-02-29",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "mycvtalent.com",
+          "created": "2024-03-12",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "worksemails.com",
+          "created": "2024-03-14",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "itjobmail.com",
+          "created": "2024-03-14",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "mailsworks.com",
+          "created": "2024-03-14",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "myemailjob.com",
+          "created": "2024-03-14",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "techjobmail.com",
+          "created": "2024-05-15",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "mycvscout.com",
+          "created": "2024-06-25",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "thetechbox.co",
+          "created": "2024-07-17",
+          "registrar": "GoDaddy",
+          "expansion_member": true
+        },
+        {
+          "domain": "jobtechmail.com",
+          "created": "2024-07-29",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "jobitmail.com",
+          "created": "2024-08-06",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "mailmywork.com",
+          "created": "2024-09-25",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "techsmail.com",
+          "created": "2024-09-25",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "myjobsmails.com",
+          "created": "2024-09-25",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "mymailkeeper.com",
+          "created": "2024-10-23",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "jobsmails.com",
+          "created": "2025-01-28",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "protectmymails.com",
+          "created": "2025-02-05",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "worksemail.com",
+          "created": "2025-06-18",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "mymailjob.com",
+          "created": "2025-08-26",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "careersmails.com",
+          "created": "2025-08-26",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "mycareersjobs.com",
+          "created": "2025-08-26",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "myjobscouts.com",
+          "created": "2025-11-03",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "savemymails.com",
+          "created": "2025-11-03",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "thepromail.co",
+          "created": "2026-01-21",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "mypostwork.com",
+          "created": "2026-04-22",
+          "registrar": "GoDaddy",
+          "expansion_member": true
+        },
+        {
+          "domain": "techmyjob.com",
+          "created": "2026-04-22",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "mailscareer.com",
+          "created": "2026-04-22",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        }
+      ]
+    },
+    {
+      "same_checkout_leads": [
+        {
+          "domain": "swiftmailhost.com",
+          "burst_start": "2026-06-04T08:48:52Z",
+          "span_s": 425,
+          "with": [
+            "elitecandidates.com",
+            "careermails.net",
+            "primemailhost.com"
+          ]
+        }
+      ],
+      "group": 2,
+      "linking_evidence": [
+        "uriports:p7rqadcw"
+      ],
+      "size": 16,
+      "with_created": 16,
+      "first": "2025-05-23",
+      "last": "2026-06-04",
+      "span_days": 376,
+      "registrars": [
+        [
+          "Cloudflare",
+          16
+        ]
+      ],
+      "members_in_bursts": 9,
+      "bursts": [
+        {
+          "registrar": "Cloudflare",
+          "start": "2026-01-21T02:01:52Z",
+          "span_s": 197,
+          "count": 4,
+          "domains": [
+            "rapidmailhost.com",
+            "mailboxcore.com",
+            "tivomail.com",
+            "smartmailhost.net"
+          ]
+        },
+        {
+          "registrar": "Cloudflare",
+          "start": "2026-06-04T08:48:52Z",
+          "span_s": 269,
+          "count": 3,
+          "domains": [
+            "elitecandidates.com",
+            "careermails.net",
+            "primemailhost.com"
+          ]
+        },
+        {
+          "registrar": "Cloudflare",
+          "start": "2025-11-22T17:26:55Z",
+          "span_s": 43,
+          "count": 2,
+          "domains": [
+            "mailactiv.com",
+            "activemails.net"
+          ]
+        }
+      ],
+      "day_batches": [
+        {
+          "registrar": "Cloudflare",
+          "day": "2026-01-21",
+          "count": 4,
+          "span_s": 197,
+          "domains": [
+            "rapidmailhost.com",
+            "mailboxcore.com",
+            "tivomail.com",
+            "smartmailhost.net"
+          ]
+        },
+        {
+          "registrar": "Cloudflare",
+          "day": "2025-11-22",
+          "count": 3,
+          "span_s": 232,
+          "domains": [
+            "mailactiv.com",
+            "activemails.net",
+            "swiftemail.co"
+          ]
+        },
+        {
+          "registrar": "Cloudflare",
+          "day": "2026-06-04",
+          "count": 3,
+          "span_s": 269,
+          "domains": [
+            "elitecandidates.com",
+            "careermails.net",
+            "primemailhost.com"
+          ]
+        },
+        {
+          "registrar": "Cloudflare",
+          "day": "2025-11-11",
+          "count": 2,
+          "span_s": 927,
+          "domains": [
+            "pulsemailbox.com",
+            "boxmailhost.com"
+          ]
+        },
+        {
+          "registrar": "Cloudflare",
+          "day": "2026-03-25",
+          "count": 2,
+          "span_s": 590,
+          "domains": [
+            "topcandidate.co",
+            "nextstepcareer.net"
+          ]
+        }
+      ],
+      "members": [
+        {
+          "domain": "boxmailhere.com",
+          "created": "2025-05-23",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "truemailhost.net",
+          "created": "2025-09-12",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "pulsemailbox.com",
+          "created": "2025-11-11",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "boxmailhost.com",
+          "created": "2025-11-11",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "mailactiv.com",
+          "created": "2025-11-22",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "activemails.net",
+          "created": "2025-11-22",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "swiftemail.co",
+          "created": "2025-11-22",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "rapidmailhost.com",
+          "created": "2026-01-21",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "mailboxcore.com",
+          "created": "2026-01-21",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "tivomail.com",
+          "created": "2026-01-21",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "smartmailhost.net",
+          "created": "2026-01-21",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "topcandidate.co",
+          "created": "2026-03-25",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "nextstepcareer.net",
+          "created": "2026-03-25",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "elitecandidates.com",
+          "created": "2026-06-04",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "careermails.net",
+          "created": "2026-06-04",
+          "registrar": "Cloudflare",
+          "expansion_member": false
+        },
+        {
+          "domain": "primemailhost.com",
+          "created": "2026-06-04",
+          "registrar": "Cloudflare",
+          "expansion_member": true
+        }
+      ]
+    },
+    {
+      "same_checkout_leads": [],
+      "group": 3,
+      "linking_evidence": [
+        "ondmarc:e3936a44"
+      ],
+      "size": 3,
+      "with_created": 3,
+      "first": "1994-12-09",
+      "last": "2002-08-05",
+      "span_days": 2796,
+      "registrars": [
+        [
+          "Gandi",
+          3
+        ]
+      ],
+      "members_in_bursts": 0,
+      "bursts": [],
+      "day_batches": [],
+      "members": [
+        {
+          "domain": "fastmail.com",
+          "created": "1994-12-09",
+          "registrar": "Gandi",
+          "expansion_member": false
+        },
+        {
+          "domain": "pobox.com",
+          "created": "1995-01-05",
+          "registrar": "Gandi",
+          "expansion_member": false
+        },
+        {
+          "domain": "fastmail.net",
+          "created": "2002-08-05",
+          "registrar": "Gandi",
+          "expansion_member": false
+        }
+      ]
+    },
+    {
+      "same_checkout_leads": [],
+      "group": 4,
+      "linking_evidence": [
+        "dkim:dkim:MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJudTILTG3qrzQzZzbptozaGQ0"
+      ],
+      "size": 3,
+      "with_created": 3,
+      "first": "2018-05-13",
+      "last": "2023-02-11",
+      "span_days": 1734,
+      "registrars": [
+        [
+          "MarkMonitor",
+          3
+        ]
+      ],
+      "members_in_bursts": 0,
+      "bursts": [],
+      "day_batches": [],
+      "members": [
+        {
+          "domain": "passmail.com",
+          "created": "2018-05-13",
+          "registrar": "MarkMonitor",
+          "expansion_member": false
+        },
+        {
+          "domain": "passmail.net",
+          "created": "2023-02-10",
+          "registrar": "MarkMonitor",
+          "expansion_member": false
+        },
+        {
+          "domain": "passinbox.com",
+          "created": "2023-02-11",
+          "registrar": "MarkMonitor",
+          "expansion_member": false
+        }
+      ]
+    },
+    {
+      "same_checkout_leads": [],
+      "group": 5,
+      "linking_evidence": [
+        "ptr:sites.framer.app"
+      ],
+      "size": 2,
+      "with_created": 2,
+      "first": "2024-09-17",
+      "last": "2025-01-23",
+      "span_days": 127,
+      "registrars": [
+        [
+          "GoDaddy",
+          2
+        ]
+      ],
+      "members_in_bursts": 0,
+      "bursts": [],
+      "day_batches": [],
+      "members": [
+        {
+          "domain": "eprivatemail.com",
+          "created": "2024-09-17",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "whisperpost.io",
+          "created": "2025-01-23",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        }
+      ]
+    },
+    {
+      "same_checkout_leads": [],
+      "group": 6,
+      "linking_evidence": [
+        "dkim:k2:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv2aC2KjGKLOwTweBY5A9",
+        "dkim:k3:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsYGiMSn7fsUqSvfSX40x"
+      ],
+      "size": 2,
+      "with_created": 2,
+      "first": "2010-11-30",
+      "last": "2023-02-18",
+      "span_days": 4462,
+      "registrars": [
+        [
+          "GoDaddy",
+          2
+        ]
+      ],
+      "members_in_bursts": 0,
+      "bursts": [],
+      "day_batches": [],
+      "members": [
+        {
+          "domain": "prorecresources.com",
+          "created": "2010-11-30",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        },
+        {
+          "domain": "insightfulworkplace.com",
+          "created": "2023-02-18",
+          "registrar": "GoDaddy",
+          "expansion_member": false
+        }
+      ]
+    }
+  ],
+  "lifecycle": {
+    "suspended_hold": [],
+    "dying": [
+      "careerwebmails.com (redemptionPeriod)"
+    ],
+    "lapsed_auto_renew": [
+      "i-mail.in",
+      "vegascareers.org"
+    ],
+    "expiring_within_90d": [
+      "activemails.net (2026-11-22)",
+      "boxmailhost.com (2026-11-11)",
+      "career-techmail.com (2026-09-13)",
+      "careermailus.com (2026-11-13)",
+      "cometmailhub.com (2026-10-31)",
+      "couriermailhub.com (2026-10-25)",
+      "cvmailhub.com (2026-10-02)",
+      "eprivatemail.com (2026-09-17)",
+      "expressinboxmail.com (2026-10-26)",
+      "fastmailzoom.com (2026-11-01)",
+      "flashpostmail.com (2026-10-31)",
+      "inboxflashpro.com (2026-10-31)",
+      "inboxhere.com (2026-10-28)",
+      "itjobinbox.com (2026-09-18)",
+      "jobmailoffer.com (2026-10-10)",
+      "letterinboxpro.com (2026-10-25)",
+      "londondesignworks.com (2026-09-15)",
+      "mail.ru (2026-09-30)",
+      "mailactiv.com (2026-11-22)",
+      "mailblitzhub.com (2026-10-31)",
+      "mailflashpro.com (2026-11-01)",
+      "mailjethub.com (2026-10-31)",
+      "mailjobhub.com (2026-11-03)",
+      "mailmessage.co (2026-11-22)",
+      "mailmywork.com (2026-09-25)",
+      "mailzoomexpress.com (2026-11-01)",
+      "mailzoomhub.com (2026-10-26)",
+      "messagehubplus.com (2026-10-25)",
+      "myemailjobs.com (2026-10-29)",
+      "myitjobmails.com (2026-09-24)",
+      "myjobscouts.com (2026-11-03)",
+      "myjobsemail.com (2026-11-17)",
+      "myjobsmails.com (2026-09-25)",
+      "mymailkeeper.com (2026-10-23)",
+      "myuswork.com (2026-11-15)",
+      "posteo.in (2026-10-14)",
+      "postmailpro.com (2026-11-01)",
+      "proinboxpost.com (2026-11-05)",
+      "promailcenter.com (2026-10-25)",
+      "propertymaveninc.com (2026-10-19)",
+      "propostbox.com (2026-11-01)",
+      "proton.me (2026-10-10)",
+      "pulsemailbox.com (2026-11-11)",
+      "quickpostmail.com (2026-11-01)",
+      "rapidinboxpro.com (2026-11-01)",
+      "rapidmailpost.com (2026-11-01)",
+      "rapidposthub.com (2026-11-01)",
+      "restartworks.com (2026-11-12)",
+      "risemail.com (2026-09-25)",
+      "savemymails.com (2026-11-03)",
+      "sorce.email (2026-10-20)",
+      "speedmailhub.com (2026-11-01)",
+      "speedymailpost.com (2026-10-31)",
+      "swiftcouriermail.com (2026-10-25)",
+      "swiftemail.co (2026-11-22)",
+      "swiftinboxmail.com (2026-11-01)",
+      "techsmail.com (2026-09-25)",
+      "themailpad.com (2026-10-23)",
+      "thetalentarc.co.uk (2026-10-09)",
+      "workitmail.com (2026-09-11)",
+      "worktechmail.com (2026-10-13)",
+      "worktechmails.com (2026-11-10)",
+      "workwebmail.com (2026-10-18)"
+    ],
+    "already_expired": [
+      "careerwebmails.com (2026-07-04)",
+      "thetechbox.co (2026-07-17)"
+    ],
+    "registered_but_not_resolving": [
+      "careerwebmails.com"
+    ],
+    "not_registered": [
+      "myjobesmails.com",
+      "myworksmail.com",
+      "thejobmail.com"
+    ],
+    "host_labels_not_domains": [
+      "mail.mcgill.ca",
+      "mail.utoronto.ca",
+      "mailjobhub.com.test-google-a.com",
+      "myjobscouts.com.test-google-a.com",
+      "protectmymails.com.test-google-a.com",
+      "themailpad.com.test-google-a.com",
+      "use.startmail.com"
+    ],
+    "undetermined": [
+      "cvtechmail.co (registrar-rdap: no hit across 14 registrars)",
+      "email.scued (no RDAP or WHOIS source for this TLD)",
+      "gmail.com0 (no RDAP or WHOIS source for this TLD)",
+      "gmail.comlinkedin (no RDAP or WHOIS source for this TLD)",
+      "gmail.om (no RDAP or WHOIS source for this TLD)",
+      "mymail.pomona.edi (no RDAP or WHOIS source for this TLD)",
+      "mysecuremail.co (registrar-rdap: no hit across 14 registrars)",
+      "privatemailbox.co (registrar-rdap: no hit across 14 registrars)"
+    ],
+    "registry_locks": [
+      "mailmessage.co",
+      "pm.me",
+      "proton.me",
+      "protonmail.com",
+      "swiftemail.co"
+    ]
+  },
+  "hypothesis_tests": [
+    {
+      "hypothesis": "the 21 domains sharing zone-edit date 2026-08-20 were registered or configured as one batch",
+      "test": "sampled 12 Hostinger-nameserver domains discovered by the expansion sweep that are unrelated to any cluster, and read their SOA serials",
+      "result": "12 of 12 controls carry the same 2026-08-20 serial",
+      "verdict": "FALSIFIED - provider-wide serial bump, not operator activity"
+    },
+    {
+      "hypothesis": "the 8 GoDaddy domains sharing zone-edit date 2026-02-05 were configured as one batch",
+      "test": "sampled 79 GoDaddy-nameserver domains discovered by the expansion sweep that belong to no cluster, and read their SOA serials",
+      "result": "0 of 79 controls carry the 2026-02-05 serial; control dates are widely dispersed (most common is 2023-09-19 at 8 of 79)",
+      "verdict": "SURVIVES - 2026-02-05 is not a GoDaddy-wide event, so the 8 domains share a genuine same-day configuration event"
+    },
+    {
+      "hypothesis": "the 8 GoDaddy domains that share zone-edit date 2026-02-05 were registered together",
+      "test": "read the RDAP registration date of each member",
+      "result": "registration dates: `cvtechmail.com` 2024-05-15, `techjobmail.com` 2024-05-15, `careeritjob.com` 2024-07-29, `jobtechmail.com` 2024-07-29, `jobstechmail.com` 2024-12-10, `jobtechsmail.com` 2025-01-17, `jobstechmails.com` 2025-03-18, `mailjobtech.com` 2025-04-14",
+      "verdict": "PARTIAL - 2 of 8 registered on 2024-05-15; the rest were registered on other days and only reconfigured together on 2026-02-05"
+    },
+    {
+      "hypothesis": "Group 1 members were registered in bursts (same registrar, <= 10 min apart)",
+      "test": "chain each member's registry registration timestamp with the group's other members at the same registrar; compare with the control-population burst share",
+      "result": "14 of 31 members sit in 5 intra-group burst(s); control-population burst share is 6.1%",
+      "verdict": "SUPPORTED - 45% of the group vs 6.1% baseline"
+    },
+    {
+      "hypothesis": "Group 2 members were registered in bursts (same registrar, <= 10 min apart)",
+      "test": "chain each member's registry registration timestamp with the group's other members at the same registrar; compare with the control-population burst share",
+      "result": "9 of 16 members sit in 3 intra-group burst(s); control-population burst share is 6.1%",
+      "verdict": "SUPPORTED - 56% of the group vs 6.1% baseline"
+    },
+    {
+      "hypothesis": "registrar choice alone separates the corpus from unrelated themed domains",
+      "test": "registrar share of the corpus against the control population",
+      "result": "GoDaddy 31.8% vs 23.4% (lift 1.36); Squarespace (ex-Google Domains) 26.9% vs 4.4% (lift 6.09); Cloudflare 8.6% vs 3.9% (lift 2.2); Hostinger 6.9% vs 2.3% (lift 3.02); Wix 4.5% vs 0.2% (lift 25.37)",
+      "verdict": "PARTIAL - Squarespace (ex-Google Domains) is 6.09x over-represented, Hostinger is 3.02x over-represented, Wix is 25.37x over-represented; still a mass-market registrar shared with the controls, so vendor-level and not used for linking"
+    }
+  ],
+  "soa_serial": {
+    "caveat": "SOA serial dates the last zone edit, not registration. It is a batch-detection signal only, never an age estimate.",
+    "serial_decodable": 106,
+    "serial_total": 263,
+    "candidate_batches": [
+      {
+        "zone_edit_date": "2026-08-20",
+        "domains": [
+          "career-techmail.com",
+          "carrermail.com",
+          "cvejobs.com",
+          "itjobemails.com",
+          "itjobinbox.com",
+          "itresumejobs.com",
+          "jobmaildesk.com",
+          "jobmailoffer.com",
+          "jobrequires.com",
+          "jobsdesire.com",
+          "myemailjobs.com",
+          "myhotmail.net",
+          "myitjobmails.com",
+          "myjobemails.com",
+          "myjobsca.com",
+          "newjobrequire.com",
+          "newjobshunt.com",
+          "ocproject.net",
+          "quopost.com",
+          "sharemejobs.com",
+          "webappemail.com"
+        ],
+        "count": 21,
+        "ns_operator": [
+          [
+            "Hostinger",
+            18
+          ],
+          [
+            "bnamed.eu;bnamed.uk;bnamed.us;nscluster.ee;nscluster.lv",
+            1
+          ],
+          [
+            "none",
+            1
+          ],
+          [
+            "GoDaddy",
+            1
+          ]
+        ],
+        "single_provider": false,
+        "falsified_by_control": true,
+        "confirmed_by_control": false
+      },
+      {
+        "zone_edit_date": "2026-02-05",
+        "domains": [
+          "careeritjob.com",
+          "cvtechmail.com",
+          "jobstechmail.com",
+          "jobstechmails.com",
+          "jobtechmail.com",
+          "jobtechsmail.com",
+          "mailjobtech.com",
+          "techjobmail.com"
+        ],
+        "count": 8,
+        "ns_operator": [
+          [
+            "GoDaddy",
+            8
+          ]
+        ],
+        "single_provider": true,
+        "falsified_by_control": false,
+        "confirmed_by_control": true
+      },
+      {
+        "zone_edit_date": "2026-03-19",
+        "domains": [
+          "itjobmail.com",
+          "mailsworks.com",
+          "myemailjob.com",
+          "worksemails.com"
+        ],
+        "count": 4,
+        "ns_operator": [
+          [
+            "GoDaddy",
+            4
+          ]
+        ],
+        "single_provider": true,
+        "falsified_by_control": false,
+        "confirmed_by_control": false
+      },
+      {
+        "zone_edit_date": "2026-08-25",
+        "domains": [
+          "applyme.co",
+          "fastmail.com",
+          "fastmail.net",
+          "pobox.com"
+        ],
+        "count": 4,
+        "ns_operator": [
+          [
+            "messagingengine.com",
+            3
+          ],
+          [
+            "GoDaddy",
+            1
+          ]
+        ],
+        "single_provider": false,
+        "falsified_by_control": false,
+        "confirmed_by_control": false
+      },
+      {
+        "zone_edit_date": "2026-06-17",
+        "domains": [
+          "ajobguide.com",
+          "mycvscout.com",
+          "nextitjobs.com"
+        ],
+        "count": 3,
+        "ns_operator": [
+          [
+            "GoDaddy",
+            2
+          ],
+          [
+            "none",
+            1
+          ]
+        ],
+        "single_provider": false,
+        "falsified_by_control": false,
+        "confirmed_by_control": false
+      },
+      {
+        "zone_edit_date": "2025-01-10",
+        "domains": [
+          "jobitwork.com",
+          "myjobitmail.com",
+          "quickitmail.com"
+        ],
+        "count": 3,
+        "ns_operator": [
+          [
+            "GoDaddy",
+            3
+          ]
+        ],
+        "single_provider": true,
+        "falsified_by_control": false,
+        "confirmed_by_control": false
+      },
+      {
+        "zone_edit_date": "2026-08-07",
+        "domains": [
+          "jobinboxhub.com",
+          "jobsmailbox.com",
+          "myitjobshub.com"
+        ],
+        "count": 3,
+        "ns_operator": [
+          [
+            "GoDaddy",
+            2
+          ],
+          [
+            "none",
+            1
+          ]
+        ],
+        "single_provider": false,
+        "falsified_by_control": false,
+        "confirmed_by_control": false
+      },
+      {
+        "zone_edit_date": "2024-05-13",
+        "domains": [
+          "careerwebmail.com",
+          "mywebemails.com",
+          "work-mail.net"
+        ],
+        "count": 3,
+        "ns_operator": [
+          [
+            "Wix",
+            3
+          ]
+        ],
+        "single_provider": true,
+        "falsified_by_control": false,
+        "confirmed_by_control": false
+      }
+    ]
+  },
   "control_tests": [
     {
       "hypothesis": "the 21 domains sharing zone-edit date 2026-08-20 were registered or configured as one batch",
@@ -14,9 +3843,6 @@
       "verdict": "SURVIVES - 2026-02-05 is not a GoDaddy-wide event, so the 8 domains share a genuine same-day configuration event"
     }
   ],
-  "caveat": "SOA serial dates the last zone edit, not registration. It is a batch-detection signal only, never an age estimate.",
-  "serial_decodable": 106,
-  "serial_total": 263,
   "candidate_batches": [
     {
       "zone_edit_date": "2026-08-20",
@@ -62,39 +3888,7 @@
           1
         ]
       ],
-      "mx_provider": [
-        [
-          "Google Workspace",
-          14
-        ],
-        [
-          "none",
-          6
-        ],
-        [
-          "Bulk/ESP",
-          1
-        ]
-      ],
-      "domain_class": [
-        [
-          "job_career_work_it_cv_themed",
-          16
-        ],
-        [
-          "synthetic_generic_mailbox_brand",
-          5
-        ]
-      ],
-      "account_selectors": [
-        [
-          "none",
-          21
-        ]
-      ],
       "single_provider": false,
-      "confounder": "spans 4 providers, so a single-provider platform event does not explain it",
-      "is_today": false,
       "falsified_by_control": true,
       "confirmed_by_control": false
     },
@@ -117,31 +3911,7 @@
           8
         ]
       ],
-      "mx_provider": [
-        [
-          "Google Workspace",
-          8
-        ]
-      ],
-      "domain_class": [
-        [
-          "job_career_work_it_cv_themed",
-          8
-        ]
-      ],
-      "account_selectors": [
-        [
-          "none",
-          6
-        ],
-        [
-          "spfm:aa8e722993",
-          2
-        ]
-      ],
       "single_provider": true,
-      "confounder": "all 8 are on GoDaddy; a provider-wide serial bump would look identical. Needs a control sample of unrelated domains on the same provider before treating as a batch registration.",
-      "is_today": false,
       "falsified_by_control": false,
       "confirmed_by_control": true
     },
@@ -160,27 +3930,7 @@
           4
         ]
       ],
-      "mx_provider": [
-        [
-          "Google Workspace",
-          4
-        ]
-      ],
-      "domain_class": [
-        [
-          "job_career_work_it_cv_themed",
-          4
-        ]
-      ],
-      "account_selectors": [
-        [
-          "spfm:aa8e722993",
-          4
-        ]
-      ],
       "single_provider": true,
-      "confounder": "all 4 are on GoDaddy; a provider-wide serial bump would look identical. Needs a control sample of unrelated domains on the same provider before treating as a batch registration.",
-      "is_today": false,
       "falsified_by_control": false,
       "confirmed_by_control": false
     },
@@ -203,39 +3953,7 @@
           1
         ]
       ],
-      "mx_provider": [
-        [
-          "Fastmail",
-          3
-        ],
-        [
-          "Google Workspace",
-          1
-        ]
-      ],
-      "domain_class": [
-        [
-          "privacy_alias_mailbox",
-          3
-        ],
-        [
-          "job_career_work_it_cv_themed",
-          1
-        ]
-      ],
-      "account_selectors": [
-        [
-          "ondmarc:e3936a44",
-          3
-        ],
-        [
-          "none",
-          1
-        ]
-      ],
       "single_provider": false,
-      "confounder": "spans 2 providers, so a single-provider platform event does not explain it",
-      "is_today": true,
       "falsified_by_control": false,
       "confirmed_by_control": false
     },
@@ -257,31 +3975,7 @@
           1
         ]
       ],
-      "mx_provider": [
-        [
-          "Google Workspace",
-          3
-        ]
-      ],
-      "domain_class": [
-        [
-          "job_career_work_it_cv_themed",
-          3
-        ]
-      ],
-      "account_selectors": [
-        [
-          "none",
-          2
-        ],
-        [
-          "spfm:aa8e722993",
-          1
-        ]
-      ],
       "single_provider": false,
-      "confounder": "spans 2 providers, so a single-provider platform event does not explain it",
-      "is_today": false,
       "falsified_by_control": false,
       "confirmed_by_control": false
     },
@@ -299,35 +3993,7 @@
           3
         ]
       ],
-      "mx_provider": [
-        [
-          "none",
-          2
-        ],
-        [
-          "Google Workspace",
-          1
-        ]
-      ],
-      "domain_class": [
-        [
-          "job_career_work_it_cv_themed",
-          2
-        ],
-        [
-          "synthetic_generic_mailbox_brand",
-          1
-        ]
-      ],
-      "account_selectors": [
-        [
-          "none",
-          3
-        ]
-      ],
       "single_provider": true,
-      "confounder": "all 3 are on GoDaddy; a provider-wide serial bump would look identical. Needs a control sample of unrelated domains on the same provider before treating as a batch registration.",
-      "is_today": false,
       "falsified_by_control": false,
       "confirmed_by_control": false
     },
@@ -349,27 +4015,7 @@
           1
         ]
       ],
-      "mx_provider": [
-        [
-          "Google Workspace",
-          3
-        ]
-      ],
-      "domain_class": [
-        [
-          "job_career_work_it_cv_themed",
-          3
-        ]
-      ],
-      "account_selectors": [
-        [
-          "none",
-          3
-        ]
-      ],
       "single_provider": false,
-      "confounder": "spans 2 providers, so a single-provider platform event does not explain it",
-      "is_today": false,
       "falsified_by_control": false,
       "confirmed_by_control": false
     },
@@ -387,165 +4033,9 @@
           3
         ]
       ],
-      "mx_provider": [
-        [
-          "Microsoft 365",
-          3
-        ]
-      ],
-      "domain_class": [
-        [
-          "job_career_work_it_cv_themed",
-          2
-        ],
-        [
-          "synthetic_generic_mailbox_brand",
-          1
-        ]
-      ],
-      "account_selectors": [
-        [
-          "none",
-          3
-        ]
-      ],
       "single_provider": true,
-      "confounder": "all 3 are on Wix; a provider-wide serial bump would look identical. Needs a control sample of unrelated domains on the same provider before treating as a batch registration.",
-      "is_today": false,
       "falsified_by_control": false,
       "confirmed_by_control": false
     }
-  ],
-  "godaddy_ns_pairs": {
-    "note": "GoDaddy nameserver-pair assignment appears to derive from the domain name, not the account, so shared pairs are NOT evidence of common ownership. Listed for completeness only.",
-    "distinct_pairs": 31,
-    "domains": 65,
-    "pairs": {
-      "ns35.domaincontrol.com+ns36.domaincontrol.com": [
-        "applyme.co",
-        "careernb.com",
-        "mymailshub.com",
-        "mymailworks.com",
-        "protectmymails.com"
-      ],
-      "ns73.domaincontrol.com+ns74.domaincontrol.com": [
-        "cvtechmail.com",
-        "myjobsmail.com",
-        "myquickmails.com",
-        "nextitjobs.com"
-      ],
-      "ns57.domaincontrol.com+ns58.domaincontrol.com": [
-        "careermailus.com",
-        "jobitwork.com",
-        "jobtechsmail.com",
-        "myemailjob.com"
-      ],
-      "ns69.domaincontrol.com+ns70.domaincontrol.com": [
-        "jobinboxhub.com",
-        "myjobscouts.com",
-        "ocproject.net",
-        "odinsoftworks.com"
-      ],
-      "ns23.domaincontrol.com+ns24.domaincontrol.com": [
-        "jobsupp.com",
-        "mailmywork.com",
-        "myjobsmails.com"
-      ],
-      "ns41.domaincontrol.com+ns42.domaincontrol.com": [
-        "cvmailhub.com",
-        "myjobfolio.com",
-        "prorecresources.com"
-      ],
-      "ns65.domaincontrol.com+ns66.domaincontrol.com": [
-        "insightfulworkplace.com",
-        "mailjobhub.com",
-        "mycareersjobs.com"
-      ],
-      "ns29.domaincontrol.com+ns30.domaincontrol.com": [
-        "careersmails.com",
-        "savemymails.com",
-        "vegascareers.org"
-      ],
-      "ns03.domaincontrol.com+ns04.domaincontrol.com": [
-        "insphiretalent.com",
-        "restartworks.com",
-        "theworkmails.com"
-      ],
-      "ns59.domaincontrol.com+ns60.domaincontrol.com": [
-        "mailjobtech.com",
-        "techmyjob.com"
-      ],
-      "ns75.domaincontrol.com+ns76.domaincontrol.com": [
-        "itjobmail.com",
-        "techsmail.com"
-      ],
-      "ns67.domaincontrol.com+ns68.domaincontrol.com": [
-        "itjobworks.com",
-        "quickitmail.com"
-      ],
-      "ns45.domaincontrol.com+ns46.domaincontrol.com": [
-        "jobitmail.com",
-        "mailscareer.com"
-      ],
-      "ns71.domaincontrol.com+ns72.domaincontrol.com": [
-        "careerattainment.com",
-        "mycareersmail.com"
-      ],
-      "ns21.domaincontrol.com+ns22.domaincontrol.com": [
-        "jobtechmail.com",
-        "myitjobshub.com"
-      ],
-      "ns13.domaincontrol.com+ns14.domaincontrol.com": [
-        "ebsworksite.com",
-        "jobstechmail.com"
-      ],
-      "ns43.domaincontrol.com+ns44.domaincontrol.com": [
-        "myjobitmail.com",
-        "worksemail.com"
-      ],
-      "ns01.domaincontrol.com+ns02.domaincontrol.com": [
-        "mailsworks.com",
-        "worksemails.com"
-      ],
-      "ns51.domaincontrol.com+ns52.domaincontrol.com": [
-        "mycvhire.com",
-        "mycvtalent.com"
-      ],
-      "ns07.domaincontrol.com+ns08.domaincontrol.com": [
-        "mainewoodproducts.com",
-        "mymailkeeper.com"
-      ]
-    }
-  },
-  "mta_sts_policy_ids": {
-    "v=STSv1; id=20260728T132000": [
-      "fastmail.com",
-      "fastmail.net",
-      "pobox.com"
-    ],
-    "v=STSv1; id=190906205100Z;": [
-      "protonmail.ch",
-      "protonmail.com"
-    ],
-    "v=STSv1; id=2026072001;": [
-      "passinbox.com",
-      "passmail.com"
-    ],
-    "v=STSv1; id=20190723;": [
-      "keemail.me",
-      "tuta.io"
-    ],
-    "This domain is expired at Hostinger!": [
-      "i-mail.in"
-    ],
-    "v=STSv1; id=20260715T120000;": [
-      "mail.ru"
-    ],
-    "v=STSv1; id=20251202110430Z": [
-      "posteo.net"
-    ],
-    "v=STSv1; id=2023100501": [
-      "use.startmail.com"
-    ]
-  }
+  ]
 }

@@ -92,7 +92,7 @@ def dkim_key_selectors(dns_json, domain):
 
 
 def main():
-    rows = list(csv.DictReader(open(IN_CSV)))
+    rows = list(csv.DictReader(open(IN_CSV, encoding="utf-8")))
     dns_json = json.load(open(os.path.join(ROOT, "output", "dns_enumeration.json")))
 
     # ---- account-level selectors per domain ----
@@ -106,6 +106,10 @@ def main():
         # non-vendor reverse DNS is account-level (a host the operator runs)
         s.update(f"ptr:{p}" for p in r["hosting_ptr"].split(";")
                  if p and not is_vendor_ptr(p))
+        # a registrant organisation the registrar actually disclosed (never a
+        # proxy service, never a redacted placeholder) is account-level
+        if r.get("registrant_org"):
+            s.add(f"regorg:{r['registrant_org'].strip().lower()}")
         acct[r["domain"]] = s
 
     # A verification token or PTR seen on exactly one domain links nothing; keep
@@ -152,6 +156,18 @@ def main():
                                         for r in mem_rows).most_common(),
                 "risk_tier": Counter(r["risk_tier"] for r in mem_rows).most_common(),
                 "domain_class": Counter(r["domain_class"] for r in mem_rows).most_common(),
+                "registrar": Counter(r.get("registrar") or "not collected"
+                                     for r in mem_rows).most_common(),
+                "registrant_disclosure": Counter(
+                    (r.get("registrant_proxy_service") or r.get("registrant_disclosure") or "no registrar-side record")
+                    for r in mem_rows).most_common(),
+                "registrant_geo": Counter(r.get("registrant_geo") for r in mem_rows
+                                          if r.get("registrant_geo")).most_common(6),
+                "created_range": [min((r["created_day"] for r in mem_rows if r.get("created_day")),
+                                      default=None),
+                                  max((r["created_day"] for r in mem_rows if r.get("created_day")),
+                                      default=None)],
+                "abuse_contacts": sorted({r["abuse_email"] for r in mem_rows if r.get("abuse_email")}),
             },
         })
     groups.sort(key=lambda g: -g["size"])

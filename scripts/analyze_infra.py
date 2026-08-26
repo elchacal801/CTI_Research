@@ -172,6 +172,147 @@ def verification_tokens(txts):
 
 
 
+# ---------------- registration (RDAP) ----------------
+REGISTRAR_LABEL = [
+    (r"godaddy", "GoDaddy"), (r"namecheap", "Namecheap"), (r"cloudflare", "Cloudflare"),
+    (r"squarespace|google", "Squarespace (ex-Google Domains)"), (r"hostinger", "Hostinger"),
+    (r"name\.com", "Name.com"), (r"wix", "Wix"), (r"porkbun", "Porkbun"),
+    (r"namesilo", "NameSilo"), (r"dynadot", "Dynadot"), (r"tucows|hover|enom", "Tucows"),
+    (r"markmonitor", "MarkMonitor"), (r"network solutions|register\.com|web\.com", "Network Solutions / Web.com"),
+    (r"ionos|1&1", "IONOS"), (r"gandi", "Gandi"), (r"spaceship", "Spaceship"),
+    (r"publicdomainregistry|pdr", "PDR"), (r"key-systems|rrpproxy", "Key-Systems"),
+    (r"amazon", "Amazon Registrar"), (r"ru-center|nic\.ru", "RU-CENTER"),
+    (r"cira|webnames", "Webnames.ca"), (r"nominet", "Nominet"),
+]
+
+
+def registrar_label(name):
+    n = (name or "").lower()
+    for pat, label in REGISTRAR_LABEL:
+        if re.search(pat, n):
+            return label
+    return (name or "")[:40] or "unknown"
+
+
+def load_rdap():
+    """domain -> flattened registration record (empty dict when not collected)."""
+    p = os.path.join(OUT_DIR, "rdap_enumeration.json")
+    if not os.path.exists(p):
+        return {}
+    data = json.load(open(p))
+    return {r["domain"]: r for r in data.get("records", [])}
+
+
+def _geo_key(rg):
+    if not rg or not (rg.get("country") or rg.get("region")):
+        return None
+    return f"{(rg.get('country') or '?').upper()}|{rg.get('region') or '?'}"
+
+
+def placeholder_geos():
+    """(registrar, geo) pairs that are the registrar's own placeholder, not the
+    registrant's location. Decided from the control population: if nearly every
+    redacted record a registrar returns carries the same state/country, that value
+    is the registrar's default (Hostinger answers LT for everyone, Squarespace
+    Domains LLC answers New York), and it must not be pivoted on. Returns
+    {(registrar, geo): (share, n)} for pairs with n >= 5 and share >= 0.8."""
+    p = os.path.join(OUT_DIR, "rdap_controls.json")
+    if not os.path.exists(p):
+        return {}
+    per = defaultdict(Counter)
+    for r in json.load(open(p)).get("records", []):
+        m = r.get("rdap") or {}
+        rg = m.get("registrant") or {}
+        if rg.get("disclosure") == "redacted" and _geo_key(rg):
+            per[m.get("registrar")][_geo_key(rg)] += 1
+    out = {}
+    for reg, c in per.items():
+        n = sum(c.values())
+        geo, k = c.most_common(1)[0]
+        if n >= 5 and k / n >= 0.8:
+            out[(reg, geo)] = (round(k / n, 2), n)
+    return out, {reg: c for reg, c in per.items()}
+
+
+PLACEHOLDER_GEO, GEO_CONTROL = placeholder_geos()
+
+
+def geo_control_check(registrar_raw, geo):
+    """How the control population bears on a (registrar, geo) pair:
+    (verdict, controls_same_geo, controls_with_geo_at_registrar)."""
+    c = GEO_CONTROL.get(registrar_raw, Counter())
+    n = sum(c.values())
+    k = c.get(geo, 0)
+    if (registrar_raw, geo) in PLACEHOLDER_GEO:
+        return "registrar placeholder", k, n
+    if n < 5:
+        return "unverified (too few controls at this registrar)", k, n
+    if k / n >= 0.15:
+        return "common among controls too (population trait)", k, n
+    return "rare among controls", k, n
+
+
+def registration_fields(rec, now):
+    """Flat registration columns for one domain. Registrant geography is kept only
+    where the registrar retained the registrant's own state/country (disclosed or
+    redacted records); a proxy service's address is never treated as geography, and
+    neither is a registrar's control-verified placeholder value."""
+    empty = {"registered": "", "registrar": "", "registrar_raw": "", "registrar_iana_id": "", "reseller": "",
+             "created": "", "created_day": "", "expires": "", "last_changed": "",
+             "time_basis": "", "domain_age_days": "", "epp_status": "",
+             "registrant_disclosure": "", "registrant_proxy_service": "",
+             "registrant_org": "", "registrant_geo": "", "abuse_email": "", "rdap_source": ""}
+    if not rec:
+        return empty
+    m = rec.get("rdap") or {}
+    reg = rec.get("registered")
+    out = dict(empty)
+    out["registered"] = "yes" if reg else ("no" if reg is False else "unknown")
+    out["rdap_source"] = rec.get("source") or ""
+    if not m:
+        return out
+    rg = m.get("registrant") or {}
+    created = m.get("created") or ""
+    out.update({
+        "registrar": registrar_label(m.get("registrar")),
+        "registrar_raw": m.get("registrar") or "",
+        "registrar_iana_id": m.get("registrar_iana_id") or "",
+        "reseller": m.get("reseller") or "",
+        "created": created,
+        "created_day": created[:10],
+        "expires": m.get("expires") or "",
+        "last_changed": m.get("last_changed") or "",
+        "time_basis": m.get("time_basis") or "",
+        "epp_status": ";".join(m.get("status") or []),
+        "registrant_disclosure": rg.get("disclosure") or ("absent" if rec.get("registrar") else ""),
+        "registrant_proxy_service": rg.get("proxy_service") or "",
+        "abuse_email": m.get("abuse_email") or "",
+    })
+    if rg.get("disclosure") == "disclosed":
+        # organisations only: a disclosed individual's name stays in the raw
+        # evidence file and is not carried into the flat table or the report
+        org_like = re.compile(r"\b(llc|inc|ltd|limited|corp|gmbh|ag|s\.?a\.?s?|bv|b\.v\.|e\.k\.|"
+                              r"oy|ab|pty|plc|llp|co\b|company|technolog|solutions|services)",
+                              re.I)
+        cand = rg.get("org") or ""
+        if not cand and rg.get("name") and (rg.get("kind") == "org" or org_like.search(rg["name"])):
+            cand = rg["name"]
+        out["registrant_org"] = cand
+    geo = _geo_key(rg)
+    if rg.get("disclosure") in ("disclosed", "redacted") and geo:
+        if (m.get("registrar"), geo) in PLACEHOLDER_GEO:
+            out["registrant_disclosure"] = "redacted (registrar placeholder geo)"
+        else:
+            out["registrant_geo"] = geo
+    if len(created) >= 10:
+        try:
+            c = datetime.fromisoformat(created[:19]).replace(tzinfo=timezone.utc)
+            out["domain_age_days"] = (now - c).days
+        except ValueError:
+            pass
+    return out
+
+
 def spf_manager_tenants(txts):
     """SPF-delegation/flattening service tenant ids (e.g. dc-<id>._spfm.<domain>).
     A shared tenant id means one account manages SPF for all those domains."""
@@ -228,6 +369,9 @@ def main():
                     prefixes.add(info["bgp_prefix"])
             ptrs.update(info.get("ptr", []))
         return asns, as_names, ccs, prefixes, ptrs
+
+    rdap = load_rdap()
+    now = datetime.now(timezone.utc)
 
     rows = []
     for d in domains:
@@ -296,10 +440,11 @@ def main():
             "ips": ";".join(sorted(set(hosting_ips) | set(mail_ips))),
             "asns": ";".join(sorted(h_asns | m_asns)),
             "as_names": ";".join(sorted(h_names | m_names)),
+            **registration_fields(rdap.get(d["domain"]), now),
         })
 
     csv_path = os.path.join(OUT_DIR, "domain_infrastructure.csv")
-    with open(csv_path, "w", newline="") as fh:
+    with open(csv_path, "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
         w.writeheader()
         w.writerows(rows)
@@ -356,6 +501,19 @@ def main():
         "mx_provider": cluster(lambda r: [r["mx_provider"]], "mail provider"),
         "hosting_asn": cluster(lambda r: [f"AS{a}" for a in r["hosting_asns"].split(";") if a],
                                "shared hosting ASN"),
+        # registration-derived selectors (populated only when RDAP was collected)
+        "registrant_org": cluster(lambda r: [r["registrant_org"]],
+                                  "shared disclosed registrant organisation"),
+        "registration_day": cluster(
+            lambda r: [f"{r['registrar']}|{r['created_day']}"] if r["created_day"] else [],
+            "same registrar, same registration day"),
+        "last_changed_day": cluster(
+            lambda r: [f"{r['registrar']}|{r['last_changed'][:10]}"] if r["last_changed"] else [],
+            "same registrar, same registry last-changed day"),
+        "registrant_geo": cluster(lambda r: [r["registrant_geo"]],
+                                  "shared retained registrant state/country"),
+        "registrar": cluster(lambda r: [r["registrar"]] if r["registrar"] else [],
+                             "registrar of record"),
     }
 
     with open(os.path.join(OUT_DIR, "pivot_clusters.json"), "w") as fh:
