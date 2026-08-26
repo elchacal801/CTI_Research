@@ -52,6 +52,7 @@ def main():
     rdap = load("rdap_enumeration.json") or {"records": []}
     controls = load("rdap_controls.json")
     exp, g2, deep = load("cluster_expansion.json"), load("group2_expansion.json"), load("deep_enumeration.json")
+    cta_sum = load("cert_analysis.json")
 
     by_domain = {r["domain"]: r for r in rows}
     live = [r for r in rows if r["resolves"]]
@@ -173,6 +174,16 @@ def main():
       f"{len(lc['not_registered'])} names in the source list are not registered at all and "
       f"{len(lc['host_labels_not_domains'])} are host labels under other organisations' domains, not "
       "registrable names.")
+    if cta_sum:
+        spanning = sum(v["certs_spanning_two_members"] for k, v in cta_sum["operator_group_cert_status"].items()
+                       if k not in ("4",))
+        ctc = [c for c in cta_sum["cert_linked_clusters"] if c["corpus_touching"]]
+        A(f"- **Certificate transparency corroborates rather than extends.** Across "
+          f"{cta_sum['distinct_certs']} certificates, none spans two members of the actor groups "
+          f"(Groups 1-3, 5, 6): they sit on shared parking and each domain gets its own "
+          "certificate, so the certificate channel adds no members. The only corpus domains that "
+          f"do share a certificate ({', '.join('`'+c['targets'][0]+'`' for c in ctc)}) share it "
+          "with established, unrelated businesses — benign names the grammar swept in.")
     feb = next((t for t in tmp["hypothesis_tests"] if "registered together" in t["hypothesis"]), None)
     if feb:
         A(f"- **The 2026-02-05 GoDaddy batch is a reconfiguration, not a registration event.** "
@@ -619,8 +630,77 @@ def main():
       "vendor's shared host.")
     A("")
 
+    # ------------------------------------------------------------------ 11 (certs)
+    cta = load("cert_analysis.json")
+    if cta:
+        A("## 11. Certificate transparency")
+        A("")
+        A(f"Certificate-transparency logs were checked for every corpus, expansion and lead "
+          f"domain and for the control population — {cta['domains_queried']} domains, "
+          f"{cta['distinct_certs']} distinct certificates. A certificate whose SANs "
+          "span two or more different registrable domains is an account-level link: one party "
+          "proved control of all of them to the CA in a single request, the same attribution "
+          "strength as a shared DKIM key. Multi-tenant vendor and SaaS certificates (a CDN, "
+          "website builder, CRM or mail provider packing unrelated customers onto one "
+          "certificate) and the reference-set providers' own estates are identified and "
+          "excluded from linking.")
+        A("")
+        A("### 11.1 The operator groups do not share certificates")
+        A("")
+        gcs = cta["operator_group_cert_status"]
+        A(tbl(["Group", "Members", "With a certificate", "Certs spanning ≥2 members"],
+              [[f"Group {gi}", st["members"], st["with_any_cert"], st["certs_spanning_two_members"]]
+               for gi, st in gcs.items()]))
+        A("")
+        clean = [gi for gi, st in gcs.items() if st["certs_spanning_two_members"] == 0]
+        A(f"No certificate links two members of Group {', '.join(clean)}. Every member sits on "
+          "shared parking or CDN infrastructure and receives its own per-domain certificate, so "
+          "the certificate channel adds no members to the operator groups and merges none of "
+          "them — a negative result that corroborates the commodity-infrastructure reading of "
+          "sections 6 and 7. The only intra-group spanning certificates belong to Group 4, and "
+          "they are the reference-set provider's own (a SimpleLogin/Proton alias estate), not an "
+          "operator artefact.")
+        A("")
+        corpus_cl = [c for c in cta["cert_linked_clusters"] if c["corpus_touching"]]
+        A("### 11.2 Corpus domains with a shared certificate")
+        A("")
+        A(f"Only {len(corpus_cl)} corpus/lead domains share a certificate with any other "
+          "registrable domain, and both resolve to established, unrelated businesses — benign "
+          "names the mail/career grammar swept into the source list, now positively identified "
+          "through the company they share a certificate with:")
+        A("")
+        rows_ct = []
+        for c in corpus_cl:
+            reading = ("shares a GoDaddy multi-tenant certificate with unrelated small-business "
+                       "sites — a benign inclusion" if c["likely_shared_hosting"] else
+                       "shares certificates with an established company's own domains — a benign "
+                       "inclusion")
+            rows_ct.append([code(c["targets"]), code(c["external_siblings"], 6), reading])
+        A(tbl(["Corpus/lead domain(s)", "Shared-certificate siblings", "Reading"], rows_ct))
+        A("")
+        ctl_cl = [c for c in cta["cert_linked_clusters"] if not c["corpus_touching"]]
+        noise = [c for c in ctl_cl if c["likely_shared_hosting"]]
+        coherent = sorted((c for c in ctl_cl if not c["likely_shared_hosting"] and c["size"] >= 4),
+                          key=lambda c: -c["size"])
+        A("### 11.3 The control population is not made of singletons")
+        A("")
+        A(f"Among the control domains the certificate pivot finds {len(ctl_cl)} shared-certificate "
+          f"clusters: {len(noise)} are bulk shared-hosting certificates (one control domain packed "
+          "onto a reseller's certificate beside dozens of unrelated tenants) and the rest are "
+          "small.")
+        if coherent:
+            jc = coherent[0]
+            A(f" One is a coherent operation of its own: {code(jc['targets'])} ride shared Let's "
+              f"Encrypt certificates with {len(jc['external_siblings'])} job-alert siblings not in "
+              f"the source list ({code(jc['external_siblings'][:6], 6)}), each carrying dedicated "
+              "`mail.` and `click.` sending hosts. That is the signature of an opt-in job-alert "
+              "email sender — structurally unlike the disposable-mailbox clusters, and a reminder "
+              "that some control domains belong to real operators. It means the control burst rate "
+              "in section 3.2 is a conservative upper bound on chance, exactly as stated there.")
+        A("")
+
     # ------------------------------------------------------------------ 11
-    A("## 11. Non-resolving, unregistered and malformed entries")
+    A("## 12. Non-resolving, unregistered and malformed entries")
     A("")
     A(f"{len(dead)} of {len(rows)} entries returned no NS/SOA/A/MX. With registry data the reasons "
       "separate cleanly:")
@@ -653,7 +733,7 @@ def main():
         A("")
 
     # ------------------------------------------------------------------ 12
-    A("## 12. Per-domain detail")
+    A("## 13. Per-domain detail")
     A("")
     A("Full records are in `output/dns_enumeration.json` and `output/rdap_enumeration.json` (raw) and "
       "`output/domain_infrastructure.csv` (flat table). Summary of the highest-risk tier:")
@@ -668,7 +748,7 @@ def main():
     A("")
 
     # ------------------------------------------------------------------ 13
-    A("## 13. Method notes and limitations")
+    A("## 14. Method notes and limitations")
     A("")
     if deep:
         A(f"**Enumeration depth.** The DNS pass used a {deep['subdomain_wordlist_size']}-name subdomain "

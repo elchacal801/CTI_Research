@@ -21,6 +21,8 @@ output/   generated results (raw JSON, flat CSV, analyst report)
 | `scripts/enumerate_dns.py` | Live DNS collection: `A`, `AAAA`, `MX`, `TXT`, `SOA`, `NS`, `CNAME`, `CAA`, plus `_dmarc`, DKIM selector sweep, `_mta-sts`, `_smtp._tls`, a subdomain probe, MX/NS host resolution, reverse DNS, and ASN/BGP-prefix/country enrichment via the Team Cymru IP-to-ASN DNS service. |
 | `scripts/deep_enumerate.py` | Second DNS pass: 133-name subdomain wordlist, 55 DKIM selectors, wildcard-zone detection (probes suppressed, canaries retried), DNSSEC status and NSEC walking. |
 | `scripts/enumerate_rdap.py` | Registration collection. Registry RDAP via the IANA bootstrap (ccTLD overrides for `.io/.me/.us/.ch`), registrar RDAP followed through the registry's `related` link; where a registry offers no public RDAP (`.co`) the registrar is guessed from delegated nameservers and queried directly using the IANA registrar-ID list; WHOIS/43 where no RDAP exists (`.ru`). Classifies registrant data as `proxy:<service>` / `redacted` / `disclosed` / `absent`. `--controls` enumerates the expansion-sweep control population; `--retry <json>` is a slow single-threaded pass that recovers records lost to registrar rate limiting. |
+| `scripts/enumerate_certs.py` | Certificate-transparency collection via crt.sh: for each corpus/lead/discovered domain (and, with `--include-controls` or `--targets-csv`, the control population), the CT-logged certificates for the apex and `%.<domain>`. A certificate whose SANs span two or more different registrable domains is an account-level link. crt.sh returns historical certificates a live DNS probe cannot. |
+| `scripts/analyze_certs.py` | Links domains on shared certificates, excluding multi-tenant vendor/SaaS certificates and reference-provider estates; reports whether any certificate spans two members of an operator group (it does not), corpus domains with a shared certificate, SAN siblings, and control-population clusters. |
 | `scripts/expand_clusters.py`, `scripts/expand_group2.py` | Cluster expansion: candidate names from the corpus naming grammar tested against each group's DNS marker (SPF-management tenant TXT; URIports account in DMARC), with wildcard and parking-default false positives controlled out. Registered candidates carrying no marker become the control population. |
 | `scripts/analyze_infra.py` | Normalises DNS and registration records into a flat table and clusters domains on shared infrastructure and registration selectors. Registrant geography is kept only where it is the registrant's own (never a proxy's address, never a registrar placeholder value identified against the controls). |
 | `scripts/cluster_operators.py` | Merges single-selector clusters into operator groups using account-level evidence only (DKIM key, SPF-management tenant, DMARC-platform account, verification token, disclosed registrant organisation, non-vendor reverse DNS); registrar, timing and hosting are attached as corroboration. |
@@ -39,6 +41,8 @@ python3 scripts/enumerate_rdap.py --workers 6          # -> output/rdap_enumerat
 python3 scripts/enumerate_rdap.py --controls           # -> output/rdap_controls.json
 python3 scripts/enumerate_rdap.py --retry output/rdap_enumeration.json   # recover rate-limited records
 python3 scripts/enumerate_rdap.py --retry output/rdap_controls.json
+python3 scripts/enumerate_certs.py                    # -> output/cert_enumeration.json (crt.sh)
+python3 scripts/analyze_certs.py                      # -> output/cert_analysis.json
 python3 scripts/build_report.py                        # -> CSV, clusters, groups, timing, report
 ```
 
@@ -55,12 +59,14 @@ python3 scripts/build_report.py                        # -> CSV, clusters, group
 | `output/pivot_clusters.json` | Domains grouped by shared selector, across 21 pivot types. |
 | `output/operator_clusters.json` | Connected components over account-level selectors, with corroboration. |
 | `output/temporal_analysis.json` | Registration timing, base rates, leads, lifecycle, hypothesis tests, SOA batches. |
+| `output/cert_enumeration.json` | crt.sh certificates (issuer, SANs, validity) per queried domain. |
+| `output/cert_analysis.json` | Shared-certificate clusters, operator-group certificate status, SAN siblings. |
 | `output/INFRASTRUCTURE_REPORT.md` | The report. |
 
 ## Note on network egress
 
 DNS collection needs outbound UDP/53. Registration collection needs outbound HTTPS to
-registry and registrar RDAP servers, and TCP/43 for the WHOIS fallback. Restricted
+registry and registrar RDAP servers, TCP/43 for the WHOIS fallback, and HTTPS to crt.sh for certificates. Restricted
 environments commonly permit the first and block the rest; `enumerate_rdap.py` records
 a block per-domain rather than failing, so a run is replayable from a network that
 permits the egress. Registrar RDAP servers rate-limit aggressively (HTTP 429); the

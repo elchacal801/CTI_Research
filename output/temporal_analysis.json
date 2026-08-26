@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-26T04:15:58.889118+00:00",
+  "generated_utc": "2026-08-26T13:22:40.975380+00:00",
   "burst_gap_seconds": 600,
   "registration": {
     "corpus_domains": 263,
@@ -370,20 +370,20 @@
       "lift": 11.53
     },
     {
-      "registrar": "Gandi",
-      "corpus": 4,
-      "corpus_pct": 1.6,
-      "control": 3,
-      "control_pct": 0.5,
-      "lift": 3.07
-    },
-    {
       "registrar": "INWX GmbH",
       "corpus": 4,
       "corpus_pct": 1.6,
       "control": 9,
       "control_pct": 1.6,
       "lift": 1.02
+    },
+    {
+      "registrar": "Gandi",
+      "corpus": 4,
+      "corpus_pct": 1.6,
+      "control": 3,
+      "control_pct": 0.5,
+      "lift": 3.07
     },
     {
       "registrar": "Spaceship",
@@ -394,20 +394,20 @@
       "lift": 0.22
     },
     {
-      "registrar": "Amazon Registrar",
-      "corpus": 2,
-      "corpus_pct": 0.8,
-      "control": 7,
-      "control_pct": 1.2,
-      "lift": 0.66
-    },
-    {
       "registrar": "NameWeb BVBA",
       "corpus": 2,
       "corpus_pct": 0.8,
       "control": 0,
       "control_pct": 0.0,
       "lift": null
+    },
+    {
+      "registrar": "Amazon Registrar",
+      "corpus": 2,
+      "corpus_pct": 0.8,
+      "control": 7,
+      "control_pct": 1.2,
+      "lift": 0.66
     },
     {
       "registrar": "Porkbun",
@@ -418,7 +418,15 @@
       "lift": 0.66
     },
     {
-      "registrar": "unknown",
+      "registrar": "Name.com",
+      "corpus": 1,
+      "corpus_pct": 0.4,
+      "control": 8,
+      "control_pct": 1.4,
+      "lift": 0.29
+    },
+    {
+      "registrar": "COPYLEFT, HOST1, KLONER, GRAVITY ASSIST,",
       "corpus": 1,
       "corpus_pct": 0.4,
       "control": 0,
@@ -426,15 +434,7 @@
       "lift": null
     },
     {
-      "registrar": "Network Solutions / Web.com",
-      "corpus": 1,
-      "corpus_pct": 0.4,
-      "control": 11,
-      "control_pct": 1.9,
-      "lift": 0.21
-    },
-    {
-      "registrar": "123-Reg Limited t/a 123-reg",
+      "registrar": "Name SRS AB",
       "corpus": 1,
       "corpus_pct": 0.4,
       "control": 0,
@@ -448,6 +448,22 @@
       "control": 0,
       "control_pct": 0.0,
       "lift": null
+    },
+    {
+      "registrar": "123-Reg Limited t/a 123-reg",
+      "corpus": 1,
+      "corpus_pct": 0.4,
+      "control": 0,
+      "control_pct": 0.0,
+      "lift": null
+    },
+    {
+      "registrar": "Network Solutions / Web.com",
+      "corpus": 1,
+      "corpus_pct": 0.4,
+      "control": 11,
+      "control_pct": 1.9,
+      "lift": 0.21
     },
     {
       "registrar": "InterNetworX Ltd. & Co. KG",
@@ -466,15 +482,7 @@
       "lift": 0.77
     },
     {
-      "registrar": "Name.com",
-      "corpus": 1,
-      "corpus_pct": 0.4,
-      "control": 8,
-      "control_pct": 1.4,
-      "lift": 0.29
-    },
-    {
-      "registrar": "Name SRS AB",
+      "registrar": "unknown",
       "corpus": 1,
       "corpus_pct": 0.4,
       "control": 0,
@@ -482,71 +490,7 @@
       "lift": null
     },
     {
-      "registrar": "COPYLEFT, HOST1, KLONER, GRAVITY ASSIST,",
-      "corpus": 1,
-      "corpus_pct": 0.4,
-      "control": 0,
-      "control_pct": 0.0,
-      "lift": null
-    },
-    {
-      "registrar": "DCGRP OU",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "IONOS",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 11,
-      "control_pct": 1.9,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Fastdomains",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Megazone Corp., dba HOSTING.KR",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 2,
-      "control_pct": 0.4,
-      "lift": 0.0
-    },
-    {
-      "registrar": "DropCatch.com 654 LLC",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "DropCatch.com 1032 LLC",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Scaleway SAS",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Web Commerce Communications Limited dba ",
+      "registrar": "DropCatch.com 660 LLC",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 1,
@@ -562,15 +506,7 @@
       "lift": 0.0
     },
     {
-      "registrar": "Rabbitsfoot.com LLC d/b/a Oxygen.nyc",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Above.com Pty Ltd.",
+      "registrar": "Alibaba Cloud Computing (Beijing) Co., L",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 3,
@@ -578,55 +514,7 @@
       "lift": 0.0
     },
     {
-      "registrar": "RegistryGate GmbH",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 4,
-      "control_pct": 0.7,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Alibaba Cloud Computing Ltd. d/b/a HiChi",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 5,
-      "control_pct": 0.9,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Domain Science Kutatasi Szolgaltato Korl",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 2,
-      "control_pct": 0.4,
-      "lift": 0.0
-    },
-    {
-      "registrar": "123-Reg Limited",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 3,
-      "control_pct": 0.5,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Gransy, s.r.o.",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 4,
-      "control_pct": 0.7,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Key-Systems",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 6,
-      "control_pct": 1.1,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Hetzner Online GmbH",
+      "registrar": "DropCatch.com 654 LLC",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 1,
@@ -634,143 +522,7 @@
       "lift": 0.0
     },
     {
-      "registrar": "101domain GRS Limited",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Sav.com, LLC - 14",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "DropCatch.com 1189 LLC",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Namepanther.com LLC",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "OVH SAS",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 2,
-      "control_pct": 0.4,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Register SPA",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 3,
-      "control_pct": 0.5,
-      "lift": 0.0
-    },
-    {
-      "registrar": "DropCatch.com 1482 LLC",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Gabia, Inc.",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Wild West Domains, LLC",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 7,
-      "control_pct": 1.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Metaregistrar BV",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "CSL Computer Service Langenbach GmbH d/b",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 2,
-      "control_pct": 0.4,
-      "lift": 0.0
-    },
-    {
-      "registrar": "InterNetX GmbH",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 2,
-      "control_pct": 0.4,
-      "lift": 0.0
-    },
-    {
-      "registrar": "DropCatch.com 1503 LLC",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "TurnCommerce, Inc. DBA NameBright.com",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 37,
-      "control_pct": 6.5,
-      "lift": 0.0
-    },
-    {
-      "registrar": "CNOBIN INFORMATION TECHNOLOGY LIMITED",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Epik LLC",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 3,
-      "control_pct": 0.5,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Dotname Korea Corp.",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "united-domains GmbH",
+      "registrar": "Gname 469 Inc",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 1,
@@ -786,15 +538,119 @@
       "lift": 0.0
     },
     {
-      "registrar": "Alibaba Cloud Computing (Beijing) Co., L",
+      "registrar": "RegistryGate GmbH",
       "corpus": 0,
       "corpus_pct": 0.0,
-      "control": 3,
-      "control_pct": 0.5,
+      "control": 4,
+      "control_pct": 0.7,
       "lift": 0.0
     },
     {
-      "registrar": "One.com A/S",
+      "registrar": "Instra Corporation Pty Ltd.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Namepanther.com LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Nom-iq Ltd. dba COM LAUDE",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 4,
+      "control_pct": 0.7,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Dot Holding Inc.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Gransy, s.r.o.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 4,
+      "control_pct": 0.7,
+      "lift": 0.0
+    },
+    {
+      "registrar": "101domain GRS Limited",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "NameSilo",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 5,
+      "control_pct": 0.9,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 765 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "TurnCommerce, Inc. DBA NameBright.com",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 37,
+      "control_pct": 6.5,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Automattic Inc.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "IONOS",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 11,
+      "control_pct": 1.9,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Domain Science Kutatasi Szolgaltato Korl",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Key-Systems",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 6,
+      "control_pct": 1.1,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 542 LLC",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 1,
@@ -810,23 +666,7 @@
       "lift": 0.0
     },
     {
-      "registrar": "DropCatch.com 765 LLC",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 2,
-      "control_pct": 0.4,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Arsys Internet, S.L. dba NICLINE.COM",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 2,
-      "control_pct": 0.4,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Sav.com, LLC - 28",
+      "registrar": "Unstoppable Domains Inc.",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 1,
@@ -834,11 +674,91 @@
       "lift": 0.0
     },
     {
-      "registrar": "Hongkong Kouming International Limited",
+      "registrar": "Fastdomains",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 1,
       "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "World4You Internet Services GmbH",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Sav.com, LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Ascio Technologies, Inc. Danmark - Filia",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Gabia, Inc.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Moniker Online Services LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 5,
+      "control_pct": 0.9,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Dominet (HK) Limited",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Sav.com, LLC - 14",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DNC Holdings, Inc.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Megazone Corp., dba HOSTING.KR",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Register SPA",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 3,
+      "control_pct": 0.5,
       "lift": 0.0
     },
     {
@@ -858,23 +778,15 @@
       "lift": 0.0
     },
     {
-      "registrar": "NameSilo",
+      "registrar": "OVH SAS",
       "corpus": 0,
       "corpus_pct": 0.0,
-      "control": 5,
-      "control_pct": 0.9,
+      "control": 2,
+      "control_pct": 0.4,
       "lift": 0.0
     },
     {
-      "registrar": "1API GmbH",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Ascio Technologies, Inc. Danmark - Filia",
+      "registrar": "Rabbitsfoot.com LLC d/b/a Oxygen.nyc",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 1,
@@ -890,7 +802,7 @@
       "lift": 0.0
     },
     {
-      "registrar": "Unstoppable Domains Inc.",
+      "registrar": "DropCatch.com 1482 LLC",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 1,
@@ -898,15 +810,7 @@
       "lift": 0.0
     },
     {
-      "registrar": "Nom-iq Ltd. dba COM LAUDE",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 4,
-      "control_pct": 0.7,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Domain.com",
+      "registrar": "Hongkong Kouming International Limited",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 1,
@@ -914,7 +818,7 @@
       "lift": 0.0
     },
     {
-      "registrar": "DNC Holdings, Inc.",
+      "registrar": "Sav.com, LLC - 28",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 1,
@@ -922,23 +826,7 @@
       "lift": 0.0
     },
     {
-      "registrar": "Sav.com, LLC",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Dot Holding Inc.",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "PDR",
+      "registrar": "CSL Computer Service Langenbach GmbH d/b",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 2,
@@ -946,23 +834,7 @@
       "lift": 0.0
     },
     {
-      "registrar": "Dominet (HK) Limited",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 2,
-      "control_pct": 0.4,
-      "lift": 0.0
-    },
-    {
-      "registrar": "DropCatch.com 952 LLC",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "OVH sas",
+      "registrar": "Above.com Pty Ltd.",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 3,
@@ -970,7 +842,7 @@
       "lift": 0.0
     },
     {
-      "registrar": "DropCatch.com 1308 LLC",
+      "registrar": "DropCatch.com 1032 LLC",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 1,
@@ -978,47 +850,15 @@
       "lift": 0.0
     },
     {
-      "registrar": "World4You Internet Services GmbH",
+      "registrar": "Wild West Domains, LLC",
       "corpus": 0,
       "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
+      "control": 7,
+      "control_pct": 1.2,
       "lift": 0.0
     },
     {
-      "registrar": "Gname 469 Inc",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Instra Corporation Pty Ltd.",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "Moniker Online Services LLC",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 5,
-      "control_pct": 0.9,
-      "lift": 0.0
-    },
-    {
-      "registrar": "WHC Online Solutions Inc.",
-      "corpus": 0,
-      "corpus_pct": 0.0,
-      "control": 1,
-      "control_pct": 0.2,
-      "lift": 0.0
-    },
-    {
-      "registrar": "DropCatch.com 660 LLC",
+      "registrar": "One.com A/S",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 1,
@@ -1034,7 +874,15 @@
       "lift": 0.0
     },
     {
-      "registrar": "DropCatch.com 542 LLC",
+      "registrar": "PDR",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Domain.com",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 1,
@@ -1042,7 +890,159 @@
       "lift": 0.0
     },
     {
-      "registrar": "Automattic Inc.",
+      "registrar": "Scaleway SAS",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 1308 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 1189 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "united-domains GmbH",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "InterNetX GmbH",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Arsys Internet, S.L. dba NICLINE.COM",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 2,
+      "control_pct": 0.4,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Alibaba Cloud Computing Ltd. d/b/a HiChi",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 5,
+      "control_pct": 0.9,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DCGRP OU",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "CNOBIN INFORMATION TECHNOLOGY LIMITED",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "1API GmbH",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Web Commerce Communications Limited dba ",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 1503 LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Epik LLC",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 3,
+      "control_pct": 0.5,
+      "lift": 0.0
+    },
+    {
+      "registrar": "WHC Online Solutions Inc.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Hetzner Online GmbH",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Dotname Korea Corp.",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "123-Reg Limited",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 3,
+      "control_pct": 0.5,
+      "lift": 0.0
+    },
+    {
+      "registrar": "OVH sas",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 3,
+      "control_pct": 0.5,
+      "lift": 0.0
+    },
+    {
+      "registrar": "Metaregistrar BV",
+      "corpus": 0,
+      "corpus_pct": 0.0,
+      "control": 1,
+      "control_pct": 0.2,
+      "lift": 0.0
+    },
+    {
+      "registrar": "DropCatch.com 952 LLC",
       "corpus": 0,
       "corpus_pct": 0.0,
       "control": 1,

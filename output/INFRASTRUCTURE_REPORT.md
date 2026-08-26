@@ -11,6 +11,7 @@
 - **Registrar is over-represented but not diagnostic.** Squarespace (ex-Google Domains) holds 26.9% of the corpus against 4.4% of the 617 control domains (6.09x), Hostinger holds 6.9% of the corpus against 2.3% of the 617 control domains (3.02x), Wix holds 4.5% of the corpus against 0.2% of the 617 control domains (25.37x). Each is a mass-market registrar the controls also use, so registrar remains a vendor fact and is never used to link.
 - **Registrant identity is almost entirely withheld** — 86 domains sit behind a proxy service, 132 are redacted, 7 disclose an organisation. Where registrars retain the registrant's state/country under redaction, it clusters: US / NY (25), US / TX (15), IN / Gujarat (14), GB / East Sussex (13). Group 2 is uniformly GB-registered. Values that a registrar returns for every customer (its own office address) were identified against the control population and excluded.
 - **Lifecycle.** 63 domains expire within 90 days, 1 are in redemption/pending-delete, 2 have lapsed into auto-renew grace, 0 are on registrar/registry hold. 3 names in the source list are not registered at all and 7 are host labels under other organisations' domains, not registrable names.
+- **Certificate transparency corroborates rather than extends.** Across 2096 certificates, none spans two members of the actor groups (Groups 1-3, 5, 6): they sit on shared parking and each domain gets its own certificate, so the certificate channel adds no members. The only corpus domains that do share a certificate (`oxfordnetworks.com`, `restartworks.com`) share it with established, unrelated businesses — benign names the grammar swept in.
 - **The 2026-02-05 GoDaddy batch is a reconfiguration, not a registration event.** 2 of 8 registered on 2024-05-15; the rest were registered on other days and only reconfigured together on 2026-02-05.
 
 ## 2. Collection scope and coverage
@@ -60,8 +61,8 @@ Corpus share against the control population. A lift near 1 means the registrar i
 | Tucows | 6 | 2.4% | 34 | 6.0% | 0.41 |
 | MarkMonitor | 6 | 2.4% | 9 | 1.6% | 1.54 |
 | Realtime Register B.V. | 5 | 2.0% | 1 | 0.2% | 11.53 |
-| Gandi | 4 | 1.6% | 3 | 0.5% | 3.07 |
 | INWX GmbH | 4 | 1.6% | 9 | 1.6% | 1.02 |
+| Gandi | 4 | 1.6% | 3 | 0.5% | 3.07 |
 | Spaceship | 2 | 0.8% | 21 | 3.7% | 0.22 |
 
 ### 3.2 Registration timing
@@ -890,7 +891,38 @@ Every batch or shared-selector finding was tested against a population that shou
 
 Two false-positive modes in the marker sweep were controlled out before any expansion result was accepted. *Wildcard DNS*: parking providers (Afternic, Sedo, CashParking, NameFind) answer every subdomain, so a name-existence probe hits domains with no connection to the cluster; the uncontrolled first pass reported 71 'new members' including `pobox.co`, `proton.io` and `tuta.us`, and requiring the marker content to match the tenant's SPF rather than the parking default `v=spf1 -all`, plus random-label canaries, cut it to four. *Timeouts read as absence*: a canary lookup that fails is not proof of no wildcard; probes retry and only a definitive NXDOMAIN clears a zone. Group 2's hosting was likewise rejected as a marker: 12 of its members resolve `autoconfig.<domain>` to `141.94.97.141`, which is `autoconfig.migadu.com` — the mail vendor's shared host.
 
-## 11. Non-resolving, unregistered and malformed entries
+## 11. Certificate transparency
+
+Certificate-transparency logs were checked for every corpus, expansion and lead domain and for the control population — 631 domains, 2096 distinct certificates. A certificate whose SANs span two or more different registrable domains is an account-level link: one party proved control of all of them to the CA in a single request, the same attribution strength as a shared DKIM key. Multi-tenant vendor and SaaS certificates (a CDN, website builder, CRM or mail provider packing unrelated customers onto one certificate) and the reference-set providers' own estates are identified and excluded from linking.
+
+### 11.1 The operator groups do not share certificates
+
+| Group | Members | With a certificate | Certs spanning ≥2 members |
+|---|---|---|---|
+| Group 1 | 27 | 20 | 0 |
+| Group 2 | 15 | 11 | 0 |
+| Group 3 | 3 | 1 | 0 |
+| Group 4 | 3 | 3 | 2 |
+| Group 5 | 2 | 2 | 0 |
+| Group 6 | 2 | 1 | 0 |
+
+No certificate links two members of Group 1, 2, 3, 5, 6. Every member sits on shared parking or CDN infrastructure and receives its own per-domain certificate, so the certificate channel adds no members to the operator groups and merges none of them — a negative result that corroborates the commodity-infrastructure reading of sections 6 and 7. The only intra-group spanning certificates belong to Group 4, and they are the reference-set provider's own (a SimpleLogin/Proton alias estate), not an operator artefact.
+
+### 11.2 Corpus domains with a shared certificate
+
+Only 2 corpus/lead domains share a certificate with any other registrable domain, and both resolve to established, unrelated businesses — benign names the mail/career grammar swept into the source list, now positively identified through the company they share a certificate with:
+
+| Corpus/lead domain(s) | Shared-certificate siblings | Reading |
+|---|---|---|
+| `oxfordnetworks.com`, `oxfordnetworks.net` | `186comm.net`, `bayring.com`, `firstlight.net`, `firstlight.systems`, `firstlightcloud.net`, `fltg.com`, … (+1 more) | shares certificates with an established company's own domains — a benign inclusion |
+| `restartworks.com` | `boltonservicegroup.com`, `optimum-financial.com`, `slatefinancialsolutions.com` | shares a GoDaddy multi-tenant certificate with unrelated small-business sites — a benign inclusion |
+
+### 11.3 The control population is not made of singletons
+
+Among the control domains the certificate pivot finds 15 shared-certificate clusters: 8 are bulk shared-hosting certificates (one control domain packed onto a reseller's certificate beside dozens of unrelated tenants) and the rest are small.
+ One is a coherent operation of its own: `careersemail.com`, `thecareermail.com` ride shared Let's Encrypt certificates with 18 job-alert siblings not in the source list (`careeralert.co.uk`, `careeralertme.co.uk`, `careeremail.co.uk`, `careersalert.co.uk`, `clickalerts.co.uk`, `jobboardalerts.co.uk`), each carrying dedicated `mail.` and `click.` sending hosts. That is the signature of an opt-in job-alert email sender — structurally unlike the disposable-mailbox clusters, and a reminder that some control domains belong to real operators. It means the control burst rate in section 3.2 is a conservative upper bound on chance, exactly as stated there.
+
+## 12. Non-resolving, unregistered and malformed entries
 
 10 of 263 entries returned no NS/SOA/A/MX. With registry data the reasons separate cleanly:
 
@@ -904,7 +936,7 @@ Two false-positive modes in the marker sweep were controlled out before any expa
 
 The 4 `*.test-google-a.com` entries are Google Workspace domain-alias test hosts, which the platform generates for a tenant's secondary domains. Their parents are `mailjobhub.com` (same-checkout lead for Group 1), `myjobscouts.com` (Group 1), `protectmymails.com` (Group 1), `themailpad.com` (same-checkout lead for Group 1). All four belonging to one Workspace tenant is consistent with the Group membership and the checkout leads in section 7, though the list itself does not prove which tenant generated them.
 
-## 12. Per-domain detail
+## 13. Per-domain detail
 
 Full records are in `output/dns_enumeration.json` and `output/rdap_enumeration.json` (raw) and `output/domain_infrastructure.csv` (flat table). Summary of the highest-risk tier:
 
@@ -934,7 +966,7 @@ Full records are in `output/dns_enumeration.json` and `output/rdap_enumeration.j
 | jobsitmail.com | 70 | Squarespace (ex-Google Domains) | 2025-03-13 | US/TX | Google Domains / Squarespace | Google Workspace | - | 198.185.159.144;198.185.159.145;198.49.23.14 |
 | workmailit.com | 70 | Squarespace (ex-Google Domains) | 2025-06-19 | US/TX | Google Domains / Squarespace | Google Workspace | - | 198.185.159.144;198.185.159.145;198.49.23.14 |
 
-## 13. Method notes and limitations
+## 14. Method notes and limitations
 
 **Enumeration depth.** The DNS pass used a 133-name subdomain wordlist and 55 DKIM selectors, retrieving 228 DKIM keys across 171 domains. 16 wildcard zones were detected and their probe results suppressed; the subdomain count in section 2 (364) reflects that suppression — an earlier figure of 603 counted wildcard answers. 19 zones are DNSSEC-signed and 5 use walkable NSEC; the Proton-operated ones return RFC 4470 white lies and only `runbox.no` yielded a real chain.
 

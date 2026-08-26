@@ -1,0 +1,990 @@
+{
+  "generated_utc": "2026-08-26T13:22:40.416786+00:00",
+  "source": "certificate-transparency logs (CT-log mirror; the reproducible public collector is scripts/enumerate_certs.py against crt.sh)",
+  "cert_enumeration_generated": "2026-08-26T06:00:00Z",
+  "domains_queried": 631,
+  "distinct_certs": 2096,
+  "coverage": {
+    "corpus": {
+      "domains": 187,
+      "with_cert": 164
+    },
+    "control": {
+      "domains": 432,
+      "with_cert": 319
+    },
+    "lead": {
+      "domains": 8,
+      "with_cert": 2
+    },
+    "discovered": {
+      "domains": 4,
+      "with_cert": 4
+    }
+  },
+  "vendor_hosts_excluded": [
+    "1und1.de",
+    "8alias.com",
+    "8shield.net",
+    "aleeas.com",
+    "arcamax.com",
+    "automattic.com",
+    "bk.ru",
+    "chatleadspro.com",
+    "cloudflaressl.com",
+    "cmp.jobs",
+    "ddg.co",
+    "donttrack.us",
+    "dralias.com",
+    "duckduckgo.com",
+    "dukgo.com",
+    "framer.app",
+    "gmx.net",
+    "gohighlevel.com",
+    "inbox.ru",
+    "invincible.design",
+    "leadconnectorhq.com",
+    "list.ru",
+    "mail.com",
+    "mail.ru",
+    "mailru.com",
+    "msgsndr.com",
+    "my.com",
+    "netcoredelivery.nobroker.in",
+    "netlify.app",
+    "pass2mail.com",
+    "passfwd.com",
+    "pm.me",
+    "proton.me",
+    "protonmail.ch",
+    "protonmail.com",
+    "protonvpn.ch",
+    "protonvpn.com",
+    "silomails.com",
+    "simplelogin.co",
+    "simplelogin.com",
+    "simplelogin.fr",
+    "simplelogin.io",
+    "slmail.me",
+    "slmails.com",
+    "snipdle.com",
+    "spiffyweb.net",
+    "squarespace.com",
+    "ui-portal.de",
+    "uimserv.net",
+    "vercel.app",
+    "weareflo.com",
+    "web.app",
+    "web.de",
+    "wixsite.com",
+    "wordpress.com",
+    "wpengine.com"
+  ],
+  "max_registrable_span_for_linking": 25,
+  "cert_linked_clusters": [
+    {
+      "size": 20,
+      "targets": [
+        "careersemail.com",
+        "thecareermail.com"
+      ],
+      "external_siblings": [
+        "careeralert.co.uk",
+        "careeralertme.co.uk",
+        "careeremail.co.uk",
+        "careersalert.co.uk",
+        "clickalerts.co.uk",
+        "jobboardalerts.co.uk",
+        "jobclickalerts.co.uk",
+        "jobmatchemail.com",
+        "jobs-inbox.com",
+        "jobsalerter.com",
+        "jobsearchalert.co.uk",
+        "jobsemail.co.uk",
+        "jobsends.co.uk",
+        "jobsends.com",
+        "jobsviaemail.co.uk",
+        "matchingalert.com",
+        "myitjobs.com",
+        "yourjobemail.com"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": false,
+      "target_sets": [
+        [
+          "control",
+          2
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 4,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          4
+        ]
+      ],
+      "first_seen_cert": "2026-07-16",
+      "last_seen_cert": "2026-08-12",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "click.careeralert.co.uk",
+        "click.careeralertme.co.uk",
+        "click.careeremail.co.uk",
+        "click.careersalert.co.uk",
+        "click.careersemail.com",
+        "click.clickalerts.co.uk",
+        "click.jobboardalerts.co.uk",
+        "click.jobclickalerts.co.uk",
+        "click.jobmatchemail.com",
+        "click.jobsalerter.com",
+        "click.jobsearchalert.co.uk",
+        "click.jobsemail.co.uk",
+        "click.jobsends.co.uk",
+        "click.jobsends.com",
+        "click.jobsviaemail.co.uk",
+        "click.matchingalert.com",
+        "click.myitjobs.com",
+        "click.thecareermail.com",
+        "click.yourjobemail.com",
+        "jobs-inbox.com",
+        "mail.careeralertme.co.uk",
+        "mail.careersemail.com",
+        "mail.jobmatchemail.com",
+        "mail.jobsalerter.com"
+      ]
+    },
+    {
+      "size": 9,
+      "targets": [
+        "oxfordnetworks.com",
+        "oxfordnetworks.net"
+      ],
+      "external_siblings": [
+        "186comm.net",
+        "bayring.com",
+        "firstlight.net",
+        "firstlight.systems",
+        "firstlightcloud.net",
+        "fltg.com",
+        "techvalleycom.com"
+      ],
+      "corpus_touching": true,
+      "likely_shared_hosting": false,
+      "target_sets": [
+        [
+          "lead",
+          1
+        ],
+        [
+          "corpus",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 1,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          1
+        ]
+      ],
+      "first_seen_cert": "2026-07-06",
+      "last_seen_cert": "2026-07-06",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "186comm.net",
+        "bayring.com",
+        "billing.firstlight.systems",
+        "bridge.techvalleycom.com",
+        "externalcommunication.firstlight.net",
+        "fltg.com",
+        "oxfordnetworks.com",
+        "oxfordnetworks.net",
+        "redirectto.firstlight.net",
+        "secure.techvalleycom.com",
+        "support.firstlightcloud.net",
+        "www.186comm.net",
+        "www.bayring.com",
+        "www.fltg.com",
+        "www.oxfordnetworks.com",
+        "www.oxfordnetworks.net"
+      ]
+    },
+    {
+      "size": 31,
+      "targets": [
+        "i-mail.com"
+      ],
+      "external_siblings": [
+        "aicontractflipping.com",
+        "alberghimare.com",
+        "b188jili.com",
+        "backaframe.repair",
+        "barrelhorsenews.net",
+        "betfun.lol",
+        "bijoubijou.club",
+        "bochki.biz",
+        "bostonroomates.net",
+        "ch.vu",
+        "digitalmarketers.com.au",
+        "geelongwestrealestate.com.au",
+        "hdfull.work",
+        "herowarstips.com",
+        "imgn.life",
+        "internetmarketingxh.world",
+        "intim-shop.site",
+        "jedahconc.com",
+        "jindomiraclesearoadfestival.com",
+        "jytstest.club",
+        "kabaddi.bet",
+        "kantoroxva.website",
+        "khkids.com",
+        "meditherapy.net",
+        "metzgerei-spahn.de",
+        "mindbodycare.net",
+        "noncustody.com",
+        "prattplaceinn.com",
+        "subwaywebnews.com",
+        "sustainable-promotional-products.com.au"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": true,
+      "target_sets": [
+        [
+          "control",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 3,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          3
+        ]
+      ],
+      "first_seen_cert": "2026-07-30",
+      "last_seen_cert": "2026-08-22",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "*.1awitze.ch.vu",
+        "*.adidasi.ch.vu",
+        "*.admin.hdfull.work",
+        "*.admin.imgn.life",
+        "*.admin.jindomiraclesearoadfestival.com",
+        "*.adrianhouriet.ch.vu",
+        "*.aicontractflipping.com",
+        "*.akw-va.ch.vu",
+        "*.alainfun.ch.vu",
+        "*.alberghimare.com",
+        "*.alpmove.ch.vu",
+        "*.andrews-online.ch.vu",
+        "*.anti-gangsta-schrift.ch.vu",
+        "*.app.betfun.lol",
+        "*.app.bijoubijou.club",
+        "*.app.bochki.biz",
+        "*.app.herowarstips.com",
+        "*.app.internetmarketingxh.world",
+        "*.app.jedahconc.com",
+        "*.app.metzgerei-spahn.de",
+        "*.as-frick.ch.vu",
+        "*.autodiscover.metzgerei-spahn.de",
+        "*.b188jili.com",
+        "*.backaframe.repair"
+      ]
+    },
+    {
+      "size": 14,
+      "targets": [
+        "emailtech.com"
+      ],
+      "external_siblings": [
+        "akoyamode.com",
+        "australianton.us",
+        "betasus861.com",
+        "cureconnect.info",
+        "discountservers.uk",
+        "hacksof.life",
+        "luiersaanbieding.net",
+        "ommoc.com",
+        "positionone.com",
+        "rxhealth.com",
+        "stare.com.au",
+        "teenagely.com",
+        "younancardiovasculargroup.com"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": true,
+      "target_sets": [
+        [
+          "control",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 1,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          1
+        ]
+      ],
+      "first_seen_cert": "2026-07-02",
+      "last_seen_cert": "2026-07-02",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "*.admin.rxhealth.com",
+        "*.akoyamode.com",
+        "*.alist.ommoc.com",
+        "*.analytic.luiersaanbieding.net",
+        "*.analytic1-network.luiersaanbieding.net",
+        "*.analytic1.luiersaanbieding.net",
+        "*.apps.teenagely.com",
+        "*.asa.teenagely.com",
+        "*.australianton.us",
+        "*.banana.hacksof.life",
+        "*.betasus861.com",
+        "*.cpcontacts.younancardiovasculargroup.com",
+        "*.cracker-barrel-hashbrown-casserole.hacksof.life",
+        "*.cureconnect.info",
+        "*.dan.teenagely.com",
+        "*.datastore.luiersaanbieding.net",
+        "*.default.luiersaanbieding.net",
+        "*.discountservers.uk",
+        "*.emailtech.com",
+        "*.hacksof.life",
+        "*.homemade-ice-cream.hacksof.life",
+        "*.hostmaster.cureconnect.info",
+        "*.hostmaster.hacksof.life",
+        "*.hostmaster.teenagely.com"
+      ]
+    },
+    {
+      "size": 9,
+      "targets": [
+        "jobsmail.com"
+      ],
+      "external_siblings": [
+        "amrella.com",
+        "bolly-flix.in",
+        "fishfurfeather.com",
+        "hyperguitar.com",
+        "jdsportts.com",
+        "legalmarketingnow.com",
+        "universal-cleaning.com",
+        "www-trilhapg.com"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": true,
+      "target_sets": [
+        [
+          "control",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 2,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          2
+        ]
+      ],
+      "first_seen_cert": "2026-07-09",
+      "last_seen_cert": "2026-07-18",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "*.8e07d050-c5b9-4b80-ae24-e3a06437b5a6.hyperguitar.com",
+        "*.accounts.bolly-flix.in",
+        "*.admin.amrella.com",
+        "*.admin.bolly-flix.in",
+        "*.amrella.com",
+        "*.analytics.jdsportts.com",
+        "*.anythinghub.amrella.com",
+        "*.api.amrella.com",
+        "*.api.hyperguitar.com",
+        "*.api.www-trilhapg.com",
+        "*.app.amrella.com",
+        "*.app.hyperguitar.com",
+        "*.app.jdsportts.com",
+        "*.apps.hyperguitar.com",
+        "*.assets.amrella.com",
+        "*.assets.hyperguitar.com",
+        "*.assets.universal-cleaning.com",
+        "*.autodiscover.fishfurfeather.com",
+        "*.backend.bolly-flix.in",
+        "*.backup.amrella.com",
+        "*.backup.bolly-flix.in",
+        "*.beta.jobsmail.com",
+        "*.betty.hyperguitar.com",
+        "*.bfqde2023llsplde12qd27qdl.bolly-flix.in"
+      ]
+    },
+    {
+      "size": 6,
+      "targets": [
+        "taskmail.net"
+      ],
+      "external_siblings": [
+        "a1elitesolutions.com",
+        "blacklivesforamerica.org",
+        "elitegame.net",
+        "marketspace.co",
+        "theeliteexchange.com"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": true,
+      "target_sets": [
+        [
+          "control",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 1,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          1
+        ]
+      ],
+      "first_seen_cert": "2026-07-31",
+      "last_seen_cert": "2026-07-31",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "mail.a1elitesolutions.com",
+        "mail.blacklivesforamerica.org",
+        "mail.elitegame.net",
+        "mail.marketspace.co",
+        "mail.taskmail.net",
+        "mail.theeliteexchange.com"
+      ]
+    },
+    {
+      "size": 6,
+      "targets": [
+        "contactbox.co"
+      ],
+      "external_siblings": [
+        "agencybuilder.pro",
+        "agencycontentmanager.com",
+        "discovercatonsville.com",
+        "localbusinessguide.co",
+        "prospectbox.co"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": true,
+      "target_sets": [
+        [
+          "control",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 1,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          1
+        ]
+      ],
+      "first_seen_cert": "2026-07-25",
+      "last_seen_cert": "2026-07-25",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "*.co.prospectbox.co",
+        "*.com.prospectbox.co",
+        "agencybuilder.app.prospectbox.co",
+        "agencybuilder.pro",
+        "agencybuilder.pro.prospectbox.co",
+        "agencycontentmanager.com",
+        "app.contactbox.co",
+        "app.contactbox.co.prospectbox.co",
+        "discovercatonsville.com",
+        "localbusinessguide.co",
+        "www.agencybuilder.app.prospectbox.co",
+        "www.agencybuilder.pro",
+        "www.agencybuilder.pro.prospectbox.co",
+        "www.agencycontentmanager.com",
+        "www.agencycontentmanager.com.prospectbox.co",
+        "www.app.contactbox.co.prospectbox.co",
+        "www.discovercatonsville.com",
+        "www.discovercatonsville.com.prospectbox.co",
+        "www.localbusinessguide.co",
+        "www.localbusinessguide.co.prospectbox.co"
+      ]
+    },
+    {
+      "size": 5,
+      "targets": [
+        "posttech.co"
+      ],
+      "external_siblings": [
+        "aisces.com",
+        "baatapp.co",
+        "okayqr.co",
+        "pingu.co.in"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": true,
+      "target_sets": [
+        [
+          "control",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 1,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          1
+        ]
+      ],
+      "first_seen_cert": "2026-06-10",
+      "last_seen_cert": "2026-06-10",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "baatapp.co",
+        "flcfc.aisces.com",
+        "pingu.co.in",
+        "site.posttech.co",
+        "web1.okayqr.co",
+        "web2.okayqr.co",
+        "www.baatapp.co",
+        "www.pingu.co.in"
+      ]
+    },
+    {
+      "size": 4,
+      "targets": [
+        "inboxtechs.com"
+      ],
+      "external_siblings": [
+        "cosmindorganics.com",
+        "mybluehostin.me",
+        "numinapharma.com"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": true,
+      "target_sets": [
+        [
+          "control",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 7,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          7
+        ]
+      ],
+      "first_seen_cert": "2026-06-11",
+      "last_seen_cert": "2026-08-12",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "*.com.inboxtechs.com",
+        "*.cosmindorganics.com",
+        "*.inboxtechs.com",
+        "*.numinapharma.com",
+        "autodiscover.numinapharma.com",
+        "checklist-inboxtechs.thc.avc.mybluehostin.me",
+        "checklist.inboxtechs.com",
+        "cosmindorganics.com",
+        "cpanel.cosmindorganics.com",
+        "cpanel.numinapharma.com",
+        "cpcalendars.cosmindorganics.com",
+        "cpcontacts.cosmindorganics.com",
+        "cpcontacts.numinapharma.com",
+        "mail.cosmindorganics.com",
+        "mail.numinapharma.com",
+        "mrcleanindia-in.thc.avc.mybluehostin.me",
+        "mytisca.thc.avc.mybluehostin.me",
+        "nirmandiwas.thc.avc.mybluehostin.me",
+        "numinapharma.com",
+        "numinapharma.com.inboxtechs.com",
+        "onewest.thc.avc.mybluehostin.me",
+        "prinkit-org.thc.avc.mybluehostin.me",
+        "webmail.cosmindorganics.com",
+        "www.checklist-inboxtechs.thc.avc.mybluehostin.me"
+      ]
+    },
+    {
+      "size": 4,
+      "targets": [
+        "runbox.net"
+      ],
+      "external_siblings": [
+        "lawschoolbound.net",
+        "rncsoftware.us",
+        "venturosa.net"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": true,
+      "target_sets": [
+        [
+          "control",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 4,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          4
+        ]
+      ],
+      "first_seen_cert": "2026-07-30",
+      "last_seen_cert": "2026-08-13",
+      "classification": "reference-set provider estate",
+      "sample_san_hosts": [
+        "*.a0627752.web.runbox.net",
+        "*.lawschoolbound.net",
+        "*.prep.web.runbox.net",
+        "*.rncsoftware.us",
+        "*.rncsoftware.web.runbox.net",
+        "*.venturosa.net",
+        "lawschoolbound.net",
+        "rncsoftware.us",
+        "rncsoftware.web.runbox.net",
+        "venturosa.net",
+        "www.lawschoolbound.prep.web.runbox.net",
+        "www.venturosanet.a0627752.web.runbox.net"
+      ]
+    },
+    {
+      "size": 4,
+      "targets": [
+        "restartworks.com"
+      ],
+      "external_siblings": [
+        "boltonservicegroup.com",
+        "optimum-financial.com",
+        "slatefinancialsolutions.com"
+      ],
+      "corpus_touching": true,
+      "likely_shared_hosting": true,
+      "target_sets": [
+        [
+          "corpus",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 4,
+      "issuers": [
+        [
+          "GoDaddy.com",
+          4
+        ]
+      ],
+      "first_seen_cert": "2026-08-10",
+      "last_seen_cert": "2026-08-18",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "boltonservicegroup.com",
+        "optimum-financial.com",
+        "restartworks.com",
+        "slatefinancialsolutions.com",
+        "www.optimum-financial.com",
+        "www.restartworks.com",
+        "www.slatefinancialsolutions.com"
+      ]
+    },
+    {
+      "size": 3,
+      "targets": [
+        "email.net"
+      ],
+      "external_siblings": [
+        "mailfence.com",
+        "mf.me"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": false,
+      "target_sets": [
+        [
+          "control",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 1,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          1
+        ]
+      ],
+      "first_seen_cert": "2026-06-29",
+      "last_seen_cert": "2026-06-29",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "*.mailfence.com",
+        "email.net",
+        "mailfence.com",
+        "mf.me",
+        "mta-sts.mf.me",
+        "www.email.net",
+        "www.mf.me"
+      ]
+    },
+    {
+      "size": 3,
+      "targets": [
+        "mailflux.net"
+      ],
+      "external_siblings": [
+        "ac.id",
+        "khoahocban.com"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": false,
+      "target_sets": [
+        [
+          "control",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 1,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          1
+        ]
+      ],
+      "first_seen_cert": "2026-07-24",
+      "last_seen_cert": "2026-07-24",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "autoconfig.bsti.buddhidharma.ac.id",
+        "autoconfig.khoahocban.com",
+        "autoconfig.mailflux.net",
+        "autodiscover.bsti.buddhidharma.ac.id",
+        "autodiscover.khoahocban.com",
+        "autodiscover.mailflux.net",
+        "imap.mailflux.net",
+        "smtp.mailflux.net"
+      ]
+    },
+    {
+      "size": 2,
+      "targets": [
+        "boxtasks.com"
+      ],
+      "external_siblings": [
+        "akosma.in"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": false,
+      "target_sets": [
+        [
+          "control",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 1,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          1
+        ]
+      ],
+      "first_seen_cert": "2026-07-29",
+      "last_seen_cert": "2026-07-29",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "accounts.akosma.in",
+        "admin.akosma.in",
+        "akosma.boxtasks.com"
+      ]
+    },
+    {
+      "size": 2,
+      "targets": [
+        "pm.org"
+      ],
+      "external_siblings": [
+        "useperl.at"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": false,
+      "target_sets": [
+        [
+          "control",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 2,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          2
+        ]
+      ],
+      "first_seen_cert": "2026-07-26",
+      "last_seen_cert": "2026-07-26",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "useperl.at",
+        "vienna.pm.org",
+        "www.useperl.at"
+      ]
+    },
+    {
+      "size": 2,
+      "targets": [
+        "myhirebox.com"
+      ],
+      "external_siblings": [
+        "hirebox.us"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": false,
+      "target_sets": [
+        [
+          "control",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 1,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          1
+        ]
+      ],
+      "first_seen_cert": "2026-07-27",
+      "last_seen_cert": "2026-07-27",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "*.hirebox.us",
+        "*.myhirebox.com",
+        "myhirebox.com",
+        "www.myhirebox.hirebox.us"
+      ]
+    },
+    {
+      "size": 2,
+      "targets": [
+        "boxit.com"
+      ],
+      "external_siblings": [
+        "sweetpackaging.com"
+      ],
+      "corpus_touching": false,
+      "likely_shared_hosting": false,
+      "target_sets": [
+        [
+          "control",
+          1
+        ]
+      ],
+      "operator_groups": [],
+      "n_link_certs": 1,
+      "issuers": [
+        [
+          "Let's Encrypt",
+          1
+        ]
+      ],
+      "first_seen_cert": "2026-07-18",
+      "last_seen_cert": "2026-07-18",
+      "classification": "cert-linked cluster (no group marker)",
+      "sample_san_hosts": [
+        "boxit.com",
+        "boxit.com.sweetpackaging.com",
+        "www.boxit.com",
+        "www.boxit.com.sweetpackaging.com"
+      ]
+    }
+  ],
+  "san_siblings": {
+    "oxfordnetworks.net": [
+      "186comm.net",
+      "bayring.com",
+      "firstlight.net",
+      "firstlight.systems",
+      "firstlightcloud.net",
+      "fltg.com",
+      "techvalleycom.com"
+    ],
+    "oxfordnetworks.com": [
+      "186comm.net",
+      "bayring.com",
+      "firstlight.net",
+      "firstlight.systems",
+      "firstlightcloud.net",
+      "fltg.com",
+      "techvalleycom.com"
+    ],
+    "restartworks.com": [
+      "boltonservicegroup.com",
+      "optimum-financial.com",
+      "slatefinancialsolutions.com"
+    ]
+  },
+  "operator_group_cert_status": {
+    "1": {
+      "members": 27,
+      "with_any_cert": 20,
+      "certs_spanning_two_members": 0,
+      "spanning_examples": [],
+      "note": "members get individual per-domain certificates on shared parking / vendor infrastructure; certificates neither merge nor extend this group"
+    },
+    "2": {
+      "members": 15,
+      "with_any_cert": 11,
+      "certs_spanning_two_members": 0,
+      "spanning_examples": [],
+      "note": "members get individual per-domain certificates on shared parking / vendor infrastructure; certificates neither merge nor extend this group"
+    },
+    "3": {
+      "members": 3,
+      "with_any_cert": 1,
+      "certs_spanning_two_members": 0,
+      "spanning_examples": [],
+      "note": "members get individual per-domain certificates on shared parking / vendor infrastructure; certificates neither merge nor extend this group"
+    },
+    "4": {
+      "members": 3,
+      "with_any_cert": 3,
+      "certs_spanning_two_members": 2,
+      "spanning_examples": [
+        [
+          "passinbox.com",
+          "passmail.com",
+          "passmail.net"
+        ],
+        [
+          "passinbox.com",
+          "passmail.com",
+          "passmail.net"
+        ]
+      ],
+      "note": "at least one certificate spans two members"
+    },
+    "5": {
+      "members": 2,
+      "with_any_cert": 2,
+      "certs_spanning_two_members": 0,
+      "spanning_examples": [],
+      "note": "members get individual per-domain certificates on shared parking / vendor infrastructure; certificates neither merge nor extend this group"
+    },
+    "6": {
+      "members": 2,
+      "with_any_cert": 1,
+      "certs_spanning_two_members": 0,
+      "spanning_examples": [],
+      "note": "members get individual per-domain certificates on shared parking / vendor infrastructure; certificates neither merge nor extend this group"
+    }
+  }
+}
